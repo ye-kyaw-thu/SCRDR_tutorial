@@ -30,5 +30,30 @@ Dataset links are as follows:
 4. Breast Cancer Wisconsin (Diagnostic): [https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 5. Titanic Dataset: [https://github.com/datasciencedojo/datasets/blob/master/titanic.csv](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv)
 
+## Assignment No.4
+
+AI Engineering အတန်းက ကျောင်းသားတွေအတွက် Assignment ပါ။  
+
+အဓိက ကတော့ လက်တွေ့ အနီးအနားက လက်လှမ်းမီတဲ့ ပြဿနာ နှစ်ခုကို dataset အသေးလေး ပြင်လိုက်ပြီး RDR model ကို interactive ဆောက်ကြည့်ပါ။ မော်ဒယ်နှစ်ခုနဲ့ ရလဒ်တွေကို report တင်ပေးပါ။ လိုအပ်ရင် coding လည်း ပြင်ချင်ပြင်ပါ။  
+
+ဒီ Assignment ကတော့ Group Work ပါ။  
+Group ၆ခု ကတော့ Assignment-1 အတွက် ဖွဲ့ပေးတုန်းကအတိုင်းပဲ သွားကြရအောင်။  
+ဖြစ်နိုင်ရင် တပတ်အတွင်းပြီးအောင်လုပ်ပြီး report/presentation လုပ်ကြရအောင်။    
+
 ## Citation
 
+If you use SCRDR_tutorial in your work or teaching, please cite it as follows:  
+*(SCRDR_tutorial ကို အသုံးပြုပါက အောက်ပါအတိုင်း ကိုးကားဖော်ပြပေးပါ။)*  
+
+```bibtex
+@misc{SCRDR_tutorial_2026,
+  author       = {Ye Kyaw Thu},
+  title        = {{SCRDR_tutorial: SCRDR Tutorial for AI Engineering (Fundamental) Class}},
+  version      = {1.0},
+  month        = {April},
+  year         = {2026},
+  publisher    = {GitHub},
+  url          = {https://github.com/ye-kyaw-thu/SCRDR_tutorial},
+  note         = {Accessed: YYYY-MM-DD},
+  institution  = {Language Understanding Lab (LU Lab), Myanmar}
+}
