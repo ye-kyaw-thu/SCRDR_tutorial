@@ -30,6 +30,29 @@ Dataset links are as follows:
 4. Breast Cancer Wisconsin (Diagnostic): [https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 5. Titanic Dataset: [https://github.com/datasciencedojo/datasets/blob/master/titanic.csv](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv)
 
+## Credits and Reimplementation
+
+This repository contains reimplementations of specific RDR tools to support the AI Engineering curriculum.
+
+* **scrdr_tagger.py**: Reimplemented based on [RDRPOSTagger](https://github.com/datquocnguyen/RDRPOSTagger) by Dat Quoc Nguyen.
+* **scrdr_tokenizer.py**: Reimplemented based on [RDRsegmenter](https://github.com/datquocnguyen/RDRsegmenter) by Dat Quoc Nguyen.
+
+### Key Enhancements in this Tutorial:
+- **Performance Optimization**: Improved logic for faster training and testing speeds compared to the original scripts.
+- **Myanmar Language Support**: Added specific features for **Syllable Segmentation** and tokenization for the Myanmar language.
+- **Educational Integration**: Refactored code for better readability and integration with Jupyter Notebook experiments.
+
+## License and Usage
+
+### Code and Tutorial Content
+The original code and tutorial materials in this repository are licensed under a **(Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0))[https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en]** License.
+
+- ✅ **Allowed**: Using, modifying, and sharing for teaching, self-study, and Research & Development (R&D).
+- ❌ **Prohibited**: Any commercial use or redistribution for profit is strictly forbidden.
+
+### Datasets
+The datasets provided (Iris, Titanic, Wine Quality, etc.) are included for educational convenience. They are **not** covered by the CC BY-NC-SA license. Users must adhere to the original licenses provided by their respective sources (UCI Machine Learning Repository, etc.).
+
 ## Assignment No.4
 
 AI Engineering အတန်းက ကျောင်းသားတွေအတွက် Assignment ပါ။  
