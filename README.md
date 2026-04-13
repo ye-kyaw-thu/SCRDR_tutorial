@@ -19,7 +19,8 @@
 
 ## Dataset
 
-Dataset links are as follows (ဒီ baseline experiment အတွက်လည်း အောက်ပါလင့်တွေကနေပဲ download လုပ်ယူခဲ့ပါတယ်။):  
+Dataset links are as follows:   
+(ဒီ tutorial ရဲ့ Machine Learning baseline experiment တွေအတွက် သုံးထားတဲ့ ဒေတာတွေကို အောက်ပါလင့်တွေကနေ download လုပ်ယူခဲ့ပါတယ်။)    
 
 1. Iris: [https://archive.ics.uci.edu/dataset/53/iris](https://archive.ics.uci.edu/dataset/53/iris)
 2. Wine Quality: [https://archive.ics.uci.edu/dataset/186/wine+quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
