@@ -9,7 +9,7 @@
 3. Baseline-with-ML.ipynb ကတော့ အများစု သိထားပြီးသား machine learning method တွေဖြစ်တဲ့ DecisionTree, Random Forest, Support Vector Machine (SVM), Naive Bayes (NB), Logistic Regression (LR) တွေကိုသုံးပြီး dataset ၅မျိုး (Iris dataset, Wine Quality dataset, Mushroom dataset, Breast Cancer dataset, Titanic Survival Prediction Dataset) ကို classification လုပ်ပြထားတာပါ။ ဒါကိုတော့ RDR နဲ့ နှိုင်းယှဉ်ကြည့်နိုင်အောင်လို့ baseline အဖြစ်ထားပေးထားပါတယ်။
 4. 
 
-## Notebooks
+## Jupyter Notebooks
 
 1. [Interactive-RDR-Learning.ipynb](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/Interactive-RDR-Learning.ipynb)  
 2. [Baseline-with-ML.ipynb](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/Baseline-with-ML.ipynb)  
