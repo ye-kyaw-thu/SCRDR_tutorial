@@ -80,6 +80,7 @@ If you use SCRDR_tutorial in your work or teaching, please cite it as follows:
   note         = {Accessed: YYYY-MM-DD},
   institution  = {Language Understanding Lab (LU Lab), Myanmar}
 }
+```
 
 ## References
 
