@@ -1,0 +1,77 @@
+digraph SCRDR_AutoLearner_Algorithm {
+    // Quality settings for high-resolution output
+    graph [rankdir=TB, nodesep=0.5, ranksep=0.4, fontname="Segoe UI, Arial", fontsize=12, splines=polyline];
+    node [shape=none, fontname="Segoe UI, Arial", fontsize=11];
+    edge [color="#5F6368", fontname="Segoe UI, Arial", fontsize=10];
+
+    // Input Stage
+    Input [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#E8F0FE">
+            <tr><td><b>INPUT DATASET</b></td></tr>
+            <tr><td>(Iris, Titanic, WDBC, etc.)</td></tr>
+        </table>
+    >];
+
+    // Processing Loop
+    subgraph cluster_loop {
+        label="Training Loop (Iterate through Rows)";
+        style=dotted;
+        
+        Classify [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#F1F3F4">
+                <tr><td><b>1. Classify Row</b></td></tr>
+                <tr><td>Traverse RDR Tree</td></tr>
+            </table>
+        >];
+
+        CheckError [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#FFF4E5">
+                <tr><td><b>2. Is Prediction Correct?</b></td></tr>
+            </table>
+        >, shape=diamond];
+
+        FindBestRule [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#D2E3FC">
+                <tr><td><b>3. Rule Discovery</b></td></tr>
+                <tr><td>Calculate Information Gain<br/>for all Features/Splits</td></tr>
+            </table>
+        >];
+
+        UpdateTree [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#E6F4EA">
+                <tr><td><b>4. Update Tree</b></td></tr>
+                <tr><td>Attach Refinement or Alternative<br/>Save Cornerstone Case</td></tr>
+            </table>
+        >];
+    }
+
+    // Results Stage
+    Output [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#CEEAD6">
+            <tr><td><b>FINAL MODEL</b></td></tr>
+            <tr><td>rdr_model.json</td></tr>
+        </table>
+    >];
+
+    // Connections
+    Input -> Classify;
+    Classify -> CheckError;
+    
+    CheckError -> Classify [label=" Yes (Next Row)"];
+    CheckError -> FindBestRule [label=" No (Misclassified)"];
+    
+    FindBestRule -> UpdateTree;
+    UpdateTree -> Classify [label=" Continue Training"];
+    
+    UpdateTree -> Output [label=" All Rows Processed", style=bold, color="#137333"];
+
+    // Legend
+    //subgraph cluster_legend {
+    //    label="Key Components in scrdr_learner.py";
+    //    style=dashed;
+    //    L1 [label="Entropy Calculation: _calculate_entropy()", shape=plaintext];
+    //    L2 [label="Tree Navigation: classify()", shape=plaintext];
+    //    L3 [label="Node Management: RDRNode Class", shape=plaintext];
+    //}
+}
+

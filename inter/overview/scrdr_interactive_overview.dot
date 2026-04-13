@@ -1,0 +1,66 @@
+digraph SCRDR {
+    // Global Styling for Slides
+    graph [rankdir=TB, nodesep=0.4, ranksep=0.4, fontname="Arial", compound=true, splines=spline];
+    node [fontname="Arial", fontsize=11, shape=rect, style="rounded,filled", fillcolor="#F8F9FA", color="#3C4043"];
+    edge [fontname="Arial", fontsize=10, color="#5F6368"];
+
+    // Entry Point
+    Start [label="START\nNew Data Row", shape=ellipse, fillcolor="#E6F4EA", fontcolor="#137333", color="#137333", style="filled,bold"];
+
+    // I. Inference Engine Cluster
+    subgraph cluster_inference {
+        label="I. CLASSIFICATION (Inference Loop)";
+        style=filled;
+        fillcolor="#F1F3F4";
+        color="#DADCE0";
+
+        Eval [label="Evaluate Current Node\n(Condition Match?)", shape=diamond, fillcolor="#E8F0FE", color="#1A73E8"];
+        
+        Refinement [label="Go to if_true\n(Refinement/Exception)"];
+        Alternative [label="Go to if_false\n(Alternative Rule)"];
+        
+        LastMatch [label="Store 'Last Match'\nas current Conclusion", fillcolor="#E8F0FE", color="#1A73E8"];
+        
+        Terminal [label="Is Branch Null?", shape=diamond];
+        Prediction [label="FINAL PREDICTION\n(Conclusion of Last Match)", shape=box, style="filled,bold", fillcolor="#D2E3FC"];
+    }
+
+    // II. Knowledge Acquisition Cluster
+    subgraph cluster_ka {
+        label="II. KNOWLEDGE ACQUISITION (KA)";
+        style=dashed;
+        color="#70757A";
+
+        ErrorCheck [label="Does Prediction == Actual?", shape=diamond, fillcolor="#FEF7E0"];
+        InputRule [label="EXPERT INPUT\n(Define Feature, Op, Value)", fillcolor="#FFF4E5", color="#E37400"];
+        
+        // Attachment Logic
+        AttachType [label="Was the Node Met?", shape=diamond];
+        RefineLink [label="Attach as Refinement\n(Exception to current rule)"];
+        AltLink [label="Attach as Alternative\n(New branch at same level)"];
+    }
+
+    // Connectors
+    Start -> Eval;
+    
+    // Inference Flow
+    Eval -> LastMatch [label="YES"];
+    LastMatch -> Refinement;
+    Eval -> Alternative [label="NO"];
+    
+    {Refinement Alternative} -> Terminal;
+    Terminal -> Eval [label="No (More Nodes)"];
+    Terminal -> Prediction [label="Yes (End of Path)"];
+
+    // KA Flow (Only in Build Mode)
+    Prediction -> ErrorCheck [label="In 'Build' Mode"];
+    ErrorCheck -> InputRule [label="NO (Mismatch)"];
+    ErrorCheck -> Start [label="YES (Correct)", color="#137333"];
+    
+    InputRule -> AttachType;
+    AttachType -> RefineLink [label="Last node matched\n(Refining error)"];
+    AttachType -> AltLink [label="Last node failed\n(New possibility)"];
+    
+    {RefineLink AltLink} -> Start [label="Save & Move to Next Row", color="#1A73E8"];
+}
+

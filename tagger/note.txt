@@ -1,0 +1,45 @@
+
+
+## Testing
+
+ye@lst-hpc3090:~/exp/auto_rdr/claude$ time python ./scrdr_tagger.py tag --input ./pos_data/otest.word --model ./model/mypos --output ./otest.hyp
+20:23:56 [INFO] ============================================================
+20:23:56 [INFO] MODE: TAG (raw text)
+20:23:56 [INFO]   Input  : ./pos_data/otest.word
+20:23:56 [INFO]   Model  : ./model/mypos
+20:23:56 [INFO]   Output : ./otest.hyp
+20:23:56 [INFO] ============================================================
+20:23:56 [INFO] Tagging 1000 sentences …
+20:23:56 [INFO] Done  [0.32s]  →  ./otest.hyp
+
+real    0m0.368s
+user    0m0.356s
+sys     0m0.012s
+ye@lst-hpc3090:~/exp/auto_rdr/claude$
+
+## Check Hyp File
+
+ye@lst-hpc3090:~/exp/auto_rdr/claude$ wc otest.hyp
+  1000  13468 229876 otest.hyp
+ye@lst-hpc3090:~/exp/auto_rdr/claude$ head otest.hyp
+တစ်/tn ကကိုက်/v ကကို/ppm ဝမ်/n ခုနှစ်ထောင်/tn ပါ/part ။/punc
+မနှစ်/n က/ppm သူ/pron ကျွန်မ/pron ကကို/ppm သင်/v ပေး/part တယ်/ppm ။/punc
+ကျွန်တော့်/pron ခခုံ/n သွား/v ရှာ/v မလလိလို့/part ။/punc
+အတန်း/n စ/v တာ/part ကြာ/v ပြီ/ppm လား/part ။/punc
+ဆေး/n နည်းနည်း/adv စား/v လလိုက်/part ၊/punc သသုံး/tn လေး/part ရက်/n လောက်/part အနားယူ/v လလိုက်/part ရင်/conj ပျောက်/v သွား/v မှာ/ppm ပါ/part ။/punc
+အေးချမ်း/v မှု/part နနဲ့/part စည်းကမ်း/n ကကို/ppm တည်မြဲ/v အောင်/conj ထိန်းသိမ်း/v သည်/ppm ။/punc
+ဇွန်း/n ကကို/ppm လလိုအပ်/v တယ်/ppm ။/punc
+ဘွွဲ့/n ရ/part ရင်/conj ဘာ/pron လုပ်/v မ/part လလိလို့/adj လဲ/part ။/punc
+ကျွန်တော်/pron ချောင်းဆဆိုး/v ခြင်း/part အတွက်/ppm တစ်/tn ခု/part ခု/part လလို/v ချင်/part တယ်/ppm ။/punc
+အသီးအနှံ/n တတိတို့/part မှ/ppm လွဲ/v လျှင်/conj လူ/n တတိတို့/part ၏/ppm အဓိက/n အစားအစာ/n မှာ/ppm ငါး/n ဖြစ်/v သည်/ppm ။/punc
+ye@lst-hpc3090:~/exp/auto_rdr/claude$
+
+## Evaluation
+
+ye@lst-hpc3090:~/exp/auto_rdr/claude$ python2.7 ./evaluate.py ./otest.hyp ./pos_data/otest.txt
+Tag precision: 0.946094446094
+Recall: 0.946094446094
+F-Measure:  1.0
+ye@lst-hpc3090:~/exp/auto_rdr/claude$
+
+

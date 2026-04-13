@@ -1,0 +1,337 @@
+{
+    "rule": "Default",
+    "conclusion": "B",
+    "cornerstone_idx": 68,
+    "exception": {
+        "rule": "area_worst > 1206.85",
+        "conclusion": "M",
+        "cornerstone_idx": 181,
+        "exception": {
+            "rule": "area_worst <= 1649.5",
+            "conclusion": "B",
+            "cornerstone_idx": 491,
+            "exception": {
+                "rule": "area_worst > 1375.0",
+                "conclusion": "M",
+                "cornerstone_idx": 343,
+                "exception": null,
+                "alternative": null
+            },
+            "alternative": null
+        },
+        "alternative": {
+            "rule": "area_worst > 633.95",
+            "conclusion": "M",
+            "cornerstone_idx": 15,
+            "exception": {
+                "rule": "area_worst <= 855.25",
+                "conclusion": "B",
+                "cornerstone_idx": 290,
+                "exception": {
+                    "rule": "area_mean <= 603.85",
+                    "conclusion": "M",
+                    "cornerstone_idx": 512,
+                    "exception": {
+                        "rule": "area_worst <= 775.5",
+                        "conclusion": "B",
+                        "cornerstone_idx": 442,
+                        "exception": {
+                            "rule": "area_mean <= 531.5",
+                            "conclusion": "M",
+                            "cornerstone_idx": 5,
+                            "exception": {
+                                "rule": "area_worst <= 692.7",
+                                "conclusion": "B",
+                                "cornerstone_idx": 143,
+                                "exception": {
+                                    "rule": "texture_worst > 27.595",
+                                    "conclusion": "M",
+                                    "cornerstone_idx": 135,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": null
+                            },
+                            "alternative": {
+                                "rule": "area_worst > 728.35",
+                                "conclusion": "M",
+                                "cornerstone_idx": 215,
+                                "exception": {
+                                    "rule": "area_mean > 587.75",
+                                    "conclusion": "B",
+                                    "cornerstone_idx": 387,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": {
+                                    "rule": "texture_worst > 24.755",
+                                    "conclusion": "M",
+                                    "cornerstone_idx": 14,
+                                    "exception": {
+                                        "rule": "area_mean > 589.35",
+                                        "conclusion": "B",
+                                        "cornerstone_idx": 560,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "area_mean <= 567.75",
+                                            "conclusion": "B",
+                                            "cornerstone_idx": 455,
+                                            "exception": null,
+                                            "alternative": null
+                                        }
+                                    },
+                                    "alternative": null
+                                }
+                            }
+                        },
+                        "alternative": {
+                            "rule": "area_worst <= 837.5",
+                            "conclusion": "B",
+                            "cornerstone_idx": 92,
+                            "exception": {
+                                "rule": "area_worst <= 809.25",
+                                "conclusion": "M",
+                                "cornerstone_idx": 40,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "area_mean <= 540.95",
+                                    "conclusion": "M",
+                                    "cornerstone_idx": 105,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": null
+                        }
+                    },
+                    "alternative": {
+                        "rule": "area_se <= 47.825",
+                        "conclusion": "M",
+                        "cornerstone_idx": 536,
+                        "exception": {
+                            "rule": "area_worst > 769.05",
+                            "conclusion": "B",
+                            "cornerstone_idx": 291,
+                            "exception": {
+                                "rule": "area_mean <= 660.15",
+                                "conclusion": "M",
+                                "cornerstone_idx": 36,
+                                "exception": {
+                                    "rule": "area_worst > 815.05",
+                                    "conclusion": "B",
+                                    "cornerstone_idx": 448,
+                                    "exception": {
+                                        "rule": "area_mean <= 651.1",
+                                        "conclusion": "M",
+                                        "cornerstone_idx": 99,
+                                        "exception": null,
+                                        "alternative": null
+                                    },
+                                    "alternative": null
+                                },
+                                "alternative": {
+                                    "rule": "area_worst > 821.25",
+                                    "conclusion": "M",
+                                    "cornerstone_idx": 430,
+                                    "exception": {
+                                        "rule": "area_mean > 716.1",
+                                        "conclusion": "B",
+                                        "cornerstone_idx": 484,
+                                        "exception": null,
+                                        "alternative": null
+                                    },
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": {
+                                "rule": "area_worst <= 708.6",
+                                "conclusion": "B",
+                                "cornerstone_idx": 439,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "texture_worst <= 25.125",
+                                    "conclusion": "B",
+                                    "cornerstone_idx": 123,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "area_mean > 643.45",
+                                        "conclusion": "B",
+                                        "cornerstone_idx": 558,
+                                        "exception": {
+                                            "rule": "area_worst > 745.85",
+                                            "conclusion": "M",
+                                            "cornerstone_idx": 385,
+                                            "exception": null,
+                                            "alternative": null
+                                        },
+                                        "alternative": null
+                                    }
+                                }
+                            }
+                        },
+                        "alternative": {
+                            "rule": "area_worst <= 733.05",
+                            "conclusion": "M",
+                            "cornerstone_idx": 38,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    }
+                },
+                "alternative": {
+                    "rule": "area_mean > 692.15",
+                    "conclusion": "B",
+                    "cornerstone_idx": 209,
+                    "exception": {
+                        "rule": "area_worst > 956.8",
+                        "conclusion": "M",
+                        "cornerstone_idx": 22,
+                        "exception": {
+                            "rule": "area_mean > 792.3",
+                            "conclusion": "B",
+                            "cornerstone_idx": 157,
+                            "exception": {
+                                "rule": "area_worst > 1058.0",
+                                "conclusion": "M",
+                                "cornerstone_idx": 489,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "area_mean <= 842.65",
+                                    "conclusion": "M",
+                                    "cornerstone_idx": 283,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "area_mean > 914.1",
+                                        "conclusion": "M",
+                                        "cornerstone_idx": 213,
+                                        "exception": null,
+                                        "alternative": null
+                                    }
+                                }
+                            },
+                            "alternative": null
+                        },
+                        "alternative": {
+                            "rule": "area_se > 32.69",
+                            "conclusion": "M",
+                            "cornerstone_idx": 414,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "area_worst <= 921.05",
+                                "conclusion": "M",
+                                "cornerstone_idx": 509,
+                                "exception": {
+                                    "rule": "area_worst <= 888.25",
+                                    "conclusion": "B",
+                                    "cornerstone_idx": 413,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": null
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "area_worst <= 902.6",
+                        "conclusion": "B",
+                        "cornerstone_idx": 513,
+                        "exception": {
+                            "rule": "area_worst > 879.45",
+                            "conclusion": "M",
+                            "cornerstone_idx": 26,
+                            "exception": {
+                                "rule": "area_mean > 656.75",
+                                "conclusion": "B",
+                                "cornerstone_idx": 347,
+                                "exception": null,
+                                "alternative": null
+                            },
+                            "alternative": {
+                                "rule": "area_mean <= 629.15",
+                                "conclusion": "M",
+                                "cornerstone_idx": 435,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        },
+                        "alternative": {
+                            "rule": "area_worst <= 924.9",
+                            "conclusion": "B",
+                            "cornerstone_idx": 472,
+                            "exception": {
+                                "rule": "area_mean <= 634.8",
+                                "conclusion": "M",
+                                "cornerstone_idx": 100,
+                                "exception": null,
+                                "alternative": null
+                            },
+                            "alternative": null
+                        }
+                    }
+                }
+            },
+            "alternative": {
+                "rule": "area_worst > 446.2",
+                "conclusion": "M",
+                "cornerstone_idx": 3,
+                "exception": {
+                    "rule": "area_mean > 431.2",
+                    "conclusion": "B",
+                    "cornerstone_idx": 502,
+                    "exception": {
+                        "rule": "area_mean <= 454.15",
+                        "conclusion": "M",
+                        "cornerstone_idx": 146,
+                        "exception": {
+                            "rule": "area_worst <= 543.45",
+                            "conclusion": "B",
+                            "cornerstone_idx": 96,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "area_worst <= 587.35",
+                                "conclusion": "B",
+                                "cornerstone_idx": 115,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "area_mean > 437.35",
+                                    "conclusion": "B",
+                                    "cornerstone_idx": 401,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            }
+                        },
+                        "alternative": null
+                    },
+                    "alternative": {
+                        "rule": "area_worst <= 542.1",
+                        "conclusion": "B",
+                        "cornerstone_idx": 50,
+                        "exception": {
+                            "rule": "area_mean <= 399.5",
+                            "conclusion": "M",
+                            "cornerstone_idx": 41,
+                            "exception": {
+                                "rule": "area_worst <= 501.75",
+                                "conclusion": "B",
+                                "cornerstone_idx": 427,
+                                "exception": null,
+                                "alternative": null
+                            },
+                            "alternative": null
+                        },
+                        "alternative": {
+                            "rule": "area_mean > 404.85",
+                            "conclusion": "B",
+                            "cornerstone_idx": 136,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    }
+                },
+                "alternative": null
+            }
+        }
+    },
+    "alternative": null
+}

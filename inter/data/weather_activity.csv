@@ -1,0 +1,8 @@
+Day,Outlook,Temp,Humidity,Windy,Activity
+1,Sunny,Hot,High,False,Swim
+2,Sunny,Hot,High,True,Stay-In
+3,Overcast,Hot,High,False,Swim
+4,Rain,Mild,High,False,Walk
+5,Rain,Cool,Normal,False,Walk
+6,Rain,Cool,Normal,True,Stay-In
+7,Overcast,Cool,Normal,True,Walk

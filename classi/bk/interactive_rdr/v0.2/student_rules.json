@@ -1,0 +1,51 @@
+{
+  "condition": null,
+  "conclusion": "Default",
+  "if_true": {
+    "condition": {
+      "col": "Hours_Studied",
+      "op": "<",
+      "val": "5"
+    },
+    "conclusion": "Fail",
+    "if_true": null,
+    "if_false": {
+      "condition": {
+        "col": "Hours_Studied",
+        "op": ">",
+        "val": "10"
+      },
+      "conclusion": "Pass",
+      "if_true": null,
+      "if_false": {
+        "condition": {
+          "col": "Attendance_Pct",
+          "op": "<",
+          "val": "50"
+        },
+        "conclusion": "Fail",
+        "if_true": null,
+        "if_false": {
+          "condition": {
+            "col": "Attendance_Pct",
+            "op": ">",
+            "val": "50"
+          },
+          "conclusion": "Pass",
+          "if_true": {
+            "condition": {
+              "col": "",
+              "op": "",
+              "val": ""
+            },
+            "conclusion": "Fail",
+            "if_true": null,
+            "if_false": null
+          },
+          "if_false": null
+        }
+      }
+    }
+  },
+  "if_false": null
+}

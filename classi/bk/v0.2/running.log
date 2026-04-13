@@ -1,0 +1,89 @@
+
+## Running log with Version 0.2
+
+ye@lst-hpc3090:~/exp/auto_rdr$ time python auto_rdr.py --input ./data/iris.xlsx --target Species
+/usr/lib/python3/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+
+Dropped non-predictive columns: ['Id']
+Building RDR tree on 120 samples...
+Model saved to rdr_model.json
+
+
+--- CLASSIFICATION REPORT ---
+
+                 precision    recall  f1-score   support
+
+
+    Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor       0.82      1.00      0.90         9
+ Iris-virginica       1.00      0.82      0.90        11
+
+
+       accuracy                           0.93        30
+      macro avg       0.94      0.94      0.93        30
+   weighted avg       0.95      0.93      0.93        30
+
+
+
+real    0m0.673s
+user    0m5.688s
+sys     0m0.080s
+ye@lst-hpc3090:~/exp/auto_rdr$
+
+
+ye@lst-hpc3090:~/exp/auto_rdr$ time python auto_rdr.py --input ./data/titanic1.csv --target Survived
+Dropped non-predictive columns: ['PassengerId']
+Building RDR tree on 712 samples...
+Model saved to rdr_model.json
+
+
+--- CLASSIFICATION REPORT ---
+
+              precision    recall  f1-score   support
+
+           0       0.82      0.89      0.85       105
+           1       0.82      0.72      0.76        74
+
+    accuracy                           0.82       179
+   macro avg       0.82      0.80      0.81       179
+weighted avg       0.82      0.82      0.81       179
+
+
+real    0m0.613s
+user    0m5.642s
+sys     0m0.070s
+ye@lst-hpc3090:~/exp/auto_rdr$
+
+
+I also tried with --exclude option:
+
+ye@lst-hpc3090:~/exp/auto_rdr$ time python auto_rdr.py --input ./data/titanic1.csv --target Survived --exclude PassengerID
+
+Dropped non-predictive columns: ['PassengerId']
+
+Building RDR tree on 712 samples...
+
+Model saved to rdr_model.json
+
+
+--- CLASSIFICATION REPORT ---
+
+              precision    recall  f1-score   support
+
+           0       0.82      0.89      0.85       105
+           1       0.82      0.72      0.76        74
+
+    accuracy                           0.82       179
+   macro avg       0.82      0.80      0.81       179
+weighted avg       0.82      0.82      0.81       179
+
+real    0m0.614s
+user    0m5.646s
+sys     0m0.068s
+ye@lst-hpc3090:~/exp/auto_rdr$
+
+
+=============
+
+

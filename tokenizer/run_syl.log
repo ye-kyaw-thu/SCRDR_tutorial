@@ -1,0 +1,80 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ ./run_syl.sh
+22:17:50 [INFO] ============================================================
+22:17:50 [INFO] MODE: TRAIN
+22:17:50 [INFO]   Train file   : ./data/mypos_v3.word
+22:17:50 [INFO]   Model prefix : model/rdrBurSeg_syl
+22:17:50 [INFO]   Scheme       : BIES
+22:17:50 [INFO]   Mode         : syllable
+22:17:50 [INFO]   Imp thresh   : 2
+22:17:50 [INFO]   Match thresh : 2
+22:17:50 [INFO]   Workers      : 20
+22:17:50 [INFO] ============================================================
+22:17:50 [INFO] Corpus: 43196 sentences | 564517 words | 2332142 chars
+22:17:51 [INFO] WordVocabulary: 24826 word types | max_units=20 | mode=syllable
+22:17:52 [INFO] Lexicon: 4247 units | 15 types | default=B | scheme=BIES | mode=syllable
+22:17:52 [INFO] Building object dictionary …
+22:17:58 [INFO] Object dict: 4 initial labels, 1073031 total units  [6.1s]
+22:17:58 [INFO] Initial accuracy: 991977/1073031 = 92.4%  (vocabulary coverage)
+22:17:58 [INFO] Default label (root conclusion): E
+22:17:58 [INFO] Learning rules for 4 initial labels using 4 worker(s) …
+22:19:35 [INFO] Rule learning done  [96.9s]
+22:19:35 [INFO]   Label B     : 530 exception rule(s)
+22:19:35 [INFO]   Label E     : 681 exception rule(s)
+22:19:35 [INFO]   Label I     : 1195 exception rule(s)
+22:19:35 [INFO]   Label S     : 134 exception rule(s)
+22:19:35 [INFO] Total exception rules: 2540 | Total nodes: 3444 | Elapsed: 103.0s
+22:19:35 [INFO] Binary model  → model/rdrBurSeg_syl.pkl
+22:19:35 [INFO] Rules file    → model/rdrBurSeg_syl.rdr  (3444 nodes)
+22:19:35 [INFO] Vocabulary    → model/rdrBurSeg_syl.vocab (24826 words)
+22:19:35 [INFO] ============================================================
+22:19:35 [INFO] MODE: TEST
+22:19:35 [INFO]   Input  : ./data/10k_test.txt
+22:19:35 [INFO]   Model  : model/rdrBurSeg_syl
+22:19:35 [INFO]   Output : test_syl.hyp
+22:19:35 [INFO] ============================================================
+22:19:35 [INFO] Loading binary model …
+22:19:35 [INFO] Model loaded. Nodes: 3444 | mode=syllable
+22:19:35 [INFO] Test corpus: 10000 sentences
+22:19:47 [INFO] Segmentation done  [12.25s]
+22:19:47 [INFO] Hypothesis → test_syl.hyp
+
+========================================================================
+  SCRDR TOKENIZER — EVALUATION RESULTS
+========================================================================
+  ── Word-level ──────────────────────────────────────────────────────
+  Precision      :  92.8527%
+  Recall         :  88.6905%
+  F1             :  90.7239%
+  Correct/Ref/Hyp: 104528 / 117857 / 112574
+  ── Char/Unit-level (BIES) ─────────────────────────────────────────
+  Char Accuracy  :  92.6968%
+  Char Macro F1  :  92.6295%
+  Known-unit Acc :  92.6977%  (235091 units)
+  Unkn-unit  Acc :  84.0000%  (25 units)
+  ------------------------------------------------------------------------
+  Label     Precision     Recall         F1    Support
+  ------------------------------------------------------------------------
+  B           93.2936    92.6488    92.9701      65255
+  E           93.7319    93.1826    93.4564      65186
+  I           87.9022    97.1758    92.3067      52228
+  S           96.2780    87.6923    91.7848      52447
+========================================================================
+22:19:49 [INFO] Confusion matrix → syl_bies_cm.png
+
+real    0m14.456s
+user    0m19.358s
+sys     0m0.125s
+22:19:49 [INFO] ============================================================
+22:19:49 [INFO] MODE: SEGMENT (raw text)
+22:19:49 [INFO]   Input  : ./data/10k_test.input
+22:19:49 [INFO]   Model  : model/rdrBurSeg_syl
+22:19:49 [INFO]   Output : segmented_syl.txt
+22:19:49 [INFO] ============================================================
+22:19:49 [INFO] Loading binary model …
+22:19:50 [INFO] Segmenting 10000 lines …
+22:20:02 [INFO] Done  [12.10s]  →  segmented_syl.txt
+
+real    0m12.157s
+user    0m12.145s
+sys     0m0.011s
+

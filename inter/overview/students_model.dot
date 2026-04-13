@@ -1,0 +1,47 @@
+digraph SCRDR_Final_Fixed {
+    // Quality settings for 300 DPI or PDF
+    graph [rankdir=TB, nodesep=0.6, ranksep=0.5, fontname="Arial", splines=polyline];
+    node [fontname="Arial", fontsize=12, shape=none]; // 'none' because we use <table>
+    edge [fontname="Arial", fontsize=10, color="#5F6368"];
+
+    // Root Node
+    Root [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#E8F0FE">
+            <tr><td><b>ROOT</b></td></tr>
+            <tr><td>Conclusion: Unknown</td></tr>
+        </table>
+    >];
+
+    // Rule 1
+    Rule1 [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#F8F9FA">
+            <tr><td><b>RULE 1</b></td></tr>
+            <tr><td>Hours_Studied &lt; 6</td></tr>
+            <tr><td>Conclusion: Fail</td></tr>
+        </table>
+    >];
+
+    // Rule 2
+    Rule2 [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#F8F9FA">
+            <tr><td><b>RULE 2</b></td></tr>
+            <tr><td>Attendance_Pct &gt; 50</td></tr>
+            <tr><td>Conclusion: Pass</td></tr>
+        </table>
+    >];
+
+    // Rule 3
+    Rule3 [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#F8F9FA">
+            <tr><td><b>RULE 3</b></td></tr>
+            <tr><td>Attendance_Pct &lt; 50</td></tr>
+            <tr><td>Conclusion: Fail</td></tr>
+        </table>
+    >];
+
+    // Relationship Links
+    Root -> Rule1 [label=" if_true\n(Refinement)"];
+    Rule1 -> Rule2 [label=" if_false\n(Alternative)"];
+    Rule2 -> Rule3 [label=" if_false\n(Alternative)"];
+}
+

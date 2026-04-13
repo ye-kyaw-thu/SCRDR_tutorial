@@ -1,0 +1,355 @@
+{
+    "rule": "Default",
+    "conclusion": "3",
+    "cornerstone_idx": 158,
+    "exception": {
+        "rule": "Magnesium <= 93.0",
+        "conclusion": "2",
+        "cornerstone_idx": 98,
+        "exception": {
+            "rule": "Proline <= 640.0",
+            "conclusion": "3",
+            "cornerstone_idx": 159,
+            "exception": {
+                "rule": "Proline <= 466.0",
+                "conclusion": "2",
+                "cornerstone_idx": 108,
+                "exception": {
+                    "rule": "Proline > 363.5",
+                    "conclusion": "3",
+                    "cornerstone_idx": 146,
+                    "exception": {
+                        "rule": "Proline > 421.5",
+                        "conclusion": "2",
+                        "cornerstone_idx": 97,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "Proline <= 397.5",
+                            "conclusion": "2",
+                            "cornerstone_idx": 123,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "Proline <= 411.0",
+                                "conclusion": "2",
+                                "cornerstone_idx": 115,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "Magnesium > 83.5",
+                                    "conclusion": "2",
+                                    "cornerstone_idx": 63,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            }
+                        }
+                    },
+                    "alternative": null
+                },
+                "alternative": {
+                    "rule": "Proline <= 591.0",
+                    "conclusion": "2",
+                    "cornerstone_idx": 101,
+                    "exception": {
+                        "rule": "Proline <= 541.0",
+                        "conclusion": "3",
+                        "cornerstone_idx": 160,
+                        "exception": {
+                            "rule": "Proline <= 517.5",
+                            "conclusion": "2",
+                            "cornerstone_idx": 83,
+                            "exception": {
+                                "rule": "Proline <= 497.5",
+                                "conclusion": "3",
+                                "cornerstone_idx": 156,
+                                "exception": {
+                                    "rule": "Proline <= 476.0",
+                                    "conclusion": "2",
+                                    "cornerstone_idx": 72,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "Proline > 484.0",
+                                        "conclusion": "2",
+                                        "cornerstone_idx": 107,
+                                        "exception": null,
+                                        "alternative": null
+                                    }
+                                },
+                                "alternative": null
+                            },
+                            "alternative": {
+                                "rule": "Alcalinity_of_ash <= 15.8",
+                                "conclusion": "2",
+                                "cornerstone_idx": 59,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        },
+                        "alternative": null
+                    },
+                    "alternative": {
+                        "rule": "Magnesium <= 79.5",
+                        "conclusion": "2",
+                        "cornerstone_idx": 89,
+                        "exception": null,
+                        "alternative": null
+                    }
+                }
+            },
+            "alternative": {
+                "rule": "Proline > 927.5",
+                "conclusion": "1",
+                "cornerstone_idx": 26,
+                "exception": null,
+                "alternative": {
+                    "rule": "Proline > 672.5",
+                    "conclusion": "3",
+                    "cornerstone_idx": 167,
+                    "exception": {
+                        "rule": "Proline > 699.5",
+                        "conclusion": "2",
+                        "cornerstone_idx": 81,
+                        "exception": {
+                            "rule": "Proline > 717.0",
+                            "conclusion": "3",
+                            "cornerstone_idx": 136,
+                            "exception": null,
+                            "alternative": null
+                        },
+                        "alternative": {
+                            "rule": "Color_intensity <= 6.53",
+                            "conclusion": "2",
+                            "cornerstone_idx": 88,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    },
+                    "alternative": {
+                        "rule": "Proline <= 655.0",
+                        "conclusion": "3",
+                        "cornerstone_idx": 134,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "Color_intensity > 7.1",
+                            "conclusion": "3",
+                            "cornerstone_idx": 172,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    }
+                }
+            }
+        },
+        "alternative": {
+            "rule": "Proline > 840.0",
+            "conclusion": "1",
+            "cornerstone_idx": 38,
+            "exception": {
+                "rule": "Proline <= 937.5",
+                "conclusion": "3",
+                "cornerstone_idx": 144,
+                "exception": {
+                    "rule": "Proline > 896.0",
+                    "conclusion": "2",
+                    "cornerstone_idx": 95,
+                    "exception": {
+                        "rule": "Magnesium <= 134.5",
+                        "conclusion": "1",
+                        "cornerstone_idx": 28,
+                        "exception": null,
+                        "alternative": null
+                    },
+                    "alternative": {
+                        "rule": "Proline > 870.0",
+                        "conclusion": "1",
+                        "cornerstone_idx": 44,
+                        "exception": {
+                            "rule": "Alcalinity_of_ash > 22.0",
+                            "conclusion": "3",
+                            "cornerstone_idx": 157,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "Magnesium <= 104.0",
+                                "conclusion": "2",
+                                "cornerstone_idx": 74,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        },
+                        "alternative": {
+                            "rule": "Proline > 862.5",
+                            "conclusion": "2",
+                            "cornerstone_idx": 70,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    }
+                },
+                "alternative": {
+                    "rule": "Magnesium > 118.5",
+                    "conclusion": "2",
+                    "cornerstone_idx": 73,
+                    "exception": {
+                        "rule": "Proline > 1110.0",
+                        "conclusion": "1",
+                        "cornerstone_idx": 33,
+                        "exception": null,
+                        "alternative": null
+                    },
+                    "alternative": null
+                }
+            },
+            "alternative": {
+                "rule": "Proline <= 555.0",
+                "conclusion": "2",
+                "cornerstone_idx": 85,
+                "exception": {
+                    "rule": "Proline > 480.0",
+                    "conclusion": "3",
+                    "cornerstone_idx": 170,
+                    "exception": {
+                        "rule": "Proline > 515.0",
+                        "conclusion": "2",
+                        "cornerstone_idx": 84,
+                        "exception": {
+                            "rule": "Magnesium > 99.0",
+                            "conclusion": "3",
+                            "cornerstone_idx": 131,
+                            "exception": null,
+                            "alternative": null
+                        },
+                        "alternative": {
+                            "rule": "Magnesium > 104.0",
+                            "conclusion": "2",
+                            "cornerstone_idx": 77,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    },
+                    "alternative": {
+                        "rule": "Proline <= 437.5",
+                        "conclusion": "3",
+                        "cornerstone_idx": 152,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "Proline > 465.0",
+                            "conclusion": "3",
+                            "cornerstone_idx": 151,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    }
+                },
+                "alternative": {
+                    "rule": "Proline > 705.0",
+                    "conclusion": "2",
+                    "cornerstone_idx": 68,
+                    "exception": {
+                        "rule": "Proline <= 742.5",
+                        "conclusion": "1",
+                        "cornerstone_idx": 4,
+                        "exception": {
+                            "rule": "Magnesium <= 106.5",
+                            "conclusion": "3",
+                            "cornerstone_idx": 173,
+                            "exception": null,
+                            "alternative": null
+                        },
+                        "alternative": {
+                            "rule": "Proline > 772.5",
+                            "conclusion": "1",
+                            "cornerstone_idx": 40,
+                            "exception": {
+                                "rule": "Proline > 817.5",
+                                "conclusion": "3",
+                                "cornerstone_idx": 176,
+                                "exception": null,
+                                "alternative": null
+                            },
+                            "alternative": {
+                                "rule": "Magnesium > 119.0",
+                                "conclusion": "1",
+                                "cornerstone_idx": 39,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "Proline > 760.0",
+                                    "conclusion": "1",
+                                    "cornerstone_idx": 21,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "Alcalinity_of_ash > 20.75",
+                                        "conclusion": "3",
+                                        "cornerstone_idx": 168,
+                                        "exception": null,
+                                        "alternative": null
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "Magnesium > 116.0",
+                        "conclusion": "2",
+                        "cornerstone_idx": 96,
+                        "exception": {
+                            "rule": "Magnesium <= 128.0",
+                            "conclusion": "3",
+                            "cornerstone_idx": 130,
+                            "exception": null,
+                            "alternative": null
+                        },
+                        "alternative": {
+                            "rule": "Proline <= 642.5",
+                            "conclusion": "2",
+                            "cornerstone_idx": 120,
+                            "exception": {
+                                "rule": "Proline <= 597.5",
+                                "conclusion": "3",
+                                "cornerstone_idx": 162,
+                                "exception": {
+                                    "rule": "Proline <= 566.0",
+                                    "conclusion": "2",
+                                    "cornerstone_idx": 110,
+                                    "exception": {
+                                        "rule": "Magnesium <= 101.5",
+                                        "conclusion": "3",
+                                        "cornerstone_idx": 177,
+                                        "exception": null,
+                                        "alternative": null
+                                    },
+                                    "alternative": null
+                                },
+                                "alternative": {
+                                    "rule": "Proline <= 612.5",
+                                    "conclusion": "3",
+                                    "cornerstone_idx": 133,
+                                    "exception": {
+                                        "rule": "Proline > 603.5",
+                                        "conclusion": "2",
+                                        "cornerstone_idx": 112,
+                                        "exception": null,
+                                        "alternative": null
+                                    },
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": {
+                                "rule": "Proline > 670.0",
+                                "conclusion": "1",
+                                "cornerstone_idx": 43,
+                                "exception": {
+                                    "rule": "Magnesium > 105.0",
+                                    "conclusion": "3",
+                                    "cornerstone_idx": 161,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": null
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "alternative": null
+}

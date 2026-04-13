@@ -1,0 +1,79 @@
+{
+    "rule": "Default",
+    "conclusion": "Iris-versicolor",
+    "cornerstone_case": 60,
+    "if_true_exception": {
+        "rule": "PetalLengthCm > 4.7",
+        "conclusion": "Iris-virginica",
+        "cornerstone_case": 117,
+        "if_true_exception": {
+            "rule": "SepalLengthCm <= 6.25",
+            "conclusion": "Iris-versicolor",
+            "cornerstone_case": 84,
+            "if_true_exception": {
+                "rule": "PetalWidthCm > 1.75",
+                "conclusion": "Iris-virginica",
+                "cornerstone_case": 102,
+                "if_true_exception": {
+                    "rule": "SepalWidthCm > 2.95",
+                    "conclusion": "Iris-versicolor",
+                    "cornerstone_case": 71,
+                    "if_true_exception": {
+                        "rule": "SepalWidthCm <= 3.1",
+                        "conclusion": "Iris-virginica",
+                        "cornerstone_case": 139,
+                        "if_true_exception": null,
+                        "if_false_alternative": null
+                    },
+                    "if_false_alternative": null
+                },
+                "if_false_alternative": null
+            },
+            "if_false_alternative": {
+                "rule": "PetalLengthCm <= 5.15",
+                "conclusion": "Iris-versicolor",
+                "cornerstone_case": 77,
+                "if_true_exception": {
+                    "rule": "PetalWidthCm > 1.85",
+                    "conclusion": "Iris-virginica",
+                    "cornerstone_case": 142,
+                    "if_true_exception": null,
+                    "if_false_alternative": {
+                        "rule": "SepalLengthCm <= 6.55",
+                        "conclusion": "Iris-virginica",
+                        "cornerstone_case": 124,
+                        "if_true_exception": null,
+                        "if_false_alternative": null
+                    }
+                },
+                "if_false_alternative": null
+            }
+        },
+        "if_false_alternative": {
+            "rule": "PetalLengthCm <= 2.65",
+            "conclusion": "Iris-setosa",
+            "cornerstone_case": 18,
+            "if_true_exception": null,
+            "if_false_alternative": {
+                "rule": "PetalLengthCm > 4.2",
+                "conclusion": "Iris-virginica",
+                "cornerstone_case": 107,
+                "if_true_exception": {
+                    "rule": "SepalLengthCm > 5.8",
+                    "conclusion": "Iris-versicolor",
+                    "cornerstone_case": 66,
+                    "if_true_exception": null,
+                    "if_false_alternative": {
+                        "rule": "SepalLengthCm > 5.2",
+                        "conclusion": "Iris-versicolor",
+                        "cornerstone_case": 91,
+                        "if_true_exception": null,
+                        "if_false_alternative": null
+                    }
+                },
+                "if_false_alternative": null
+            }
+        }
+    },
+    "if_false_alternative": null
+}

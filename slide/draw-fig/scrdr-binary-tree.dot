@@ -1,0 +1,17 @@
+digraph SCRDR {
+    rankdir=TB;
+    node [shape=box, fontname="Arial", style=filled, fillcolor=lightblue];
+    
+    R0 [label="Rule 0: Default\nConclusion: Go Out"];
+    R1 [label="Rule 1: If Rain\nConclusion: Take Umbrella", fillcolor=lightyellow];
+    R2 [label="Rule 2: If Rain & Wind > 50\nConclusion: Stay Home", fillcolor=salmon];
+    R3 [label="Rule 3: If Snow\nConclusion: Wear Boots"];
+
+    R0 -> R1 [label="True (Refine)"];
+    R1 -> R2 [label="True (Refine)"];
+    R0 -> R3 [label="False (Next)"];
+    
+    edge [fontname="Arial", fontsize=10];
+    legend [shape=none, label="SCRDR: Only the last 'True' rule\nin the path fires."];
+}
+

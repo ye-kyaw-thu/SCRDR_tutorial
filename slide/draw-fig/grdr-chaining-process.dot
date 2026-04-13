@@ -1,0 +1,26 @@
+digraph GRDR {
+    rankdir=LR;
+    node [fontname="Arial"];
+
+    subgraph cluster_0 {
+        label = "Fact Base";
+        style=dashed;
+        F1 [label="Temp < 0", shape=note];
+        F2 [label="Precipitation = Yes", shape=note];
+    }
+
+    subgraph cluster_1 {
+        label = "Inference Engine (Rules)";
+        R1 [label="Rule A: Temp < 0\n-> ASSERT 'Freezing'", shape=box, fillcolor=lightgray, style=filled];
+        R2 [label="Rule B: Freezing + Precip\n-> ASSERT 'Snowing'", shape=box, fillcolor=lightgray, style=filled];
+        R3 [label="Rule C: Snowing\n-> CONCLUSION 'Stay Home'", shape=box, fillcolor=salmon, style=filled];
+    }
+
+    F1 -> R1;
+    R1 -> R2 [label="Fact Feedback", color=blue, style=bold];
+    F2 -> R2;
+    R2 -> R3 [label="Fact Feedback", color=blue, style=bold];
+    
+    edge [fontname="Arial", fontsize=10];
+}
+

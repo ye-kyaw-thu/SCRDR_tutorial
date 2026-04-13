@@ -1,0 +1,24 @@
+{
+  "condition": null,
+  "conclusion": "Unknown",
+  "if_true": {
+    "condition": {
+      "col": "Credit_Score",
+      "op": ">",
+      "val": "600"
+    },
+    "conclusion": "Yes",
+    "if_true": null,
+    "if_false": {
+      "condition": {
+        "col": "Income",
+        "op": ">",
+        "val": "2000"
+      },
+      "conclusion": "No",
+      "if_true": null,
+      "if_false": null
+    }
+  },
+  "if_false": null
+}

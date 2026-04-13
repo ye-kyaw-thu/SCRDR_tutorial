@@ -1,0 +1,56 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/inter$ ./run_inter_loan.sh
+--- Running in BUILD mode ---
+
+[Row 1/6] ERROR Found!
+{'Income': 5000, 'Credit_Score': 750, 'Stable_Job': 'Yes', 'Approved': 'Yes'}
+
+[KNOWLEDGE ACQUISITION]
+System predicted: 'Unknown' but Actual is: 'Yes'
+Enter feature name (or 'exit'): Credit_Score
+Enter operator (==, <, >): >
+Enter threshold value: 700
+
+[Row 2/6] ERROR Found!
+{'Income': 2000, 'Credit_Score': 600, 'Stable_Job': 'No', 'Approved': 'No'}
+
+[KNOWLEDGE ACQUISITION]
+System predicted: 'Unknown' but Actual is: 'No'
+Enter feature name (or 'exit'): Income
+Enter operator (==, <, >): <
+Enter threshold value: 2000
+
+[Row 3/6] ERROR Found!
+{'Income': 8000, 'Credit_Score': 580, 'Stable_Job': 'Yes', 'Approved': 'No'}
+
+[KNOWLEDGE ACQUISITION]
+System predicted: 'Unknown' but Actual is: 'No'
+Enter feature name (or 'exit'): Stable_Job
+Enter operator (==, <, >): ==
+Enter threshold value: Yes
+
+--- FINAL PERFORMANCE SUMMARY ---
+              precision    recall  f1-score   support
+
+          No       1.00      0.67      0.80         3
+     Unknown       0.00      0.00      0.00         0
+         Yes       1.00      1.00      1.00         3
+
+    accuracy                           0.83         6
+   macro avg       0.67      0.56      0.60         6
+weighted avg       1.00      0.83      0.90         6
+
+Loaded existing model: loan_rules_demo.json
+--- Running in TEST mode ---
+
+--- FINAL PERFORMANCE SUMMARY ---
+              precision    recall  f1-score   support
+
+          No       1.00      0.67      0.80         3
+     Unknown       0.00      0.00      0.00         0
+         Yes       1.00      1.00      1.00         3
+
+    accuracy                           0.83         6
+   macro avg       0.67      0.56      0.60         6
+weighted avg       1.00      0.83      0.90         6
+
+ye@lst-hpc3090:~/exp/scrdr_tuto/inter$

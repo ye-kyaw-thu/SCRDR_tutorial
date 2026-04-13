@@ -1,0 +1,95 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ ./run_all.sh
+22:10:34 [INFO] ============================================================
+22:10:34 [INFO] MODE: TRAIN
+22:10:34 [INFO]   Train file   : ./data/mypos_v3.word
+22:10:34 [INFO]   Model prefix : model/rdrBurSeg
+22:10:34 [INFO]   Scheme       : BIES
+22:10:34 [INFO]   Mode         : char
+22:10:34 [INFO]   Imp thresh   : 2
+22:10:34 [INFO]   Match thresh : 2
+22:10:34 [INFO]   Workers      : 20
+22:10:34 [INFO] ============================================================
+22:10:34 [INFO] Corpus: 43196 sentences | 564517 words | 2332142 chars
+22:10:34 [INFO] WordVocabulary: 24826 word types | max_units=43 | mode=char
+22:10:35 [INFO] Lexicon: 279 units | 15 types | default=I | scheme=BIES | mode=char
+22:10:35 [INFO] Building object dictionary …
+22:10:47 [INFO] Object dict: 4 initial labels, 2332142 total units  [12.1s]
+22:10:47 [INFO] Initial accuracy: 2230385/2332142 = 95.6%  (vocabulary coverage)
+22:10:47 [INFO] Default label (root conclusion): I
+22:10:47 [INFO] Learning rules for 4 initial labels using 4 worker(s) …
+22:12:07 [INFO] Rule learning done  [80.0s]
+22:12:07 [INFO]   Label B     : 183 exception rule(s)
+22:12:07 [INFO]   Label E     : 84 exception rule(s)
+22:12:07 [INFO]   Label I     : 549 exception rule(s)
+22:12:07 [INFO]   Label S     : 20 exception rule(s)
+22:12:07 [INFO] Total exception rules: 836 | Total nodes: 1359 | Elapsed: 92.1s
+22:12:08 [INFO] Binary model  → model/rdrBurSeg.pkl
+22:12:08 [INFO] Rules file    → model/rdrBurSeg.rdr  (1359 nodes)
+22:12:08 [INFO] Vocabulary    → model/rdrBurSeg.vocab (24826 words)
+
+real    1m33.832s
+user    1m59.315s
+sys     0m4.279s
+22:12:08 [INFO] ============================================================
+22:12:08 [INFO] MODE: TEST
+22:12:08 [INFO]   Input  : ./data/10k_test.txt
+22:12:08 [INFO]   Model  : model/rdrBurSeg
+22:12:08 [INFO]   Output : test.hyp
+22:12:08 [INFO] ============================================================
+22:12:08 [INFO] Loading binary model …
+22:12:08 [INFO] Model loaded. Nodes: 1359 | mode=char
+22:12:08 [INFO] Test corpus: 10000 sentences
+22:12:24 [INFO] Segmentation done  [16.43s]
+22:12:24 [INFO] Hypothesis → test.hyp
+
+========================================================================
+  SCRDR TOKENIZER — EVALUATION RESULTS
+========================================================================
+  ── Word-level ──────────────────────────────────────────────────────
+  Precision      :  90.8887%
+  Recall         :  84.4108%
+  F1             :  87.5300%
+  Correct/Ref/Hyp: 99484 / 117857 / 109457
+  ── Char/Unit-level (BIES) ─────────────────────────────────────────
+  Char Accuracy  :  96.1703%
+  Char Macro F1  :  94.3231%
+  Known-unit Acc :  96.1703%  (526027 units)
+  Unkn-unit  Acc :   0.0000%  (0 units)
+  ------------------------------------------------------------------------
+  Label     Precision     Recall         F1    Support
+  ------------------------------------------------------------------------
+  B           98.2951    91.7046    94.8855     110338
+  E           99.1296    92.4831    95.6911     110338
+  I           94.4910    99.5031    96.9323     297832
+  S           96.6856    83.8010    89.7834       7519
+========================================================================
+22:12:27 [INFO] Confusion matrix → bies_cm.png
+
+real    0m19.536s
+user    0m24.306s
+sys     0m0.156s
+22:12:27 [INFO] ============================================================
+22:12:27 [INFO] MODE: SEGMENT (raw text)
+22:12:27 [INFO]   Input  : ./data/10k_test.input
+22:12:27 [INFO]   Model  : model/rdrBurSeg
+22:12:27 [INFO]   Output : segmented.txt
+22:12:27 [INFO] ============================================================
+22:12:27 [INFO] Loading binary model …
+22:12:27 [INFO] Segmenting 10000 lines …
+22:12:43 [INFO] Done  [16.05s]  →  segmented.txt
+
+real    0m16.109s
+user    0m16.095s
+sys     0m0.013s
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$
+
+## Manual Evaluation
+
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ python2.7 ./evaluate.py ./segmented.txt ./data/10k_test.txt
+Tag precision: 0.909369891039
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$
+
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ python2.7 ./evaluate.py ./test.hyp ./data/10k_test.txt
+Tag precision: 0.908895730744
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$
+

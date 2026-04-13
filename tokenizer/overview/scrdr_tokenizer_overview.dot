@@ -1,0 +1,303 @@
+// ============================================================
+//  scrdr_tokenizer.py — System Overview
+//  Render with:  dot -Tpdf overview.dot -o overview.pdf
+//                dot -Tpng -Gdpi=200 overview.dot -o overview.png
+// ============================================================
+
+digraph scrdr_tokenizer {
+
+    // ── Global graph settings ─────────────────────────────────
+    graph [
+        rankdir   = LR          // left-to-right keeps height short
+        fontname  = "Helvetica"
+        fontsize  = 11
+        splines   = spline
+        nodesep   = 0.35
+        ranksep   = 0.65
+        bgcolor   = "white"
+        label     = "scrdr_tokenizer.py v3.0 — SCRDR-based Word Segmenter"
+        labelloc  = t
+        labeljust = c
+    ]
+
+    node [fontname="Helvetica" fontsize=10 style="filled" margin="0.12,0.06"]
+    edge [fontname="Helvetica" fontsize=9]
+
+    // ── Color palette ─────────────────────────────────────────
+    // Blue shades  → Training pipeline
+    // Green shades → Inference pipeline
+    // Orange       → Shared components
+    // Grey         → I/O
+
+    // ─────────────────────────────────────────────────────────
+    //  SUBGRAPH 1 : TRAINING  (top band)
+    // ─────────────────────────────────────────────────────────
+    subgraph cluster_train {
+        label     = "TRAINING  (python scrdr_tokenizer.py train)"
+        style     = "filled"
+        fillcolor = "#EBF3FC"
+        color     = "#2563EB"
+        fontcolor = "#1D4ED8"
+        fontsize  = 11
+        fontname  = "Helvetica-Bold"
+
+        T_INPUT [
+            label    = "Segmented\nCorpus\n(corpus.txt)"
+            shape    = cylinder
+            fillcolor= "#DBEAFE"
+            color    = "#3B82F6"
+        ]
+
+        T_VOCAB [
+            label    = "① WordVocabulary\n─────────────────\nword → BIES sequence\ngreedy-longest-match\nAll training words stored"
+            shape    = box
+            fillcolor= "#93C5FD"
+            color    = "#2563EB"
+        ]
+
+        T_LEX [
+            label    = "② Lexicon\n─────────────────\nunit → most-freq tag\nMM/MV/MA/MG → I\n(OOV fallback)"
+            shape    = box
+            fillcolor= "#93C5FD"
+            color    = "#2563EB"
+        ]
+
+        T_OBJDICT [
+            label    = "③ Object Dictionary\n─────────────────\ninitTag → goldTag → [contexts]\nVocab gives 100% init accuracy\nfor known words (zero entries!)"
+            shape    = box
+            fillcolor= "#60A5FA"
+            color    = "#1D4ED8"
+            fontcolor= "white"
+        ]
+
+        T_WORKER [
+            label    = "④ SCRDR Learner\n─────────────────\nParallel workers (1 per init tag)\nInverted index + live-counts\nNet improvement criterion:\n  score = |wrong| − |correct|"
+            shape    = box
+            fillcolor= "#2563EB"
+            color    = "#1E40AF"
+            fontcolor= "white"
+        ]
+
+        T_TREE [
+            label    = "⑤ SCRDR Exception Tree\n─────────────────\nRoot → per-init-tag nodes\n→ exception / else chains\n  except_child: condition fires\n  else_child:   condition fails"
+            shape    = box
+            fillcolor= "#1E40AF"
+            color    = "#1E3A8A"
+            fontcolor= "white"
+        ]
+
+        T_MODEL [
+            label    = "Model Files\n.pkl  .rdr  .vocab  .lex"
+            shape    = cylinder
+            fillcolor= "#DBEAFE"
+            color    = "#3B82F6"
+        ]
+
+        // Training flow
+        T_INPUT -> T_VOCAB  [label=" build\n vocab" color="#2563EB"]
+        T_INPUT -> T_LEX    [label=" build\n lexicon" color="#2563EB"]
+        T_VOCAB -> T_OBJDICT [label=" init tag\n (greedy\n LM)" color="#2563EB"]
+        T_LEX   -> T_OBJDICT [label=" OOV\n fallback" color="#2563EB" style=dashed]
+        T_INPUT -> T_OBJDICT [label=" gold tags" color="#2563EB"]
+        T_OBJDICT -> T_WORKER [label=" per-label\n correction\n examples" color="#1D4ED8"]
+        T_WORKER -> T_TREE   [label=" assemble\n subtrees" color="#1D4ED8"]
+        T_TREE   -> T_MODEL  [label=" save" color="#1D4ED8"]
+        T_VOCAB  -> T_MODEL  [color="#2563EB" style=dashed]
+        T_LEX    -> T_MODEL  [color="#2563EB" style=dashed]
+    }
+
+    // ─────────────────────────────────────────────────────────
+    //  SUBGRAPH 2 : SHARED CORE  (middle band)
+    // ─────────────────────────────────────────────────────────
+    subgraph cluster_core {
+        label     = "SHARED CORE COMPONENTS"
+        style     = "filled"
+        fillcolor = "#FFF7ED"
+        color     = "#EA580C"
+        fontcolor = "#C2410C"
+        fontsize  = 11
+        fontname  = "Helvetica-Bold"
+
+        C_CHARTYPE [
+            label    = "CharType Classifier\n─────────────────\nMC MC MV MM MA MG\nMD MP ME CJ TH AR\nLL LU DG PU …\n(15 type codes)"
+            shape    = box
+            fillcolor= "#FED7AA"
+            color    = "#EA580C"
+        ]
+
+        C_SYLBREAK [
+            label    = "Myanmar Syllabifier\n─────────────────\nRE-based (sylbreak)\nbase + stack + medial\n  + vowel + asat\nGroups Latin/digits"
+            shape    = box
+            fillcolor= "#FED7AA"
+            color    = "#EA580C"
+        ]
+
+        C_CTX [
+            label    = "Context Builder\n─────────────────\n19-slot feature vector\nprevUnit2/1  currUnit  nextUnit1/2\nprevTag2/1   currTag   nextTag1/2\nprevType1  currType  nextType1\nbigramL  bigramR  trigramC\nprevBigram  nextBigram\ncanWordInit (Y/N)"
+            shape    = box
+            fillcolor= "#FDBA74"
+            color    = "#C2410C"
+        ]
+
+        C_RULES [
+            label    = "Rule Templates\n─────────────────\n43 templates per unit:\n• 18 single-feature\n• 17 two-feature pairs\n• 8  three-feature triples\nStored as sorted constraint\ntuples (hashable, no eval!)"
+            shape    = box
+            fillcolor= "#FDBA74"
+            color    = "#C2410C"
+        ]
+
+        C_BIES [
+            label    = "BIES Converter\n─────────────────\nB — Begin of word\nI — Inside word\nE — End of word\nS — Single-char word\n\nwords_to_bies()  /  bies_to_words()"
+            shape    = box
+            fillcolor= "#FED7AA"
+            color    = "#EA580C"
+        ]
+
+        C_CHARTYPE -> C_CTX   [color="#EA580C" style=dashed label="type\ncode"]
+        C_SYLBREAK -> C_CTX   [color="#EA580C" style=dashed label="units\n(syl mode)"]
+        C_CTX      -> C_RULES [color="#EA580C" label=" generate\n candidates"]
+    }
+
+    // ─────────────────────────────────────────────────────────
+    //  SUBGRAPH 3 : INFERENCE  (bottom band)
+    // ─────────────────────────────────────────────────────────
+    subgraph cluster_infer {
+        label     = "INFERENCE  (python scrdr_tokenizer.py  test | segment)"
+        style     = "filled"
+        fillcolor = "#ECFDF5"
+        color     = "#059669"
+        fontcolor = "#047857"
+        fontsize  = 11
+        fontname  = "Helvetica-Bold"
+
+        I_INPUT [
+            label    = "Raw / Gold\nInput Text"
+            shape    = cylinder
+            fillcolor= "#D1FAE5"
+            color    = "#059669"
+        ]
+
+        I_SPLIT [
+            label    = "Whitespace Split\n(BUG-2 fix)\nEach space-delimited\nchunk processed\nindependently"
+            shape    = diamond
+            fillcolor= "#6EE7B7"
+            color    = "#059669"
+        ]
+
+        I_INIT [
+            label    = "Initial Tagging\n─────────────────\nGreedy Longest Match\nagainst WordVocabulary\nOOV → Lexicon fallback\n(MM/MV/MA/MG → I)"
+            shape    = box
+            fillcolor= "#34D399"
+            color    = "#047857"
+        ]
+
+        I_RDR [
+            label    = "RDR Tree Traversal\n─────────────────\nFor each unit (left→right):\n1. Build 19-slot context\n2. Traverse: if condition fires\n     → follow except_child\n   else → follow else_child\n3. Return last fired node's tag\n4. Update running tags"
+            shape    = box
+            fillcolor= "#059669"
+            color    = "#065F46"
+            fontcolor= "white"
+        ]
+
+        I_POSTCON [
+            label    = "Post-inference\nConstraint\n─────────────────\nMM/MV/MA/MG\npredicted B or S\n→ force to I\n(BUG-4 fix)"
+            shape    = box
+            fillcolor= "#047857"
+            color    = "#064E3B"
+            fontcolor= "white"
+        ]
+
+        I_CONVERT [
+            label    = "BIES → Words\nbies_to_words()\nSkip whitespace S tokens\n(BUG-3 fix)"
+            shape    = box
+            fillcolor= "#6EE7B7"
+            color    = "#059669"
+        ]
+
+        I_EVAL [
+            label    = "Evaluation\n─────────────────\nWord P / R / F1\n(span matching)\nBIES label P/R/F1\nConfusion matrix PNG"
+            shape    = box
+            fillcolor= "#D1FAE5"
+            color    = "#059669"
+        ]
+
+        I_OUTPUT [
+            label    = "Segmented\nOutput"
+            shape    = cylinder
+            fillcolor= "#D1FAE5"
+            color    = "#059669"
+        ]
+
+        // Inference flow
+        I_INPUT   -> I_SPLIT   [color="#059669"]
+        I_SPLIT   -> I_INIT    [color="#059669" label=" chunks"]
+        I_INIT    -> I_RDR     [color="#059669" label=" unit/tag\n sequence"]
+        I_RDR     -> I_POSTCON [color="#059669" label=" raw\n prediction"]
+        I_POSTCON -> I_CONVERT [color="#059669"]
+        I_CONVERT -> I_EVAL    [color="#059669" label=" (test mode)" style=dashed]
+        I_CONVERT -> I_OUTPUT  [color="#059669"]
+    }
+
+    // ─────────────────────────────────────────────────────────
+    //  SUBGRAPH 4 : SYLLABLE MODE DIFFERENCE
+    // ─────────────────────────────────────────────────────────
+    subgraph cluster_syl {
+        label     = "--syllable  MODE  (Myanmar-specific)"
+        style     = "filled,dashed"
+        fillcolor = "#FDF4FF"
+        color     = "#9333EA"
+        fontcolor = "#7E22CE"
+        fontsize  = 10
+        fontname  = "Helvetica-Bold"
+
+        S_WHAT [
+            label    = "Syllabify First\n─────────────────\nChar mode:  ကျွန်တော် → က ျ ွ န ် တ ေ ာ ်\nSyl mode:   ကျွန်တော် → ကျွ | န် | တော်\n\nBIES tags on syllables, NOT chars:\n  ကျွ→B  န်→I  တော်→E"
+            shape    = box
+            fillcolor= "#E9D5FF"
+            color    = "#9333EA"
+            fontsize = 9
+        ]
+
+        S_WHY [
+            label    = "Advantages\n─────────────────\n• Fewer units (÷2–4 vs char)\n• No combining-char ambiguity\n• More meaningful bigrams\n• Faster learning\n• Less OOV risk per unit"
+            shape    = box
+            fillcolor= "#E9D5FF"
+            color    = "#9333EA"
+            fontsize = 9
+        ]
+
+        S_WHEN [
+            label    = "When to use\n─────────────────\n--syllable  → Myanmar (Burmese)\ndefault     → Chinese / English\n                   / Vietnamese\nBoth modes use same\nSCRDR tree structure"
+            shape    = box
+            fillcolor= "#E9D5FF"
+            color    = "#9333EA"
+            fontsize = 9
+        ]
+
+        S_WHAT -> S_WHY  -> S_WHEN [color="#9333EA" arrowhead=none style=invis]
+    }
+
+    // ─────────────────────────────────────────────────────────
+    //  CROSS-CLUSTER EDGES
+    // ─────────────────────────────────────────────────────────
+
+    // Training uses shared core
+    T_VOCAB   -> C_BIES    [label="words_to_bies" color="#EA580C" style=dashed fontsize=8]
+    T_OBJDICT -> C_CTX     [label="build context" color="#EA580C" style=dashed fontsize=8]
+    T_WORKER  -> C_RULES   [label="gen rules" color="#EA580C" style=dashed fontsize=8]
+
+    // Inference uses model
+    T_MODEL -> I_INIT [label=" load vocab\n + lexicon" color="#374151" fontsize=8]
+    T_MODEL -> I_RDR  [label=" load tree" color="#374151" fontsize=8]
+
+    // Inference uses shared core
+    I_INIT    -> C_CHARTYPE [label="type check" color="#EA580C" style=dashed fontsize=8]
+    I_RDR     -> C_CTX      [label="build ctx" color="#EA580C" style=dashed fontsize=8]
+    I_CONVERT -> C_BIES     [label="bies_to_words" color="#EA580C" style=dashed fontsize=8]
+
+    // Syllable mode hooks into both pipelines
+    C_SYLBREAK -> S_WHAT  [color="#9333EA" style=dashed fontsize=8]
+    S_WHAT     -> I_INIT  [label="--syllable" color="#9333EA" style=dashed fontsize=8]
+    S_WHAT     -> T_VOCAB [label="--syllable" color="#9333EA" style=dashed fontsize=8]
+}
+

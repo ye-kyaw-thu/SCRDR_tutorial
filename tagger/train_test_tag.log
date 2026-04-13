@@ -1,0 +1,102 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/tagger$ ./run_all.sh
+13:34:55 [INFO] ============================================================
+13:34:55 [INFO] MODE: TRAIN
+13:34:55 [INFO]   Train corpus : ./pos_data/corpus.txt
+13:34:55 [INFO]   Model prefix : model/mypos
+13:34:55 [INFO]   Imp thresh   : 2
+13:34:55 [INFO]   Match thresh : 2
+13:34:55 [INFO]   Workers      : 16
+13:34:55 [INFO] ============================================================
+13:34:55 [INFO] Corpus: 43196 sentences, 564517 tokens
+13:34:56 [INFO] Lexicon built: 34775 entries | unk_word=part | unk_cap=fw | unk_num=fw
+13:34:56 [INFO] Lexicon saved → model/mypos.lex
+13:34:56 [INFO] Building object dictionary from 43196 sentences …
+13:34:58 [INFO] Object dictionary: 15 initial tags, 564517 total tokens  [1.8s]
+13:34:58 [INFO] Default tag (root conclusion): part
+13:34:58 [INFO] Learning exception rules for 15 initial tags using 15 worker(s) …
+13:37:16 [INFO] Rule learning complete  [138.0s]
+13:37:16 [INFO]   Tag abb          : 1 exception rule(s)
+13:37:16 [INFO]   Tag adj          : 276 exception rule(s)
+13:37:16 [INFO]   Tag adv          : 64 exception rule(s)
+13:37:16 [INFO]   Tag conj         : 187 exception rule(s)
+13:37:16 [INFO]   Tag fw           : 0 exception rule(s)
+13:37:16 [INFO]   Tag int          : 7 exception rule(s)
+13:37:16 [INFO]   Tag n            : 362 exception rule(s)
+13:37:16 [INFO]   Tag num          : 0 exception rule(s)
+13:37:16 [INFO]   Tag part         : 549 exception rule(s)
+13:37:16 [INFO]   Tag ppm          : 142 exception rule(s)
+13:37:16 [INFO]   Tag pron         : 48 exception rule(s)
+13:37:16 [INFO]   Tag punc         : 1 exception rule(s)
+13:37:16 [INFO]   Tag sb           : 0 exception rule(s)
+13:37:16 [INFO]   Tag tn           : 30 exception rule(s)
+13:37:16 [INFO]   Tag v            : 372 exception rule(s)
+13:37:16 [INFO] Total exception rules: 2039  |  Total nodes: 2511  [139.9s total]
+13:37:16 [INFO] Binary model saved → model/mypos.pkl
+13:37:16 [INFO] Rules file saved  → model/mypos.rdr
+13:37:16 [INFO] Total nodes in tree: 2511
+
+real    2m21.096s
+user    6m44.439s
+sys     0m2.987s
+13:37:16 [INFO] ============================================================
+13:37:16 [INFO] MODE: TEST
+13:37:16 [INFO]   Test corpus : ./pos_data/otest.txt
+13:37:16 [INFO]   Model       : ./model/mypos
+13:37:16 [INFO]   Hypothesis  : ./otest.hyp
+13:37:16 [INFO] ============================================================
+13:37:16 [INFO] Loading binary model from ./model/mypos.pkl …
+13:37:16 [INFO] Model loaded. Nodes in tree: 2511
+13:37:16 [INFO] Test corpus: 1000 sentences
+13:37:17 [INFO] Tagging complete  [0.32s]
+13:37:17 [INFO] Hypothesis written → ./otest.hyp
+
+========================================================================
+  RDR TAGGER — EVALUATION RESULTS
+========================================================================
+  Overall Accuracy   :  94.602%
+  Known-word Acc     :  94.602%  (13468 tokens)
+  Unknown-word Acc   :   0.000%  (0 tokens)
+  Macro   P/R/F1     : 94.199% / 93.082% / 93.571%
+  Micro   P/R/F1     : 94.602% / 94.602% / 94.602%
+  Weighted P/R/F1    : 94.663% / 94.602% / 94.618%
+------------------------------------------------------------------------
+  Tag                 Precision     Recall         F1    Support
+------------------------------------------------------------------------
+  abb                   100.000    100.000    100.000         12
+  adj                    73.086     80.874     76.783        366
+  adv                    84.644     86.260     85.444        262
+  conj                   89.130     89.781     89.455        411
+  fw                    100.000    100.000    100.000         87
+  int                   100.000     84.000     91.304         25
+  n                      96.739     96.900     96.819       3000
+  num                   100.000     98.710     99.351        155
+  part                   93.525     94.669     94.094       3189
+  ppm                    97.342     97.767     97.554       2060
+  pron                   93.049     87.185     90.022        476
+  punc                  100.000    100.000    100.000       1270
+  sb                    100.000    100.000    100.000          3
+  tn                     92.029     89.437     90.714        142
+  v                      93.436     90.647     92.020       2010
+========================================================================
+13:37:18 [INFO] Confusion matrix saved → pos_cm.png
+
+real    0m1.658s
+user    0m6.538s
+sys     0m0.107s
+13:37:18 [INFO] ============================================================
+13:37:18 [INFO] MODE: TAG (raw text)
+13:37:18 [INFO]   Input  : ./pos_data/otest.txt
+13:37:18 [INFO]   Model  : ./model/mypos
+13:37:18 [INFO]   Output : ./otest.tag
+13:37:18 [INFO] ============================================================
+13:37:18 [INFO] Tagging 1000 sentences …
+13:37:18 [INFO] Done  [0.44s]  →  ./otest.tag
+
+real    0m0.490s
+user    0m0.485s
+sys     0m0.005s
+Tag precision: 0.944386694387
+Recall: 0.944386694387
+F-Measure:  0.998217998218
+ye@lst-hpc3090:~/exp/scrdr_tuto/tagger$
+

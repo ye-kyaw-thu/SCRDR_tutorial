@@ -1,0 +1,103 @@
+{
+    "rule": "Default",
+    "conclusion": "Iris-setosa",
+    "cornerstone_idx": 22,
+    "exception": {
+        "rule": "petal_length > 2.7",
+        "conclusion": "Iris-versicolor",
+        "cornerstone_idx": 65,
+        "exception": {
+            "rule": "sepal_width <= 2.8",
+            "conclusion": "Iris-virginica",
+            "cornerstone_idx": 146,
+            "exception": {
+                "rule": "petal_length <= 4.35",
+                "conclusion": "Iris-versicolor",
+                "cornerstone_idx": 81,
+                "exception": null,
+                "alternative": {
+                    "rule": "sepal_length <= 6.15",
+                    "conclusion": "Iris-versicolor",
+                    "cornerstone_idx": 83,
+                    "exception": {
+                        "rule": "petal_length > 5.35",
+                        "conclusion": "Iris-virginica",
+                        "cornerstone_idx": 134,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "sepal_width <= 2.45",
+                            "conclusion": "Iris-virginica",
+                            "cornerstone_idx": 119,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "sepal_length <= 5.8",
+                                "conclusion": "Iris-virginica",
+                                "cornerstone_idx": 121,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "petal_width <= 1.7",
+                        "conclusion": "Iris-versicolor",
+                        "cornerstone_idx": 72,
+                        "exception": null,
+                        "alternative": null
+                    }
+                }
+            },
+            "alternative": {
+                "rule": "petal_length > 4.95",
+                "conclusion": "Iris-virginica",
+                "cornerstone_idx": 137,
+                "exception": {
+                    "rule": "petal_length <= 5.25",
+                    "conclusion": "Iris-versicolor",
+                    "cornerstone_idx": 77,
+                    "exception": {
+                        "rule": "petal_width > 1.85",
+                        "conclusion": "Iris-virginica",
+                        "cornerstone_idx": 147,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "sepal_length <= 6.3",
+                            "conclusion": "Iris-virginica",
+                            "cornerstone_idx": 149,
+                            "exception": null,
+                            "alternative": null
+                        }
+                    },
+                    "alternative": null
+                },
+                "alternative": {
+                    "rule": "sepal_length <= 6.35",
+                    "conclusion": "Iris-virginica",
+                    "cornerstone_idx": 138,
+                    "exception": {
+                        "rule": "sepal_length <= 5.7",
+                        "conclusion": "Iris-versicolor",
+                        "cornerstone_idx": 84,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "sepal_width > 3.1",
+                            "conclusion": "Iris-versicolor",
+                            "cornerstone_idx": 70,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "petal_width <= 1.6",
+                                "conclusion": "Iris-versicolor",
+                                "cornerstone_idx": 63,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        }
+                    },
+                    "alternative": null
+                }
+            }
+        },
+        "alternative": null
+    },
+    "alternative": null
+}

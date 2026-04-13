@@ -1,0 +1,42 @@
+{
+  "condition": null,
+  "conclusion": "Unknown",
+  "if_true": {
+    "condition": {
+      "col": "Income",
+      "op": ">",
+      "val": "4000"
+    },
+    "conclusion": "Yes",
+    "if_true": {
+      "condition": {
+        "col": "Credit_Score",
+        "op": "<",
+        "val": "700"
+      },
+      "conclusion": "No",
+      "if_true": null,
+      "if_false": null
+    },
+    "if_false": {
+      "condition": {
+        "col": "Income",
+        "op": "<",
+        "val": "3000"
+      },
+      "conclusion": "No",
+      "if_true": null,
+      "if_false": {
+        "condition": {
+          "col": "Income",
+          "op": "<",
+          "val": "4000"
+        },
+        "conclusion": "Yes",
+        "if_true": null,
+        "if_false": null
+      }
+    }
+  },
+  "if_false": null
+}

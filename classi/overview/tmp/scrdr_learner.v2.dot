@@ -1,0 +1,70 @@
+digraph SCRDR_AutoLearner_Landscape {
+    // Optimization for 16:9 Presentation Slides
+    graph [rankdir=LR, nodesep=0.5, ranksep=0.8, fontname="Segoe UI, Arial", fontsize=14, splines=polyline];
+    node [shape=none, fontname="Segoe UI, Arial", fontsize=12];
+    edge [fontname="Segoe UI, Arial", fontsize=11, color="#5F6368"];
+
+    // Stage 1: Data Preparation
+    Input [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#E8F0FE" color="#1A73E8">
+            <tr><td><b>1. PRE-PROCESSING</b></td></tr>
+            <tr><td>Load Dataset<br/>Impute Missing Values<br/>Label Encoding</td></tr>
+        </table>
+    >];
+
+    // Stage 2: Classification Engine
+    Classify [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#F1F3F4" color="#5F6368">
+            <tr><td><b>2. INFERENCE</b></td></tr>
+            <tr><td>Traverse RDR Tree<br/>(evaluate() conditions)</td></tr>
+        </table>
+    >];
+
+    // Stage 3: Decision Logic
+    CheckError [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#FFF4E5" color="#E37400">
+            <tr><td><b>3. ACCURACY CHECK</b></td></tr>
+            <tr><td>Prediction == Actual?</td></tr>
+        </table>
+    >];
+
+    // Stage 4: Automatic Knowledge Acquisition
+    FindBestRule [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#D2E3FC" color="#1A73E8">
+            <tr><td><b>4. RULE DISCOVERY</b></td></tr>
+            <tr><td>Calculate Information Gain<br/>Find Best Feature + Split</td></tr>
+        </table>
+    >];
+
+    // Stage 5: Knowledge Integration
+    UpdateTree [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#E6F4EA" color="#137333">
+            <tr><td><b>5. TREE UPDATE</b></td></tr>
+            <tr><td>Add Refinement/Alternative<br/>Store Cornerstone Case</td></tr>
+        </table>
+    >];
+
+    // Final Output
+    Output [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#CEEAD6" color="#137333">
+            <tr><td><b>FINAL MODEL</b></td></tr>
+            <tr><td>rdr_model.json</td></tr>
+        </table>
+    >];
+
+    // Main Horizontal Flow
+    Input -> Classify;
+    Classify -> CheckError;
+    
+    // Branching Logic with xlabels to avoid overlap
+    CheckError -> FindBestRule [xlabel=" Incorrect "];
+    FindBestRule -> UpdateTree;
+    
+    // Feedback Loops (Dashed lines to distinguish from main flow)
+    CheckError -> Classify [label=" Correct\n(Next Row)", style=dashed, constraint=false, tailport=n, headport=n];
+    UpdateTree -> Classify [label=" Loop to\nnext row", style=dashed, constraint=false, tailport=s, headport=s];
+    
+    // Completion
+    UpdateTree -> Output [label=" Training Complete ", style=bold, color="#137333"];
+}
+

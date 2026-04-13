@@ -1,0 +1,37 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/inter$ ./run_inter_loan.sh
+Loaded existing model: loan_rules_demo.json
+--- Running in BUILD mode ---
+
+[Row 2/6] ERROR Found!
+{'Income': 2000, 'Credit_Score': 600, 'Stable_Job': 'No', 'Approved': 'No'}
+
+[KNOWLEDGE ACQUISITION]
+System predicted: 'Unknown' but Actual is: 'No'
+Enter feature name (or 'exit'): Income
+Enter operator (==, <, >): <
+Enter threshold value: 3000
+
+--- FINAL PERFORMANCE SUMMARY ---
+              precision    recall  f1-score   support
+
+          No       1.00      1.00      1.00         3
+         Yes       1.00      1.00      1.00         3
+
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
+
+Loaded existing model: loan_rules_demo.json
+--- Running in TEST mode ---
+
+--- FINAL PERFORMANCE SUMMARY ---
+              precision    recall  f1-score   support
+
+          No       1.00      1.00      1.00         3
+         Yes       1.00      1.00      1.00         3
+
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
+
+ye@lst-hpc3090:~/exp/scrdr_tuto/inter$

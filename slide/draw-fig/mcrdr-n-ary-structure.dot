@@ -1,0 +1,20 @@
+digraph MCRDR {
+    rankdir=TB;
+    node [shape=box, fontname="Arial", style=filled, fillcolor=lightblue];
+    
+    Root [label="Root / Data Input", shape=ellipse];
+    R1 [label="Rule 1: If Rain\nConclusion: Take Umbrella"];
+    R2 [label="Rule 2: If Temp < 0\nConclusion: Wear Coat"];
+    R3 [label="Rule 3: If Wind > 50\nConclusion: Stay Home"];
+    
+    R1_Refine [label="Rule 1.1: If Rain & Warm\nConclusion: Light Raincoat", fillcolor=lightyellow];
+
+    Root -> R1;
+    Root -> R2;
+    Root -> R3;
+    R1 -> R1_Refine [label="Refine"];
+    
+    edge [fontname="Arial", fontsize=10];
+    legend [shape=none, label="MCRDR: Multiple siblings can be\nTrue and fire simultaneously."];
+}
+

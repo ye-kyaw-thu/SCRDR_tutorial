@@ -1,0 +1,1359 @@
+True : I
+	currTag == "B" : B
+		bigramR == "မရ" : S
+			currUnit == "မ" : B
+				nextUnit1 == "ရ" : E
+					currType == "MC" : I
+		nextTag1 == "E" and nextTag2 == "I" : S
+			nextTag1 == "E" : I
+				currType == "MC" : E
+		currUnit == "မ" and nextUnit1 == "ဟ" and nextUnit2 == "ု" : S
+			currUnit == "မ" : B
+		nextUnit1 == "သ" and nextTag1 == "E" : S
+			nextUnit1 == "သ" : B
+		currUnit == "က" and nextUnit1 == "တ" and nextUnit2 == "ေ" : S
+			currUnit == "က" : B
+		currUnit == "က" and nextUnit2 == "ြ" : S
+			currUnit == "က" : B
+		nextUnit1 == "်" : I
+		currUnit == "ရ" and nextUnit1 == "လ" and nextUnit2 == "ာ" : S
+			currUnit == "ရ" : B
+		currUnit == "မ" and nextUnit1 == "တ" and nextUnit2 == "ွ" : S
+			currUnit == "မ" : B
+		prevBigram == "ရသ" : I
+			prevUnit1 == "သ" : B
+		currUnit == "စ" and nextUnit1 == "ပ" and nextUnit2 == "ြ" : S
+		currUnit == "မ" and nextUnit1 == "က" and nextUnit2 == "ျ" : S
+			currUnit == "မ" : B
+		currUnit == "က" and nextUnit2 == "ှ" : S
+		bigramR == "မဆ" : S
+			currUnit == "မ" : B
+		currUnit == "ရ" and nextUnit1 == "ရ" and nextUnit2 == "င" : S
+		currUnit == "မ" and nextUnit1 == "သ" and nextUnit2 == "ေ" : S
+		currUnit == "မ" and nextUnit1 == "ထ" and nextUnit2 == "ာ" : S
+		prevTag1 == "E" and bigramR == "ကသ" : S
+			currUnit == "က" : B
+		prevTag1 == "I" and trigramC == "်တေ" : I
+			currUnit == "တ" : B
+		currUnit == "မ" and nextUnit1 == "မ" and nextUnit2 == "ေ" : S
+		currUnit == "မ" and nextUnit1 == "တ" and nextUnit2 == "ိ" : S
+			currUnit == "မ" : B
+		prevTag1 == "E" and trigramC == "ရရှ" : I
+			currUnit == "ရ" : B
+		prevTag1 == "I" and trigramC == "်လည" : I
+			currUnit == "လ" : B
+		prevTag1 == "I" and bigramR == "မာ" : I
+		bigramR == "၂ရ" : S
+		currUnit == "မ" and nextUnit1 == "ယ" and nextUnit2 == "ူ" : S
+		prevUnit1 == "္" : I
+		currUnit == "မ" and nextUnit1 == "တ" and nextUnit2 == "တ" : S
+			currUnit == "မ" : B
+		prevTag1 == "I" and bigramR == "ရိ" : I
+			currUnit == "ရ" : B
+		currUnit == "မ" and nextUnit1 == "လ" and nextUnit2 == "ွ" : S
+			currUnit == "မ" : B
+		prevTag1 == "E" and bigramR == "မပ" : S
+			currUnit == "မ" : B
+		currUnit == "ဆ" and prevTag1 == "I" and prevTag2 == "S" : I
+		currUnit == "မ" and nextUnit1 == "အ" and nextUnit2 == "ေ" : S
+			currUnit == "မ" : B
+		currUnit == "ရ" and nextUnit1 == "ီ" and nextUnit2 == "း" : I
+			currUnit == "ရ" : B
+		prevTag1 == "I" and bigramR == "လင" : I
+		currUnit == "မ" and nextUnit1 == "လ" and nextUnit2 == "ု" : S
+			currUnit == "မ" : B
+		currUnit == "က" and nextUnit1 == "လ" and nextUnit2 == "ဲ" : S
+			currUnit == "က" : B
+		prevTag1 == "I" and trigramC == "်မိ" : I
+			currUnit == "မ" : B
+		currUnit == "ည" and prevTag1 == "I" and nextTag1 == "E" : I
+		prevTag1 == "I" and trigramC == "းလဲ" : I
+			currUnit == "လ" : B
+		trigramC == "ူငယ" : I
+		currUnit == "မ" and nextUnit1 == "တ" and nextUnit2 == "ည" : S
+			currUnit == "မ" : B
+		prevTag1 == "I" and trigramC == "းအစ" : I
+			currUnit == "အ" : B
+		prevTag1 == "I" and trigramC == "ာကြ" : I
+			currUnit == "က" : B
+		currUnit == "ရ" and nextUnit1 == "စ" and nextUnit2 == "ေ" : S
+			currUnit == "ရ" : I
+		prevUnit2 == "ည" and prevUnit1 == "ာ" and currUnit == "ရ" : I
+		currUnit == "စ" and nextUnit2 == "ွ" : S
+			currUnit == "စ" : B
+		prevUnit2 == "့" and prevUnit1 == "ဆ" and currUnit == "ရ" : I
+		currUnit == "လ" and nextUnit1 == "ှ" and nextUnit2 == "ယ" : I
+		prevTag1 == "I" and bigramR == "ပတ" : I
+		prevTag1 == "I" and trigramC == "်ကျ" : I
+			currUnit == "က" : B
+		prevTag1 == "I" and trigramC == "းသာ" : I
+			currUnit == "သ" : B
+		trigramC == "ီဥတ" : I
+		prevTag1 == "I" and bigramR == "ရွ" : I
+		currUnit == "မ" and nextUnit1 == "က" and nextUnit2 == "ြ" : S
+			currUnit == "မ" : B
+				prevUnit1 == "်" : E
+		prevTag1 == "E" and bigramR == "ကည" : S
+			currUnit == "က" : B
+		currUnit == "ယ" and prevTag1 == "I" and nextTag1 == "E" : I
+			currUnit == "ယ" : B
+		prevTag1 == "I" and bigramR == "စု" : I
+			currUnit == "စ" : B
+		prevTag1 == "I" and bigramR == "သု" : I
+			currUnit == "သ" : B
+		prevTag1 == "I" and bigramR == "ပွ" : I
+		currUnit == "က" and nextUnit1 == "န" and nextUnit2 == "ာ" : S
+		trigramC == "ံစံ" : I
+		currUnit == "ခ" and prevTag1 == "I" and nextTag1 == "E" : I
+			currUnit == "ခ" : B
+		prevTag1 == "I" and trigramC == "ုပြ" : I
+			currUnit == "ပ" : B
+		prevTag1 == "I" and trigramC == "်ပျ" : I
+		trigramC == "ီစဉ" : I
+		trigramC == "သနာ" : I
+		prevTag1 == "I" and trigramC == "်ပစ" : I
+		currUnit == "က" and nextUnit1 == "ရ" and nextUnit2 == "ာ" : S
+			currUnit == "က" : B
+		bigramR == "ညဘ" : S
+			currUnit == "ည" : B
+		prevTag1 == "I" and trigramC == "်လှ" : I
+		currUnit == "မ" and nextUnit1 == "ခ" and nextUnit2 == "ြ" : S
+		currUnit == "မ" and nextUnit1 == "စ" and nextUnit2 == "ိ" : S
+			currUnit == "မ" : B
+		prevTag1 == "I" and trigramC == "းမြ" : I
+			currUnit == "မ" : B
+		prevTag1 == "I" and trigramC == "းတက" : I
+		prevTag1 == "I" and trigramC == "်မြ" : I
+			currUnit == "မ" : B
+		currUnit == "မ" and nextUnit1 == "န" and nextUnit2 == "ည" : S
+			currUnit == "မ" : B
+		trigramC == "စတင" : I
+		currUnit == "မ" and nextUnit1 == "တ" and nextUnit2 == "ရ" : S
+			currUnit == "မ" : B
+		prevUnit2 == "စ" and prevUnit1 == "ေ" and currUnit == "ရ" : I
+			currUnit == "ရ" : B
+		prevTag1 == "I" and trigramC == "းသမ" : I
+			currUnit == "သ" : B
+		trigramC == "်ရမ" : S
+			currUnit == "ရ" : B
+		currUnit == "ဦ" and prevTag1 == "I" : I
+		trigramC == "ညနေ" : I
+		prevTag1 == "I" and trigramC == "်သစ" : I
+		prevTag1 == "I" and trigramC == "ေပု" : I
+		prevTag1 == "I" and trigramC == "ာဖွ" : I
+		prevTag1 == "I" and trigramC == "်လွ" : I
+		prevTag1 == "I" and trigramC == "်ရှ" : I
+			currUnit == "ရ" : B
+		trigramC == "ါကတ" : S
+			currUnit == "က" : B
+		prevTag1 == "I" and trigramC == "်ကာ" : I
+		prevTag1 == "I" and trigramC == "းကမ" : I
+		prevTag1 == "I" and bigramR == "ဇေ" : I
+		trigramC == "ြတင" : I
+		currUnit == "ည" and prevTag1 == "I" and prevTag2 == "S" : I
+		prevTag1 == "I" and trigramC == "်ကန" : I
+		prevTag1 == "I" and trigramC == "်ခိ" : I
+		prevTag1 == "I" and bigramR == "ကင" : I
+		prevTag1 == "I" and trigramC == "်ကု" : I
+		currUnit == "မ" and nextUnit1 == "က" and nextUnit2 == "စ" : S
+		trigramC == "ကမလ" : S
+			currUnit == "မ" : B
+		prevTag1 == "E" and trigramC == "ကလေ" : I
+			currUnit == "လ" : B
+		prevUnit2 == "ူ" and prevUnit1 == "း" and currUnit == "ည" : I
+			currUnit == "ည" : B
+		bigramR == "။၂" : S
+		prevTag1 == "I" and trigramC == "့လည" : I
+			currUnit == "လ" : B
+		prevTag1 == "I" and bigramR == "ကွ" : I
+			currUnit == "က" : B
+		prevTag1 == "I" and bigramR == "နီ" : I
+		currUnit == "က" and nextUnit1 == "န" and nextUnit2 == "ူ" : S
+			currUnit == "က" : B
+		trigramC == "်ငံ" : I
+		prevTag1 == "I" and bigramR == "ကပ" : I
+		currUnit == "မ" and nextUnit1 == "က" and nextUnit2 == "ူ" : S
+		prevTag1 == "I" and bigramR == "ဆု" : I
+		bigramL == "၃၂" : I
+		prevTag1 == "I" and trigramC == "်ဆေ" : I
+		prevTag1 == "I" and bigramR == "ဖက" : I
+		prevTag1 == "I" and bigramR == "လန" : I
+		trigramC == "ီယိ" : I
+		trigramC == "ံသန" : I
+		trigramC == "ရယူ" : I
+		currUnit == "ဝ" and prevTag1 == "I" and nextTag1 == "E" : I
+		prevTag1 == "S" and trigramC == "ံကိ" : I
+		prevTag1 == "I" and trigramC == "ေမြ" : I
+		prevTag1 == "I" and trigramC == "ေတွ" : I
+		trigramC == "သဘေ" : I
+		prevTag1 == "I" and trigramC == "ူမင" : I
+		trigramC == "ဿနာ" : I
+		prevTag1 == "I" and trigramC == "်ခန" : I
+		currUnit == "မ" and nextUnit1 == "စ" and nextUnit2 == "ပ" : S
+		trigramC == "မကန" : S
+		currUnit == "မ" and nextUnit1 == "စ" and nextUnit2 == "စ" : S
+		prevTag1 == "I" and trigramC == "းကေ" : I
+			currUnit == "က" : B
+		prevTag1 == "I" and trigramC == "်နှ" : I
+			currUnit == "န" : B
+		trigramC == "ျကျ" : I
+			currUnit == "က" : B
+		currUnit == "က" and nextUnit1 == "လ" and nextUnit2 == "ယ" : S
+			currUnit == "က" : B
+		prevTag1 == "I" and trigramC == "်တွ" : I
+			currUnit == "တ" : B
+		trigramC == "ျရေ" : I
+			currUnit == "ရ" : B
+		nextUnit1 == "3" and nextTag1 == "E" : S
+			nextUnit1 == "3" : B
+		prevTag1 == "I" and trigramC == "်ဘက" : I
+		prevUnit2 == "ပ" and prevUnit1 == "ြ" and currUnit == "ဆ" : I
+		trigramC == "ာရမ" : S
+		prevTag1 == "I" and trigramC == "်ချ" : I
+			currUnit == "ခ" : B
+		trigramC == "းထန" : I
+			currUnit == "ထ" : B
+		prevTag1 == "I" and bigramR == "ဝတ" : I
+		prevTag1 == "I" and trigramC == "ုကျ" : I
+		currUnit == "ဒ" and nextUnit1 == "ီ" and nextUnit2 == "ယ" : I
+		prevTag1 == "I" and trigramC == "်စာ" : I
+		prevTag1 == "I" and trigramC == "်ပု" : I
+			currUnit == "ပ" : B
+		prevTag1 == "I" and trigramC == "့ဆိ" : I
+		prevTag1 == "I" and trigramC == "်ခု" : I
+		bigramR == "ည၈" : S
+		prevTag1 == "I" and trigramC == "်ဆင" : I
+		prevTag1 == "I" and trigramC == "ေမေ" : I
+		prevTag1 == "I" and trigramC == "းသန" : I
+		prevTag1 == "I" and bigramR == "အု" : I
+		prevTag1 == "I" and bigramR == "ရစ" : I
+		prevTag1 == "I" and trigramC == "ဲရင" : I
+		trigramC == "းလံ" : I
+		trigramC == "ကဗျ" : I
+		trigramC == "ျအပ" : I
+		prevTag1 == "I" and trigramC == "်ရည" : I
+		prevTag1 == "S" and trigramC == "တလေ" : I
+		prevTag1 == "I" and trigramC == "်ဝန" : I
+		prevTag1 == "S" and trigramC == "ဝကျ" : I
+		prevTag1 == "I" and bigramR == "စံ" : I
+		prevTag1 == "I" and trigramC == "ဲပြ" : I
+		prevTag1 == "I" and bigramR == "နင" : I
+		prevTag1 == "I" and trigramC == "်မေ" : I
+		prevTag1 == "I" and trigramC == "်ဘာ" : I
+		trigramC == "်ရီ" : I
+		prevUnit2 == "‌" : I
+		prevTag1 == "I" and bigramR == "တင" : I
+		prevTag1 == "I" and trigramC == "ူတစ" : I
+		prevBigram == "ါတ" : I
+		prevTag1 == "I" and bigramR == "စဉ" : I
+		prevTag1 == "I" and bigramR == "ထေ" : I
+		trigramC == "တချ" : I
+		currUnit == "န" and nextUnit1 == "ီ" and nextUnit2 == "ခ" : I
+		prevTag1 == "I" and trigramC == "ေလည" : I
+		bigramL == "၁၉" : I
+		trigramC == "းကဆ" : S
+		trigramC == "ါကစ" : S
+		currUnit == "မ" and nextUnit1 == "မ" and nextUnit2 == "ည" : S
+		currUnit == "မ" and nextUnit1 == "စ" and nextUnit2 == "ခ" : S
+	currTag == "E" : E
+		nextTag1 == "I" : B
+			nextTag1 == "I" : I
+		nextTag1 == "S" and nextTag2 == "I" : B
+			nextTag1 == "S" : I
+		currUnit == "က" and prevTag1 == "I" and prevTag2 == "B" : S
+			currUnit == "က" : E
+				prevUnit1 == "ူ" : B
+		bigramL == "မရ" : S
+			currUnit == "ရ" : B
+				prevUnit1 == "မ" : E
+		currUnit == "လ" and nextType1 == "MD" : S
+			currUnit == "လ" : E
+		bigramL == "ရသ" : B
+			currUnit == "သ" : E
+		nextUnit2 == "်" : I
+			nextUnit1 == "ယ" : B
+		prevUnit2 == "စ" and prevUnit1 == "ေ" and currUnit == "ရ" : S
+		prevUnit2 == "ေ" and prevUnit1 == "း" and currUnit == "ရ" : S
+			currUnit == "ရ" : B
+		prevTag1 == "B" and bigramR == "်စ" : I
+		prevUnit2 == "င" and currUnit == "ရ" : S
+			currUnit == "ရ" : E
+				prevUnit1 == "်" : B
+		prevUnit2 == "တ" and prevUnit1 == "်" and currUnit == "လ" : S
+		prevUnit2 == "မ" and prevUnit1 == "ေ" and currUnit == "လ" : S
+		prevUnit2 == "န" and prevUnit1 == "်" and currUnit == "ရ" : S
+			currUnit == "ရ" : B
+		prevUnit2 == "ရ" and prevUnit1 == "ီ" and currUnit == "လ" : S
+		prevUnit2 == "ရ" and currUnit == "ရ" : S
+			currUnit == "ရ" : E
+		currUnit == "မ" and nextUnit1 == "ရ" and nextUnit2 == "ှ" : S
+			currUnit == "မ" : E
+		currUnit == "မ" and nextUnit1 == "ဟ" and nextUnit2 == "ု" : S
+			currUnit == "မ" : E
+		nextTag1 == "B" and bigramL == "့ရ" : S
+			currUnit == "ရ" : E
+				prevUnit1 == "့" : B
+		bigramL == "နက" : S
+			currUnit == "က" : E
+		currUnit == "ခ" and nextUnit1 == "ရ" and nextUnit2 == "ီ" : B
+		bigramL == "်၇" : S
+		prevTag1 == "B" and bigramR == "်တ" : I
+			currUnit == "်" : E
+		bigramL == "း၍" : S
+		nextUnit1 == "သ" and nextTag1 == "S" : I
+			currUnit == "့" : E
+		trigramC == "့ဆရ" : B
+		currUnit == "ု" and nextType1 == "MG" : I
+		currUnit == "ါ" and nextUnit1 == "ရ" and nextUnit2 == "စ" : I
+		bigramL == "့ည" : S
+			currUnit == "ည" : E
+				prevUnit1 == "့" : B
+					prevUnit2 == "ေ" : I
+		bigramL == "ါရ" : S
+		prevUnit2 == "တ" and prevUnit1 == "်" and currUnit == "ခ" : S
+		trigramC == "ညာရ" : I
+			currUnit == "ာ" : E
+		bigramL == "်က" : S
+			currUnit == "က" : E
+				prevUnit1 == "်" : B
+		nextUnit1 == "တ" and nextTag1 == "S" : I
+			nextUnit1 == "တ" : E
+		prevUnit2 == "စ" and currUnit == "ဆ" : S
+		currUnit == "ံ" and nextUnit1 == "စ" and nextUnit2 == "ံ" : I
+		currUnit == "ီ" and nextUnit1 == "စ" and nextUnit2 == "ဉ" : I
+		currUnit == "ီ" and nextUnit1 == "မ" and nextUnit2 == "ံ" : I
+		currUnit == "ရ" and nextUnit1 == "လ" and nextUnit2 == "ဲ" : S
+			currUnit == "ရ" : E
+		prevTag1 == "B" and bigramR == "်ပ" : I
+			currUnit == "်" : E
+		currUnit == "စ" and nextUnit1 == "တ" and nextUnit2 == "င" : B
+		currUnit == "က" and nextUnit1 == "လ" and nextUnit2 == "ေ" : B
+			currUnit == "က" : E
+		prevTag1 == "B" and bigramR == "်လ" : I
+			currUnit == "်" : E
+		prevTag1 == "I" and trigramC == "လူမ" : I
+		currUnit == "ူ" and nextUnit1 == "င" and nextUnit2 == "ယ" : I
+		bigramL == "ဲက" : S
+			currUnit == "က" : B
+		prevUnit2 == "သ" and prevUnit1 == "ာ" and currUnit == "မ" : S
+		prevUnit2 == "န" and prevUnit1 == "ာ" and currUnit == "က" : S
+		trigramC == "့ခက" : S
+		currUnit == "3" and prevTag1 == "B" and nextTag1 == "B" : S
+		trigramC == "မကစ" : B
+		currUnit == "ြ" and nextUnit1 == "တ" and nextUnit2 == "င" : I
+		currUnit == "ိ" and nextUnit1 == "ရ" and nextUnit2 == "စ" : I
+		currUnit == "၌" and nextUnit2 == "ေ" : S
+			currUnit == "၌" : E
+		bigramL == "မစ" : S
+		currUnit == "်" and nextUnit1 == "င" and nextUnit2 == "ံ" : I
+		bigramR == "၃၂" : B
+		currType == "MC" and nextType1 == "MG" : B
+		currType == "MD" and prevType1 == "MP" and nextType1 == "MD" : B
+		currUnit == "သ" and nextUnit1 == "ဘ" and nextUnit2 == "ေ" : B
+		currUnit == "ီ" and nextUnit1 == "ယ" and nextUnit2 == "ိ" : I
+		currUnit == "ံ" and nextUnit1 == "သ" and nextUnit2 == "န" : I
+		currUnit == "း" and nextUnit1 == "ည" and nextUnit2 == "ံ" : I
+			currUnit == "း" : E
+		currUnit == "ျ" and nextUnit1 == "က" and nextUnit2 == "ျ" : I
+			currUnit == "ျ" : E
+		trigramC == "ပြဆ" : I
+		prevTag1 == "B" and bigramR == "်ဆ" : I
+		currUnit == "ု" and nextUnit1 == "ရ" and nextUnit2 == "ီ" : I
+			currUnit == "ု" : E
+		prevUnit2 == "န" and prevUnit1 == "်" and currUnit == "စ" : S
+		bigramL == "ည၈" : S
+		trigramC == "ူမဝ" : S
+		bigramR == "၍၊" : S
+		trigramC == "းလတ" : S
+		currUnit == "မ" and nextUnit1 == "ရ" and nextUnit2 == "ဘ" : S
+		currUnit == "၌" and nextUnit1 == "သ" and nextUnit2 == "ာ" : S
+		trigramC == "ာကဗ" : B
+		bigramR == "‌‌" : B
+		trigramC == "်တခ" : B
+		bigramR == "၁၉" : B
+		currUnit == "း" and nextUnit1 == "လ" and nextUnit2 == "ံ" : I
+		currUnit == "ျ" and nextUnit1 == "အ" and nextUnit2 == "ပ" : I
+		prevTag1 == "B" and bigramR == "်ဝ" : I
+		prevTag1 == "B" and trigramC == "ငံခ" : I
+		prevTag1 == "I" and trigramC == "လူသ" : I
+		currUnit == "ူ" and nextUnit1 == "ဆ" and nextUnit2 == "သ" : I
+	currTag == "I" : I
+		nextBigram == "တယ" : E
+			nextUnit1 == "တ" : I
+		currUnit == "တ" and nextUnit1 == "ယ" and nextUnit2 == "်" : B
+			currUnit == "တ" : I
+		nextTag1 == "B" : E
+			nextTag1 == "B" : I
+		nextTag1 == "E" and nextTag2 == "I" : E
+			nextTag1 == "E" : B
+				nextTag2 == "I" : I
+					currUnit == "မ" : S
+		currUnit == "မ" and nextUnit1 == "ှ" and nextUnit2 == "ာ" : B
+			currUnit == "မ" : I
+		currUnit == "ပ" and nextUnit2 == "။" : B
+			currUnit == "ပ" : I
+		prevUnit2 == "<BOS>" and prevUnit1 == "ဒ" and currUnit == "ီ" : E
+			currUnit == "ီ" : I
+		prevUnit2 == "ပ" and prevUnit1 == "ေ" and currUnit == "း" : E
+			currUnit == "း" : I
+		prevTag1 == "B" and trigramC == "မရှ" : B
+			currUnit == "ရ" : I
+		currUnit == "ဘ" and nextUnit1 == "ူ" and nextUnit2 == "း" : B
+			currUnit == "ဘ" : I
+		nextBigram == "ဘူ" : E
+			nextUnit1 == "ဘ" : I
+		prevTag1 == "B" and trigramC == "မဟု" : B
+			currUnit == "ဟ" : I
+		nextUnit1 == "။" and nextTag1 == "S" : E
+		currUnit == "်" and nextUnit1 == "ပ" and nextUnit2 == "ါ" : E
+			currUnit == "်" : I
+		prevUnit2 == "်" and prevUnit1 == "မ" and currUnit == "ာ" : E
+			currUnit == "ာ" : I
+		prevUnit2 == "ဒ" and prevUnit1 == "ီ" and currUnit == "န" : B
+			currUnit == "န" : I
+		currUnit == "န" and nextUnit1 == "ိ" and nextUnit2 == "ု" : B
+			currUnit == "န" : I
+		currUnit == "ာ" and nextUnit2 == "ဲ" : E
+			currUnit == "ာ" : I
+		prevTag1 == "I" and bigramR == "ုခ" : E
+			currUnit == "ု" : I
+		bigramL == "ုခ" : B
+			currUnit == "ခ" : I
+		prevTag1 == "B" and trigramC == "သူက" : E
+			currUnit == "ူ" : I
+		prevTag1 == "B" and trigramC == "ကတေ" : B
+			currUnit == "တ" : I
+		trigramC == "ယ်မ" : E
+			currUnit == "်" : I
+		currUnit == "ါ" and nextUnit1 == "သ" and nextUnit2 == "လ" : E
+		trigramC == "ါသလ" : B
+		currUnit == "ဲ" and nextUnit1 == "မ" and nextUnit2 == "ှ" : E
+			currUnit == "ဲ" : I
+		trigramC == "်ပါ" : B
+			currUnit == "ပ" : I
+		currUnit == "ါ" and nextUnit2 == "ဲ" : E
+			currUnit == "ါ" : I
+		currUnit == "ရ" and nextUnit1 == "ဲ" and nextUnit2 == "့" : B
+			currUnit == "ရ" : I
+		trigramC == "ာလဲ" : B
+			currUnit == "လ" : I
+		prevUnit2 == "ပ" and prevUnit1 == "ါ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		currUnit == "း" and nextUnit1 == "ရ" and nextUnit2 == "ဲ" : E
+			currUnit == "း" : I
+		currUnit == "်" and nextUnit1 == "လ" and nextUnit2 == "ာ" : E
+			currUnit == "်" : I
+		trigramC == "်လာ" : B
+			currUnit == "လ" : I
+		currUnit == "ဘ" and nextUnit1 == "က" and nextUnit2 == "်" : B
+			currUnit == "ဘ" : I
+		nextBigram == "ဘက" : E
+			nextUnit1 == "ဘ" : I
+		currUnit == "ု" and nextUnit1 == "ရ" and nextUnit2 == "င" : E
+			currUnit == "ု" : I
+		trigramC == "ုရင" : B
+			currUnit == "ရ" : I
+		prevUnit2 == "ွ" and prevUnit1 == "ာ" and currUnit == "း" : E
+			currUnit == "း" : I
+		currUnit == "ပ" and nextUnit1 == "ေ" and nextUnit2 == "း" : B
+			currUnit == "ပ" : I
+		currUnit == "ီ" and nextUnit1 == "မ" and nextUnit2 == "ှ" : E
+			currUnit == "ီ" : I
+		currUnit == "့" and nextUnit1 == "မ" and nextUnit2 == "ယ" : E
+			currUnit == "့" : I
+		trigramC == "့မယ" : B
+			currUnit == "မ" : I
+		trigramC == "စ်ခ" : E
+			currUnit == "်" : I
+		currUnit == "ါ" and nextUnit1 == "လ" and nextUnit2 == "ာ" : E
+			currUnit == "ါ" : I
+		prevUnit2 == "ဒ" and currUnit == "ဟ" : B
+			currUnit == "ဟ" : I
+		currUnit == "စ" and nextUnit1 == "ွ" and nextUnit2 == "ာ" : B
+			currUnit == "စ" : I
+		currUnit == "ံ" and nextUnit1 == "ရ" and nextUnit2 == "ေ" : E
+			currUnit == "ံ" : I
+		trigramC == "ံရေ" : B
+			currUnit == "ရ" : I
+		trigramC == "ာနဲ" : B
+		prevTag1 == "B" and trigramC == "ဘာမ" : E
+			currUnit == "ာ" : I
+		prevUnit2 == "သ" and prevUnit1 == "ူ" and currUnit == "မ" : B
+			currUnit == "မ" : I
+		trigramC == "စ်န" : E
+			currUnit == "်" : I
+		trigramC == "ီးတ" : E
+			currUnit == "း" : I
+		prevUnit2 == "ီ" and prevUnit1 == "း" and currUnit == "တ" : B
+			currUnit == "တ" : I
+		trigramC == "ါ်မ" : E
+			currUnit == "်" : I
+		nextTag1 == "S" and nextTag2 == "B" : E
+			nextTag1 == "S" : I
+		prevUnit2 == "စ" and prevUnit1 == "်" and currUnit == "န" : B
+			currUnit == "န" : I
+		prevUnit2 == "မ" and prevUnit1 == "ာ" and currUnit == "ပ" : B
+			currUnit == "ပ" : I
+		prevTag1 == "B" and trigramC == "ဒီန" : E
+		prevUnit2 == "ဘ" and prevUnit1 == "ာ" and currUnit == "မ" : B
+			currUnit == "မ" : I
+				prevUnit1 == "ာ" : S
+		currUnit == "း" and nextUnit1 == "မ" and nextUnit2 == "ှ" : E
+			currUnit == "း" : I
+		currUnit == "့" and nextUnit1 == "ပ" and nextUnit2 == "ေ" : E
+			currUnit == "့" : I
+		prevTag1 == "B" and trigramC == "ဘာလ" : E
+			currUnit == "ာ" : I
+		trigramC == "ရလာ" : B
+			currUnit == "လ" : I
+		currUnit == "ခ" and nextUnit1 == "ု" and nextUnit2 == "ခ" : B
+			currUnit == "ခ" : I
+		prevTag1 == "B" and trigramC == "မတွ" : B
+			currUnit == "တ" : I
+		trigramC == "းမှ" : B
+			currUnit == "မ" : I
+		prevUnit2 == "မ" and prevUnit1 == "ာ" and currUnit == "စ" : B
+			currUnit == "စ" : I
+		prevUnit2 == "ဒ" and prevUnit1 == "ိ" and currUnit == "ယ" : E
+			currUnit == "ယ" : I
+		nextTag1 == "E" and bigramL == "းပ" : B
+			currUnit == "ပ" : I
+		currUnit == "စ" and nextUnit1 == "ရ" and nextUnit2 == "ာ" : B
+			currUnit == "စ" : I
+		prevUnit2 == "လ" and prevUnit1 == "ပ" and currUnit == "်" : E
+			currUnit == "်" : I
+		prevUnit2 == "ခ" and currUnit == "ထ" : B
+			currUnit == "ထ" : I
+		trigramC == "ပံပ" : E
+			currUnit == "ံ" : I
+		prevUnit2 == "ပ" and prevUnit1 == "ံ" and currUnit == "ပ" : B
+			currUnit == "ပ" : I
+		prevTag1 == "I" and trigramC == "ဒီလ" : E
+			currUnit == "ီ" : I
+		prevTag1 == "B" and trigramC == "စပြ" : B
+		prevUnit2 == "ဘ" and prevUnit1 == "ာ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		prevTag1 == "B" and trigramC == "မေလ" : E
+			currUnit == "ေ" : I
+		currUnit == "ု" and nextUnit1 == "မ" and nextUnit2 == "ှ" : E
+			currUnit == "ု" : I
+		trigramC == "ပ်လ" : E
+			currUnit == "်" : I
+		currUnit == "ာ" and nextUnit1 == "တ" and nextUnit2 == "ာ" : E
+			currUnit == "ာ" : I
+		trigramC == "ာတာ" : B
+			currUnit == "တ" : I
+		trigramC == "်မျ" : B
+			currUnit == "မ" : I
+		currUnit == "ု" and nextUnit1 == "ပ" and nextUnit2 == "ဲ" : E
+			currUnit == "ု" : I
+		currUnit == "း" and nextUnit1 == "စ" and nextUnit2 == "ွ" : E
+			currUnit == "း" : I
+		currUnit == "ု" and nextUnit1 == "က" and nextUnit2 == "ိ" : E
+			currUnit == "ု" : I
+		trigramC == "ုကိ" : B
+			currUnit == "က" : I
+		prevUnit2 == "ပ" and prevUnit1 == "်" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		trigramC == "ခုထ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "န" and prevUnit1 == "ဲ" and currUnit == "့" : E
+			currUnit == "့" : I
+		prevTag1 == "B" and trigramC == "ယူသ" : E
+			currUnit == "ူ" : I
+		prevUnit2 == "ဒ" and prevUnit1 == "ီ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		currUnit == "်" and nextUnit1 == "မ" and nextUnit2 == "ျ" : E
+			currUnit == "်" : I
+		prevTag1 == "B" and trigramC == "ဒါဆ" : E
+			currUnit == "ါ" : I
+		trigramC == "ညီပ" : E
+			currUnit == "ီ" : I
+		trigramC == "ဲ့ဝ" : E
+			currUnit == "့" : I
+		prevUnit2 == "ဲ" and prevUnit1 == "့" and currUnit == "ဝ" : B
+			currUnit == "ဝ" : I
+		trigramC == "လာပ" : E
+			currUnit == "ာ" : I
+		trigramC == "ူသွ" : B
+			currUnit == "သ" : I
+		prevUnit2 == "ဒ" and prevUnit1 == "ါ" and currUnit == "ဆ" : B
+			currUnit == "ဆ" : I
+		currUnit == "း" and nextUnit1 == "န" and nextUnit2 == "ိ" : E
+			currUnit == "း" : I
+		prevUnit2 == "ှ" and prevUnit1 == "ာ" and currUnit == "တ" : B
+			currUnit == "တ" : I
+		currUnit == "ု" and nextUnit1 == "စ" and nextUnit2 == "ီ" : E
+			currUnit == "ု" : I
+		trigramC == "ှာတ" : E
+			currUnit == "ာ" : I
+		currUnit == "ြ" and nextUnit1 == "ပ" and nextUnit2 == "ေ" : E
+		prevTag1 == "B" and trigramC == "နေန" : E
+			currUnit == "ေ" : I
+		bigramR == "ဓဘ" : E
+			currUnit == "ဓ" : I
+		bigramL == "ဓဘ" : B
+			currUnit == "ဘ" : I
+		currUnit == "ါ" and nextUnit1 == "ရ" and nextUnit2 == "ှ" : E
+			currUnit == "ါ" : I
+		trigramC == "ါရှ" : B
+			currUnit == "ရ" : I
+		trigramC == "ရရင" : B
+		trigramC == "မသေ" : B
+			currUnit == "သ" : I
+		currUnit == "ပ" and nextUnit1 == "ါ" and nextUnit2 == "၊" : B
+		trigramC == "ရီလ" : E
+			currUnit == "ီ" : I
+		prevTag1 == "B" and trigramC == "မထာ" : B
+		prevUnit2 == "်" and prevUnit1 == "့" and currUnit == "န" : B
+			currUnit == "န" : I
+		prevTag1 == "B" and trigramC == "ပါက" : E
+			currUnit == "ါ" : I
+		trigramC == "ုပဲ" : B
+		currUnit == "ု" and nextUnit1 == "လ" and nextUnit2 == "ှ" : E
+			currUnit == "ု" : I
+		trigramC == "ဲ့ပ" : E
+			currUnit == "့" : I
+		trigramC == "့်န" : E
+			currUnit == "့" : I
+		currUnit == "ူ" and nextUnit1 == "သ" and nextUnit2 == "ည" : E
+			currUnit == "ူ" : I
+		trigramC == "ူသည" : B
+			currUnit == "သ" : I
+		currUnit == "်" and nextUnit1 == "မ" and nextUnit2 == "ယ" : E
+			currUnit == "်" : I
+		prevTag1 == "B" and trigramC == "လူတ" : E
+			currUnit == "ူ" : I
+		prevTag1 == "B" and trigramC == "နေစ" : E
+			currUnit == "ေ" : I
+		currUnit == "ာ" and nextUnit1 == "စ" and nextUnit2 == "စ" : E
+			currUnit == "ာ" : I
+		trigramC == "ေ့ရ" : E
+			currUnit == "့" : I
+		prevUnit2 == "ေ" and prevUnit1 == "့" and currUnit == "ရ" : B
+			currUnit == "ရ" : I
+		trigramC == "ဒီဟ" : E
+		trigramC == "ကမှ" : B
+		trigramC == "မမေ" : B
+		currUnit == "ု" and nextUnit1 == "လ" and nextUnit2 == "ာ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "စ" and currUnit == "ဦ" : B
+			currUnit == "ဦ" : I
+		currUnit == "း" and nextUnit1 == "စ" and nextUnit2 == "ီ" : E
+			currUnit == "း" : I
+		trigramC == "းစီ" : B
+			currUnit == "စ" : I
+		prevUnit2 == "ဲ" and prevUnit1 == "့" and currUnit == "ဆ" : B
+			currUnit == "ဆ" : I
+		prevTag1 == "B" and trigramC == "မတိ" : B
+			currUnit == "တ" : I
+		trigramC == "ခုလ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "ခ" and prevUnit1 == "ု" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		trigramC == "ေစဉ" : B
+		prevUnit2 == "ဘ" and prevUnit1 == "ာ" and currUnit == "စ" : B
+		trigramC == "်မယ" : B
+			currUnit == "မ" : I
+		currUnit == "ူ" and nextUnit1 == "အ" and nextUnit2 == "မ" : E
+			currUnit == "ူ" : I
+		trigramC == "ူအမ" : B
+			currUnit == "အ" : I
+		trigramC == "ုလာ" : B
+			currUnit == "လ" : I
+		currUnit == "း" and nextUnit1 == "ထ" and nextUnit2 == "ာ" : E
+			currUnit == "း" : I
+		trigramC == "ဲမှ" : B
+			currUnit == "မ" : I
+		prevTag1 == "B" and trigramC == "ယူပ" : E
+		prevTag1 == "B" and trigramC == "မဆိ" : B
+			currUnit == "ဆ" : I
+		currUnit == "ျ" and nextUnit1 == "ပ" and nextUnit2 == "ါ" : E
+		trigramC == "ျပါ" : B
+		currUnit == "်" and nextUnit1 == "စ" and nextUnit2 == "ရ" : E
+			currUnit == "်" : I
+		nextTag1 == "E" and bigramL == "တ်" : E
+			currUnit == "်" : I
+		prevUnit2 == "ံ" and prevUnit1 == "စ" and currUnit == "ံ" : E
+			currUnit == "ံ" : I
+		trigramC == "းထာ" : B
+			currUnit == "ထ" : I
+		prevTag1 == "I" and bigramR == "ထဲ" : B
+			currUnit == "ထ" : I
+		currUnit == "ီ" and nextUnit1 == "လ" and nextUnit2 == "ေ" : E
+			currUnit == "ီ" : I
+		prevUnit2 == "စ" and prevUnit1 == "ံ" and currUnit == "က" : B
+			currUnit == "က" : I
+		trigramC == "ထံမ" : E
+			currUnit == "ံ" : I
+		prevTag1 == "B" and trigramC == "မကျ" : B
+			currUnit == "က" : I
+		nextBigram == "ထဲ" : E
+			nextUnit1 == "ထ" : I
+		trigramC == "စ်ဦ" : E
+			currUnit == "်" : I
+		trigramC == "ှာခ" : E
+			currUnit == "ာ" : I
+		prevUnit2 == "ှ" and prevUnit1 == "ာ" and currUnit == "ခ" : B
+			currUnit == "ခ" : I
+		trigramC == "ကကြ" : B
+			currUnit == "က" : I
+		prevUnit2 == "ခ" and prevUnit1 == "ု" and currUnit == "မ" : B
+			currUnit == "မ" : I
+		prevUnit2 == "ာ" and prevUnit1 == "း" and currUnit == "ခ" : B
+			currUnit == "ခ" : I
+		trigramC == "ူမယ" : B
+		prevUnit2 == "ထ" and prevUnit1 == "ံ" and currUnit == "မ" : B
+			currUnit == "မ" : I
+		currUnit == "ူ" and nextUnit1 == "မ" and nextUnit2 == "ယ" : E
+			currUnit == "ူ" : I
+		currUnit == "ု" and nextUnit1 == "င" and nextUnit2 == "ွ" : E
+			currUnit == "ု" : I
+		trigramC == "ုငွ" : B
+			currUnit == "င" : I
+		bigramL == "၂ရ" : B
+		prevTag1 == "B" and trigramC == "မယူ" : B
+		prevTag1 == "B" and bigramR == "ါဟ" : E
+		prevTag1 == "B" and trigramC == "မတတ" : B
+			currUnit == "တ" : I
+		trigramC == "ါပဲ" : B
+		currUnit == "့" and nextUnit1 == "အ" and nextUnit2 == "ခ" : E
+			currUnit == "့" : I
+		trigramC == "့အခ" : B
+			currUnit == "အ" : I
+		currUnit == "့" and nextUnit1 == "လ" and nextUnit2 == "ဲ" : E
+			currUnit == "့" : I
+		trigramC == "့လဲ" : B
+			currUnit == "လ" : I
+		currUnit == "်" and nextUnit1 == "တ" and nextUnit2 == "တ" : E
+			currUnit == "်" : I
+		trigramC == "်တတ" : B
+			currUnit == "တ" : I
+		currUnit == "ေ" and nextUnit1 == "လ" and nextUnit2 == "ဲ" : E
+			currUnit == "ေ" : I
+		trigramC == "ေလဲ" : B
+			currUnit == "လ" : I
+		prevTag1 == "B" and trigramC == "ကသာ" : B
+			currUnit == "သ" : I
+		trigramC == "ငံလ" : E
+			currUnit == "ံ" : I
+		prevUnit2 == "င" and prevUnit1 == "ံ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		currUnit == "်" and nextUnit1 == "ထ" and nextUnit2 == "ည" : E
+			currUnit == "်" : I
+		trigramC == "်ထည" : B
+			currUnit == "ထ" : I
+		trigramC == "ူ့အ" : E
+			currUnit == "့" : I
+		prevUnit2 == "ူ" and prevUnit1 == "့" and currUnit == "အ" : B
+			currUnit == "အ" : I
+		prevTag1 == "B" and trigramC == "မလွ" : B
+			currUnit == "လ" : I
+		prevTag1 == "B" and trigramC == "ဘာန" : E
+		currUnit == "ထ" and prevType1 == "MM" : B
+		currUnit == "လ" and nextUnit1 == "ာ" and nextUnit2 == "ဘ" : B
+			currUnit == "လ" : I
+		bigramR == "ြထ" : E
+		trigramC == "ကပြ" : B
+			currUnit == "ပ" : I
+		prevUnit2 == "ဘ" and prevUnit1 == "ာ" and currUnit == "န" : B
+			currUnit == "န" : I
+		currUnit == "ျ" and nextUnit1 == "ပ" and nextUnit2 == "ေ" : E
+		trigramC == "ု့ခ" : E
+			currUnit == "့" : I
+		trigramC == "ှုလ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "ှ" and prevUnit1 == "ု" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "တ" : B
+			currUnit == "စ" : I
+		prevTag1 == "B" and trigramC == "မဆု" : B
+			currUnit == "ဆ" : I
+		currUnit == "်" and nextUnit1 == "အ" and nextUnit2 == "ု" : E
+			currUnit == "်" : I
+		trigramC == "်အု" : B
+			currUnit == "အ" : I
+		trigramC == "ုလှ" : B
+			currUnit == "လ" : I
+		prevUnit2 == "မ" and prevUnit1 == "ာ" and currUnit == "င" : B
+		prevUnit2 == "ြ" and prevUnit1 == "သ" and currUnit == "ူ" : E
+		currUnit == "့" and nextUnit1 == "တ" and nextUnit2 == "ိ" : E
+			currUnit == "့" : I
+		trigramC == "့တိ" : B
+			currUnit == "တ" : I
+		trigramC == "ာကက" : E
+			currUnit == "က" : I
+		currUnit == "ေ" and nextUnit1 == "ရ" and nextUnit2 == "မ" : E
+		trigramC == "မလု" : B
+			currUnit == "လ" : I
+		prevUnit2 == "တ" and prevUnit1 == "ိ" and currUnit == "ယ" : E
+			currUnit == "ယ" : I
+		currUnit == "ံ" and nextUnit1 == "စ" and nextUnit2 == "ေ" : E
+			currUnit == "ံ" : I
+		prevTag1 == "B" and trigramC == "ကလဲ" : B
+			currUnit == "လ" : I
+		trigramC == "ဲပေ" : B
+			currUnit == "ပ" : I
+		currUnit == "့" and nextUnit1 == "ဟ" and nextUnit2 == "ေ" : E
+			currUnit == "့" : I
+		trigramC == "့ဟေ" : B
+			currUnit == "ဟ" : I
+		trigramC == "ှုရ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "ှ" and prevUnit1 == "ု" and currUnit == "ရ" : B
+			currUnit == "ရ" : I
+		trigramC == "ံးည" : E
+		prevUnit2 == "ံ" and prevUnit1 == "း" and currUnit == "ည" : B
+		currUnit == "ာ" and nextUnit1 == "စ" and nextUnit2 == "ရ" : E
+			currUnit == "ာ" : I
+		currUnit == "ေ" and nextUnit1 == "ရ" and nextUnit2 == "င" : E
+			currUnit == "ေ" : I
+		trigramC == "ေရင" : B
+			currUnit == "ရ" : I
+		currUnit == "တ" and nextUnit1 == "က" and nextUnit2 == "္" : B
+			currUnit == "တ" : I
+		currUnit == "ဲ" and nextUnit1 == "ပ" and nextUnit2 == "ေ" : E
+			currUnit == "ဲ" : I
+		currUnit == "မ" and nextUnit1 == "လ" and nextUnit2 == "ဲ" : B
+			currUnit == "မ" : I
+				prevUnit1 == "်" : S
+		trigramC == "ုနက" : E
+			currUnit == "န" : I
+		currUnit == "်" and nextUnit1 == "ရ" and nextUnit2 == "ရ" : E
+		prevTag1 == "B" and trigramC == "မပူ" : B
+			currUnit == "ပ" : I
+		prevTag1 == "B" and trigramC == "မကြ" : B
+			currUnit == "က" : I
+		trigramC == "ောခ" : E
+			currUnit == "ာ" : I
+		prevTag1 == "B" and trigramC == "မတည" : B
+			currUnit == "တ" : I
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "ရ" : B
+			currUnit == "စ" : I
+		nextTag1 == "E" and bigramL == "ေ့" : E
+			currUnit == "့" : I
+		currUnit == "း" and nextType1 == "MP" : E
+			currUnit == "း" : I
+		trigramC == "ဂါန" : E
+		trigramC == "ါနေ" : B
+		nextBigram == "ရ။" : E
+		nextTag1 == "E" and bigramL == "ါမ" : B
+		bigramR == "်၇" : E
+		currUnit == "ာ" and nextUnit1 == "ဝ" and nextUnit2 == "င" : E
+			currUnit == "ာ" : I
+		trigramC == "ာဝင" : B
+			currUnit == "ဝ" : I
+		trigramC == "းပစ" : B
+			currUnit == "ပ" : I
+		bigramR == "ျထ" : E
+			currUnit == "ျ" : I
+		trigramC == "ဲ့က" : E
+			currUnit == "့" : I
+		prevUnit2 == "ဲ" and prevUnit1 == "့" and currUnit == "က" : B
+			currUnit == "က" : I
+		trigramC == "ခဏန" : E
+			currUnit == "ဏ" : I
+		nextTag1 == "E" and bigramL == "ဲ့" : E
+			currUnit == "့" : I
+		prevTag1 == "B" and trigramC == "မဆင" : B
+			currUnit == "ဆ" : I
+		currUnit == "ြ" and nextUnit1 == "သ" and nextUnit2 == "ည" : E
+		currUnit == "်" and nextUnit1 == "ရ" and nextUnit2 == "တ" : E
+			currUnit == "်" : I
+		currUnit == "း" and nextUnit1 == "ပ" and nextUnit2 == "စ" : E
+			currUnit == "း" : I
+		prevUnit2 == "စ" and prevUnit1 == "ရ" and currUnit == "ာ" : E
+			currUnit == "ာ" : I
+		trigramC == "ါနဲ" : B
+			currUnit == "န" : I
+		trigramC == "ျာစ" : E
+			currUnit == "ာ" : I
+		currUnit == "့" and nextUnit1 == "သ" and nextUnit2 == "စ" : E
+		trigramC == "့သစ" : B
+		currUnit == "့" and nextUnit1 == "ဆ" and nextUnit2 == "ရ" : E
+		prevTag1 == "I" and trigramC == "စာစ" : E
+			currUnit == "ာ" : I
+		trigramC == "ူတိ" : B
+			currUnit == "တ" : I
+		currUnit == "သ" and nextUnit1 == "ာ" and nextUnit2 == "ယ" : B
+			currUnit == "သ" : I
+		trigramC == "ဏနေ" : B
+			currUnit == "န" : I
+		trigramC == "စထွ" : B
+		prevUnit2 == "ဲ" and prevUnit1 == "့" and currUnit == "ပ" : B
+			currUnit == "ပ" : I
+		trigramC == "ီဝက" : B
+			currUnit == "ဝ" : I
+		currUnit == "ှ" and nextUnit1 == "တ" and nextUnit2 == "ေ" : E
+		trigramC == "ှတေ" : B
+		prevUnit2 == "ံ" and prevUnit1 == "သ" and currUnit == "ူ" : E
+			currUnit == "ူ" : I
+		trigramC == "စေမ" : E
+		trigramC == "ေမည" : B
+		trigramC == "့လက" : B
+			currUnit == "လ" : I
+		currUnit == "်" and nextUnit1 == "တ" and nextUnit2 == "ခ" : E
+			currUnit == "်" : I
+		currUnit == "ါ" and nextUnit1 == "တ" and nextUnit2 == "ေ" : E
+			currUnit == "ါ" : I
+		trigramC == "ါတေ" : B
+			currUnit == "တ" : I
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "ခ" : B
+			currUnit == "စ" : I
+		prevTag1 == "B" and trigramC == "ဘာက" : E
+			currUnit == "ာ" : I
+		currUnit == "့" and nextUnit1 == "ဟ" and nextUnit2 == "ာ" : E
+			currUnit == "့" : I
+		trigramC == "့ဟာ" : B
+			currUnit == "ဟ" : I
+		trigramC == "စီဝ" : E
+		prevUnit2 == "စ" and prevUnit1 == "ီ" and currUnit == "ဝ" : B
+		nextBigram == "ကဏ" : E
+			currUnit == "း" : I
+		bigramR == "ကဏ" : B
+			currUnit == "က" : I
+		currUnit == "ာ" and nextUnit1 == "ဆ" and nextUnit2 == "ည" : E
+			currUnit == "ာ" : I
+		trigramC == "ာဆည" : B
+			currUnit == "ဆ" : I
+		trigramC == "ကနာ" : B
+		trigramC == "်ရေ" : B
+			currUnit == "ရ" : I
+		trigramC == "ေ့သ" : E
+			currUnit == "့" : I
+		prevUnit2 == "ေ" and prevUnit1 == "့" and currUnit == "သ" : B
+			currUnit == "သ" : I
+		trigramC == "ုစီ" : B
+			currUnit == "စ" : I
+		prevUnit2 == "ိ" and prevUnit1 == "သ" and currUnit == "ူ" : E
+			currUnit == "ူ" : I
+		currUnit == "ဒ" and nextUnit1 == "ေ" and nextUnit2 == "သ" : B
+			currUnit == "ဒ" : I
+		currUnit == "့" and nextUnit1 == "လ" and nextUnit2 == "က" : E
+			currUnit == "့" : I
+		trigramC == "ယတန" : B
+			currUnit == "တ" : I
+		trigramC == "ီမှ" : B
+			currUnit == "မ" : I
+		trigramC == "ညာခ" : E
+			currUnit == "ာ" : I
+		prevUnit2 == "ည" and prevUnit1 == "ာ" and currUnit == "ခ" : B
+			currUnit == "ခ" : I
+		currUnit == "ာ" and nextUnit1 == "မ" and nextUnit2 == "ဟ" : E
+		prevTag1 == "I" and trigramC == "ရီဝ" : E
+			currUnit == "ီ" : I
+		trigramC == "ေသစ" : E
+			currUnit == "သ" : I
+		trigramC == "ယမြ" : B
+			currUnit == "မ" : I
+		currUnit == "ါ" and nextUnit1 == "မ" and nextUnit2 == "င" : E
+		trigramC == "ါမင" : B
+		trigramC == "ထမထ" : E
+			currUnit == "မ" : I
+		prevUnit2 == "ထ" and prevUnit1 == "မ" and currUnit == "ထ" : B
+			currUnit == "ထ" : I
+		currUnit == "ာ" and nextUnit1 == "အ" and nextUnit2 == "န" : E
+			currUnit == "ာ" : I
+		trigramC == "ာအန" : B
+			currUnit == "အ" : I
+		currUnit == "က" and nextUnit1 == "န" and nextUnit2 == "ေ" : B
+			currUnit == "က" : I
+		prevTag1 == "I" and trigramC == "ဂါရ" : E
+			currUnit == "ါ" : I
+		currUnit == "း" and nextUnit1 == "တ" and nextUnit2 == "ဲ" : E
+		trigramC == "းတဲ" : B
+		currUnit == "လ" and nextUnit1 == "ှ" and nextUnit2 == "ခ" : B
+		currUnit == "က" and nextUnit1 == "ိ" and nextUnit2 == "စ" : B
+			currUnit == "က" : I
+		prevTag1 == "I" and trigramC == "ဟာက" : E
+			currUnit == "ာ" : I
+		currUnit == "ေ" and nextUnit1 == "လ" and nextUnit2 == "ိ" : E
+			currUnit == "ေ" : I
+		trigramC == "ေလိ" : B
+			currUnit == "လ" : I
+		trigramC == "မာအ" : E
+			currUnit == "ာ" : I
+		prevUnit2 == "မ" and prevUnit1 == "ာ" and currUnit == "အ" : B
+			currUnit == "အ" : I
+		prevUnit2 == "ဘ" and prevUnit1 == "ာ" and currUnit == "က" : B
+			currUnit == "က" : I
+		trigramC == "်တခ" : B
+			currUnit == "တ" : I
+		trigramC == "မအေ" : B
+			currUnit == "အ" : I
+		prevTag1 == "B" and trigramC == "မပြ" : B
+			currUnit == "ပ" : I
+		trigramC == "ကသစ" : B
+			currUnit == "သ" : I
+		trigramC == "ြာအ" : E
+		prevUnit2 == "ြ" and prevUnit1 == "ာ" and currUnit == "အ" : B
+		trigramC == "်မဖ" : S
+		prevUnit2 == "်" and prevUnit1 == "မ" and currUnit == "ဖ" : B
+		prevTag1 == "B" and trigramC == "မခြ" : B
+		prevTag1 == "B" and trigramC == "မစိ" : B
+			currUnit == "စ" : I
+		currUnit == "က" and nextUnit1 == "အ" and nextUnit2 == "ခ" : E
+		trigramC == "ကအခ" : B
+		trigramC == "စေဦ" : E
+			currUnit == "ေ" : I
+		trigramC == "ျာလ" : E
+			currUnit == "ာ" : I
+		currUnit == "ဲ" and nextUnit1 == "က" and nextUnit2 == "ရ" : E
+		trigramC == "ခုအ" : E
+		prevUnit2 == "ခ" and prevUnit1 == "ု" and currUnit == "အ" : B
+		currUnit == "့" and nextUnit1 == "ဘ" and nextUnit2 == "ဝ" : E
+			currUnit == "့" : I
+		trigramC == "့ဘဝ" : B
+			currUnit == "ဘ" : I
+		prevTag1 == "B" and trigramC == "မနည" : B
+			currUnit == "န" : I
+		trigramC == "တူစ" : E
+		prevUnit2 == "တ" and prevUnit1 == "ူ" and currUnit == "စ" : B
+		currUnit == "အ" and nextUnit1 == "န" and nextUnit2 == "ည" : B
+		trigramC == "မတရ" : B
+			currUnit == "တ" : I
+		nextTag1 == "E" and bigramL == "ေး" : E
+			currUnit == "း" : I
+		currUnit == "ု" and nextUnit1 == "ပ" and nextUnit2 == "စ" : E
+			currUnit == "ု" : I
+		trigramC == "ုပစ" : B
+			currUnit == "ပ" : I
+		prevTag1 == "B" and trigramC == "ကရာ" : B
+			currUnit == "ရ" : I
+		trigramC == "ွေပ" : E
+			currUnit == "ေ" : I
+		currUnit == "ု" and nextUnit1 == "ရ" and nextUnit2 == "ွ" : E
+			currUnit == "ု" : I
+		trigramC == "ုရွ" : B
+			currUnit == "ရ" : I
+		bigramR == "ဓသ" : E
+			currUnit == "ဓ" : I
+		bigramL == "ဓသ" : B
+			currUnit == "သ" : I
+		currUnit == "ံ" and nextUnit1 == "ဘ" and nextUnit2 == "ု" : E
+			currUnit == "ံ" : I
+		trigramC == "ံဘု" : B
+			currUnit == "ဘ" : I
+		currUnit == "ီ" and nextUnit1 == "ခ" and nextUnit2 == "ေ" : E
+			currUnit == "ီ" : I
+		trigramC == "ီခေ" : B
+			currUnit == "ခ" : I
+		prevUnit2 == "ျ" and prevUnit1 == "ာ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		trigramC == "လဲခ" : E
+			currUnit == "ဲ" : I
+		prevUnit2 == "လ" and prevUnit1 == "ဲ" and currUnit == "ခ" : B
+			currUnit == "ခ" : I
+		prevTag1 == "I" and trigramC == "သေလ" : E
+			currUnit == "ေ" : I
+		trigramC == "ဆီသ" : E
+			currUnit == "ီ" : I
+		prevUnit2 == "ဆ" and prevUnit1 == "ီ" and currUnit == "သ" : B
+			currUnit == "သ" : I
+		prevTag1 == "B" and bigramR == "ါန" : E
+		trigramC == "သစံ" : B
+		trigramC == "ှတမ" : E
+		trigramC == "းဘူ" : B
+			currUnit == "ဘ" : I
+		currUnit == "ဒ" and nextUnit1 == "ြ" and nextUnit2 == "ပ" : B
+			currUnit == "ဒ" : I
+		trigramC == "ဉ်လ" : E
+			currUnit == "်" : I
+		prevUnit2 == "ဉ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		prevUnit2 == "ှ" and prevUnit1 == "တ" and currUnit == "မ" : B
+			currUnit == "မ" : I
+		prevTag1 == "I" and trigramC == "တာတ" : E
+			currUnit == "ာ" : I
+		currUnit == "ဲ" and nextUnit1 == "က" and nextUnit2 == "စ" : E
+			currUnit == "ဲ" : I
+		trigramC == "ရမှ" : B
+			currUnit == "မ" : I
+		trigramC == "ဝံင" : E
+		trigramC == "ံငယ" : B
+		trigramC == "ူးဟ" : E
+			currUnit == "း" : I
+		prevUnit2 == "ူ" and prevUnit1 == "း" and currUnit == "ဟ" : B
+			currUnit == "ဟ" : I
+		prevUnit2 == "အ" and prevUnit1 == "ခ" and currUnit == "ဲ" : E
+		trigramC == "ေဟစ" : E
+			currUnit == "ဟ" : I
+		trigramC == "ဟစန" : B
+			currUnit == "စ" : I
+		trigramC == "ကညစ" : B
+		currUnit == "ဘ" and nextUnit1 == "မ" and nextUnit2 == "ျ" : E
+		trigramC == "ဘမျ" : B
+		currUnit == "်" and nextUnit1 == "ရ" and nextUnit2 == "လ" : E
+			currUnit == "်" : I
+		trigramC == "တဆမ" : E
+		trigramC == "ဆမှ" : B
+		currUnit == "ီ" and nextUnit1 == "ဆ" and nextUnit2 == "ွ" : E
+		trigramC == "ီဆွ" : B
+		trigramC == "ီဝတ" : B
+		trigramC == "ူဆခ" : E
+			currUnit == "ဆ" : I
+		prevUnit2 == "ူ" and prevUnit1 == "ဆ" and currUnit == "ခ" : B
+			currUnit == "ခ" : I
+		currUnit == "့" and nextUnit1 == "ဖ" and nextUnit2 == "ူ" : E
+		trigramC == "့ဖူ" : B
+		currUnit == "ေ" and nextUnit1 == "ဥ" and nextUnit2 == "တ" : E
+		trigramC == "ေဥတ" : B
+		prevUnit2 == "ထ" and prevUnit1 == "ပ" and currUnit == "်" : E
+			currUnit == "်" : I
+		trigramC == "ြံက" : E
+			currUnit == "ံ" : I
+		prevUnit2 == "ြ" and prevUnit1 == "ံ" and currUnit == "က" : B
+			currUnit == "က" : I
+		currUnit == "ဲ" and nextUnit1 == "က" and nextUnit2 == "မ" : E
+			currUnit == "ဲ" : I
+		trigramC == "ွေဝ" : E
+			currUnit == "ေ" : I
+		currUnit == "း" and nextUnit1 == "လ" and nextUnit2 == "ူ" : E
+			currUnit == "း" : I
+		nextTag1 == "E" and bigramL == "ကည" : B
+			currUnit == "ည" : I
+		prevUnit2 == "ဟ" and prevUnit1 == "ာ" and currUnit == "က" : B
+			currUnit == "က" : I
+		trigramC == "တုဒ" : E
+			currUnit == "ု" : I
+		prevTag1 == "I" and trigramC == "သနပ" : E
+			currUnit == "န" : I
+		trigramC == "ခံထ" : E
+			currUnit == "ံ" : I
+		trigramC == "ဲကစ" : B
+			currUnit == "က" : I
+		currUnit == "လ" and nextUnit1 == "ူ" and nextUnit2 == "မ" : B
+			currUnit == "လ" : I
+		currUnit == "ံ" and nextUnit1 == "သ" and nextUnit2 == "ူ" : E
+			currUnit == "ံ" : I
+		trigramC == "ံသူ" : B
+			currUnit == "သ" : I
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "သ" : B
+			currUnit == "စ" : I
+		trigramC == "ာရလ" : E
+			currUnit == "ရ" : I
+		prevTag1 == "I" and trigramC == "စုဝ" : E
+			currUnit == "ု" : I
+		trigramC == "ပေဗ" : E
+			currUnit == "ေ" : I
+		trigramC == "ေဗိ" : B
+			currUnit == "ဗ" : I
+		currUnit == "ဈ" and prevType1 == "MV" : B
+			currUnit == "ဈ" : I
+		prevTag1 == "B" and trigramC == "စဖွ" : B
+			currUnit == "ဖ" : I
+		prevUnit2 == "ဿ" and currUnit == "ာ" : E
+			currUnit == "ာ" : I
+		currUnit == "အ" and nextUnit1 == "လ" and nextUnit2 == "ယ" : B
+		currUnit == "့" and nextUnit1 == "စ" and nextUnit2 == "ံ" : E
+		trigramC == "့စံ" : B
+		trigramC == "ကနူ" : B
+			currUnit == "န" : I
+		currUnit == "ဲ" and nextUnit1 == "န" and nextUnit2 == "ံ" : E
+			currUnit == "ဲ" : I
+		trigramC == "ဲနံ" : B
+			currUnit == "န" : I
+		currUnit == "သ" and nextUnit1 == "ူ" and nextUnit2 == "င" : B
+			currUnit == "သ" : I
+		currUnit == "ိ" and nextUnit1 == "ပ" and nextUnit2 == "ိ" : E
+		trigramC == "ိပိ" : B
+		currUnit == "ာ" and nextUnit1 == "ဝ" and nextUnit2 == "ါ" : E
+			currUnit == "ာ" : I
+		trigramC == "ာဝါ" : B
+			currUnit == "ဝ" : I
+		currUnit == "သ" and nextUnit1 == "ပ" and nextUnit2 == "ိ" : B
+		trigramC == "ျီဝ" : E
+			currUnit == "ီ" : I
+		prevTag1 == "B" and trigramC == "ဒါတ" : E
+		currUnit == "လ" and nextUnit1 == "ူ" and nextUnit2 == "င" : B
+		prevTag1 == "B" and trigramC == "မကူ" : B
+		nextUnit1 == "၏" : E
+		currUnit == "၀" and nextUnit1 == "၃" and nextUnit2 == "၂" : E
+		currUnit == "ာ" and nextUnit1 == "က" and nextUnit2 == "ယ" : E
+		nextBigram == "၍၊" : E
+		currUnit == "်" and nextUnit1 == "က" and nextUnit2 == "အ" : E
+		currUnit == "တ" and nextUnit1 == "ာ" and nextUnit2 == "ဈ" : B
+		currUnit == "တ" and nextUnit1 == "ု" and nextUnit2 == "န" : B
+			currUnit == "တ" : I
+		bigramR == "ဝဆ" : E
+			currUnit == "ဝ" : I
+		trigramC == "ဝဆေ" : B
+			currUnit == "ဆ" : I
+		currUnit == "ု" and nextUnit1 == "ဌ" and nextUnit2 == "ာ" : E
+			currUnit == "ု" : I
+		trigramC == "ုဌာ" : B
+			currUnit == "ဌ" : I
+		trigramC == "ားင" : E
+			currUnit == "း" : I
+		prevUnit2 == "ာ" and prevUnit1 == "း" and currUnit == "င" : B
+			currUnit == "င" : I
+		prevTag1 == "B" and trigramC == "ကနေ" : B
+			currUnit == "န" : I
+		currUnit == "း" and nextUnit1 == "စ" and nextUnit2 == "တ" : E
+			currUnit == "း" : I
+		currUnit == "ု" and nextUnit1 == "ခ" and nextUnit2 == "ျ" : E
+			currUnit == "ု" : I
+		currUnit == "ဲ" and nextUnit1 == "န" and nextUnit2 == "ေ" : E
+			currUnit == "ဲ" : I
+		trigramC == "ခံပ" : E
+			currUnit == "ံ" : I
+		prevTag1 == "B" and trigramC == "ကလယ" : B
+			currUnit == "လ" : I
+		prevTag1 == "I" and trigramC == "ဆံရ" : E
+		trigramC == "တုသ" : E
+		prevUnit2 == "တ" and prevUnit1 == "ု" and currUnit == "သ" : B
+		trigramC == "ါတင" : B
+			currUnit == "တ" : I
+		trigramC == "ါသထ" : E
+			currUnit == "သ" : I
+		trigramC == "သထွ" : B
+			currUnit == "ထ" : I
+		currUnit == "ပ" and nextUnit1 == "ု" and nextUnit2 == "ဂ" : B
+			currUnit == "ပ" : I
+		currUnit == "ာ" and nextUnit1 == "ပ" and nextUnit2 == "စ" : E
+			currUnit == "ာ" : I
+		trigramC == "ာပစ" : B
+			currUnit == "ပ" : I
+		currUnit == "ေ" and nextUnit1 == "သ" and nextUnit2 == "ွ" : E
+			currUnit == "ေ" : I
+		trigramC == "ေသွ" : B
+			currUnit == "သ" : I
+		currUnit == "ပ" and nextUnit1 == "ါ" and nextUnit2 == "ခ" : B
+			currUnit == "ပ" : I
+		trigramC == "ှုအ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "ှ" and prevUnit1 == "ု" and currUnit == "အ" : B
+			currUnit == "အ" : I
+		trigramC == "န်ဥ" : E
+			currUnit == "်" : I
+		trigramC == "်ဥယ" : B
+			currUnit == "ဥ" : I
+		trigramC == "စုလ" : E
+			currUnit == "ု" : I
+		prevUnit2 == "စ" and prevUnit1 == "ု" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		prevTag1 == "I" and trigramC == "စုစ" : E
+			currUnit == "ု" : I
+		currUnit == "ဒ" and nextUnit2 == "ှ" : E
+			currUnit == "ဒ" : I
+		trigramC == "ဒရှ" : B
+			currUnit == "ရ" : I
+		currUnit == "ဲ" and nextUnit1 == "ဖ" and nextUnit2 == "ြ" : E
+			currUnit == "ဲ" : I
+		trigramC == "ဲဖြ" : B
+			currUnit == "ဖ" : I
+		trigramC == "ဲတွ" : B
+			currUnit == "တ" : I
+		trigramC == "ပ်ဒ" : E
+			currUnit == "်" : I
+		trigramC == "ရလိ" : B
+		prevUnit2 == "စ" and prevUnit1 == "ံ" and currUnit == "လ" : B
+			currUnit == "လ" : I
+		prevUnit2 == "ု" and prevUnit1 == "ထ" and currUnit == "ဲ" : E
+		currUnit == "သ" and nextUnit1 == "ရ" and nextUnit2 == "ု" : B
+		trigramC == "ာလရ" : E
+		prevUnit2 == "ာ" and prevUnit1 == "လ" and currUnit == "ရ" : B
+		currUnit == "ဥ" and nextUnit1 == "ခ" and nextUnit2 == "ေ" : E
+		trigramC == "ဥခေ" : B
+		trigramC == "သစိ" : B
+		trigramC == "နပည" : B
+		currUnit == "ူ" and nextUnit1 == "အ" and nextUnit2 == "ာ" : E
+			currUnit == "ူ" : I
+		trigramC == "ူအာ" : B
+			currUnit == "အ" : I
+		prevTag1 == "B" and trigramC == "ကာစ" : E
+			currUnit == "ာ" : I
+		prevTag1 == "B" and trigramC == "မရွ" : B
+			currUnit == "ရ" : I
+		trigramC == "တံလ" : E
+		trigramC == "ံလက" : B
+			currUnit == "လ" : I
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "ပ" : B
+			currUnit == "စ" : I
+		currUnit == "ီ" and nextUnit1 == "ထ" and nextUnit2 == "ေ" : E
+			currUnit == "ီ" : I
+		trigramC == "ီထေ" : B
+			currUnit == "ထ" : I
+		trigramC == "့်ဒ" : E
+		currUnit == "့" and nextUnit1 == "န" and nextUnit2 == "ာ" : E
+			currUnit == "့" : I
+		trigramC == "့နာ" : B
+			currUnit == "န" : I
+		trigramC == "ရဲန" : E
+		trigramC == "ိကထ" : E
+			currUnit == "က" : I
+		trigramC == "ကထာ" : B
+			currUnit == "ထ" : I
+		prevTag1 == "I" and trigramC == "ဖီလ" : E
+		trigramC == "ျာအ" : E
+			currUnit == "ာ" : I
+		prevUnit2 == "ျ" and prevUnit1 == "ာ" and currUnit == "အ" : B
+			currUnit == "အ" : I
+		bigramR == "ာဈ" : E
+			currUnit == "ာ" : I
+		trigramC == "လဲပ" : E
+		prevUnit2 == "လ" and prevUnit1 == "ဲ" and currUnit == "ပ" : B
+		currUnit == "ျ" and nextUnit1 == "င" and nextUnit2 == "ွ" : E
+			currUnit == "ျ" : I
+		trigramC == "ျငွ" : B
+			currUnit == "င" : I
+		bigramR == "လအ" : E
+		bigramL == "လအ" : B
+		trigramC == "အမက" : E
+			currUnit == "မ" : I
+		trigramC == "ဖီက" : E
+		prevUnit2 == "ဖ" and prevUnit1 == "ီ" and currUnit == "က" : B
+		prevUnit2 == "၊" and prevUnit1 == "ခ" and currUnit == "ဏ" : E
+			currUnit == "ဏ" : I
+		trigramC == "ုံဗ" : E
+		trigramC == "ံဗဟ" : B
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "ဖ" : B
+		trigramC == "မညတ" : E
+		trigramC == "ညတိ" : B
+		trigramC == "ကဲက" : E
+		trigramC == "ဲကဲ" : B
+		prevUnit2 == "လ" and prevUnit1 == "ဖ" and currUnit == "ာ" : E
+		currUnit == "ဲ" and nextUnit1 == "ပ" and nextUnit2 == "စ" : E
+		trigramC == "ဲပစ" : B
+		currUnit == "့" and nextUnit1 == "စ" and nextUnit2 == "မ" : E
+		trigramC == "့စမ" : B
+		currUnit == "ျ" and nextUnit1 == "ပ" and nextUnit2 == "စ" : E
+		prevTag1 == "B" and trigramC == "လာသ" : E
+		currUnit == "း" and nextUnit1 == "ဘ" and nextUnit2 == "ယ" : E
+		currUnit == "ါ" and nextUnit1 == "တ" and nextUnit2 == "တ" : E
+		trigramC == "ျပစ" : B
+		currUnit == "လ" and nextUnit1 == "ဲ" and nextUnit2 == "င" : B
+		prevUnit2 == "း" and prevUnit1 == "က" and currUnit == "ဆ" : B
+		prevUnit2 == "လ" and prevUnit1 == "ာ" and currUnit == "သ" : B
+		currUnit == "စ" and nextUnit1 == "ေ" and nextUnit2 == "ဘ" : B
+		currUnit == "လ" and nextUnit1 == "ူ" and nextUnit2 == "သ" : B
+		currUnit == "မ" and nextUnit1 == "ီ" and nextUnit2 == "၁" : B
+		currUnit == "၁" and nextUnit1 == "ဝ" and nextUnit2 == "၂" : B
+		currUnit == "မ" and nextUnit1 == "ရ" and nextUnit2 == "ဘ" : S
+	currTag == "S" : S
+		nextTag1 == "I" : I
+		currUnit == "ံ" and nextType1 == "MC" : E
+			currUnit == "ံ" : I
+				currType == "MG" : S
+		nextTag1 == "S" and nextTag2 == "I" : I
+		currUnit == "လ" and prevTag1 == "I" : E
+			currUnit == "လ" : I
+		nextUnit1 == "ံ" : I
+		currUnit == "သ" and nextUnit2 == "ာ" : I
+		currUnit == "တ" : I
+			currUnit == "တ" : E
+				currType == "MC" : S
+		currType == "MD" and prevType1 == "MD" : E
+		prevUnit1 == "္" : E
+			prevUnit1 == "္" : I
+		currUnit == "သ" and nextTag1 == "B" : E
+		prevUnit1 == "ူ" and prevTag1 == "I" : E
+		currUnit == "ဆ" and prevType1 == "MV" : E
+		currUnit == "ပ" and prevTag1 == "I" : E
+		prevUnit1 == "‌" : I
+		bigramL == "ုံ" : E
+		bigramR == "ဝက" : I
+		currUnit == "ဝ" and prevTag1 == "I" : E
+		prevUnit2 == "လ" and currUnit == "ပ" : E
+		prevBigram == "သု" : E
+		bigramR == "ဝမ" : E

@@ -1,0 +1,2508 @@
+True : part
+	tag == "abb" : abb
+		prevTag1 == "punc" and suffixL2 == "<SFX>" : fw
+	tag == "adj" : adj
+		nextWord1 == "မှာ" : pron
+			nextTag1 == "ppm" : adj
+				wordShape == "U" : v
+					nextWord1 == "မှာ" : n
+		nextTag1 == "ppm" and prefixL2 == "ဒီ" : pron
+			nextTag1 == "ppm" : adj
+				suffixL3 == "<SFX>" : n
+		nextTag1 == "ppm" and prefixL2 == "ဘယ" : pron
+		nextWord1 == "သို့" : pron
+			nextTag1 == "ppm" : adj
+				prevWord1 == "အခြား" : n
+		nextWord1 == "လို" : pron
+			nextTag1 == "v" and wordShape == "U" : adj
+				nextWord1 == "လို" and nextWord2 == "ချင်" : n
+		word == "ဘယ်" and nextTag1 == "part" : pron
+			nextTag1 == "part" and prefixL2 == "ဘယ" : adj
+				prevWord1 == "ပဲ" : adv
+		word == "ဒီ" and nextTag1 == "part" : pron
+			suffixL3 == "<SFX>" : adj
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "အားလုံး" : pron
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : n
+				prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "အားလုံး" : adj
+		nextTag1 == "v" and prefixL2 == "ပိ" : adv
+			nextTag1 == "v" and wordShape == "U" : adj
+		nextWord1 == "ကဲ့သို့" : pron
+		word == "ဘယ်" and nextWord1 == "ဘက်" : n
+			nextTag2 == "ppm" : adj
+		word == "ဘယ်" and nextTag1 == "v" : pron
+			nextTag1 == "v" and wordShape == "U" : adj
+				prefixL3 == "ဘယ်" : adv
+		prevTag1 == "adv" and nextTag1 == "ppm" : v
+			nextTag1 == "ppm" : adj
+		word == "အထူး" and nextTag1 == "v" : adv
+			nextTag1 == "v" and wordShape == "U" : adj
+		word == "ပြည့်" and nextTag1 == "part" : v
+			nextTag1 == "part" and prefixL2 == "ပြ" : adj
+		nextWord1 == "ဘူး" : v
+			prevTag1 == "part" and nextTag1 == "part" : adj
+		prevTag1 == "punc" and word == "အားလုံး" : pron
+			prevTag1 == "punc" and suffixL3 == "ုံး" : n
+		word == "ဤ" and nextTag1 == "ppm" : pron
+		nextWord1 == "ထက်" : pron
+			wordShape == "U" : adj
+		word == "သီးခြား" and nextTag1 == "v" : adv
+			nextTag1 == "v" and wordShape == "U" : adj
+		word == "မြန်" and nextTag1 == "part" : v
+			word == "မြန်" and suffixL3 == "ြန်" : adj
+				prefixL2 == "မြ" : adv
+		word == "ထို" and nextWord1 == "မှ" : pron
+		prevTag1 == "v" and word == "ကောင်း" and nextTag1 == "v" : part
+		prevTag1 == "ppm" and word == "အားလုံး" : pron
+			prevTag1 == "ppm" and wordShape == "U" : n
+				prevTag1 == "ppm" and word == "အားလုံး" : adj
+		prevWord1 == "<BOS>" and nextWord1 == "က" : pron
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : n
+		prevWord1 == "အလွန်" and nextWord1 == "ပါ" : v
+			nextTag2 == "ppm" : adj
+		word == "အကြီးဆုံး" and nextWord1 == "ဖြစ်" : n
+			nextTag1 == "v" and wordShape == "U" : adj
+		prevWord1 == "သား" and word == "ငယ်" : part
+			nextTag2 == "ppm" : adj
+		nextWord1 == "ရောက်" : adv
+			nextTag1 == "v" and wordShape == "U" : n
+		prevTag1 == "conj" and word == "အားလုံး" : pron
+			prevTag1 == "conj" : n
+				word == "အားလုံး" and suffixL3 == "ုံး" : adj
+		word == "ထင်ရှား" and nextWord1 == "သည်" : v
+			nextTag1 == "ppm" : adj
+		nextTag1 == "v" and prefixL2 == "ကိ" : n
+			nextTag1 == "v" and wordShape == "U" : adj
+		word == "အထူး" and nextTag1 == "part" : adv
+		prevWord1 == "လည်း" and nextWord1 == "တယ်" : v
+			nextTag1 == "ppm" : adj
+		nextWord1 == "တာ" and nextWord2 == "ပဲ" : v
+			nextWord1 == "တာ" and nextWord2 == "ပဲ" : adj
+		prevWord1 == "မျက်နှာ" : v
+		prevTag1 == "ppm" and word == "သစ်" : n
+		nextWord1 == "တယ်" and nextWord2 == "နော်" : v
+		prevTag2 == "n" and prevTag1 == "n" and word == "ထင်ရှား" : v
+		prevTag1 == "punc" and suffixL2 == "စ်" : n
+		word == "အကောင်းဆုံး" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : adj
+		word == "နိုင်ငံတကာ" and nextWord1 == "နှင့်" : n
+		prevTag1 == "conj" and word == "အများကြီး" and nextTag1 == "v" : adv
+		prevWord1 == "ခင်ဗျား" and word == "ပို" : adv
+		prevWord1 == "<BOS>" and word == "ဤ" and nextWord1 == "ကား" : pron
+		word == "အချို့" and nextWord1 == "ကား" : pron
+		word == "လျှို့ဝှက်" and nextTag1 == "part" : v
+		prevWord2 == "သိပ်" : v
+			prevTag1 == "part" and nextTag1 == "part" : adj
+		prevTag2 == "tn" and prevTag1 == "part" and word == "ပြည့်" : v
+		prevWord1 == "ပို" and nextWord1 == "တာ" : v
+		word == "မြင့်" and nextWord2 == "တယ်" : v
+		prevWord1 == "ပဲ" and word == "ကောင်း" and nextWord1 == "မယ်" : v
+		prevWord1 == "ကို" and nextWord1 == "တယ်" : v
+		word == "လှပ" and nextTag1 == "part" and nextTag2 == "punc" : v
+		prevTag1 == "n" and word == "သန့်ရှင်း" and nextTag1 == "part" : v
+		word == "ကျော်ကြား" and nextWord2 == "။" : v
+		nextWord1 == "အုပ်ချုပ်ခွင့်" : n
+		prevWord1 == "အပိုင်း" : n
+		nextWord1 == "ဖြစ်" and nextWord2 == "သည်" : n
+			nextTag1 == "v" and wordShape == "U" : adj
+		prevWord1 == "ငှက်" and word == "ငယ်" : part
+		word == "အသီးသီး" and nextTag1 == "v" : adv
+			nextTag1 == "v" and wordShape == "U" : adj
+		prevWord1 == "ကို" and nextWord1 == "စား" : adv
+		word == "ဤ" and nextWord1 == "မျှ" : pron
+		prevTag1 == "conj" and word == "အချို့" and nextTag1 == "ppm" : pron
+		prevTag1 == "v" and suffixL3 == "ှား" : v
+			prevTag1 == "v" and wordShape == "U" : adj
+		nextWord1 == "မလား" and nextWord2 == "။" : v
+		prevTag2 == "v" and prevTag1 == "part" and word == "ထင်ရှား" : v
+		prevWord2 == "က" and word == "ကျယ်" : v
+		prevWord2 == "နေ့" and prevWord1 == "ရာသီဥတု" : v
+		prevWord1 == "သိပ်" and nextWord1 == "ပါ" : v
+		prevTag2 == "n" and prevTag1 == "ppm" and word == "ဆိုးဝါး" : v
+		prevWord1 == "ကျော်" : v
+		word == "အားလုံး" and nextWord1 == "ဟာ" : n
+		word == "နိုင်ငံတကာ" and nextTag1 == "ppm" : n
+		word == "တခြား" and nextWord1 == "လူ" and nextWord2 == "ကို" : n
+		word == "ထူးခြား" and nextWord1 == "စွာ" : adv
+		nextTag1 == "v" and prefixL2 == "တူ" : adv
+		prevTag1 == "punc" and word == "အချို့" and nextTag1 == "ppm" : pron
+		word == "ဒီ" and nextWord1 == "အထဲ" : pron
+		prevTag1 == "ppm" and word == "အချို့" and nextTag1 == "ppm" : pron
+		prevWord1 == "လည်း" and word == "အားလုံး" : pron
+		word == "ထို" and nextTag1 == "conj" : pron
+		nextWord1 == "ကြ" and nextWord2 == "ပါ" : v
+		prevWord1 == "ရင်" and nextWord1 == "မယ်" : v
+			nextTag1 == "ppm" : adj
+		nextWord1 == "လာ" and nextWord2 == "ပြီ" : v
+		word == "ဈေးကြီး" and nextTag1 == "part" and nextTag2 == "part" : v
+		prevWord1 == "တဲ့" and word == "ယဉ်ကျေး" : v
+		word == "ပေါ" and nextWord1 == "ပါ" : v
+		prevWord2 == "က" and prevWord1 == "မ" and word == "ကောင်း" : v
+		nextWord1 == "သွား" and nextWord2 == "တယ်" : v
+			nextTag1 == "v" and wordShape == "U" : adj
+		word == "ထင်ရှား" and nextWord2 == "လာ" : v
+		word == "များပြား" and nextWord2 == "တယ်" : v
+		word == "အရေးပါ" and nextWord1 == "လာ" : v
+		word == "ကြည်လင်" and nextTag1 == "part" and nextTag2 == "part" : v
+		nextWord1 == "လာ" and nextWord2 == "လို့" : v
+		word == "မြန်" and nextWord1 == "တယ်" and nextWord2 == "။" : v
+			nextTag1 == "ppm" : adj
+		word == "မြင့်" and nextWord1 == "တဲ့" : v
+		prevTag1 == "part" and word == "ထင်ရှား" and nextTag1 == "v" : v
+		word == "ဈေးကြီး" and nextTag1 == "part" and nextTag2 == "ppm" : v
+			nextTag2 == "ppm" : adj
+		prevWord1 == "များ" and word == "ပေါများ" : v
+		word == "ကျော်ကြား" and nextTag1 == "part" and nextTag2 == "ppm" : v
+		prevTag1 == "adv" and word == "အရေးပါ" and nextTag1 == "part" : v
+		prevWord2 == "က" and word == "ကြီးမား" : v
+		prevWord1 == "စိတ်" : v
+		word == "လှပ" and nextWord2 == "တယ်" : v
+		word == "ထို" and nextWord1 == "မင်းဆက်" : n
+		prevWord1 == "ရင်" and word == "တခြား" : n
+		nextTag1 == "ppm" and prefixL2 == "အန" : n
+		word == "အောက်ပါ" and nextTag1 == "ppm" : n
+		prevWord1 == "သခင်" : n
+		word == "အခြား" and nextWord1 == "လူ" and nextWord2 == "တွေ" : n
+		word == "ပထမဆုံး" and nextWord1 == "တွေ့" : n
+			word == "ပထမဆုံး" and nextWord1 == "တွေ့" and nextWord2 == "တဲ့" : adv
+		prevTag1 == "conj" and suffixL3 == "သစ်" : n
+		prevWord2 == "တအား" : part
+		prevWord1 == "ချောင်း" and word == "ငယ်" : part
+		prevWord1 == "အကောင်" and word == "ငယ်" : part
+		prevWord1 == "ကလေး" and nextWord1 == "များ" : part
+		prevWord2 == "က" and word == "ပို" : adv
+			prevWord2 == "က" and word == "ပို" : adj
+		word == "ရိုးရိုး" and nextTag1 == "part" : adv
+		nextWord1 == "ကွာ" : adv
+		word == "အများကြီး" and nextTag1 == "v" and nextTag2 == "v" : adv
+			nextTag1 == "v" and wordShape == "U" : adj
+		prevWord1 == "သည်" and nextWord1 == "အားဖြင့်" : adv
+		prevWord1 == "တွေ" and nextWord1 == "ဝယ်" : adv
+		prevWord2 == "ဒါပေမဲ့" : adv
+		prevWord1 == "ငယ်" and word == "အသွယ်သွယ်" and nextWord1 == "ဖောက်လုပ်" : adv
+		word == "အထူး" and nextWord2 == "တယ်" : adv
+		prevTag1 == "ppm" and word == "ပိုမို" and nextTag1 == "adv" : adv
+		prevWord1 == "လို့" and nextWord1 == "တောင်" : adv
+		word == "သီးခြား" and nextWord1 == "စီ" : adv
+		prevTag1 == "<BOS_T>" and word == "အခမဲ့" and nextTag1 == "part" : adv
+		prevWord1 == "ဗဟုသုတ" and word == "အများကြီး" and nextWord1 == "တိုး" : adv
+		prevWord1 == "ယာယီ" and word == "အကျိုးတူ" : adv
+		prevWord2 == "<BOS>" and prevWord1 == "ရောင်း" : adv
+		word == "အချိန်ပြည့်" and nextWord1 == "တာဝန်" : adv
+		word == "အများကြီး" and nextWord2 == "ကြ" : adv
+		prevTag1 == "punc" and word == "အများကြီး" : adv
+		prevTag1 == "v" and word == "ချောမွေ့" : adv
+		nextWord2 == "အိပ်ပျော်" : adv
+		word == "သပ်ရပ်" and nextTag1 == "part" and nextTag2 == "v" : adv
+		prevWord2 == "က" and word == "ပီသ" : adv
+		prevTag2 == "part" and prevTag1 == "ppm" and word == "အသီးသီး" : adv
+		nextWord1 == "ကျန်" : adv
+		prevWord1 == "နဲ့" and nextWord1 == "စွာ" : adv
+		nextWord1 == "ခေါ်" and nextWord2 == "လို့" : adv
+		word == "ဒီ" and nextWord1 == "လ" and nextWord2 == "က" : pron
+		prevWord2 == "လေး" and prevWord1 == "က" and word == "ဒီ" : pron
+		prevWord1 == "<BOS>" and word == "ထို" and nextWord1 == "လူ" : pron
+		word == "အားလုံး" and nextWord1 == "ဆို" : pron
+		prevTag1 == "<BOS_T>" and word == "အချို့" and nextTag1 == "ppm" : pron
+		word == "ဒီ" and nextWord1 == "မဂ္ဂဇင်း" : pron
+		prevWord1 == "သည်" and word == "ဘယ်" and nextWord1 == "သောအခါ" : pron
+		word == "ဒီ" and nextWord1 == "အပိုင်း" and nextWord2 == "က" : pron
+		word == "အားလုံး" and nextWord1 == "က" : pron
+			nextTag1 == "ppm" : adj
+				prevTag1 == "part" and word == "အားလုံး" : n
+		word == "ဒီ" and nextWord1 == "ရှပ်အင်္ကျီ" : pron
+		word == "အချို့" and nextWord1 == "ဆို" : pron
+		prevWord1 == "ဟာ" and word == "ဒီ" and nextWord1 == "တစ်" : pron
+		word == "ဆိုးရွား" and nextWord2 == "တယ်" : v
+		nextTag1 == "ppm" and prefixL2 == "ပြ" : v
+		word == "ကောင်း" and nextWord1 == "သလဲ" : v
+		word == "အရေးပါ" and nextTag1 == "ppm" and nextTag2 == "punc" : v
+		prevWord1 == "လောက်" and word == "ရှည်" : v
+		prevTag1 == "ppm" and word == "ရိုးသား" and nextTag1 == "part" : v
+		word == "အရေးပါ" and nextWord2 == "အခန်း" : v
+		prevWord1 == "ရင်" and word == "ကောင်း" and nextWord1 == "ပါ" : v
+		prevWord2 == "နေ့" and word == "နွေး" : v
+		prevTag1 == "conj" and word == "ထင်ရှား" and nextTag1 == "part" : v
+			prevTag2 == "part" and prevTag1 == "conj" : adj
+		word == "လတ်ဆတ်" and nextTag1 == "ppm" : v
+		prevWord1 == "အတော်" : v
+			wordShape == "U" : adj
+		prevWord2 == "ကီလိုမီတာ" and prevWord1 == "၆၁၈၆" and word == "ကျယ်ဝန်း" : v
+		prevWord1 == "မှု" and nextWord1 == "သည်" : v
+		prevWord2 == "ရာသီဥတု" and prevWord1 == "မ" : v
+		word == "ပို" and nextWord1 == "ပါ" : v
+		word == "ထူးခြား" and nextWord1 == "တာ" and nextWord2 == "မ" : v
+		prevWord2 == "နယ်" : v
+		prevTag1 == "n" and word == "တောက်" and nextTag1 == "part" : v
+		prevWord1 == "တွင်" and word == "ထင်ရှား" and nextWord1 == "စွာ" : v
+		prevWord1 == "ပဲ" and nextWord1 == "တယ်" : v
+		prevWord1 == "လေ" and word == "ကြမ်း" : v
+		word == "စိမ်း" and nextWord1 == "နေ" : v
+		prevWord2 == "အဖြစ်" and word == "ကျော်ကြား" : v
+		prevWord2 == "ဖတ်" and word == "ကောင်း" : v
+		prevWord2 == "ရန်အောင်" and word == "ထင်ရှား" : v
+		prevWord2 == "ကြည်ညို" and prevWord1 == "စရာ" : v
+		prevWord1 == "မှာ" and word == "လှပ" and nextWord1 == "သည့်" : v
+		nextWord1 == "အရာရောက်" : v
+			prefixL3 == "အရေ" : adj
+		prevWord1 == "အထူး" and nextWord1 == "တယ်" : v
+		word == "နွေးထွေး" and nextTag1 == "conj" : v
+		prevWord1 == "မ" and word == "ကောင်း" and nextWord1 == "တာ" : v
+			prevTag1 == "part" and nextTag1 == "part" : adj
+		prevTag2 == "v" and prevTag1 == "conj" and word == "ဈေးကြီး" : v
+		prevWord1 == "အားလုံး" and word == "ကောင်း" : v
+		word == "မာ" and nextTag1 == "part" and nextTag2 == "part" : v
+		prevWord2 == "အရပ်" and word == "မြင့်" : v
+		prevWord1 == "လည်း" and word == "ထင်ရှား" : v
+			prevWord1 == "လည်း" and word == "ထင်ရှား" : adj
+		prevWord2 == "ဟာ" and word == "ပြည့်" : v
+		prevTag1 == "n" and word == "ပေါများ" and nextTag1 == "part" : v
+		prevWord1 == "က" and word == "ငယ်" : v
+		prevWord1 == "<BOS>" and word == "အားနည်း" and nextWord1 == "နေ" : v
+		word == "ပြင်း" and nextWord1 == "လို့" : v
+		word == "ကြီးမား" and nextWord1 == "ပါ" : v
+		prevWord1 == "လို့" and word == "ကောင်း" and nextWord1 == "တာ" : v
+		prevWord1 == "ကျန်းမာရေး" and word == "ကောင်း" and nextWord1 == "လား" : v
+		word == "လေးလံ" and nextTag1 == "part" and nextTag2 == "part" : v
+		word == "အေးမြ" and nextWord1 == "တယ်" : v
+		prevTag1 == "part" and suffixL2 == "ှတ" : v
+		prevWord1 == "ပို" and nextWord1 == "အောင်" : v
+		prevWord2 == "ထဲ" and word == "နက်ရှိုင်း" : v
+		word == "စာရင်းဝင်" and nextTag1 == "part" : v
+		word == "မြင့်မား" and nextWord2 == "အတွက်" : v
+		word == "ကောင်း" and nextWord1 == "လာ" and nextWord2 == "ပြီး" : v
+		prevTag1 == "adv" and suffixL3 == "ျို" : v
+		prevWord2 == "အမြင်ကတ်" and prevWord1 == "ဖို့" : v
+		prevWord1 == "စီးပွားရေး" and word == "ဖွံ့ဖြိုး" : v
+		word == "ဆိုးဝါး" and nextTag1 == "part" and nextTag2 == "ppm" : v
+		prevWord2 == "ကို" and prevWord1 == "မှ" : v
+		word == "ယဉ်ကျေး" and nextWord2 == "မ" : v
+		word == "ကျော်ကြား" and nextTag1 == "part" and nextTag2 == "v" : v
+		nextWord2 == "ပန်း" : v
+		prevWord1 == "ကို" and word == "ထူးချွန်" : v
+		prevWord1 == "ဟာ" and nextWord1 == "မှု" : v
+		prevTag1 == "adv" and word == "ကျဉ်း" and nextTag1 == "part" : v
+		prevTag1 == "adj" and word == "တုံး" : v
+		word == "အားနည်း" and nextWord1 == "လာ" : v
+		nextWord1 == "တော့" and nextWord2 == "ဘူး" : v
+		prevWord2 == "က" and prevWord1 == "အသက်" : v
+		prevWord1 == "ပစ္စည်း" and word == "ကောင်း" and nextWord1 == "ပြီး" : v
+		prevWord2 == "အသက်" and prevWord1 == "၂၀" : v
+		prevWord1 == "၍" and word == "ရှည်ကြာ" : v
+		prevTag1 == "part" and suffixL2 == "့ဝ" : v
+		word == "ရှေး" and nextWord1 == "တုန်း" : n
+		prevWord1 == "မိမိ" : n
+		word == "အားလုံး" and nextWord2 == "လာ" : n
+		word == "အနိမ့်ဆုံး" and nextTag1 == "v" : n
+		prevWord1 == "<BOS>" and word == "တခြား" and nextWord1 == "ဆိုင်" : n
+		prevWord1 == "က" and word == "အငယ်ဆုံး" and nextWord1 == "ပါ" : n
+		word == "တခြား" and nextWord1 == "တံဆိပ်" : n
+		prevWord2 == "ကိုယ်" and prevWord1 == "က" : n
+		word == "မဟာ" and nextTag1 == "n" and nextTag2 == "part" : n
+			nextTag1 == "n" and wordShape == "U" : adj
+		word == "အငယ်ဆုံး" and nextTag1 == "part" and nextTag2 == "v" : n
+		word == "အားလုံး" and nextWord2 == "လိုက်" : n
+		word == "ငယ်" and nextWord1 == "ဆရာ" : n
+		word == "နိုင်ငံတကာ" and nextWord1 == "သုံး" and nextWord2 == "တရုတ်" : n
+		prevTag1 == "<BOS_T>" and word == "တခြား" and nextTag1 == "v" : n
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : adj
+		word == "အငယ်ဆုံး" and nextTag1 == "v" : n
+		prevWord1 == "အမျိုးမျိုး" : n
+		word == "တခြား" and nextWord1 == "အလုပ်" and nextWord2 == "တစ်" : n
+		word == "ပထမ" and nextTag1 == "part" and nextTag2 == "part" : n
+		word == "တခြား" and nextWord1 == "အဖွဲ့အစည်း" : n
+		prevWord2 == "<BOS>" and word == "လျှို့ဝှက်" : n
+		prevWord1 == "လူ" and word == "မျိုးစုံ" : n
+		prevWord1 == "ကို" and nextWord1 == "က" : n
+		word == "တခြား" and nextWord1 == "ကုမ္ပဏီ" : n
+		prevWord2 == "ရွေး" : n
+		prevTag1 == "conj" and suffixL2 == "ွေ" : n
+		nextWord1 == "ဌာန" and nextWord2 == "၊" : n
+			nextTag1 == "n" and wordShape == "U" : adj
+		prevWord1 == "ရင်" and word == "ပထမ" : n
+		prevTag1 == "punc" and word == "တခြား" and nextTag1 == "n" : n
+			suffixL3 == "ြား" : adj
+		word == "တခြား" and nextWord2 == "မ" : n
+		prevWord1 == "သည်" and nextWord1 == "ဖြစ်" : n
+		word == "ကိုယ်ပိုင်" and nextWord1 == "ငွေ" : n
+		word == "တခြား" and nextWord1 == "ဘာ" and nextWord2 == "မှ" : n
+		word == "ပထမ" and nextTag1 == "ppm" and nextTag2 == "pron" : n
+		word == "နိုင်ငံတကာ" and nextWord1 == "လေဆိပ်" and nextWord2 == "ကို" : n
+		word == "အားလုံး" and nextWord1 == "စုစည်း" : n
+		word == "ရောင်စုံ" and nextWord1 == "လား" : n
+		prevWord1 == "။" and word == "နိုင်ငံတကာ" : n
+		prevWord2 == "သူငယ်ချင်း" and prevWord1 == "တွေ" and word == "အားလုံး" : n
+		word == "ကောင်း" and nextWord1 == "လေ" and nextWord2 == "သည်" : part
+		nextTag1 == "conj" and prefixL2 == "လတ" : part
+		word == "ငယ်" and nextWord2 == "တို့" : part
+		prevWord2 == "<BOS>" and prevWord1 == "တစ်" and word == "တုံး" : part
+		prevWord1 == "နိုင်" and word == "ကောင်း" : part
+		prevWord2 == "မှတ်သား" : part
+	tag == "adv" : adv
+		word == "ဘယ်လောက်" and nextWord1 == "လဲ" and nextWord2 == "။" : adj
+			nextTag1 == "part" and prefixL2 == "ဘယ" : adv
+				prevTag1 == "ppm" and wordShape == "U" : pron
+		word == "အရင်" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : adv
+		word == "ဘယ်လို" and nextTag1 == "n" and nextTag2 == "n" : adj
+			nextTag1 == "n" and wordShape == "U" : adv
+		word == "ထပ်" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : part
+				word == "ထပ်" and nextWord1 == "မှာ" : adv
+		word == "တရားဝင်" and nextTag1 == "n" : adj
+			prefixL3 == "တရာ" : adv
+		word == "အရင်" and nextWord2 == "က" : n
+			nextWord1 == "တုန်း" and nextWord2 == "က" : adv
+		word == "တိုက်ရိုက်" and nextTag1 == "n" : adj
+			nextTag1 == "n" and wordShape == "U" : adv
+		word == "ကြို" and nextTag1 == "part" : v
+			prevTag1 == "ppm" and word == "ကြို" : adv
+		word == "သေချာ" and nextTag1 == "part" and nextTag2 == "punc" : v
+			suffixL4 == "ေချာ" : adv
+		word == "သီးသန့်" and nextTag1 == "n" : adj
+		word == "သေချာ" and nextTag1 == "part" and nextTag2 == "ppm" : v
+		nextTag1 == "ppm" and prefixL2 == "ကေ" : adj
+		prevTag1 == "tn" and suffixL3 == "ထပ်" : part
+		nextWord1 == "မှု" : v
+			suffixL3 == "်တဆ" : n
+		word == "ပုံမှန်" and nextWord1 == "အားဖြင့်" : n
+		word == "ခေတ္တ" and nextTag1 == "n" : n
+		nextTag1 == "n" and prefixL2 == "ယေ" : adj
+			nextTag1 == "n" and wordShape == "U" : adv
+		word == "တကယ့်" and nextTag1 == "n" : adj
+		prevTag1 == "part" and word == "အမြန်ဆုံး" : adj
+		nextWord1 == "ရဲ့" and nextWord2 == "လား" : v
+		word == "ကြို" and nextTag1 == "conj" : v
+		prevTag1 == "n" and word == "အထပ်ထပ်" : n
+		prevTag1 == "n" and word == "အလွန်" and nextTag1 == "ppm" : n
+		prevTag1 == "punc" and word == "ခုလေးတင်" : n
+		word == "ပျမ်းမျှ" and nextWord1 == "သက်တမ်း" : adj
+		prevTag1 == "n" and suffixL3 == "ှည်" : adj
+		prevTag1 == "n" and word == "များများ" and nextTag1 == "ppm" : adj
+		word == "တရားဝင်" and nextTag1 == "adj" : adj
+		prevTag2 == "ppm" and prevTag1 == "n" and word == "အမြဲတမ်း" : adj
+		word == "ကြို" and nextWord2 == "။" : v
+		word == "တချက်" and nextWord1 == "လောက်" : n
+		word == "တဆင့်" and nextTag1 == "n" and nextTag2 == "v" : n
+		word == "ထပ်" and nextWord2 == "ဘက်" : n
+		prevTag1 == "n" and word == "အသေးစိတ်" and nextTag1 == "ppm" : n
+		word == "နှစ်စဉ်" and nextWord2 == "လ" : n
+		word == "နှစ်စဉ်" and nextTag1 == "adj" and nextTag2 == "n" : n
+		prevWord1 == "က" and word == "အရင်" : n
+		word == "အတင်း" and nextTag1 == "tn" : n
+		nextWord2 == "အဲဒီ" : n
+		prevWord2 == "<BOS>" and prevWord1 == "ခင်ဗျား" and word == "ပုံမှန်" : n
+		prevTag1 == "num" and suffixL3 == "ထပ်" : n
+		prevTag1 == "ppm" and word == "အသေးစိတ်" and nextTag1 == "n" : n
+		prevWord1 == "နဲ့" and word == "တခြားစီ" : n
+		prevWord1 == "<BOS>" and word == "အတော်" and nextWord1 == "ပါ" : n
+		nextWord1 == "ခရီးသည်တင်" and nextWord2 == "ရထား" : n
+		word == "အကြိမ်ကြိမ်" and nextWord1 == "ပြန်" : n
+		word == "ပုံမှန်" and nextWord1 == "အပူချိန်" : adj
+		prevWord2 == "ဂိတ်" and word == "ဘယ်လောက်" : adj
+		nextWord1 == "ဘဝ" : adj
+		nextTag1 == "ppm" and prefixL2 == "ငယ" : adj
+		nextWord1 == "ရဲ့" : adj
+		prevTag1 == "n" and word == "သက်သက်" and nextTag1 == "n" : adj
+		prevWord2 == "<BOS>" and word == "စိတ်တိုင်းကျ" : adj
+		prevWord2 == "စကားလုံး" and word == "ပုံမှန်" : adj
+		prevWord1 == "ပမာဏ" and word == "ဘယ်လောက်" : adj
+		word == "ကောင်းကောင်း" and nextWord1 == "ရှိ" : adj
+		prevWord2 == "ကောင်စီ" and word == "အမြဲတမ်း" : adj
+		prevWord2 == "<BOS>" and prevWord1 == "အလေးချိန်" : adj
+		prevWord2 == "<BOS>" and prevWord1 == "အတိုး" and word == "ဘယ်လောက်" : adj
+		prevWord2 == "အခန်း" and prevWord1 == "နံပါတ်" and word == "ဘယ်လောက်" : pron
+		prevWord1 == "တကယ်" and word == "သေချာ" : v
+		nextWord1 == "ခြင်း" : v
+		prevWord1 == "လေး" and word == "ထပ်" : part
+		prevWord1 == "နှစ်" and word == "ဆင့်" : part
+	tag == "conj" : conj
+		nextTag1 == "v" and prefixL2 == "နှ" : ppm
+			nextTag1 == "v" and wordShape == "U" : conj
+				suffixL3 == "င့်" : part
+		nextWord1 == "ပြီ" : part
+			nextTag1 == "ppm" : v
+				nextTag1 == "ppm" and prefixL2 == "ပြ" : conj
+		prevTag1 == "<BOS_T>" and word == "ပြီး" : v
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : conj
+				prevWord2 == "<BOS>" : n
+		nextTag1 == "part" and prefixL2 == "နှ" : ppm
+			prefixL2 == "နှ" : conj
+				wordShape == "U" : part
+		word == "ပြီး" and nextWord1 == "သား" : part
+			prevWord1 == "ပြော" and word == "ပြီး" and nextWord1 == "သား" : conj
+		prevTag1 == "punc" and word == "ပြီး" : v
+			prevTag1 == "punc" : conj
+		nextWord1 == "ပဲ" and nextWord2 == "။" : part
+			prevTag1 == "part" and nextTag1 == "part" : conj
+		prevWord1 == "မ" : v
+			wordShape == "U" : conj
+		prevTag1 == "n" and word == "ပြီး" and nextTag1 == "conj" : v
+			wordShape == "U" : conj
+		prevTag1 == "<BOS_T>" and suffixL2 == "ု၍" : int
+		prevTag2 == "part" and prevTag1 == "n" and word == "ထက်" : adj
+			prefixL3 == "ထက်" : conj
+				prevTag1 == "n" and suffixL2 == "က်" : ppm
+		prevWord1 == "ထပ်" and word == "ပြီး" : part
+			wordShape == "U" : conj
+				prevTag1 == "adv" and wordShape == "U" : v
+		prevWord1 == "တို့" and word == "နှင့်" : ppm
+			suffixL3 == "င့်" : conj
+		word == "ပြီး" and nextWord2 == "ပြီ" : part
+			nextWord2 == "ပြီ" : v
+		nextWord1 == "ခဲ့" : v
+			nextTag1 == "part" and prefixL2 == "ဖြ" : conj
+			nextTag1 == "part" and prefixL2 == "ပြ" : part
+		nextWord1 == "ထဲ" : n
+		word == "အောင်" and nextWord2 == "သည်" : part
+			nextTag1 == "v" and wordShape == "U" : conj
+		prevWord1 == "ရင်" and word == "ပြီး" : v
+		prevTag1 == "n" and word == "နှင့်" and nextTag1 == "adv" : ppm
+			suffixL3 == "င့်" : conj
+				prefixL2 == "နှ" : part
+		prevTag1 == "part" and word == "နှင့်" and nextTag1 == "adv" : ppm
+			suffixL3 == "င့်" : conj
+		nextWord1 == "ဆိုင်" : ppm
+			prevTag1 == "n" and word == "နှင့်" and nextTag1 == "n" : part
+		word == "ခင်" and nextTag1 == "v" and nextTag2 == "part" : part
+			nextTag1 == "v" and wordShape == "U" : conj
+		prevTag1 == "n" and word == "အောင်" : v
+			prevTag1 == "n" and suffixL2 == "င်" : conj
+				prevWord2 == "၊" : n
+		word == "ပြီး" and nextWord2 == "လိုက်" : part
+			wordShape == "U" : conj
+		nextWord1 == "ပါ" and nextWord2 == "ပဲ" : part
+			wordShape == "U" : ppm
+				nextWord1 == "ပါ" and nextWord2 == "ပဲ" : conj
+		word == "ပြီး" and nextWord1 == "အောင်" : v
+		word == "ပြီး" and nextWord2 == "။" : v
+			wordShape == "U" : part
+		word == "နှင့်" and nextWord1 == "အဆက်အသွယ်" : ppm
+		prevTag1 == "part" and suffixL3 == "ခင်" : part
+			prevTag1 == "part" and suffixL3 == "ခင်" : ppm
+				word == "ခင်" and suffixL3 == "ခင်" : conj
+		prevWord1 == "စစ်" and word == "ပြီး" : part
+			prevWord1 == "စစ်" and word == "ပြီး" : v
+		prevTag1 == "ppm" and suffixL2 == "<SFX>" : v
+		nextTag1 == "conj" and prefixL2 == "နှ" : ppm
+			suffixL3 == "င့်" : conj
+				word == "နှင့်" and nextWord1 == "ပြီး" : part
+		word == "နှင့်" and nextWord2 == "တူ" : ppm
+		word == "နှင့်" and nextWord1 == "အနီးဆုံး" : ppm
+		word == "နှင့်" and nextWord2 == "မိုင်" : ppm
+		nextTag1 == "ppm" and prefixL2 == "ထက" : n
+		prevTag1 == "v" and word == "သမျှ" and nextTag1 == "ppm" : part
+			nextTag1 == "ppm" : conj
+		word == "ပြီး" and nextWord2 == "တယ်" : part
+			nextTag2 == "ppm" : conj
+				nextTag1 == "v" and wordShape == "U" : v
+		prevTag1 == "n" and word == "ပြီး" and nextTag1 == "part" : v
+			nextTag1 == "part" and prefixL2 == "ပြ" : conj
+				prevTag2 == "n" and prevTag1 == "n" : part
+		prevWord2 == "မ" and word == "အောင်" : part
+			word == "အောင်" and suffixL3 == "ာင်" : conj
+				wordShape == "U" : ppm
+		prevWord2 == "ငယ်ငယ်" : ppm
+		word == "နှင့်" and nextWord1 == "မိုင်" : ppm
+		word == "နှင့်" and nextWord1 == "ဆိုင်ရာ" : ppm
+		prevTag1 == "ppm" and suffixL3 == "ရန်" : n
+		word == "ထက်" and nextWord2 == "ဆ" : adj
+			nextWord2 == "ဆ" : conj
+		word == "ထက်" and nextWord2 == "က" : adj
+			nextTag2 == "ppm" : conj
+		prevWord1 == "တိုင်" and word == "ခင်" : part
+		word == "အောင်" and nextWord2 == "တဲ့" : part
+			prevTag1 == "part" and word == "အောင်" and nextTag1 == "v" : conj
+		prevWord1 == "ရောက်" and word == "သော်" and nextWord1 == "။" : part
+		word == "ရန်" and nextWord1 == "။" : part
+		nextWord1 == "လေ့ကျင့်" : part
+		nextTag1 == "ppm" and prefixL2 == "အေ" : part
+			nextTag1 == "ppm" : v
+		prevWord1 == "အားလုံး" and word == "ပြီး" : v
+		prevWord1 == "လည်း" : v
+		word == "ရင်း" and nextTag1 == "conj" : v
+		nextWord1 == "တွေ" : n
+		prevWord1 == "က" and nextWord1 == "ပို" : adj
+		word == "ထက်" and nextTag1 == "adj" and nextTag2 == "n" : adj
+		word == "ထက်" and nextTag1 == "part" and nextTag2 == "n" : adj
+		prevWord1 == "သန့်ရှင်း" and word == "အောင်" : part
+		prevTag1 == "tn" and word == "လျှင်" and nextTag1 == "n" : part
+		prevWord2 == "ပြောင်" : part
+		word == "အောင်" and nextWord1 == "ကျွေး" and nextWord2 == "သော" : part
+		prevTag2 == "ppm" and prevTag1 == "adv" and word == "ပြီး" : part
+		word == "လျက်" and nextWord1 == "ကြီး" and nextWord2 == "နဲ့" : part
+		word == "ရန်" and nextWord1 == "အားထုတ်" and nextWord2 == "ခြင်း" : part
+		prevTag1 == "n" and word == "ခင်" : part
+		word == "အောင်" and nextWord1 == "နိုင်" : v
+		word == "နှင့်" and nextWord1 == "ပေါင်း" : ppm
+		prevWord2 == "သည်" and prevWord1 == "ဗမာ" and word == "ထက်" : ppm
+		prevTag1 == "n" and word == "နှင့်" and nextTag1 == "adv" : ppm
+		prevTag1 == "n" and word == "အလျောက်" and nextTag1 == "v" : ppm
+		prevTag1 == "punc" and suffixL2 == "<SFX>" : n
+		prevTag1 == "ppm" and word == "ထက်" and nextTag1 == "adv" : adj
+		prevWord1 == "ကမ္ဘာ" and word == "ထက်" : adj
+		prevWord1 == "နေ့" and word == "ထက်" : adj
+		prevTag2 == "conj" and prevTag1 == "pron" and word == "ထက်" : adj
+		word == "ထက်" and nextWord2 == "ကို" : adj
+			nextTag2 == "ppm" : conj
+		prevTag1 == "conj" and word == "ကျေးဇူးပြု၍" and nextTag1 == "n" : int
+		prevTag1 == "punc" and suffixL2 == "ု၍" : int
+		prevWord1 == "ဥဥ" and word == "ရန်" : part
+		prevWord1 == "မှန်" and word == "အောင်" : part
+		prevWord1 == "ရှိ" and word == "သလောက်" and nextWord1 == "ပင်" : part
+		prevWord2 == "မ" and prevWord1 == "ရပ်" and word == "ခင်" : part
+		word == "ပြီး" and nextWord2 == "ကြ" : part
+			wordShape == "U" : conj
+		word == "ရန်" and nextWord1 == "လွယ်ကူ" : part
+		prevWord2 == "<BOS>" and prevWord1 == "ဈေးဝယ်" and word == "ပြီး" : part
+		prevTag1 == "v" and word == "နှင့်" and nextTag1 == "punc" : part
+		word == "လျှင်" and nextTag1 == "n" and nextTag2 == "punc" : part
+		word == "အောင်" and nextWord1 == "ရယ်" : part
+		prevWord1 == "ဆောက်" and word == "ပြီး" : part
+		word == "ပြီး" and nextWord1 == "ကြောင်း" : part
+		word == "ပြီး" and nextWord1 == "မြိတ်" : part
+		nextWord1 == "ခင်းကျင်း" : part
+		prevWord1 == "ပြည့်ဝ" : part
+		word == "ပြီး" and nextWord1 == "မာရိတ်" : part
+		prevWord2 == "လူ" and word == "ပြီး" : part
+		word == "လျက်" and nextWord1 == "နဲ့" : part
+		prevWord1 == "ဒူးထောက်" and word == "ပြီး" : part
+		prevWord1 == "နေ" and word == "အောင်" and nextWord1 == "ဖက်" : part
+		word == "ပြီး" and nextWord1 == "အိပ်" : part
+		word == "ပြီး" and nextWord1 == "လိုက်" : part
+		word == "ပြီး" and nextWord1 == "စာရေး" and nextWord2 == "တတ်" : part
+		word == "ပြီး" and nextWord2 == "သင့်" : part
+		nextWord1 == "သီချင်းဆို" and nextWord2 == "ခဲ့" : part
+		prevWord1 == "နိုင်" and word == "အောင်" and nextWord1 == "လုပ်" : part
+		word == "ပြီး" and nextWord1 == "ဝတ်" : part
+		prevWord1 == "ဝင်" and word == "ရန်" and nextWord1 == "ဖြစ်" : part
+		word == "လျှင်" and nextWord1 == "ဥ" : part
+			prevTag1 == "n" and word == "လျှင်" and nextTag1 == "n" : conj
+		prevWord2 == "လွတ်မြောက်ရေး" and word == "ပြီး" : part
+		word == "ပြီး" and nextWord1 == "ထွက်ပြေး" : part
+		nextWord1 == "လုပ်" and nextWord2 == "တာ" : part
+		prevWord1 == "နိုင်" and word == "အောင်" and nextWord1 == "ပြော" : part
+		word == "ပြီး" and nextWord1 == "မ" and nextWord2 == "ဝယ်" : part
+		prevWord2 == "ကို" and prevWord1 == "ကူ" and word == "ပြီး" : part
+		word == "အောင်" and nextWord2 == "။" : part
+		word == "သမျှ" and nextWord1 == "တို့" and nextWord2 == "ကို" : part
+		word == "ပြီး" and nextWord1 == "ဆက်" : part
+		prevWord2 == "ပုံစံ" and word == "လျှင်" : part
+		prevWord2 == "နာရီ" and word == "အောင်" : part
+		word == "သလို" and nextWord2 == "သွား" : part
+		prevWord2 == "လေယာဉ်" and word == "ပြီး" : part
+		word == "ပြီး" and nextWord1 == "မ" and nextWord2 == "ရှိ" : part
+		nextWord1 == "သင်" and nextWord2 == "ပေး" : part
+		prevWord1 == "ရရှိ" and word == "ရန်" and nextWord1 == "လည်းကောင်း" : part
+		prevWord1 == "သာ" and nextWord1 == "ဖြစ်" : part
+		prevWord2 == "နားလည်" and prevWord1 == "သဘောပေါက်" and word == "အောင်" : part
+		prevWord1 == "ခံ" and word == "ပြီး" : part
+		prevWord1 == "ထုတ်ဝေ" and word == "ရန်" : part
+		prevWord2 == "မှာ" and prevWord1 == "ပို" and word == "ပြီး" : part
+		prevWord2 == "တီဗီ" and prevWord1 == "ကြည့်" : part
+		prevWord2 == "တော်ကြာ" : part
+		prevWord1 == "ဆောင်ရွက်" and word == "ရန်" and nextWord1 == "အခွင့်" : part
+		nextWord1 == "လည်း" and nextWord2 == "လုပ်" : part
+		word == "ခင်" and nextWord1 == "ဆရာ" : part
+		word == "ပြီး" and nextWord1 == "ပြင်ဆင်" : part
+		word == "ကာ" and nextTag1 == "ppm" and nextTag2 == "v" : part
+			nextTag1 == "ppm" : n
+		prevWord2 == "မ" and prevWord1 == "ရှိ" and word == "ခင်" : part
+		word == "ပြီး" and nextWord1 == "ချင်" : v
+		word == "ထက်" and nextWord1 == "သုံး" : ppm
+		prevWord2 == "ယခု" and word == "တိုင်အောင်" : ppm
+		word == "နှင့်" and nextWord2 == "လာ" : ppm
+		word == "နှင့်" and nextWord1 == "ပိုမို" and nextWord2 == "နီးစပ်" : ppm
+		prevWord1 == "တို့" and word == "နှင့်" : ppm
+		prevWord1 == "များ" and word == "နှင့်" and nextWord1 == "အထက်" : ppm
+		word == "နှင့်" and nextWord1 == "နယ်" and nextWord2 == "ချင်း" : ppm
+		word == "နှင့်" and nextWord2 == "မိတ်ဆွေ" : ppm
+		prevWord2 == "မ" and prevWord1 == "အိပ်" : ppm
+		prevWord2 == "ရွှေတိဂုံ" : ppm
+		nextWord1 == "အတူဆုံး" : ppm
+		prevWord1 == "နိုင်ငံတကာ" and word == "နှင့်" : ppm
+		prevTag1 == "pron" and word == "နှင့်" and nextTag1 == "n" : ppm
+		prevWord1 == "လုပ်" and word == "ခင်" : ppm
+		word == "ကတည်းက" and nextWord1 == "စိတ်ဝင်စား" and nextWord2 == "ခဲ့" : ppm
+		word == "နှင့်" and nextWord2 == "ခဲ့" : ppm
+		word == "နှင့်" and nextWord2 == "လျှင်" : ppm
+		prevWord2 == "ဟူသော" and word == "နှင့်" : ppm
+		word == "နှင့်" and nextWord2 == "ကီလိုမီတာ" : ppm
+		prevWord1 == "နာမည်" and word == "နှင့်" : ppm
+		word == "နှင့်" and nextWord2 == "တိကျ" : ppm
+		word == "ရင်" and nextWord2 == "တုန်" : n
+		nextWord1 == "မှာ" and nextWord2 == "ပိုက်" : n
+		prevTag1 == "<BOS_T>" and suffixL3 == "ကြာ" : n
+		prevWord1 == "လေကြောင်း" and word == "ရန်" and nextWord1 == "ကာကွယ်" : n
+		prevWord2 == "က" and prevWord1 == "ဒါ" : adj
+		word == "ထက်" and nextWord2 == "တွေ" : adj
+		nextWord1 == "ပို" and nextWord2 == "ကျယ်" : adj
+		prevWord2 == "သူ" and prevWord1 == "တွေ" and word == "ထက်" : adj
+		prevWord2 == "ကို" and word == "ထက်" : adj
+		prevWord2 == "ဟာ" and word == "ထက်" : adj
+		word == "ထက်" and nextWord1 == "ပို" and nextWord2 == "ပြီး" : adj
+			nextWord1 == "ပို" : conj
+		prevWord2 == "တာ" and word == "ထက်" : adj
+		word == "ထက်" and nextWord1 == "နည်းနည်း" and nextWord2 == "ပို" : adj
+		prevWord2 == "ဒေါ်လာ" and prevWord1 == "၇၅ဝ" and word == "ထက်" : adj
+		prevWord2 == "၊" and prevWord1 == "ထို" : adj
+		word == "ထက်" and nextWord2 == "တို့" : adj
+		prevWord1 == "ဘတ်စ်ကား" and word == "ထက်" : adj
+		prevWord2 == "ဂြိုဟ်" and prevWord1 == "များ" : adj
+		word == "ထက်" and nextTag1 == "v" and nextTag2 == "v" : adj
+			nextTag1 == "v" and wordShape == "U" : conj
+		word == "ထက်" and nextWord2 == "အဝတ်" : adj
+		prevTag1 == "tn" and suffixL2 == "က်" : adj
+		prevWord1 == "ကိုယ့်" and word == "ထက်" : adj
+	tag == "fw" : fw
+	tag == "int" : int
+		word == "အိုး" and nextTag1 == "part" : n
+		prevTag1 == "part" : part
+			word == "အိုး" : n
+		word == "အိုး" and nextTag1 == "ppm" : n
+		prevTag1 == "n" and suffixL2 == "ို" : adj
+		prevTag1 == "ppm" and suffixL2 == "ုး" : n
+		prevTag1 == "pron" and wordShape == "U" : part
+		prevWord1 == "၊" and word == "လက်စသတ်တော့" : conj
+	tag == "n" : n
+		prevTag1 == "tn" and word == "မျိုး" : part
+			prevTag1 == "tn" : n
+		prevTag1 == "n" and word == "ကလေး" : part
+			prevTag1 == "n" and suffixL3 == "လေး" : n
+				wordShape == "U" : adj
+		prevWord1 == "မ" : v
+			wordShape == "U" : n
+				prevTag1 == "part" and word == "နည်း" : adj
+		word == "တောင်" and nextWord1 == "မ" : part
+		prevTag1 == "part" and word == "အပြင်" : conj
+			word == "အပြင်" and suffixL3 == "ြင်" : n
+		word == "တောင်" and nextTag1 == "v" : part
+			nextTag1 == "v" and wordShape == "U" : n
+		nextWord1 == "တယ်" : v
+			nextTag1 == "ppm" : part
+		word == "ပေါ်" and nextTag1 == "part" : v
+			nextTag1 == "part" and prefixL2 == "ပေ" : n
+		prevWord1 == "ပြီး" and word == "သား" : part
+		prevTag1 == "part" and word == "ကား" and nextTag1 == "n" : part
+			nextTag1 == "n" and prefixL2 == "ကာ" : n
+		nextWord1 == "၍" : v
+		word == "တောင်" and nextWord1 == "မှ" : part
+			nextWord1 == "မှ" : n
+		prevTag1 == "adj" and word == "မြောက်" : part
+		prevWord2 == "နိုင်ငံ" and prevWord1 == "တစ်" : part
+		nextWord1 == "သည်" and nextWord2 == "။" : v
+			nextTag1 == "ppm" : adj
+				nextWord1 == "သည်" : n
+		word == "နား" and nextTag1 == "part" : v
+			word == "နား" and suffixL3 == "နား" : n
+		word == "ကား" and nextWord1 == "၊" : part
+			prefixL2 == "ကာ" : n
+		prevTag1 == "n" and word == "ရေ" and nextTag1 == "punc" : part
+		nextWord1 == "တဲ့" : v
+			wordShape == "U" : n
+				nextTag1 == "part" : adj
+		nextWord1 == "ခဲ့" : v
+			wordShape == "U" : n
+				prevTag1 == "part" and word == "ရစ်" and nextTag1 == "part" : part
+		prevTag1 == "part" and word == "မြောက်" : part
+			prefixL2 == "မြ" : n
+		nextWord1 == "တာ" : v
+			nextWord1 == "တာ" : n
+		word == "သား" and nextWord1 == "ပဲ" : part
+		word == "ခွဲ" and nextWord1 == "ထား" : v
+		nextWord1 == "နေ" and nextWord2 == "တယ်" : v
+		nextWord1 == "မယ်" : v
+		nextWord1 == "ဖို့" : v
+			wordShape == "U" : n
+		prevTag1 == "pron" and suffixL3 == "ာသာ" : adv
+		prevWord1 == "တစ်" and word == "ပွဲ" : part
+			prevTag1 == "tn" and suffixL3 == "ပွဲ" : n
+		word == "စစ်" and nextWord1 == "ကြည့်" : v
+		nextWord1 == "ခြင်း" : v
+			wordShape == "U" : n
+				nextTag1 == "part" : adj
+		word == "တပ်" and nextWord1 == "ထား" : v
+		prevTag1 == "n" and word == "ငါး" and nextTag1 == "part" : tn
+		prevTag1 == "v" and word == "ရဲ" : part
+		prevTag2 == "v" and prevTag1 == "v" and word == "ပုံ" : part
+			prevTag1 == "v" and wordShape == "U" : n
+		word == "ဆိုင်" and nextWord1 == "သော" : v
+		word == "စစ်" and nextWord1 == "ပေး" : v
+		word == "ကား" and nextTag1 == "n" and nextTag2 == "n" : part
+			nextTag1 == "n" and prefixL2 == "ကာ" : n
+		word == "စာ" and nextWord1 == "ရင်" : part
+		word == "နောက်ဆုံး" and nextTag1 == "n" and nextTag2 == "ppm" : adj
+			nextTag2 == "ppm" : n
+		prevWord2 == "မိုး" and word == "ရွာ" : v
+		nextWord1 == "ရင်" : v
+			wordShape == "U" : n
+		prevTag1 == "n" and word == "တချို့" : adv
+			suffixL4 == "ျို့" : n
+				prevTag1 == "n" and word == "တချို့" : pron
+		word == "ယာဉ်မောင်း" and nextWord1 == "လိုင်စင်" : v
+		word == "ကား" and nextTag1 == "pron" : part
+			prevTag1 == "pron" and wordShape == "U" : n
+		nextWord1 == "ကြ" : v
+		word == "ခေါင်းဆောင်" and nextWord1 == "မှု" : v
+		prevTag1 == "n" and word == "အများဆုံး" and nextTag1 == "v" : adv
+			nextTag1 == "v" and wordShape == "U" : n
+				prevTag1 == "n" and suffixL3 == "ုံး" : adj
+		prevWord1 == "လေး" and word == "ငါး" : tn
+		word == "ငါး" and nextWord1 == "မိနစ်" : tn
+		word == "ကား" and nextTag1 == "num" and nextTag2 == "n" : part
+		prevWord1 == "ကို" and nextWord1 == "ပြီး" : v
+		prevTag1 == "ppm" and word == "တိုက်" : v
+			prevTag1 == "ppm" and wordShape == "U" : n
+		nextWord1 == "နေ" and nextWord2 == "တာ" : v
+		prevWord2 == "မြို့" and prevWord1 == "တစ်" and word == "မြို့" : part
+		prevTag2 == "part" and prevTag1 == "part" and word == "တောင်" : part
+			prevTag1 == "part" and suffixL3 == "ာင်" : n
+		prevWord1 == "သုံး" and word == "မျိုး" : part
+		prevWord1 == "နှစ်" and word == "သား" : part
+		prevTag2 == "n" and prevTag1 == "adj" and word == "ကလေး" : part
+		nextWord1 == "နိုင်" : v
+			wordShape == "U" : n
+		prevTag1 == "ppm" and word == "အခြေခံ" and nextTag1 == "part" : v
+			prevTag1 == "ppm" and wordShape == "U" : n
+		word == "နည်း" and nextWord2 == "တယ်" : v
+		prevTag1 == "ppm" and word == "ပေါင်း" : v
+		prevWord1 == "ဆက်" and word == "မြောက်" : part
+		word == "ဆောင်း" and nextTag1 == "part" : v
+		prevTag1 == "n" and word == "ဆန်" : v
+		word == "ခွဲ" and nextTag1 == "conj" : v
+		word == "လမ်းပြ" and nextTag1 == "part" : v
+			prevTag1 == "ppm" and wordShape == "U" : n
+		word == "အပြည့်" and nextTag1 == "v" : adv
+			nextTag1 == "v" and wordShape == "U" : n
+		word == "အရောက်" and nextTag1 == "v" and nextTag2 == "part" : adv
+		word == "ငါး" and nextWord1 == "နာရီ" : tn
+		prevWord1 == "တစ်" and word == "နေ့" and nextWord1 == "လုံး" : part
+			prevWord1 == "တစ်" and word == "နေ့" and nextWord1 == "လုံး" : n
+		prevWord1 == "လာ" and word == "ပုံ" : part
+			prevTag1 == "part" and suffixL3 == "ပုံ" : n
+		prevTag2 == "num" and prevTag1 == "n" and word == "မြောက်" : part
+		prevWord2 == "နှစ်" and word == "စာ" : part
+		prevTag1 == "ppm" and word == "နည်း" : part
+			prevTag1 == "ppm" and wordShape == "U" : v
+				suffixL2 == "်း" : adj
+		prevTag1 == "ppm" and word == "ကား" and nextTag1 == "adj" : part
+		prevTag2 == "n" and prevTag1 == "part" and word == "ကား" : part
+			prefixL2 == "ကာ" : n
+		prevWord1 == "ပုံစံ" and word == "အသစ်" : adj
+		word == "နား" and nextWord1 == "ပြီး" : v
+		nextWord1 == "ကာ" : v
+			wordShape == "U" : n
+		prevTag1 == "adv" and word == "တိုက်" and nextTag1 == "part" : v
+		prevWord1 == "ကို" and word == "ဥ" : v
+		prevTag1 == "ppm" and word == "ခွဲ" : v
+		nextWord1 == "လျက်" : v
+		word == "ညာ" and nextTag1 == "part" and nextTag2 == "part" : v
+		prevTag1 == "<BOS_T>" and word == "အလို" : int
+		prevTag1 == "tn" and suffixL3 == "လက်" : part
+		prevTag2 == "punc" and prevTag1 == "v" and word == "ပုံ" : part
+		prevTag2 == "tn" and prevTag1 == "n" and word == "မြောက်" : part
+		prevTag1 == "part" and word == "ကား" and nextTag1 == "adj" : part
+		prevWord1 == "အချို့" and word == "ကား" : part
+		word == "တွဲ" and nextTag1 == "ppm" and nextTag2 == "conj" : part
+		word == "ရေ" and nextTag1 == "pron" : part
+		prevWord2 == "သည်" and word == "ကား" : part
+		nextWord1 == "သော" and nextWord2 == "နိုင်ငံ" : adj
+		nextWord1 == "လေ့" : v
+		word == "ဘာသာပြန်" and nextTag1 == "part" and nextTag2 == "part" : v
+		word == "ကမ်း" and nextWord1 == "ပေး" : v
+		prevWord1 == "ကို" and word == "တန်း" : adv
+		prevTag1 == "ppm" and word == "အများဆုံး" : adv
+			nextTag1 == "v" and wordShape == "U" : n
+		prevTag1 == "pron" and word == "အမှန်" and nextTag1 == "v" : adv
+		word == "ငါး" and nextWord1 == "နှစ်" : tn
+		word == "ငါး" and nextWord1 == "ခု" : tn
+		word == "ငါး" and nextWord1 == "ရက်" : tn
+		nextWord1 == "ယောက်" : tn
+		word == "တောင်" and nextTag1 == "part" and nextTag2 == "part" : part
+			wordShape == "U" : n
+		prevWord2 == "သော" and word == "ကား" : part
+		word == "ရက်" and nextWord2 == "တောင်" : part
+		word == "သား" and nextWord2 == "။" : part
+			prefixL2 == "သာ" : n
+		prevTag2 == "part" and prevTag1 == "tn" and word == "မြို့" : part
+		word == "တောင်" and nextTag1 == "pron" : part
+			nextTag1 == "pron" and prefixL2 == "တေ" : n
+		prevWord1 == "ယောက်" and word == "သား" : part
+		prevWord1 == "လို့" and word == "တောင်" : part
+		prevTag1 == "v" and word == "ပုံ" and nextTag1 == "n" : part
+			nextTag1 == "n" and wordShape == "U" : n
+		word == "တောင်" and nextWord2 == "မ" : part
+		prevWord1 == "အဘယ်" and word == "နည်း" : part
+		word == "မြေအောက်" and nextTag1 == "n" and nextTag2 == "part" : adj
+		word == "နောက်ဆုံး" and nextTag1 == "n" and nextTag2 == "adj" : adj
+		word == "မြို့ပြ" and nextWord1 == "မြေပုံ" : adj
+		prevTag1 == "n" and word == "စွယ်စုံ" : adj
+		nextTag1 == "n" and prefixL2 == "ဒသ" : adj
+		prevWord1 == "ရဲ့" and word == "နောက်ဆုံး" : adj
+		prevWord1 == "ဘောလုံး" and word == "ကန်" : v
+		word == "သဘောထား" and nextTag1 == "conj" : v
+		word == "ခရီးသွား" and nextTag1 == "conj" : v
+		prevTag1 == "adv" and word == "ပေါင်း" : v
+		prevTag1 == "conj" and word == "တိုက်" and nextTag1 == "part" : v
+		prevTag1 == "adv" and word == "ကျပ်" : v
+		nextWord1 == "သည့်" : v
+			suffixL4 == "းစီး" : n
+		prevWord2 == "နှစ်" and word == "ခွဲ" : v
+		word == "တချို့" and nextWord2 == "တွေ" : pron
+			suffixL4 == "ျို့" : n
+		word == "အနည်းဆုံး" and nextWord1 == "ဘယ်လောက်" : adv
+		nextWord1 == "ရက်နေ့" : tn
+		prevTag1 == "n" and word == "ကား" and nextTag1 == "adv" : part
+			prevWord2 == "<BOS>" : n
+		word == "စာ" and nextWord1 == "နေရာ" : part
+		prevTag1 == "v" and word == "တန်" : part
+		prevWord2 == "ဖလင်" and word == "လိပ်" : part
+		prevWord1 == "ဥရောပ" and word == "သား" : part
+		prevWord1 == "လုံး" and word == "စာ" : part
+		prevTag1 == "conj" and word == "စာ" and nextTag1 == "conj" : part
+		prevWord1 == "ရ" and word == "ကား" : part
+		word == "အုပ်" and nextWord1 == "၊" : part
+		prevWord1 == "၌" and word == "ကား" : part
+		prevWord2 == "နဲ့" and word == "တောင်" : part
+		prevWord1 == "၂၀" and word == "သား" : part
+		prevWord1 == "ယူဆ" and word == "ပုံ" : part
+		prevWord1 == "ဖွဲ့တည်" : part
+		nextTag1 == "num" and prefixL2 == "မမ" : part
+		word == "အသစ်" and nextWord1 == "ကို" : adj
+			nextTag1 == "ppm" : n
+		word == "ရွှေ" and nextWord1 == "ခွက်" : adj
+		prevWord1 == "ကား" and word == "နောက်" and nextWord1 == "ခန်း" : adj
+		nextWord1 == "အဆင့်" : adj
+		word == "ပကတိ" and nextWord1 == "မျက်စိ" and nextWord2 == "ဖြင့်" : adj
+		word == "ပေါ်" and nextTag1 == "conj" : v
+		word == "ထောင်" and nextWord2 == "တယ်" : v
+		prevWord1 == "မှာ" and nextWord1 == "ထား" : v
+		word == "တပ်" and nextWord1 == "ပြီး" : v
+		nextWord1 == "ပြီ" : v
+		word == "အချိန်" and nextWord1 == "ပြီး" : v
+			prevTag1 == "adj" : n
+		nextWord1 == "နေ" and nextWord2 == "ပြီ" : v
+		word == "ခရီးသွား" and nextTag1 == "ppm" : v
+		word == "နည်း" and nextWord1 == "ပါ" : v
+		nextWord1 == "စေ" : v
+		prevTag1 == "ppm" and word == "တွဲ" and nextTag1 == "part" : v
+		nextWord1 == "နေ" and nextWord2 == "ပါ" : v
+		prevWord1 == "ရဲ့" and nextWord1 == "မှု" : v
+		word == "စစ်" and nextWord1 == "ကြည့်" : v
+		nextWord1 == "လာ" and nextWord2 == "ပြီး" : v
+		nextWord1 == "နေ" and nextWord2 == "လို့" : v
+		word == "ခရီးသွား" and nextWord2 == "တယ်" : v
+		prevTag1 == "v" and word == "တိုက်" : v
+		word == "ဥ" and nextWord1 == "တတ်" : v
+		word == "တပ်" and nextWord1 == "လိုက်" : v
+		prevTag1 == "ppm" and word == "တွဲ" and nextTag1 == "conj" : v
+		word == "ပညာရှိ" and nextTag1 == "part" and nextTag2 == "pron" : v
+		prevWord1 == "အပေါ်" and word == "အခြေခံ" : v
+		word == "တချို့" and nextTag1 == "n" and nextTag2 == "n" : pron
+		prevTag1 == "ppm" and word == "တချို့" : pron
+		prevTag1 == "part" and word == "အပြည့်" and nextTag1 == "v" : adv
+		word == "အနည်းငယ်" and nextWord1 == "လို" and nextWord2 == "ချင်" : adv
+		word == "အနည်းဆုံး" and nextTag1 == "tn" : adv
+		prevWord1 == "ခေါင်း" and word == "ပေါ်" and nextWord1 == "က" : ppm
+		prevWord1 == "အခွံ" : ppm
+		word == "ငါး" and nextWord1 == "ပိုင်း" : tn
+		prevTag2 == "part" and prevTag1 == "punc" and word == "ငါး" : tn
+		prevTag1 == "<BOS_T>" and word == "အာ" and nextTag1 == "punc" : int
+		prevWord1 == "-" and nextWord1 == "-" : abb
+		word == "အပြင်" and nextTag1 == "punc" : conj
+		word == "အပြင်" and nextTag1 == "fw" : conj
+		word == "အပြင်" and nextTag1 == "adv" and nextTag2 == "v" : conj
+		word == "အပြင်" and nextTag1 == "n" and nextTag2 == "punc" : conj
+		prevWord1 == "ကြ" and nextWord1 == "ကို" : part
+		prevTag1 == "n" and word == "ရဲ" : part
+		word == "လီ" and nextWord1 == "အချိုး" and nextWord2 == "လိုက်" : part
+		word == "ကား" and nextWord1 == "လူ" : part
+		prevWord1 == "ရက်" and word == "မြောက်" : part
+		prevWord2 == "သုံး" and word == "စာ" : part
+		prevWord1 == "လောက်" and word == "ကလေး" : part
+		prevWord2 == "ခြောက်" and word == "စာ" : part
+		word == "တန်" and nextWord1 == "ကပ်" : part
+		prevWord2 == "မှာ" and word == "ကလေး" : part
+		prevWord2 == "လေး" and word == "စာ" : part
+		word == "ကား" and nextWord2 == "၌" : part
+		prevWord1 == "ကြီး" and word == "ပုံ" : part
+		prevWord1 == "နှင့်" and word == "ကား" : part
+		prevWord1 == "လေး" and word == "မျိုး" : part
+			prevWord1 == "လေး" and word == "မျိုး" : n
+		word == "ကား" and nextWord2 == "ခဲ့" : part
+		prevTag2 == "<BOS_T>" and prevTag1 == "part" and word == "ကား" : part
+		word == "ကား" and nextWord1 == "မှန်ကန်" : part
+		word == "ကား" and nextWord2 == "ဖြစ်" : part
+			prefixL2 == "ကာ" : n
+		prevWord1 == "မူ" and word == "ကား" : part
+		prevWord1 == "မျောက်" and nextWord1 == "ကြီး" : part
+		word == "ကား" and nextWord1 == "မည်" : part
+		prevWord1 == "စကား" and nextWord1 == "ထွက်လာ" : part
+		prevWord2 == "တော့" and word == "တောင်" : part
+		prevTag1 == "conj" and word == "မျိုး" and nextTag1 == "n" : part
+		prevTag2 == "adv" and prevTag1 == "pron" and word == "မျိုး" : part
+		prevTag1 == "n" and word == "ဖိုး" and nextTag1 == "part" : part
+		word == "အုပ်" and nextWord1 == "မျှ" : part
+		word == "အုပ်" and nextWord2 == "ပျောက်ပျက်" : part
+		prevTag2 == "n" and prevTag1 == "n" and word == "ခြမ်း" : part
+		word == "ကား" and nextWord2 == "၍" : part
+		prevWord1 == "ထက်" and word == "တောင်" : part
+		prevTag1 == "tn" and word == "အုပ်" and nextTag1 == "conj" : part
+		prevWord1 == "တနေ့" and word == "နေ့" : part
+		word == "တောင်" and nextWord2 == "လိုက်" : part
+		word == "တောင်" and nextWord1 == "ရ" : part
+		prevTag2 == "<BOS_T>" and prevTag1 == "v" and word == "ပုံ" : part
+		word == "ကား" and nextWord1 == "ထို" : part
+		prevTag2 == "ppm" and prevTag1 == "v" and word == "သ" : part
+		word == "ဖိုး" and nextTag1 == "v" and nextTag2 == "conj" : part
+		prevWord1 == "ပြော" and word == "ပ" : part
+		prevTag1 == "tn" and word == "နည်း" and nextTag1 == "ppm" : part
+		word == "အုပ်" and nextWord1 == "ရေးသား" : part
+		prevTag1 == "v" and word == "ပေါင်" : part
+		prevWord1 == "၍" and word == "ကား" and nextWord1 == "မ" : part
+		prevWord2 == "<BOS>" and prevWord1 == "ဤ" and word == "ကား" : part
+		prevWord2 == "အနက်" and prevWord1 == "ငါး" and word == "မျိုး" : part
+		prevWord2 == "။" and word == "ရေ" : part
+		prevWord1 == "အရေးကြီး" and word == "ပုံ" and nextWord1 == "ကို" : part
+		prevWord2 == "ဤ" and word == "ကား" : part
+		prevTag2 == "<BOS_T>" and prevTag1 == "n" and word == "အရှည်" : adj
+		word == "နောက်" and nextWord1 == "အပတ်" and nextWord2 == "အင်္ဂါ" : adj
+		word == "တန်" and nextTag1 == "n" and nextTag2 == "num" : adj
+		prevWord1 == "ကား" and word == "အသေး" : adj
+		nextWord1 == "လွန်း" : adj
+		word == "အချိန်ပိုင်း" and nextTag1 == "n" and nextTag2 == "ppm" : adj
+		prevWord2 == "ဒါ" and prevWord1 == "က" and word == "နောက်ဆုံး" : adj
+		nextWord1 == "ဟင်္သာ" : adj
+		word == "နောက်ဆုံး" and nextWord2 == "ပါ" : adj
+		word == "ထိပ်တန်း" and nextTag1 == "n" : adj
+		prevWord2 == "နဲ့" and word == "အသစ်" : adj
+		prevTag2 == "v" and prevTag1 == "conj" and word == "မြေအောက်" : adj
+		prevTag1 == "ppm" and word == "ယာယီ" and nextTag1 == "n" : adj
+		word == "အသစ်" and nextTag1 == "v" and nextTag2 == "ppm" : adj
+			nextTag1 == "v" and wordShape == "U" : n
+		word == "နောက်" and nextWord1 == "အပတ်" and nextWord2 == "တနင်္လာ" : adj
+		word == "မြေအောက်" and nextWord1 == "နျူးကလီးယား" : adj
+		prevWord2 == "ခြင်း" and word == "ဝိသေသ" : adj
+		nextTag1 == "pron" and prefixL2 == "နည" : adj
+		word == "အသစ်" and nextWord2 == "နိုင်" : adj
+		prevWord2 == "ဟာ" and word == "အများဆုံး" : adj
+		word == "ဆန့်ကျင်ဘက်" and nextWord1 == "အဖွဲ့အစည်း" and nextWord2 == "များ" : adj
+		word == "အသစ်" and nextWord1 == "နဲ့" : adj
+		prevWord1 == "စေတနာ" and nextWord1 == "နဲ့" : adj
+		prevWord1 == "အမည်" and word == "ရှေ့" : adj
+			nextTag1 == "ppm" : n
+		prevTag2 == "v" and prevTag1 == "part" and word == "အနည်းဆုံး" : adj
+		prevWord2 == "ကျေးလက်" and prevWord1 == "နှင့်" : adj
+		prevWord1 == "နိုင်ငံ" and word == "ပြင်ပ" : adj
+		word == "အချိန်ပိုင်း" and nextTag1 == "n" and nextTag2 == "n" : adj
+		word == "မြေအောက်" and nextTag1 == "ppm" : adj
+		word == "နည်း" and nextWord1 == "သော" : adj
+		prevTag1 == "ppm" and word == "အထင်ရှားဆုံး" and nextTag1 == "n" : adj
+		word == "ရေနက်" and nextWord1 == "သော" and nextWord2 == "ပင်လယ်" : adj
+		prevTag2 == "n" and prevTag1 == "n" and word == "ပြား" : adj
+		prevWord2 == "များ" and prevWord1 == "ကို" and word == "လက်တွေ့" : adj
+		prevTag1 == "punc" and word == "ပြား" and nextTag1 == "ppm" : adj
+		prevWord1 == "တာယာ" and word == "အသစ်" : adj
+		prevWord1 == "အဆင့်" and word == "စက်မှု" and nextWord1 == "လုပ်ငန်း" : adj
+		word == "ရှေ့" and nextWord2 == "ကျ" : adj
+		nextWord1 == "မလား" : v
+		prevWord1 == "၏" and nextWord1 == "မှု" : v
+		word == "ဟန်" and nextTag1 == "punc" and nextTag2 == "v" : v
+		prevTag1 == "part" and word == "သရုပ်ဆောင်" : v
+		nextWord1 == "ရန်" and nextWord2 == "အတွက်" : v
+		nextWord1 == "နေ" and nextWord2 == "တဲ့" : v
+			wordShape == "U" : n
+		prevTag1 == "n" and word == "ဆေး" and nextTag1 == "conj" : v
+		word == "ကန်" and nextTag1 == "part" and nextTag2 == "punc" : v
+		word == "ညီ" and nextTag1 == "conj" and nextTag2 == "v" : v
+		prevWord1 == "မှာ" and word == "ဂိတ်ဆုံး" : v
+		nextWord1 == "သည်" and nextWord2 == "ဟု" : v
+		prevTag2 == "ppm" and prevTag1 == "adv" and word == "ဘာသာပြန်" : v
+		word == "ခြေထောက်" and nextTag1 == "ppm" and nextTag2 == "adv" : v
+		word == "ခေါင်းဆောင်" and nextWord1 == "သော" : v
+		word == "ပေါင်း" and nextWord2 == "တယ်" : v
+		word == "ဘာသာပြန်" and nextWord1 == "လက်ရာ" : v
+		word == "တန်" and nextWord2 == "တယ်" : v
+		prevTag1 == "v" and word == "စစ်" and nextTag1 == "part" : v
+		word == "မိနစ်" and nextWord1 == "နေ" : v
+		prevTag2 == "pron" and prevTag1 == "part" and word == "အစိုးရ" : v
+		prevWord1 == "ရဲ့" and nextWord1 == "ထား" : v
+		prevWord1 == "ကို" and word == "အသံထွက်" : v
+		prevWord1 == "ကို" and nextWord1 == "ကြည့်" : v
+		word == "ဆိုင်" and nextWord2 == "အစည်းအဝေး" : v
+		prevTag2 == "ppm" and prevTag1 == "adv" and word == "ချိန်" : v
+		word == "ဥ" and nextWord1 == "သော" : v
+		word == "ညာ" and nextWord1 == "ပြော" : v
+		nextWord1 == "တော့" and nextWord2 == "မယ်" : v
+		prevWord1 == "ဘီး" : v
+		word == "စစ်" and nextWord2 == "ကိစ္စ" : v
+		prevWord2 == "၊" and prevWord1 == "သိပ်" : v
+		prevWord1 == "တာ" and word == "နည်း" : v
+		prevTag2 == "ppm" and prevTag1 == "v" and word == "ဆေး" : v
+		nextWord1 == "နေ" and nextWord2 == "တတ်" : v
+		prevWord2 == "ကို" and word == "ဦးစီး" : v
+		word == "မိုးလင်း" and nextTag1 == "v" : v
+		prevWord1 == "လက်" and word == "ထောင်" and nextWord1 == "ပါ" : v
+		nextWord1 == "ချိန်" and nextWord2 == "တွင်" : v
+		prevWord1 == "၊" and word == "ချိန်" : v
+		prevTag1 == "part" and word == "ဘာသာပြန်" and nextTag1 == "v" : v
+		word == "သဘောထား" and nextWord1 == "ပါ" : v
+		nextWord1 == "စရာ" : v
+		word == "ပညာတော်သင်" and nextTag1 == "n" and nextTag2 == "ppm" : v
+		word == "အောက်ခံ" and nextTag1 == "n" and nextTag2 == "part" : v
+		word == "စစ်" and nextWord1 == "ရေး" and nextWord2 == "ခေါင်းဆောင်" : v
+		word == "မင်္ဂလာဆောင်" and nextTag1 == "conj" : v
+		word == "လက်ကိုင်" and nextTag1 == "n" : v
+		prevWord1 == "များ" and nextWord1 == "ထား" : v
+		prevTag2 == "adv" and prevTag1 == "n" and word == "တိုက်" : v
+		prevWord1 == "ကို" and nextWord1 == "သူ" : v
+		prevTag1 == "part" and word == "ဆင်" : v
+		word == "စင်" and nextTag1 == "v" : v
+		word == "ခွဲ" and nextWord1 == "ပေး" and nextWord2 == "ပါ" : v
+		word == "တိုက်" and nextWord1 == "မှု" : v
+		prevTag1 == "ppm" and word == "ကျွန်တော့" and nextTag1 == "ppm" : pron
+		prevWord1 == "လူ" and word == "တစ်ဦးတစ်ယောက်" and nextWord1 == "၏" : pron
+		prevWord2 == "လူ" and word == "အများဆုံး" : adv
+		prevWord2 == "ကို" and word == "ခဏ" : adv
+		word == "အများဆုံး" and nextTag1 == "adv" : adv
+		prevWord1 == "တို့" and word == "ဘာသာ" : adv
+		nextWord1 == "ငှား" and nextWord2 == "သုံး" : adv
+		word == "အသစ်" and nextWord1 == "ရောက်" and nextWord2 == "တာ" : adv
+		word == "ယာယီ" and nextWord1 == "အကျိုးတူ" : adv
+		word == "အကုန်" and nextWord1 == "ပေး" : adv
+		word == "လက်တွေ့" and nextWord1 == "အသုံးချ" and nextWord2 == "နိုင်" : adv
+		prevWord2 == "စကား" and prevWord1 == "ဆို" : adv
+		prevWord1 == "က" and word == "အနည်းဆုံး" : adv
+		prevWord2 == "ကို" and prevWord1 == "တွဲ" : ppm
+		prevWord1 == "ရွာ" and word == "တွင်း" : ppm
+		prevWord1 == "ဆန္ဒ" and word == "အလျှောက်" : ppm
+		word == "ပေါ်" and nextWord1 == "ခေါ်" : ppm
+		prevTag1 == "conj" and word == "ငါး" and nextTag1 == "n" : tn
+			prevTag1 == "conj" and word == "ငါး" : n
+		prevTag1 == "tn" and suffixL3 == "ငါး" : tn
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "ခုနှစ်" : tn
+		prevTag2 == "<BOS_T>" and prevTag1 == "n" and word == "ခုနှစ်" : tn
+		prevTag2 == "n" and prevTag1 == "part" and word == "ငါး" : tn
+		word == "ဝမ်း" and nextWord1 == "၊" : tn
+		prevWord1 == "အနက်" and nextWord1 == "မျိုး" : tn
+	tag == "num" : num
+	tag == "part" : part
+		prevWord1 == "မ" : v
+			wordShape == "U" : part
+				prevTag1 == "part" : adj
+		prevWord1 == "လို့" and word == "ရ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "n" and suffixL3 == "ပေး" : v
+			prefixL3 == "ပေး" : part
+		prevTag1 == "n" and word == "ရ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "ppm" and suffixL2 == "ေး" : v
+			prevTag1 == "ppm" and wordShape == "U" : tn
+				wordShape == "U" : adj
+					prevTag1 == "ppm" and suffixL2 == "ေး" : part
+		word == "များ" and nextWord1 == "စွာ" : adj
+			word == "များ" and nextWord1 == "စွာ" : adv
+		prevTag1 == "ppm" and word == "လာ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "adv" and nextTag1 == "part" : v
+			wordShape == "U" : part
+				prevTag1 == "adv" and wordShape == "U" : adj
+					nextTag1 == "part" : ppm
+		prevTag1 == "<BOS_T>" and word == "ရ" : v
+		word == "ရ" and nextWord1 == "နိုင်" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "part" and suffixL3 == "ပေး" : v
+			prefixL3 == "ပေး" : part
+		word == "များ" and nextWord1 == "တယ်" : v
+		prevTag1 == "ppm" and word == "နေ" and nextTag1 == "part" : v
+			suffixL3 == "<SFX>" : part
+		word == "လဲ" and nextTag1 == "part" and nextTag2 == "part" : v
+			suffixL3 == "<SFX>" : part
+		prevTag2 == "n" and prevTag1 == "ppm" and word == "ထား" : v
+			prevWord1 == "မှာ" and word == "ထား" : part
+		prevTag1 == "ppm" and suffixL2 == "က်" : v
+			prevTag1 == "ppm" and wordShape == "U" : part
+				prefixL2 == "တဆ" : adv
+		prevTag1 == "ppm" and word == "ရ" : v
+			suffixL3 == "<SFX>" : part
+				prevTag1 == "ppm" and wordShape == "U" : n
+		prevWord2 == "<BOS>" and word == "လာ" : v
+			prevWord2 == "<BOS>" : part
+		prevTag1 == "part" and word == "ရာ" : conj
+			suffixL3 == "<SFX>" : part
+		word == "ပါ" and nextWord1 == "ရှိ" : v
+			nextTag1 == "v" and wordShape == "U" : part
+		word == "လာ" and nextTag1 == "v" and nextTag2 == "part" : v
+			nextTag1 == "v" and wordShape == "U" : part
+		word == "လိမ့်" and nextWord1 == "မည်" : ppm
+			nextTag1 == "ppm" : part
+		word == "လေး" and nextTag1 == "n" : tn
+			nextTag1 == "n" and wordShape == "U" : part
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "နေ" : n
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : v
+		word == "ပါ" and nextWord1 == "ပါ" : v
+			word == "ပါ" and nextWord1 == "ပါ" : part
+		prevTag1 == "punc" and word == "ရ" : v
+		prevTag1 == "pron" and suffixL3 == "ပေး" : v
+		prevTag1 == "n" and word == "ရေး" and nextTag1 == "part" : v
+			nextTag1 == "part" and prefixL2 == "ရေ" : part
+		word == "ပါ" and nextWord1 == "တဲ့" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "conj" and word == "ရ" : v
+			suffixL3 == "<SFX>" : part
+		prevWord1 == "မြို့" and word == "ကြီး" : adj
+		prevWord2 == "လွတ်လပ်" and word == "ရ" : v
+		prevTag1 == "conj" and suffixL2 == "ေး" : v
+			prevTag1 == "conj" and suffixL2 == "ေး" : part
+				prevTag1 == "conj" : adj
+					wordShape == "U" : tn
+		prevWord1 == "မှာ" and word == "တည်း" : v
+		prevTag1 == "punc" and word == "လာ" : v
+		prevTag1 == "ppm" and word == "နေ" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : v
+		word == "များ" and nextWord2 == "တယ်" : v
+		prevTag1 == "conj" and word == "နေ" and nextTag1 == "part" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "n" and word == "ကျော်" : adj
+			prevTag1 == "n" and suffixL2 == "ာ်" : part
+				prefixL2 == "ကျ" : v
+		prevWord1 == "ပို" and word == "ကြီး" : adj
+			prevTag1 == "adj" and word == "ကြီး" : v
+		word == "များ" and nextWord1 == "လို့" : v
+		prevTag1 == "num" and word == "ပေ" : n
+		prevTag1 == "adj" and word == "ရ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "conj" and word == "နေ" : n
+			suffixL3 == "<SFX>" : part
+				prevTag1 == "conj" : v
+		prevTag1 == "part" and word == "ရေး" and nextTag1 == "part" : v
+			nextTag1 == "part" and prefixL2 == "ရေ" : part
+		prevWord1 == "ပြန်" and word == "လာ" : v
+			suffixL3 == "<SFX>" : part
+		word == "ပါ" and nextWord1 == "လာ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "ppm" and word == "ကြီး" : adj
+			prevTag1 == "ppm" and wordShape == "U" : v
+				word == "ကြီး" and suffixL3 == "ြီး" : part
+		prevTag1 == "<BOS_T>" and suffixL2 == "ာ်" : v
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : adj
+		prevWord1 == "တွေ" and word == "ရ" : v
+		prevTag1 == "pron" and word == "လာ" : v
+		word == "လေ" and nextWord1 == "ထဲ" : n
+		word == "လေး" and nextWord1 == "ယောက်" : tn
+		prevWord1 == "လည်း" and nextWord1 == "တယ်" : v
+			nextTag1 == "ppm" : adj
+		word == "စမ်း" and nextTag1 == "v" : v
+		word == "နေ" and nextWord1 == "အဖွဲ့အစည်း" : n
+		nextTag1 == "ppm" and prefixL2 == "အေ" : adj
+			nextTag1 == "ppm" : v
+		word == "လိမ့်" and nextTag1 == "ppm" and nextTag2 == "part" : ppm
+			nextTag1 == "ppm" : part
+		prevTag1 == "n" and word == "ပါ" and nextTag1 == "conj" : v
+		prevWord2 == "တစ်" and word == "လာ" : v
+		prevTag1 == "n" and suffixL3 == "ျက်" : v
+			prevTag1 == "n" and suffixL2 == "က်" : part
+		prevTag1 == "adv" and nextTag1 == "conj" : v
+			wordShape == "U" : part
+				prevTag1 == "adv" and wordShape == "U" : adj
+		word == "ပါ" and nextWord1 == "သော" : v
+		prevTag1 == "conj" and suffixL2 == "က်" : v
+			prevTag1 == "conj" : part
+				wordShape == "U" : n
+		nextTag1 == "num" and prefixL2 == "ပေ" : n
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "n" and word == "ချောင်း" : n
+			prefixL2 == "ချ" : part
+		prevTag1 == "punc" and suffixL3 == "င်း" : n
+			prefixL3 == "အင်" : part
+		prevWord1 == "ဖြစ်" and word == "ရာ" : conj
+		word == "တတ်" and nextWord1 == "နိုင်" : v
+		nextTag1 == "part" and prefixL2 == "ကွ" : v
+		word == "လဲ" and nextTag1 == "ppm" : v
+		prevTag2 == "adj" and prevTag1 == "ppm" and word == "ထား" : v
+		prevWord1 == "အစ်ကို" and word == "ကြီး" : adj
+		prevWord1 == "တည်း" and word == "နေ" : v
+		prevTag1 == "part" and suffixL3 == "ပတ်" : v
+		prevTag2 == "v" and prevTag1 == "conj" and word == "လာ" : v
+		prevWord1 == "ခဏ" and word == "နေ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "adv" and word == "နေ" : v
+			suffixL3 == "<SFX>" : part
+		word == "ကြီး" and nextWord1 == "တယ်" : v
+			nextTag1 == "ppm" : adj
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "ခု" : n
+		word == "တိုင်း" and nextWord1 == "၊" : n
+		prevWord2 == "ဘယ်နှ" and word == "ပါ" : v
+			suffixL3 == "<SFX>" : part
+		prevWord1 == "ပဲ" and nextWord1 == "တယ်" : v
+		prevWord1 == "ပြန်" and word == "ပေး" : v
+		prevWord2 == "<BOS>" and word == "ဦး" : pron
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "တို့" : pron
+		prevWord1 == "ရှိ" and word == "ရာ" : conj
+			suffixL3 == "<SFX>" : part
+		prevTag2 == "part" and prevTag1 == "ppm" and word == "ထား" : v
+			prevTag1 == "ppm" and wordShape == "U" : part
+		prevTag1 == "pron" and word == "နေ" : v
+			prevTag1 == "pron" and wordShape == "U" : part
+		prevTag2 == "n" and prevTag1 == "adj" and word == "ပေး" : v
+		prevTag1 == "ppm" and word == "ပတ်" : v
+		prevTag1 == "n" and suffixL3 == "မဲ့" : v
+			prevTag1 == "n" and suffixL2 == "ဲ့" : adj
+				nextTag2 == "ppm" : part
+		nextWord1 == "သွား" and nextWord2 == "တယ်" : v
+			nextTag1 == "v" and wordShape == "U" : part
+		prevWord1 == "သော" : n
+		word == "လေး" and nextWord1 == "ခု" : tn
+		word == "တော်" and nextWord1 == "တယ်" : v
+			nextTag1 == "ppm" : adj
+		prevWord1 == "တော့" and word == "ရ" : v
+		prevWord2 == "ဘယ်" and word == "လာ" : v
+		prevTag1 == "punc" and suffixL3 == "ှင်" : pron
+		word == "လေ" and nextWord2 == "တိုက်" : n
+		prevWord1 == "တစ်" and nextWord1 == "ထပ်" : n
+			prevTag1 == "tn" and nextTag1 == "adv" : part
+		prevWord1 == "ငယ်ငယ်" and word == "တုန်း" and nextWord1 == "က" : conj
+		word == "ကြီး" and nextWord1 == "လာ" : v
+			word == "ကြီး" and suffixL3 == "ြီး" : adj
+		word == "ရေး" and nextWord2 == "။" : v
+		prevTag2 == "tn" and prevTag1 == "part" and word == "ရ" : v
+		prevTag1 == "pron" and word == "နိုင်" : v
+		word == "လိုက်" and nextWord1 == "ခဲ့" : v
+		prevTag1 == "pron" and word == "ရေး" : v
+		prevTag1 == "<BOS_T>" and suffixL2 == "င်" : pron
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : n
+		prevTag1 == "ppm" and word == "ခု" : n
+		word == "ရာ" and nextWord1 == "မှ" : conj
+			nextWord1 == "မှ" : part
+		prevWord2 == "<BOS>" and word == "လွန်း" : adv
+			prevWord2 == "<BOS>" : part
+		prevTag2 == "ppm" and prevTag1 == "ppm" and word == "ထား" : v
+		prevTag1 == "n" and word == "လဲ" and nextTag1 == "part" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "n" and word == "နေ" and nextTag1 == "n" : v
+			suffixL3 == "<SFX>" : part
+		prevWord2 == "က" and prevWord1 == "နေ" and word == "လာ" : v
+		prevWord1 == "လည်း" and word == "ရ" : v
+		prevWord1 == "သာ" and word == "နေ" : v
+		prevTag1 == "adv" and word == "လှ" and nextTag1 == "ppm" : v
+		prevTag1 == "adv" and word == "ရ" : v
+		prevTag1 == "ppm" and suffixL3 == "င်း" : n
+			prevTag1 == "ppm" and wordShape == "U" : v
+				suffixL2 == "်း" : part
+		prevTag1 == "tn" and word == "ဖက်" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : part
+		prevWord1 == "တနင်္သာရီ" and word == "တိုင်း" : n
+		prevWord2 == "၊" and word == "ပင်" : n
+			prevWord2 == "၊" : part
+		word == "လှ" and nextWord1 == "လိုက်" : adj
+			suffixL3 == "<SFX>" : v
+		prevTag1 == "part" and word == "ကျော်" : adj
+		word == "ကွာ" and nextTag1 == "ppm" : v
+		word == "များ" and nextWord1 == "လှ" : v
+			prevTag1 == "ppm" and wordShape == "U" : adj
+		prevTag1 == "pron" and word == "ရ" : v
+		word == "ရော" and nextTag1 == "conj" : v
+		prevWord1 == "ဘဲ" and word == "နေ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag2 == "punc" and prevTag1 == "n" and word == "လာ" : v
+		prevWord1 == "မှု" and word == "ရ" : v
+		word == "ရာ" and nextWord2 == "ချီ" : n
+		word == "နေ" and nextWord1 == "နှင့်" : n
+		word == "ရာ" and nextWord1 == "ပေါင်း" : n
+		word == "ကြီး" and nextWord1 == "တဲ့" : adj
+			nextTag2 == "ppm" : v
+		prevTag1 == "tn" and word == "ကျော်" : adj
+			prevTag1 == "tn" : part
+				prefixL2 == "ကျ" : v
+		prevWord1 == "အစ်မ" and word == "ကြီး" : adj
+			word == "ကြီး" and suffixL3 == "ြီး" : part
+		prevTag1 == "n" and word == "အေး" : adj
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "ကြီး" : adj
+		word == "များ" and nextWord1 == "သော" : adj
+		prevWord1 == "ပါ" and word == "မူ" : conj
+		prevTag1 == "<BOS_T>" and suffixL2 == "ေ့" : int
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : part
+		word == "လေး" and nextWord1 == "ဦး" : tn
+		prevTag1 == "conj" and suffixL2 == "ယ်" : v
+		word == "များ" and nextWord2 == "လို့" : v
+			word == "များ" and suffixL3 == "ျား" : part
+		word == "များ" and nextWord1 == "တဲ့" : v
+			word == "များ" and suffixL3 == "ျား" : part
+		prevTag1 == "n" and word == "လာ" and nextTag1 == "v" : v
+		prevTag1 == "ppm" and suffixL2 == "စ်" : v
+			prevTag1 == "ppm" and wordShape == "U" : part
+		prevWord1 == "လောက်" and word == "နေ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "<BOS_T>" and nextTag1 == "ppm" : v
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : n
+				nextTag1 == "ppm" : part
+					prevWord2 == "<BOS>" : pron
+		word == "ပါ" and nextWord1 == "သွား" : v
+		prevTag1 == "punc" and suffixL3 == "ဦး" : pron
+		prevTag1 == "conj" and word == "တိုင်း" : n
+		word == "လေ" and nextWord1 == "ကို" : n
+		word == "ပင်" and nextTag1 == "part" and nextTag2 == "ppm" : n
+		word == "များ" and nextWord1 == "သည်" and nextWord2 == "။" : adj
+			nextTag1 == "ppm" : v
+				suffixL2 == "ား" : part
+		word == "ရာ" and nextWord2 == "ဖြစ်" : conj
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "v" and word == "လိမ့်" and nextTag1 == "part" : ppm
+		prevWord1 == "သုံး" and word == "လေး" : tn
+		prevTag1 == "punc" and suffixL3 == "ုက်" : v
+		prevTag1 == "n" and word == "တတ်" and nextTag1 == "part" : v
+			prevTag1 == "n" and word == "တတ်" and nextTag1 == "part" : part
+		word == "ပါ" and nextWord1 == "တာ" : v
+		prevTag1 == "part" and word == "ကြီး" and nextTag1 == "part" : v
+			word == "ကြီး" and suffixL3 == "ြီး" : adj
+		prevWord1 == "ကို" and nextWord1 == "အောင်" : v
+		prevTag1 == "n" and word == "လဲ" and nextTag1 == "n" : v
+			suffixL3 == "<SFX>" : part
+		word == "ရေး" and nextWord1 == "ပြီး" : v
+		prevTag2 == "num" and prevTag1 == "n" and word == "လာ" : v
+		prevWord1 == "အဆင့်" and word == "မီ" : v
+		word == "ရေး" and nextWord1 == "ထား" : v
+		prevWord1 == "လည်း" and nextWord1 == "မယ်" : v
+		prevTag1 == "tn" and word == "ပေး" : v
+		prevWord2 == "သွား" and word == "လာ" : v
+		prevWord1 == "ပဲ" and word == "ရ" : v
+		prevTag1 == "num" and word == "ရ" : v
+		prevWord1 == "<BOS>" and word == "သင့်" : pron
+		word == "တိုင်း" and nextWord2 == "များ" : n
+		prevWord1 == "ဧရာဝတီ" : n
+		prevWord1 == "ဟူသော" and word == "ပုဒ်" : n
+		prevTag1 == "tn" and word == "ပေ" : n
+		prevWord2 == "ပို" and word == "ကြီး" : adj
+		prevWord1 == "ဆရာမ" and word == "ကြီး" : adj
+		word == "ကြီး" and nextWord1 == "တွေ" : adj
+			word == "ကြီး" and nextWord1 == "တွေ" : part
+		prevTag2 == "n" and prevTag1 == "part" and word == "ကြီး" : adj
+			prevTag2 == "n" and prevTag1 == "part" and word == "ကြီး" : part
+		prevWord1 == "က" and word == "များ" : adj
+			prevTag1 == "ppm" and wordShape == "U" : v
+		word == "လေး" and nextWord1 == "ချောင်း" : tn
+		word == "လေး" and nextWord1 == "ဖက်" : tn
+		prevWord1 == "ကို" and word == "ထား" : v
+		prevWord1 == "လို့" and word == "လာ" : v
+		prevWord1 == "ပင်ကို" and word == "ရေး" : v
+		prevWord1 == "မှာ" and word == "နေ" : v
+			suffixL3 == "<SFX>" : n
+		prevWord2 == "စား" and prevWord1 == "ဝတ်" : v
+		word == "ရယ်" and nextWord1 == "စရာ" : v
+		nextWord1 == "ထား" and nextWord2 == "တယ်" : v
+			nextTag2 == "ppm" : part
+		prevTag1 == "conj" and word == "သာ" and nextTag1 == "ppm" : v
+		prevWord1 == "အပူချိန်" and word == "တိုင်း" : v
+		prevWord1 == "ဟုတ်ကဲ့" and nextWord1 == "ပါ" : v
+		word == "လေး" and nextWord1 == "တယ်" : v
+			nextTag1 == "ppm" : part
+		prevWord2 == "အလုပ်" and prevWord1 == "တွေ" and word == "များ" : v
+		word == "များ" and nextWord1 == "ရင်" : v
+		prevTag1 == "conj" and word == "ပစ်" : v
+		prevWord1 == "ကို" and nextWord1 == "၍" : v
+		prevWord1 == "တို့" and word == "လာ" : v
+		word == "များ" and nextWord1 == "တာ" : v
+			nextWord1 == "တာ" : part
+		prevWord1 == "ရော" and word == "ပါ" : v
+		prevTag1 == "conj" and word == "လဲ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag2 == "pron" and prevTag1 == "n" and word == "လာ" : v
+		word == "ချီ" and nextWord1 == "ယူ" : v
+		word == "လိုက်" and nextWord1 == "သွား" : v
+		word == "တည်း" and nextTag1 == "ppm" and nextTag2 == "punc" : v
+		prevTag1 == "adv" and word == "ထား" and nextTag1 == "ppm" : v
+		prevTag1 == "ppm" and word == "သင့်" : pron
+		word == "တိုင်း" and nextWord1 == "စစ်ဌာနချုပ်" : n
+		word == "တိုင်း" and nextWord1 == "၏" : n
+		prevTag1 == "punc" and word == "ခု" : n
+		prevTag2 == "<BOS_T>" and prevTag1 == "n" and word == "လေ" : n
+		prevWord1 == "ဘယ်" and word == "ရုံ" : n
+		prevTag2 == "n" and prevTag1 == "punc" and word == "စီ" : n
+		prevWord1 == "မန္တလေး" and word == "တိုင်း" : n
+		prevTag1 == "num" and word == "တိုင်း" : n
+		word == "တိုင်း" and nextWord1 == "မြို့တော်" : n
+		word == "ဖက်" and nextTag1 == "ppm" and nextTag2 == "part" : n
+		prevTag1 == "n" and word == "အင်း" : n
+		prevTag1 == "punc" and word == "လေ" : n
+		word == "ပေ" and nextTag1 == "n" : n
+		prevTag1 == "ppm" and word == "လှ" : adj
+			suffixL3 == "<SFX>" : v
+		word == "လေး" and nextWord1 == "သည်" : adj
+		word == "ကြီး" and nextWord1 == "သူ" : adj
+		word == "လေး" and nextWord1 == "သော" : adj
+		prevWord1 == "မေးမြန်း" and word == "ရာ" : conj
+		word == "ရာ" and nextWord2 == "ရေး" : conj
+		prevWord2 == "လာ" and word == "လိမ့်" : ppm
+		prevWord2 == "ဖြစ်" and word == "လိမ့်" : ppm
+		word == "လိမ့်" and nextTag1 == "ppm" and nextTag2 == "v" : ppm
+		word == "လေး" and nextWord1 == "ပါး" : tn
+		word == "လေး" and nextWord1 == "နှစ်" : tn
+		prevWord1 == "သလိပ်" : v
+		prevWord1 == "မဂ္ဂဇင်း" and word == "ပါ" : v
+		prevWord1 == "အရှည်" and word == "ထား" : v
+		prevTag1 == "ppm" and suffixL3 == "မ်း" : v
+		prevWord1 == "<BOS>" and nextWord1 == "လို့" : v
+		prevTag1 == "punc" and word == "ပေး" : v
+		word == "များ" and nextWord1 == "လေ" : v
+			suffixL2 == "ား" : adj
+		prevWord1 == "စွာ" and word == "ထား" : v
+		prevWord1 == "လည်း" and word == "တတ်" : v
+		prevWord1 == "တော့" and word == "လာ" : v
+		prevWord1 == "ရေကြောင်း" and word == "ချီ" : v
+		word == "ချက်" and nextWord1 == "တယ်" : v
+		prevWord2 == "ဖြစ်" and prevWord1 == "ဖြစ်" and word == "ရ" : v
+		prevWord1 == "စာ" and word == "လာ" and nextWord1 == "ခဲ့" : v
+		prevWord1 == "အသက်" and word == "ကြီး" : v
+			prevWord1 == "အသက်" : adj
+		prevTag1 == "adv" and word == "လာ" : v
+			nextTag1 == "ppm" : part
+		word == "လာ" and nextWord2 == "မို့" : v
+		word == "များ" and nextWord1 == "လား" : v
+			word == "များ" and nextWord1 == "လား" : part
+		word == "ပါ" and nextWord1 == "သည့်" : v
+		prevWord1 == "အဖြစ်" and word == "ထား" : v
+		word == "ပေါ့" and nextWord1 == "သွား" and nextWord2 == "တာ" : v
+		word == "များ" and nextWord1 == "သလား" and nextWord2 == "။" : v
+		prevWord1 == "ရင်" and word == "လာ" : v
+		word == "များ" and nextWord2 == "တာ" : v
+			word == "များ" and suffixL3 == "ျား" : part
+		prevWord1 == "ပဲ" and word == "နေ" : v
+			suffixL3 == "<SFX>" : part
+		prevTag1 == "n" and word == "ခိုင်း" : v
+		prevTag1 == "part" and word == "ချက်" and nextTag1 == "part" : v
+		prevWord1 == "၊" and nextWord1 == "လည်း" : v
+		prevWord1 == "တွဲ" and word == "ပါ" and nextWord1 == "လား" : v
+		nextTag1 == "v" and prefixL2 == "ခပ" : v
+			nextTag1 == "v" and wordShape == "U" : part
+		nextTag1 == "ppm" and prefixL2 == "ခပ" : v
+		word == "ဖူး" and nextWord2 == "မယ်" : v
+		prevTag1 == "conj" and word == "မီ" : v
+		prevWord1 == "ဝတ္ထု" and word == "ရေး" : v
+		word == "တော်" and nextWord2 == "တာ" : v
+		prevTag1 == "n" and suffixL3 == "ါက်" : v
+		prevWord1 == "များ" and word == "ရေး" : v
+		prevWord2 == "ဝယ်" and prevWord1 == "ဖို့" and word == "လာ" : v
+		prevWord2 == "<BOS>" and prevWord1 == "အဖေ" and word == "ဆုံး" : v
+		prevTag1 == "part" and word == "ရယ်" and nextTag1 == "part" : v
+		prevTag2 == "n" and prevTag1 == "part" and word == "ခိုင်း" : v
+		prevWord1 == "စွာ" and word == "နေ" : v
+		prevTag1 == "n" and word == "စမ်း" : v
+		prevWord1 == "ကား" and word == "လာ" : v
+		prevWord1 == "လို့" and word == "နေ" : v
+		prevWord1 == "လုံး" and word == "ရ" : v
+		word == "တော်" and nextWord2 == "တယ်" : v
+			nextTag2 == "ppm" : adj
+		prevWord1 == "အပေါ်" and word == "ထား" : v
+		prevWord1 == "သဘော" and word == "ထား" : v
+		prevWord1 == "ချက်" and word == "ရ" : v
+		prevTag2 == "<BOS_T>" and prevTag1 == "ppm" and word == "ထား" : v
+		nextTag1 == "n" and prefixL2 == "ရှ" : pron
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "လေ" : n
+		prevTag1 == "punc" and word == "နေ" : n
+			prevTag1 == "punc" and suffixL2 == "<SFX>" : v
+		word == "ဖက်" and nextTag1 == "n" and nextTag2 == "ppm" : n
+		prevWord1 == "သည်" and word == "နေ" : n
+		prevWord1 == "နှင့်" and word == "ချင်း" : n
+		word == "ရေး" and nextWord1 == "မြို့" : n
+		prevWord2 == "<BOS>" and word == "ချောင်း" : n
+		prevTag1 == "n" and word == "လေ" and nextTag1 == "n" : n
+			suffixL3 == "<SFX>" : part
+		prevWord1 == "ရန်ကုန်" and word == "တိုင်း" : n
+		prevWord1 == "၊" and word == "ပဲ" : n
+		prevTag1 == "n" and word == "ဝိုင်း" : n
+			suffixL2 == "်း" : v
+		prevWord2 == "နား" and prevWord1 == "တစ်" : n
+		prevWord1 == "ရာမည" and word == "တိုင်း" : n
+		nextTag1 == "part" and prefixL2 == "ရိ" : n
+		prevTag1 == "conj" and suffixL3 == "ာင်" : n
+		word == "ပင်" and nextWord2 == "ချင်" : n
+		prevTag2 == "punc" and prevTag1 == "tn" and word == "ခါ" : n
+			prevTag1 == "tn" and suffixL2 == "<SFX>" : part
+		word == "ခါ" and nextWord1 == "တိုင်း" : n
+		prevWord2 == "ရဲ့" and word == "ဆ" : n
+		word == "ကြီး" and nextWord1 == "သော" : adj
+		prevWord1 == "အကို" and word == "ကြီး" : adj
+		word == "များ" and nextWord1 == "သည့်" : adj
+		word == "အေး" and nextWord1 == "တဲ့" : adj
+		word == "ဆူ" and nextWord1 == "အောင်" and nextWord2 == "ကျွေး" : adj
+		prevWord2 == "<BOS>" and word == "ဝိုင်း" : adj
+		prevWord1 == "နွား" and word == "ကြီး" : adj
+		word == "ကြီး" and nextWord1 == "စွာ" : adj
+		word == "တော်" and nextTag1 == "conj" : adj
+		prevWord2 == "ကို" and word == "တုန်း" : conj
+		word == "ရာ" and nextWord2 == "ဒေသ" : conj
+		prevWord1 == "အဆင်ပြေ" and nextWord1 == "မယ်" : ppm
+		prevWord1 == "များ" and word == "လွန်း" and nextWord1 == "တယ်" : adv
+		word == "တဆိတ်လောက်" and nextTag1 == "v" and nextTag2 == "part" : adv
+			nextTag1 == "v" and wordShape == "U" : part
+		word == "လေး" and nextWord1 == "စောင်" : tn
+		word == "လေး" and nextWord1 == "ထပ်" : tn
+		word == "လေး" and nextWord2 == "ဓာတ်ပုံ" : tn
+		prevWord1 == "အောင်" and word == "ထား" : v
+		prevWord1 == "မြောက်" and nextWord1 == "''" : v
+		prevWord1 == "မှာ" and word == "ပါ" and nextWord1 == "တယ်" : v
+		prevTag2 == "num" and prevTag1 == "v" and word == "ပေး" : v
+		word == "လာ" and nextWord2 == "ကောင်း" : v
+		prevWord1 == "စာ" and word == "ရေး" : v
+		prevTag2 == "<BOS_T>" and prevTag1 == "n" and word == "ပစ်" : v
+		prevTag2 == "ppm" and prevTag1 == "v" and word == "ခေါက်" : v
+		prevWord1 == "ဒီ" and word == "လာ" : v
+		prevWord2 == "ထပ်" and prevWord1 == "ရှင်းပြ" and word == "ပေး" : v
+		prevWord2 == "မှာ" and prevWord1 == "လူ" and word == "များ" : v
+		word == "တတ်" and nextWord1 == "လွယ်" : v
+		prevWord1 == "ဌာပနာ" and word == "ထား" : v
+		word == "များ" and nextWord1 == "လည်း" and nextWord2 == "များ" : v
+		prevTag1 == "adj" and word == "ပေး" and nextTag1 == "ppm" : v
+		prevWord2 == "ပဲ" and prevWord1 == "ဘယ်" and word == "နေ" : v
+		prevWord2 == "ကျွန်တော့်" and word == "ထား" : v
+		prevWord2 == "က" and prevWord1 == "ဧည့်သည်" and word == "လာ" : v
+		prevWord1 == "ကိုယ်အပူချိန်" and word == "တိုင်း" : v
+		prevWord2 == "ယောက်" and word == "လာ" : v
+			prevWord2 == "ယောက်" : part
+		prevWord1 == "သာ" and nextWord1 == "သည်" : v
+		prevWord1 == "တွေ" and word == "လာ" : v
+			suffixL3 == "<SFX>" : part
+		nextWord1 == "ပြီး" and nextWord2 == "စား" : v
+		word == "လိုက်" and nextWord1 == "၍" : v
+		prevWord1 == "လို" and word == "လှ" : v
+		word == "ခန့်" and nextTag1 == "part" and nextTag2 == "ppm" : v
+		prevWord1 == "လျှင်" and word == "ကြီး" : v
+		prevWord2 == "တွေ" and prevWord1 == "အများကြီး" and word == "လာ" : v
+		word == "တည်း" and nextWord1 == "မှာ" and nextWord2 == "လဲ" : v
+		prevWord1 == "ကုန်" and word == "ပေး" : v
+		prevWord1 == "အလည်" and nextWord1 == "ပါ" : v
+		prevWord1 == "တန်ခိုး" : v
+		prevWord1 == "ပရိုဂရမ်" and word == "ရေး" : v
+		word == "လဲ" and nextWord1 == "ချင်" and nextWord2 == "တယ်" : v
+		word == "ခါ" and nextWord1 == "လိုက်" : v
+		prevWord1 == "မှ" and word == "နေ" and nextWord1 == "၍" : v
+			suffixL3 == "<SFX>" : part
+		word == "တော်" and nextWord1 == "ပြီ" : v
+		prevWord1 == "ရက်" and word == "နေ" : v
+		prevWord1 == "ည" and word == "တည်း" : v
+		word == "ပါ" and nextWord1 == "မှာ" : v
+		prevTag2 == "<BOS_T>" and prevTag1 == "n" and word == "ထား" : v
+		prevWord1 == "စ" and nextWord1 == "ဖြစ်" : v
+		nextWord1 == "ပြီး" and nextWord2 == "ပြန်" : v
+		prevWord2 == "လောက်" and prevWord1 == "ဆို" : v
+		word == "သင့်" and nextWord1 == "သည်" and nextWord2 == "။" : v
+		prevWord1 == "နဲ့" and nextWord1 == "တယ်" : v
+		prevTag1 == "ppm" and word == "မီ" and nextTag1 == "part" : v
+		prevWord1 == "အာမခံ" and word == "ထား" : v
+		prevWord1 == "မှာ" and word == "ပါ" and nextWord1 == "မယ်" : v
+		prevTag1 == "part" and suffixL2 == "စ်" : v
+		prevTag2 == "part" and prevTag1 == "num" and word == "ထား" : v
+		prevWord2 == "သက်တမ်း" and word == "ရ" : v
+		word == "ကွယ်" and nextWord2 == "ရက်" : v
+		prevWord2 == "တွေ့" and prevWord1 == "ဖို့" and word == "လာ" : v
+		word == "ရ" and nextWord1 == "လာ" : v
+		word == "ထား" and nextWord1 == "ပြီး" and nextWord2 == "ထွက်လာ" : v
+		prevWord1 == "သို့" and word == "တတ်" : v
+		prevWord1 == "တို့" and word == "ရ" : v
+		word == "ချက်" and nextWord1 == "တဲ့" : v
+		nextWord1 == "လေ" and nextWord2 == "လေ" : v
+		prevWord2 == "ဟာ" and word == "ဆုံး" : v
+		prevWord1 == "ကော" and word == "ရ" : v
+		word == "လဲ" and nextWord1 == "သွား" : v
+		prevWord2 == "သီးသန့်" and prevWord1 == "မှာ" : v
+		prevTag2 == "ppm" and prevTag1 == "n" and word == "ချေ" : v
+		nextWord1 == "ကြို" and nextWord2 == "ရ" : v
+		prevWord1 == "လည်း" and word == "လာ" : v
+		prevTag2 == "ppm" and prevTag1 == "adv" and word == "ခိုင်း" : v
+		prevTag1 == "n" and suffixL3 == "ပတ်" : v
+			prefixL3 == "ပတ်" : part
+		prevWord1 == "ဝန်ဆောင်ခ" and word == "ပါ" : v
+		word == "ပစ်" and nextWord2 == "လိုက်" : v
+		prevWord1 == "<BOS>" and nextWord1 == "လား" : v
+		prevWord2 == "<BOS>" and prevWord1 == "အရသာ" and word == "ပေါ့" : v
+		word == "ချီ" and nextWord2 == "လူ" : v
+		prevWord1 == "နောက်ဆုံး" and nextWord1 == "ပြီး" : v
+		prevWord1 == "များ" and word == "ထား" : v
+		prevTag1 == "ppm" and suffixL2 == "ါး" : v
+		word == "တည်း" and nextWord1 == "ချင်" : v
+		prevWord1 == "တို့" and word == "လိုက်" and nextWord1 == "ပေ" : v
+		prevWord1 == "လည်း" and nextWord1 == "ရော" : v
+		word == "ပါ" and nextWord1 == "မ" and nextWord2 == "လာ" : v
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "ရေး" : v
+		prevWord1 == "ပဲ" and nextWord1 == "ပါ" : v
+		prevTag1 == "fw" and word == "ရေး" : v
+		prevWord1 == "၌" and word == "နေ" : v
+		prevWord1 == "လည်း" and word == "နေ" : v
+		prevWord2 == "လောက်" and prevWord1 == "ပို" : v
+		word == "လား" and nextWord1 == "စေ" : v
+		prevWord2 == "လာ" and word == "လာ" : v
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "ရယ်" : v
+		prevWord1 == "ခဏ" and word == "ထား" : v
+		prevWord1 == "နောက်ခံ" and word == "ထား" : v
+		prevWord1 == "ပတ်" and word == "နေ" and nextWord1 == "မယ်" : v
+		word == "ဖူး" and nextTag1 == "v" and nextTag2 == "part" : v
+		prevWord1 == "ပို" and word == "လိုက်" : v
+		prevWord1 == "မြို့" and word == "နေ" : v
+		prevTag1 == "conj" and word == "တည်း" and nextTag1 == "part" : v
+		word == "နေ" and nextWord1 == "လို့" and nextWord2 == "ကောင်း" : v
+		prevWord1 == "တန်ဖိုး" and word == "ထား" and nextWord1 == "ကြ" : v
+		prevWord2 == "ဖြစ်" and prevWord1 == "ဖြစ်" and word == "လာ" : v
+		prevWord1 == "ပါရမီ" and word == "ပါ" and nextWord1 == "တယ်" : v
+		word == "တော်" and nextWord1 == "သူ" : v
+		prevWord1 == "နည်းနည်း" and nextWord1 == "တယ်" : v
+		prevTag1 == "conj" and word == "လှ" : v
+			suffixL3 == "<SFX>" : adj
+		prevWord2 == "က" and prevWord1 == "လူ" and word == "ဦး" : v
+		prevWord2 == "မှာ" and prevWord1 == "သွေး" and word == "ပါ" : v
+		prevTag2 == "n" and prevTag1 == "conj" and word == "ရော" : v
+		prevWord2 == "ဖြစ်" and prevWord1 == "ဖြစ်" and word == "ပေး" : v
+		word == "ချည်" and nextWord2 == "လို့" : v
+		word == "လေး" and nextWord1 == "နေ" : v
+		word == "ခန့်" and nextWord1 == "လိုက်" : v
+		prevWord1 == "တွေ" and word == "နေ" : v
+		prevWord2 == "စိတ်မကောင်း" and word == "ရ" : v
+		prevWord1 == "ပဲ" and word == "လိုက်" : v
+		prevWord1 == "ပင်" and word == "နေ" : v
+		prevWord1 == "လွှဲ" and word == "ပေး" and nextWord1 == "ရန်" : v
+		prevWord1 == "ကြော်" and word == "ပေး" : v
+		word == "တော်" and nextWord1 == "တဲ့" : v
+		prevWord2 == "ဘာ" and prevWord1 == "မှာ" and word == "ထား" : v
+		word == "ရ" and nextWord1 == "ပါ" and nextWord2 == "ပြီ" : v
+		prevWord2 == "<BOS>" and prevWord1 == "မင်း" and word == "မှန်း" : v
+		prevWord1 == "ရေ" and word == "ခပ်" : v
+		word == "ပါ" and nextWord1 == "တတ်" : v
+		prevWord1 == "အကြွေ" and word == "ပါ" and nextWord1 == "လား" : v
+		prevWord1 == "လည်း" and word == "လိုက်" : v
+		prevWord2 == "<BOS>" and word == "သင်း" : v
+		prevTag2 == "conj" and prevTag1 == "ppm" and word == "ထား" : v
+		prevWord1 == "။" and word == "တို့" : pron
+		word == "ရှင်" and nextTag1 == "v" : pron
+		word == "ပတ်" and nextWord1 == "က" : n
+		word == "တိုင်း" and nextWord2 == "အနောက်" : n
+		prevWord1 == "ကောင်း" and word == "ကြောင်း" : n
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "ရုံ" : n
+		word == "လေ" and nextWord1 == "မ" : n
+		prevTag2 == "<BOS_T>" and prevTag1 == "adj" and word == "တိုင်း" : n
+		prevWord1 == "ဖို" : n
+		prevWord1 == "က" and word == "ချည်" : n
+		word == "နေ" and nextWord1 == "ကို" : n
+		prevTag1 == "ppm" and word == "စောင်" and nextTag1 == "ppm" : n
+		prevWord1 == "မှ" and word == "လေ" : n
+		prevWord2 == "<BOS>" and word == "ချပ်" : n
+		prevWord1 == "အိန္ဒိယ" and word == "မူ" : n
+		prevTag1 == "conj" and word == "တာ" and nextTag1 == "num" : n
+		prevWord2 == "<BOS>" and prevWord1 == "ကြေငြာ" and word == "ချက်" : n
+		prevWord2 == "အများသုံး" and word == "ရုံ" : n
+		prevWord2 == "ကို" and prevWord1 == "၄" : n
+		prevTag1 == "n" and word == "ပင်" and nextTag1 == "ppm" : n
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "တိုင်း" : n
+		word == "ဆ" and nextWord1 == "တိုးတက်" : n
+		prevTag1 == "adj" and word == "လေ" and nextTag1 == "v" : n
+		word == "ကြိမ်" and nextWord2 == "က" : n
+		word == "လေ" and nextTag1 == "ppm" and nextTag2 == "adv" : n
+		word == "ရုံ" and nextWord2 == "သွား" : n
+		word == "ဆ" and nextWord1 == "မက" : n
+		prevTag1 == "n" and word == "ချင်" and nextTag1 == "n" : n
+		prevTag1 == "punc" and word == "ဦး" : n
+		prevTag2 == "conj" and prevTag1 == "adj" and word == "ပိုင်း" : n
+		prevTag1 == "n" and word == "ပင်" and nextTag1 == "punc" : n
+		word == "ဖက်" and nextWord2 == "မှာ" : n
+		word == "လေ" and nextWord1 == "နဲ့" : n
+		word == "ရာ" and nextWord1 == "ကို" and nextWord2 == "အကြံပြု" : n
+		prevWord2 == "ရည်ညွှန်း" and prevWord1 == "ပြီး" : n
+		nextWord1 == "၁၃၀" and nextWord2 == "လေယာဉ်" : n
+		prevWord2 == "တာယာ" and word == "လေ" : n
+		word == "မိ" and nextTag1 == "n" : n
+		prevTag1 == "v" and suffixL3 == "ုဒ်" : n
+		word == "ပတ်" and nextWord1 == "လောက်" and nextWord2 == "ကြာ" : n
+		prevTag2 == "n" and prevTag1 == "ppm" and word == "ခဲ" : n
+		prevTag2 == "punc" and prevTag1 == "adj" and word == "ပိုင်း" : n
+		prevWord1 == "၅" and word == "ဆ" : n
+		word == "ပိုင်း" and nextWord1 == "နေ" : n
+		prevWord2 == "၊" and prevWord1 == "ငါး" and word == "ကြီး" : adj
+		prevTag1 == "conj" and word == "ကြီး" and nextTag1 == "n" : adj
+		prevWord1 == "စေတမန်" and word == "တော်" : adj
+		word == "ကြီး" and nextWord1 == "ကြီး" : adj
+		prevTag1 == "v" and suffixL3 == "အေး" : adj
+		prevWord2 == "က" and prevWord1 == "ပို" and word == "လှ" : adj
+		prevWord1 == "ဘူတာ" and word == "ကြီး" : adj
+		word == "ကြီး" and nextWord1 == "မင်းမှုထမ်း" and nextWord2 == "အချို့" : adj
+		word == "များ" and nextWord1 == "လာ" and nextWord2 == "သောအခါ" : adj
+		prevWord1 == "<BOS>" and nextWord1 == "လွန်း" : adj
+		prevWord1 == "၌" and nextWord1 == "၍" : adj
+		prevWord2 == "အသက်" and prevWord1 == "၇၀" and word == "ကျော်" : adj
+		prevWord2 == "၊" and prevWord1 == "သဘာဝတရား" : adj
+		prevWord2 == "ဇိမ်ခံ" and prevWord1 == "မှန်လုံကား" and word == "ကြီး" : adj
+		prevTag2 == "part" and prevTag1 == "part" and word == "ကြီး" : adj
+		prevWord2 == "ဇွဲ" and word == "ကြီး" : adj
+		word == "ကြီး" and nextWord1 == "ဟာ" : adj
+		prevTag1 == "part" and word == "အေး" and nextTag1 == "part" : adj
+		word == "လေး" and nextTag1 == "conj" and nextTag2 == "n" : adj
+		prevWord2 == "ပေါင်း" and prevWord1 == "၄၀" and word == "ကျော်" : adj
+		prevWord1 == "အိတ်" and word == "ကြီး" and nextWord1 == "ကို" : adj
+		word == "ကြီး" and nextWord1 == "ငယ်" and nextWord2 == "များ" : adj
+		prevWord1 == "ဆိုဒ်" and word == "ကြီး" : adj
+		prevTag2 == "punc" and prevTag1 == "n" and word == "သေး" : adj
+		word == "လှ" and nextTag1 == "ppm" and nextTag2 == "v" : adj
+		word == "သေး" and nextWord1 == "လေး" : adj
+		prevWord1 == "ရှေး" and word == "တုန်း" and nextWord1 == "က" : conj
+		word == "ရာ" and nextWord2 == "က" : conj
+		prevWord1 == "ပြ" and word == "ရာ" : conj
+		prevWord1 == "လေး" and word == "တုန်း" : conj
+		word == "ရာ" and nextWord2 == "၏" : conj
+		prevWord2 == "အမြောက်အမြား" and prevWord1 == "ထွက်" : conj
+		prevWord1 == "ကျောင်း" and word == "တုန်း" : conj
+		prevWord2 == "စောင့်" and word == "တုန်း" : conj
+		prevWord1 == "နေထိုင်" and nextWord1 == "နေ" : conj
+		prevWord1 == "ထွက်လာ" and word == "တုန်း" : conj
+		prevWord2 == "ပြော" and word == "တုန်း" : conj
+		word == "ရာ" and nextWord1 == "နှင့်" : conj
+		prevWord1 == "၍" and word == "မူ" : conj
+		prevWord2 == "ဖြစ်စေ" and prevWord1 == "ကာ" and word == "မူ" : conj
+		prevWord1 == "ပစ်ခတ်" and word == "ရာ" : conj
+		word == "လိမ့်" and nextWord1 == "မယ်" and nextWord2 == "ဆရာ" : ppm
+		word == "လိမ့်" and nextTag1 == "ppm" and nextTag2 == "pron" : ppm
+		word == "သည့်" and nextWord1 == "တိုင်အောင်" : ppm
+		prevTag1 == "punc" and suffixL3 == "ခပ်" : adv
+		prevWord2 == "<BOS>" and word == "ခပ်" : adv
+		prevWord1 == "ဆင်းရဲ" and word == "လွန်း" : adv
+		word == "လွန်း" and nextWord1 == "လို့" and nextWord2 == "ပါ" : adv
+		prevTag1 == "punc" and word == "ဟေ့" and nextTag1 == "punc" : int
+		prevTag2 == "part" and prevTag1 == "punc" and word == "ရော့" : int
+	tag == "ppm" : ppm
+		word == "နဲ့" and nextTag1 == "punc" : part
+			suffixL3 == "နဲ့" : ppm
+				nextTag1 == "punc" and wordShape == "U" : conj
+		word == "နဲ့" and nextTag1 == "n" : conj
+			word == "နဲ့" and nextTag1 == "n" : ppm
+				nextTag1 == "n" and wordShape == "U" : part
+		prevTag1 == "adj" and word == "ဟာ" : part
+			suffixL3 == "<SFX>" : pron
+				prevTag1 == "adj" : ppm
+		prevWord1 == "ကြိုတင်" : v
+		prevTag1 == "adj" and word == "သို့" : part
+			prevTag1 == "adj" : ppm
+		word == "နဲ့" and nextTag1 == "part" and nextTag2 == "punc" : part
+			suffixL3 == "နဲ့" : ppm
+				word == "နဲ့" and nextWord2 == "။" : conj
+		word == "မည်" and nextWord1 == "သည့်" : pron
+			nextTag1 == "part" and prefixL2 == "မည" : adj
+		word == "ရဲ့" and nextWord1 == "လား" : part
+			suffixL3 == "ရဲ့" : ppm
+		word == "မှာ" and nextWord1 == "ချင်" : v
+			nextTag2 == "ppm" : ppm
+		prevWord1 == "တဲ့" and word == "ဟာ" : pron
+			suffixL3 == "<SFX>" : part
+		prevWord1 == "မ" : v
+			nextTag1 == "v" and wordShape == "U" : ppm
+		word == "မှာ" and nextWord1 == "ထား" and nextWord2 == "တာ" : v
+		prevTag1 == "<BOS_T>" and word == "ဟာ" : int
+		prevTag1 == "pron" and word == "သို့" : part
+		prevWord1 == "ရာ" and word == "မှ" : conj
+			prevWord1 == "ရာ" and word == "မှ" : ppm
+		prevWord1 == "မည်" and word == "သို့" : part
+		word == "မည်" and nextWord1 == "သို့" : pron
+		word == "အား" and nextWord2 == "။" : v
+		word == "နဲ့" and nextTag1 == "fw" : conj
+			suffixL3 == "နဲ့" : part
+		prevWord1 == "စသည်" and word == "ဖြင့်" : part
+		prevWord1 == "ကြို" and word == "မှာ" : v
+		prevTag1 == "pron" and word == "နဲ့" and nextTag1 == "pron" : conj
+			prevTag1 == "pron" and wordShape == "U" : ppm
+		prevWord1 == "ဟို" and word == "ဟာ" : part
+			prevTag1 == "pron" and wordShape == "U" : ppm
+		prevWord1 == "ပါ" and word == "နဲ့" : part
+		prevTag1 == "<BOS_T>" and nextTag1 == "part" : v
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : n
+				prevWord2 == "<BOS>" : ppm
+		prevWord1 == "ရင်း" and word == "နဲ့" : conj
+			prevTag2 == "v" and prevTag1 == "conj" and word == "နဲ့" : ppm
+		prevTag1 == "ppm" and word == "ဆီ" : n
+		prevTag1 == "ppm" and suffixL2 == "ား" : n
+			prevTag1 == "ppm" and wordShape == "U" : v
+		prevWord2 == "မ" and word == "နဲ့" : part
+		prevTag1 == "<BOS_T>" and suffixL3 == "အား" : int
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : ppm
+		prevTag1 == "<BOS_T>" and suffixL3 == "<SFX>" : n
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : ppm
+		word == "ဟာ" and nextWord2 == "။" : part
+			suffixL3 == "<SFX>" : pron
+		prevWord2 == "လာ" and word == "နဲ့" : conj
+			prevTag2 == "part" and prevTag1 == "part" : ppm
+		nextWord1 == "ခဲ့" : v
+		word == "အကြား" and nextWord1 == "တွင်" : n
+			nextTag1 == "ppm" : ppm
+		prevWord1 == "အဲဒီ" and word == "ဟာ" and nextWord1 == "က" : part
+		word == "အား" and nextTag1 == "conj" : v
+		word == "ဟာ" and nextWord2 == "ဟုတ်" : part
+		word == "ဟာ" and nextTag1 == "fw" : part
+		word == "မှ" and nextWord1 == "သာ" and nextWord2 == "လျှင်" : conj
+		word == "မည်" and nextWord1 == "ကဲ့သို့" : pron
+			nextTag1 == "part" and prefixL2 == "မည" : ppm
+		prevWord1 == "ဟု" and word == "တွင်" : v
+		prevWord1 == "တယ်" and word == "နဲ့" : part
+			prevWord1 == "တယ်" : conj
+		nextWord1 == "အပ" : part
+			suffixL3 == "<SFX>" : ppm
+		word == "နဲ့" and nextWord1 == "တခြား" : conj
+		word == "ရအောင်" and nextWord1 == "၊" : conj
+		prevWord1 == "ဟင်း" and word == "မှာ" : v
+		prevTag1 == "n" and word == "မည်" : v
+			prevTag1 == "n" and word == "မည်" : pron
+		prevWord1 == "၊" and word == "ဆီ" : n
+		prevTag1 == "part" and word == "ရဲ့" and nextTag1 == "punc" : part
+		word == "ဟာ" and nextWord2 == "<EOS>" : part
+		word == "မှ" and nextWord1 == "၊" : conj
+			suffixL3 == "<SFX>" : ppm
+		word == "မှာ" and nextWord1 == "မယ်" : v
+		prevWord2 == "<BOS>" and prevWord1 == "အခု" and word == "မှာ" : v
+		prevTag1 == "ppm" and word == "အနက်" : n
+			nextTag1 == "ppm" : ppm
+		word == "အကြား" and nextTag1 == "v" and nextTag2 == "n" : n
+		word == "ရအောင်" and nextWord2 == "ပေး" : conj
+		prevTag1 == "v" and word == "ရအောင်" and nextTag1 == "adv" : conj
+		word == "အား" and nextWord1 == "နေ" : v
+		word == "က" and nextWord1 == "တတ်" : v
+		nextWord1 == "တယ်" : v
+		nextTag1 == "part" and prefixL2 == "အန" : n
+		word == "အား" and nextWord1 == "မ" and nextWord2 == "ရှိ" : n
+		prevTag1 == "conj" and word == "ဆီ" : n
+		word == "အနက်" and nextWord1 == "အဓိပ္ပါယ်" : n
+		prevTag1 == "ppm" and word == "က" and nextTag1 == "conj" : n
+		prevTag1 == "<BOS_T>" and nextTag1 == "v" : part
+		word == "ဟာ" and nextWord1 == "အင်မတန်" : part
+		prevTag1 == "v" and word == "မယ်" and nextTag1 == "ppm" : part
+		prevTag1 == "fw" and word == "သို့" and nextTag1 == "n" : conj
+		word == "ရအောင်" and nextTag1 == "n" : conj
+			word == "ရအောင်" and suffixL3 == "ာင်" : ppm
+		word == "နဲ့" and nextWord1 == "ဆက်စပ်" and nextWord2 == "နေ" : conj
+		prevWord1 == "ရ" and word == "နဲ့" : conj
+		prevTag2 == "<BOS_T>" and prevTag1 == "conj" and word == "မှ" : conj
+		prevWord1 == "တာ" and nextWord1 == "အမျှ" : conj
+		word == "ဟာ" and nextWord1 == "ကို" : pron
+		word == "အား" and nextWord2 == "တယ်" : v
+		word == "အတိုင်း" and nextWord2 == "အလွန်" : n
+		prevWord2 == "ကို" and prevWord1 == "ဒီ" and word == "အတိုင်း" : n
+			prevTag2 == "ppm" and prevTag1 == "adj" : ppm
+		prevTag2 == "ppm" and prevTag1 == "adv" and word == "အတိုင်း" : n
+		prevTag1 == "adj" and word == "အနက်" : n
+		word == "အား" and nextTag1 == "ppm" and nextTag2 == "v" : n
+		prevWord2 == "သည်" and word == "အနက်" : n
+		prevTag1 == "v" and word == "အား" and nextTag1 == "adj" : n
+		word == "မှ" and nextWord1 == "၁" and nextWord2 == "နာရီ" : part
+		word == "နဲ့" and nextWord1 == "စာဖတ်" : part
+		prevWord1 == "ကျုပ်" and word == "ဟာ" : part
+		word == "ဟာ" and nextWord2 == "မှု" : part
+		prevWord2 == "အမျိုးသမီး" and word == "ဟာ" : part
+		word == "တွင်" and nextWord1 == "တည်းခို" : part
+		word == "မယ့်" and nextWord1 == "ဟာ" and nextWord2 == "ကို" : part
+		word == "ဟာ" and nextWord2 == "မှ" : part
+		word == "ကို" and nextWord1 == "သူရိန်" : part
+		prevWord1 == "မယ်" and nextWord1 == "တူ" : part
+			prevTag1 == "ppm" and suffixL3 == "နဲ့" : ppm
+				nextTag1 == "v" and wordShape == "U" : conj
+		word == "ဟာ" and nextTag1 == "tn" and nextTag2 == "part" : part
+		prevWord2 == "''" and word == "ဟာ" : part
+		prevTag2 == "part" and prevTag1 == "adv" and word == "နဲ့" : part
+			suffixL3 == "နဲ့" : ppm
+		nextWord1 == "ဗြက်" and nextWord2 == "သိပ်" : part
+		word == "မှာ" and nextWord1 == "ရောက်" and nextWord2 == "ခဲ့" : part
+		word == "မှ" and nextWord1 == "ငါ့" : part
+		prevWord2 == "မိန်းကလေး" and word == "ဟာ" : part
+		prevWord1 == "တဖြည်းဖြည်း" : part
+		prevWord2 == "ဘုရား" and word == "မယ်" : part
+		prevWord1 == "သူမ" and word == "ဟာ" and nextWord1 == "ကလေး" : part
+		prevWord2 == "ကြား" and word == "တွင်" : part
+		word == "နဲ့" and nextWord2 == "လုပ်ငန်း" : conj
+		prevWord1 == "ဇွန်း" and word == "နဲ့" and nextWord1 == "တူ" : conj
+		prevWord1 == "မင်း" and word == "နဲ့" and nextWord1 == "မ" : conj
+		word == "အားလျော်စွာ" and nextTag1 == "v" and nextTag2 == "v" : conj
+		prevWord1 == "က" and word == "နဲ့" : conj
+		prevWord1 == "လိုင်း" and word == "နဲ့" : conj
+		word == "နဲ့" and nextWord2 == "တည့်" : conj
+		prevWord2 == "အဲဒီ" and prevWord1 == "သူငယ်ချင်း" and word == "နဲ့" : conj
+		prevWord1 == "အမှား" and word == "နဲ့" : conj
+		prevWord1 == "ရှိ" and word == "မှ" and nextWord1 == "လည်း" : conj
+		prevWord2 == "၊" and prevWord1 == "အပြော" and word == "နဲ့" : conj
+		prevTag2 == "n" and prevTag1 == "tn" and word == "နဲ့" : conj
+		prevWord1 == "လိုက်" and word == "နဲ့" : conj
+		prevWord1 == "တာ" and word == "နဲ့" and nextWord1 == "သူ" : conj
+		prevTag1 == "v" and word == "ရအောင်" and nextTag1 == "v" : conj
+			nextTag1 == "v" and wordShape == "U" : ppm
+		word == "နဲ့" and nextTag1 == "abb" : conj
+		word == "နဲ့" and nextWord1 == "ရန်ဖြစ်" and nextWord2 == "လို့" : conj
+		word == "နဲ့" and nextWord1 == "တပြိုင်နက်" : conj
+		prevWord1 == "ရင်း" and word == "မှ" : conj
+		prevWord2 == "မျက်နှာ" and word == "နဲ့" : conj
+		word == "နဲ့" and nextWord2 == "ရေး" : conj
+		prevWord2 == "မျက်လုံး" and word == "နဲ့" : conj
+		prevWord2 == "ကို" and prevWord1 == "ငွေ" : conj
+		prevWord1 == "အလုပ်" and nextWord1 == "ပတ်သတ်" : conj
+		prevWord1 == "တွေ" and word == "နဲ့" and nextWord1 == "ပြည့်ကျပ်" : conj
+		word == "နဲ့" and nextWord1 == "နှစ်" : conj
+		prevWord2 == "စာအုပ်" and word == "နဲ့" : conj
+		word == "မည်" and nextWord1 == "နည်း" : pron
+			prevTag1 == "part" and suffixL3 == "မည်" : ppm
+		word == "အား" and nextWord1 == "လို့" : v
+		prevWord1 == "လည်း" : v
+		prevTag2 == "part" and prevTag1 == "punc" and word == "မှာ" : v
+		word == "မှာ" and nextWord1 == "ပုံ" and nextWord2 == "။" : v
+		word == "အား" and nextWord1 == "မှာ" : v
+		prevTag2 == "conj" and prevTag1 == "punc" and word == "က" : v
+		nextWord1 == "လိုက်" and nextWord2 == "ရင်" : v
+		nextWord1 == "သည်" and nextWord2 == "။" : v
+		prevWord1 == "က" and nextWord1 == "ပြီး" : v
+	tag == "pron" : pron
+		prevTag1 == "v" and word == "သူ" : n
+			suffixL3 == "<SFX>" : pron
+				prevTag1 == "v" and wordShape == "U" : part
+		word == "ဘာ" and nextTag1 == "n" : adj
+			suffixL3 == "<SFX>" : pron
+		prevTag1 == "part" and word == "သူ" : n
+			suffixL3 == "<SFX>" : pron
+				prevTag1 == "part" and suffixL2 == "<SFX>" : v
+					prevTag1 == "part" and word == "သူ" : part
+		prevTag1 == "n" and word == "မင်း" : n
+			prevTag1 == "n" and word == "မင်း" : pron
+		word == "ယင်း" and nextTag1 == "n" : adj
+			suffixL2 == "်း" : pron
+		prevTag1 == "adj" and word == "သူ" : n
+			suffixL3 == "<SFX>" : pron
+		word == "ဟို" and nextTag1 == "n" : adj
+			word == "ဟို" : pron
+		nextTag1 == "n" and prefixL2 == "၎င" : adj
+			word == "၎င်း" and suffixL3 == "င်း" : pron
+		prevWord1 == "သော" and word == "မင်း" : n
+		prevWord1 == "ထို" : n
+		word == "ကိုယ်" and nextTag1 == "n" : n
+			word == "ကိုယ်" : pron
+		word == "ယင်း" and nextTag1 == "v" : adj
+		prevTag1 == "ppm" and word == "ကိုယ်" and nextTag1 == "ppm" : n
+		prevWord1 == "မယ့်" : n
+		prevWord1 == "နဲ့" and word == "သူ" : n
+			suffixL3 == "<SFX>" : pron
+		nextWord1 == "နေပြည်တော်" : n
+		prevWord1 == "မယ့်" and word == "သူ" : n
+		word == "ကိုယ်" and nextTag1 == "part" and nextTag2 == "n" : n
+			nextTag1 == "part" and prefixL2 == "ကိ" : pron
+		word == "၎င်း" and nextWord1 == "၊" : conj
+		word == "ကိုယ်" and nextWord1 == "တွင်" : n
+		nextTag1 == "punc" and nextTag2 == "v" : n
+		word == "မင်း" and nextTag1 == "tn" : n
+		prevTag1 == "punc" and word == "ကျွန်တော့်" and nextTag1 == "n" : n
+		prevWord1 == "ကို" and word == "ဟို" : adj
+		word == "သူ" and nextWord2 == "ဝင်" : n
+		word == "မင်း" and nextWord2 == "သည်" : n
+		prevWord1 == "<BOS>" and word == "ကျွန်တော့်" and nextWord1 == "ဆီ" : n
+		prevWord2 == "<BOS>" and prevWord1 == "အဲဒါ" and word == "ကျွန်တော့်" : n
+		prevTag1 == "<BOS_T>" and word == "မိမိ" and nextTag1 == "n" : n
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : pron
+		prevWord1 == "လည်း" and word == "ကျွန်တော့်" : n
+		prevWord1 == "ပထမဆုံး" : n
+		prevWord1 == "လို့" and word == "ကိုယ်" and nextWord1 == "က" : n
+		prevTag1 == "conj" and word == "မင်း" and nextTag1 == "n" : n
+		prevWord2 == "မှ" and word == "သူ" : n
+		prevTag2 == "v" and prevTag1 == "n" and word == "သူ" : n
+		word == "ကိုယ်" and nextWord2 == "သွား" : n
+		nextWord1 == "ကို" and nextWord2 == "မှန်" : n
+		prevWord1 == "နည်း" and word == "သူ" : n
+		prevWord1 == "တွင်" and word == "မင်း" : n
+		word == "သူ" and nextWord1 == "တွေ" : n
+		prevWord1 == "ကာ" and nextWord1 == "ကို" : n
+		word == "မင်း" and nextWord1 == "နှင့်တကွ" : n
+		word == "အဲဒါ" and nextWord1 == "က" and nextWord2 == "နာရီ" : adj
+		word == "အဲဒီ" and nextWord1 == "နံပါတ်" : adj
+		word == "၎င်း" and nextTag1 == "fw" : adj
+		word == "နင်" and nextWord2 == "တယ်" : v
+		prevWord1 == "၊" and word == "အဲ" : part
+		word == "ဘာ" and nextWord1 == "။" : part
+	tag == "punc" : punc
+		prevWord2 == "<BOS>" and prevWord1 == "တရုတ်" and word == "-" : sb
+	tag == "sb" : sb
+	tag == "tn" : tn
+		prevTag1 == "adj" and word == "နှစ်" : n
+			prevTag1 == "adj" and suffixL3 == "ှစ်" : tn
+		prevTag1 == "num" and word == "နှစ်" : n
+			prevTag1 == "num" and wordShape == "U" : tn
+		prevTag1 == "tn" and word == "နှစ်" : n
+			prevTag1 == "tn" : tn
+		word == "နှစ်" and nextWord1 == "ပေါင်း" : n
+		word == "နှစ်" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : tn
+		word == "နှစ်" and nextTag1 == "num" : n
+		nextWord1 == "နိုင်ငံ" and nextWord2 == "လုံး" : n
+		word == "နှစ်" and nextWord1 == "များ" : n
+		word == "ကိုး" and nextTag1 == "punc" : part
+		prevWord1 == "သုံး" and word == "နှစ်" : n
+			prevWord2 == "သုံး" and word == "နှစ်" : tn
+		nextTag1 == "conj" and nextTag2 == "v" : v
+			prefixL2 == "နှ" : n
+		nextWord1 == "ကာလ" : n
+		word == "နှစ်" and nextWord1 == "တိုင်း" : n
+		prevWord1 == "လေး" and word == "နှစ်" : n
+		nextWord1 == "အနည်းငယ်" : n
+		prevTag1 == "ppm" and word == "နှစ်" and nextTag1 == "tn" : n
+		prevWord1 == "ငါး" and word == "နှစ်" : n
+		prevWord1 == "ယခု" : n
+		prevWord2 == "ဝက်ပေါင်" and prevWord1 == "ကြပ်တင်" and word == "ခြောက်" : n
+		prevTag1 == "part" and word == "နှစ်" and nextTag1 == "punc" : n
+		prevTag1 == "ppm" and word == "သုံးဆယ်" and nextTag1 == "n" : n
+		word == "နှစ်" and nextTag1 == "adv" and nextTag2 == "v" : n
+		nextWord1 == "ထုတ်" : v
+		prevWord1 == "ဝက်ဆားနယ်" and word == "ခြောက်" : n
+		prevWord1 == "စာသင်" and word == "နှစ်" : n
+		nextWord1 == "လောက" and nextWord2 == "လုံး" : n
+		prevWord1 == "သော" and word == "နှစ်" : n
+		nextWord1 == "ကုန်" : n
+		word == "နှစ်" and nextWord1 == "ထောင်" and nextWord2 == "ပေါင်း" : n
+		word == "ခြောက်" and nextWord1 == "နေ" : v
+	tag == "v" : v
+		prevTag1 == "v" and word == "သွား" : part
+			prevTag1 == "v" and wordShape == "U" : v
+		prevTag1 == "v" and word == "ရှိ" : part
+			prevTag1 == "v" and suffixL3 == "ရှိ" : v
+		prevWord1 == "တစ်" : part
+			prevTag1 == "tn" : n
+				wordShape == "U" : v
+		word == "လို" and nextTag1 == "n" : ppm
+			nextTag1 == "n" and prefixL2 == "လိ" : part
+				nextTag1 == "n" and wordShape == "U" : v
+					prefixL2 == "လိ" : n
+		prevWord1 == "ဖြစ်" and word == "ဖြစ်" : part
+			prevWord1 == "ဖြစ်" : v
+		word == "လို" and nextTag1 == "v" : ppm
+			nextTag1 == "v" and wordShape == "U" : part
+		word == "ပြန်" and nextTag1 == "ppm" and nextTag2 == "punc" : part
+			nextTag1 == "ppm" : v
+		prevTag1 == "v" and word == "ကြည့်" : part
+			suffixL2 == "့်" : v
+		prevWord1 == "ပါ" and word == "ရှိ" : part
+			prevTag1 == "part" and word == "ရှိ" : v
+		word == "သုံး" and nextTag1 == "n" : tn
+			nextTag1 == "n" and wordShape == "U" : v
+		word == "ဆက်" and nextTag1 == "v" : adv
+		prevTag1 == "v" and word == "ကြည့်" : part
+			prevTag1 == "v" and word == "ကြည့်" : v
+		word == "ကုန်" and nextTag1 == "ppm" : part
+			nextTag1 == "ppm" : v
+		prevTag1 == "v" and word == "ပြ" : part
+			suffixL3 == "<SFX>" : v
+		word == "လို" and nextWord1 == "ပဲ" : ppm
+			prefixL2 == "လိ" : part
+		word == "ကြား" and nextTag1 == "ppm" : n
+			nextTag1 == "ppm" : v
+		prevTag1 == "ppm" and word == "ဆို" and nextTag1 == "punc" : part
+		prevTag1 == "adj" and word == "သွား" and nextTag1 == "ppm" : part
+			nextTag1 == "ppm" : v
+		prevWord1 == "မျှ" and word == "ရှိ" : part
+		word == "သုံး" and nextTag1 == "part" and nextTag2 == "v" : tn
+			word == "သုံး" and nextTag1 == "part" : v
+		prevTag1 == "v" and word == "ပြန်" : part
+			prevTag1 == "v" and wordShape == "U" : v
+		nextWord1 == "ကို" : n
+			nextTag1 == "ppm" : v
+				word == "ရပ်" and suffixL3 == "ရပ်" : part
+				wordShape == "U" : adj
+		prevWord1 == "အင်္ဂလိပ်" and word == "လို" : ppm
+		nextTag1 == "tn" and prefixL2 == "သု" : tn
+		word == "လို" and nextWord1 == "မ" : ppm
+		word == "သွား" and nextWord1 == "ပြီ" and nextWord2 == "။" : part
+			nextTag1 == "ppm" : v
+		word == "သင်" and nextWord1 == "တို့" : n
+			word == "သင်" and nextWord1 == "တို့" : pron
+		word == "သင်" and nextTag1 == "ppm" : pron
+			nextTag1 == "ppm" : v
+		prevTag1 == "adj" and suffixL3 == "လို" : ppm
+			prevTag1 == "adj" : v
+				prefixL2 == "လိ" : part
+		word == "တင်" and nextTag1 == "v" and nextTag2 == "part" : part
+		word == "ကုန်" and nextWord1 == "ထုတ်လုပ်" : n
+		prevWord1 == "<BOS>" and nextWord1 == "၊" : int
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : v
+		word == "မှန်" and nextTag1 == "conj" and nextTag2 == "ppm" : adj
+		prevTag2 == "v" and prevTag1 == "part" and word == "ပြန်" : part
+			prevTag1 == "part" and suffixL2 == "န်" : v
+		word == "ကုန်" and nextWord1 == "သော" : part
+		prevWord2 == "တစ်" and word == "ကျ" : part
+		prevTag1 == "n" and word == "တိုင်" : ppm
+			suffixL3 == "ုင်" : n
+				prevTag1 == "n" and suffixL2 == "င်" : v
+					word == "တိုင်" and suffixL3 == "ုင်" : part
+		prevWord1 == "နှစ်" and word == "ရပ်" : part
+		word == "သုံး" and nextWord1 == "လေး" : tn
+		word == "သာယာ" and nextTag1 == "part" and nextTag2 == "n" : adj
+			word == "သာယာ" : v
+		prevWord1 == "ရ" and word == "သွား" : part
+			wordShape == "U" : v
+		prevWord1 == "စစ်" and word == "ကြည့်" : part
+			word == "ကြည့်" : v
+		word == "ပြန်" and nextWord1 == "ပေး" : part
+		prevTag1 == "v" and word == "စ" : part
+			suffixL3 == "<SFX>" : v
+		nextWord1 == "ထဲ" : n
+			nextTag1 == "ppm" : v
+		word == "ကြား" and nextTag1 == "v" : n
+		word == "နာမည်ကြီး" and nextTag1 == "n" : adj
+			prefixL3 == "နာမ" : n
+		prevWord1 == "အဲဒီ" and word == "လို" : ppm
+			prevTag1 == "pron" and wordShape == "U" : part
+		prevTag2 == "n" and prevTag1 == "conj" and word == "သွား" : part
+			prevWord1 == "နှင့်" : n
+		prevWord1 == "စမ်း" and word == "ကြည့်" : part
+		word == "သွား" and nextTag1 == "n" and nextTag2 == "ppm" : n
+			nextTag2 == "ppm" : v
+		prevTag1 == "n" and word == "ဖျား" : n
+		word == "ကောက်" and nextTag1 == "n" : n
+		nextWord1 == "ယောက်" : tn
+		word == "သုံး" and nextWord1 == "ခု" : tn
+		prevTag2 == "ppm" and prevTag1 == "n" and word == "လွတ်" : adj
+			prefixL2 == "လွ" : v
+		prevWord1 == "ကိစ္စ" and word == "ရပ်" : part
+		prevWord1 == "သုံး" : part
+			prevTag1 == "v" and wordShape == "U" : n
+		word == "အပ်" and nextWord1 == "သော" : part
+		word == "ကျ" and nextWord1 == "မှ" : part
+			nextWord1 == "မှ" : v
+		word == "ပညာသင်" and nextTag1 == "v" and nextTag2 == "part" : n
+		word == "သွား" and nextWord1 == "များ" : n
+		word == "ဝေး" and nextTag1 == "part" and nextTag2 == "n" : adj
+			prefixL2 == "ဝေ" : v
+		prevWord1 == "သည့်" and word == "တိုင်" : ppm
+		word == "ပြန်" and nextWord1 == "တွေ့" : part
+			nextTag1 == "v" and wordShape == "U" : v
+		prevWord1 == "ကြည့်" and word == "ဖြစ်" : part
+			prevTag1 == "v" and wordShape == "U" : v
+		prevWord2 == "မျိုး" and word == "စား" : part
+		word == "အကြံပေး" and nextTag1 == "n" : n
+		word == "တူ" and nextWord1 == "နဲ့" : n
+		prevTag1 == "num" and suffixL3 == "ဆက်" : n
+		prevTag2 == "part" and prevTag1 == "v" and word == "မက" : adv
+		word == "ကျ" and nextWord1 == "တော့" : part
+			suffixL3 == "<SFX>" : v
+		prevWord1 == "ထား" and word == "ရှိ" : part
+			prevTag1 == "part" and word == "ရှိ" : v
+		prevWord1 == "မိ" and word == "သွား" : part
+		prevWord1 == "ပါ" and word == "သွား" : part
+			nextTag1 == "ppm" : v
+		prevWord1 == "ပြီး" and nextWord1 == "ပြီ" : part
+		word == "သုံး" and nextTag1 == "v" : tn
+			nextTag1 == "v" and wordShape == "U" : v
+		word == "သုံး" and nextWord1 == "ပါး" : tn
+		word == "မြင့်" and nextTag1 == "part" and nextTag2 == "n" : adj
+		word == "ပြင်းထန်" and nextTag1 == "part" and nextTag2 == "n" : adj
+			nextTag1 == "part" and prefixL2 == "ပြ" : v
+		word == "အေးချမ်း" and nextWord1 == "စွာ" : adj
+		prevWord1 == "ကြွယ်ဝ" and word == "ချမ်းသာ" : adj
+		word == "လို" and nextTag1 == "adj" : ppm
+		word == "ပြန်" and nextTag1 == "v" and nextTag2 == "v" : part
+			nextTag1 == "v" and wordShape == "U" : v
+		prevTag1 == "v" and word == "ကုန်" : part
+			prevTag1 == "v" and word == "ကုန်" : v
+		word == "ပြန်" and nextWord2 == "လိုက်" : part
+			nextTag1 == "v" and wordShape == "U" : v
+		prevWord1 == "သည့်" and word == "ပြင်" : part
+		prevWord1 == "ပေါ့" and word == "သွား" : part
+		prevTag1 == "tn" and suffixL3 == "စီး" : part
+		nextWord1 == "တွင်" : n
+			nextTag1 == "ppm" : part
+		prevWord1 == "သခင်" : n
+			prefixL2 == "စိ" : v
+		nextWord1 == "ပိုင်း" : tn
+		prevWord2 == "နှစ်" and word == "သုံး" : tn
+		word == "ပူးတွဲ" and nextTag1 == "v" and nextTag2 == "part" : adv
+		prevTag1 == "conj" and word == "ဝေး" and nextTag1 == "part" : adj
+		word == "ကြာ" and nextWord1 == "သော်" : adj
+		word == "အသိအမှတ်ပြု" and nextWord1 == "လက်မှတ်" : adj
+		word == "နာမည်ကြီး" and nextWord1 == "တဲ့" : adj
+		nextWord1 == "သတ္တိ" : adj
+		word == "ခက်" and nextTag1 == "conj" : adj
+		nextWord1 == "၏" and nextWord2 == "၊" : adj
+		prevWord1 == "<BOS>" and word == "စုပေါင်း" and nextWord1 == "အဖွဲ့" : adj
+		prevTag1 == "ppm" and word == "တိုင်" : ppm
+		prevWord2 == "ယုံ" and prevWord1 == "တင်" : ppm
+		prevTag1 == "tn" and word == "စု" : part
+		word == "ဝယ်" and nextTag1 == "n" : part
+			prefixL3 == "ဝယ်" : ppm
+		word == "သွား" and nextWord1 == "အောင်" : part
+		prevWord1 == "ရ" and word == "ရှာ" : part
+		word == "သွား" and nextWord1 == "ပါ" and nextWord2 == "ပြီ" : part
+		prevWord1 == "ဆုံး" and word == "သွား" : part
+		prevTag1 == "tn" and suffixL3 == "ွဲ့" : part
+		word == "ယုံ" and nextWord1 == "တင်" and nextWord2 == "မက" : part
+		prevWord1 == "ဘူး" and nextWord1 == "။" : part
+		word == "စ" and nextTag1 == "n" and nextTag2 == "n" : part
+		prevWord1 == "လေး" and word == "တင်" : part
+		word == "စာရေး" and nextWord1 == "ဆီ" : n
+		prevWord1 == "မစ္စတာ" : n
+		prevTag1 == "<BOS_T>" and word == "မှန်" and nextTag1 == "v" : n
+		prevTag1 == "n" and word == "ကြား" and nextTag1 == "n" : n
+		word == "လုပ်ကြံ" and nextTag1 == "v" : adv
+		word == "စော" and nextTag1 == "v" : adv
+		word == "နှစ်ခြိုက်" and nextWord1 == "စွာ" : adv
+		prevTag1 == "<BOS_T>" and suffixL3 == "ဟော" : int
+			prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" : part
+		prevTag2 == "<BOS_T>" and prevTag1 == "n" and word == "ပူ" : adj
+		prevTag2 == "<BOS_T>" and prevTag1 == "adv" and word == "ပူ" : adj
+			prevWord2 == "<BOS>" : v
+		prevTag1 == "ppm" and word == "မှန်" and nextTag1 == "conj" : adj
+		word == "ထူ" and nextTag1 == "part" and nextTag2 == "n" : adj
+		prevTag1 == "ppm" and word == "ပူ" and nextTag1 == "conj" : adj
+		word == "လွယ်" and nextWord1 == "တဲ့" : adj
+			prefixL3 == "လွယ" : v
+				word == "လွယ်" and nextWord1 == "တဲ့" : adv
+		word == "နီး" and nextWord1 == "သော" : adj
+		prevTag1 == "ppm" and word == "သာယာ" and nextTag1 == "part" : adj
+		word == "လင်း" and nextTag1 == "part" : adj
+			prevTag1 == "ppm" and wordShape == "U" : v
+		word == "တိုး" and nextTag1 == "n" : adj
+		prevTag1 == "<BOS_T>" and word == "တိတ်ဆိတ်" and nextTag1 == "part" : adj
+		word == "အရေးကြီး" and nextWord1 == "တဲ့" and nextWord2 == "ကိစ္စ" : adj
+		word == "ကြာ" and nextWord1 == "သောအခါ" : adj
+		prevWord1 == "နှုတ်သီး" : adj
+		word == "သာယာ" and nextWord1 == "သည်" : adj
+		word == "ချို့ယွင်း" and nextTag1 == "n" : adj
+		word == "လွတ်လပ်" and nextTag1 == "n" : adj
+		prevTag1 == "conj" and word == "ခက်" and nextTag1 == "part" : adj
+		prevWord1 == "ခု" and word == "လို" and nextWord1 == "တယ်" : ppm
+			nextTag1 == "ppm" : v
+		word == "လို" and nextWord1 == "ပါ" and nextWord2 == "ပဲ" : ppm
+		prevWord1 == "မြန်မာ" and word == "လို" : ppm
+		prevWord1 == "အထီးကျန်" and word == "ဖြစ်" : part
+		prevWord2 == "တာ" and word == "သွား" : part
+		prevWord1 == "ငို" and word == "ချ" : part
+		prevWord1 == "နေ" and word == "ကြည့်" : part
+		prevTag1 == "n" and word == "ဝယ်" and nextTag1 == "punc" : part
+		word == "ပြန်" and nextTag1 == "v" and nextTag2 == "ppm" : part
+			word == "ပြန်" and nextTag1 == "v" and nextTag2 == "ppm" : v
+		prevWord1 == "နေ့" and word == "ကျ" : part
+		word == "ကျ" and nextWord1 == "ပဲ" and nextWord2 == "။" : part
+		prevWord2 == "အလုပ်" and word == "ခံ" : part
+		prevWord1 == "ရ" and word == "ရှိ" : part
+		word == "ယောင်" and nextWord1 == "ဆောင်" : part
+		prevWord1 == "စစ်" and word == "ကြည့်" : part
+		prevWord1 == "လဲ" and word == "သွား" : part
+		word == "ပြန်" and nextWord1 == "ကြည့်" : part
+		nextWord1 == "မ" and nextWord2 == "ဆပ်" : part
+		prevTag2 == "part" and prevTag1 == "v" and word == "ရှာ" : part
+		prevWord1 == "နေ" and word == "ရှာ" : part
+		word == "အပ်" and nextWord1 == "နဲ့" : n
+		prevTag2 == "num" and prevTag1 == "n" and word == "ကြား" : n
+		prevTag1 == "n" and word == "သရုပ်ဖော်" : n
+		prevTag1 == "<BOS_T>" and word == "သွား" and nextTag1 == "n" : n
+		prevWord1 == "၊" and nextWord1 == "၊" : n
+			prevTag1 == "punc" : v
+		prevWord1 == "ဘယ်နှ" : n
+		prevWord1 == "ရဲ့" and nextWord1 == "က" : n
+		word == "ကုန်" and nextTag1 == "n" : n
+			word == "ကုန်" and nextTag1 == "n" : v
+		prevTag2 == "n" and prevTag1 == "n" and word == "ကွဲ" : n
+		prevTag1 == "<BOS_T>" and word == "လက်ခံ" and nextTag1 == "n" : n
+		prevTag1 == "<BOS_T>" and word == "စျေးဝယ်" : n
+		prevWord1 == "၊" and nextWord1 == "နှင့်" : n
+		nextWord1 == "ဖာ" : n
+			nextTag1 == "v" and wordShape == "U" : v
+		prevTag1 == "n" and word == "စာရေး" : n
+		word == "ကု" and nextTag1 == "ppm" : n
+		prevTag1 == "v" and suffixL3 == "ရေး" : n
+		prevTag2 == "v" and prevTag1 == "part" and word == "စွမ်း" : n
+			prevTag2 == "v" and prevTag1 == "part" and word == "စွမ်း" : part
+		prevWord2 == "နေ့" and prevWord1 == "ကို" and word == "သုံး" : tn
+		word == "သုံး" and nextWord1 == "ဆ" : tn
+		word == "သုံး" and nextWord1 == "လုံး" : tn
+		word == "သုံး" and nextWord2 == "တို့" : tn
+		word == "လှည့်ပတ်" and nextTag1 == "v" and nextTag2 == "part" : adv
+			nextTag1 == "v" and wordShape == "U" : v
+		nextWord1 == "စွာ" and nextWord2 == "နေထိုင်" : adv
+			nextTag1 == "part" and nextTag2 == "v" : v
+		word == "ဆက်" and nextWord1 == "၍" : adv
+		nextWord1 == "ရိုက်" : adv
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "သင်" : pron
+		prevWord1 == "နေရာ" and word == "လွတ်" : adj
+		word == "အသက်ကယ်" and nextWord2 == "တွေ" : adj
+		prevWord1 == "<BOS>" and word == "နောက်ပြောင်" and nextWord1 == "သော" : adj
+		prevWord2 == "နှစ်သက်" and word == "သာယာ" : adj
+		word == "သဘောကောင်း" and nextWord2 == "သူ" : adj
+		word == "လျင်မြန်" and nextTag1 == "part" and nextTag2 == "ppm" : adj
+		prevWord2 == "<BOS>" and prevWord1 == "<BOS>" and word == "မှန်ကန်" : adj
+		prevTag1 == "ppm" and word == "ချမ်းသာ" and nextTag1 == "adj" : adj
+		word == "ဝေး" and nextWord1 == "သည်" : adj
+			nextTag1 == "ppm" : v
+		prevTag1 == "<BOS_T>" and word == "အရေးကြီး" and nextTag1 == "n" : adj
+		word == "ကျန်" and nextWord2 == "တွေ" : adj
+		word == "စုပေါင်း" and nextTag1 == "n" and nextTag2 == "tn" : adj
+		prevWord1 == "<BOS>" and word == "လိုအပ်" and nextWord1 == "သော" : adj
+		prevWord1 == "အပြေး" and word == "လျင်မြန်" : adj
+		prevWord1 == "ရေ" and word == "ပူ" : adj
+		nextWord1 == "စစ်" and nextWord2 == "အစိုးရ" : adj
+		nextWord1 == "သန်စွမ်း" : adj
+		word == "မှား" and nextWord1 == "လောက်" : adj
+		prevWord2 == "လ" and word == "ကြာ" : adj
+		word == "ပြင်းထန်" and nextWord2 == "ဝေဖန်" : adj
+		prevWord2 == "ကိုရီးယား" and prevWord1 == "နိုင်ငံ" : adj
+		prevWord1 == "ဟောင်းနွမ်း" and nextWord1 == "နေ" : adj
+		word == "ဉာဏ်ကောင်း" and nextTag1 == "conj" : adj
+		word == "မြန်ဆန်" and nextTag1 == "part" and nextTag2 == "n" : adj
+		word == "ကြာ" and nextWord1 == "ချင်" and nextWord2 == "ကြာ" : adj
+		prevWord1 == "ချင်" and word == "ကြာ" : adj
+		prevWord2 == "ဓာတု" : adj
+		word == "ကြာ" and nextWord1 == "တော့" and nextWord2 == "သည်" : adj
+		word == "မှန်" and nextWord2 == "တို့" : adj
+		word == "မှား" and nextWord1 == "မည်" and nextWord2 == "မ" : adj
+		word == "မှားယွင်း" and nextWord1 == "တဲ့" and nextWord2 == "အတွေး" : adj
+		word == "သာယာ" and nextWord2 == "သော" : adj
+		nextWord1 == "တိကျ" : adj
+		prevTag1 == "v" and word == "တိကျ" and nextTag1 == "part" : adj
+		prevWord2 == "သော" and word == "မှန်" : adj
+		word == "မှား" and nextWord1 == "တဲ့" : adj
+		prevWord1 == "<BOS>" and word == "ပူ" and nextWord1 == "လိုက်" : adj
+		word == "စည်ကား" and nextWord1 == "သော" : adj
+		word == "ဝေး" and nextWord1 == "ရာ" : adj
+		prevWord1 == "ရိုးသား" : adj
+		prevWord1 == "အခြေအနေ" and word == "ဆိုး" : adj
+		word == "ချော" and nextWord1 == "လာ" : adj
+		prevWord2 == "<BOS>" and word == "ကင်းမဲ့" : adj
+		prevWord2 == "<BOS>" and prevWord1 == "ထမင်း" and word == "ကြော်" : adj
+		prevTag1 == "pron" and word == "ရေဆာ" and nextTag1 == "ppm" : adj
+		prevWord1 == "မူ" and word == "စုပေါင်း" and nextWord1 == "အဖွဲ့" : adj
+		prevWord1 == "မှာ" and word == "မှန်" : adj
+			prevTag2 == "n" and prevTag1 == "ppm" and word == "မှန်" : n
+		word == "ထူးဆန်း" and nextWord1 == "တဲ့" : adj
+		word == "မှန်ကန်" and nextTag1 == "part" and nextTag2 == "ppm" : adj
+		word == "သာယာ" and nextWord1 == "လှ" : adj
+		prevTag1 == "part" and word == "အေးချမ်း" : adj
+		word == "ဆိုး" and nextTag1 == "ppm" and nextTag2 == "n" : adj
+		word == "ထက်သန်" and nextTag1 == "adj" and nextTag2 == "part" : adj
+		prevWord2 == "က" and prevWord1 == "စိတ်ထား" : adj
+		word == "မိုက်" and nextWord1 == "သော" and nextWord2 == "သူ" : adj
+		prevTag2 == "adj" and prevTag1 == "ppm" and word == "ဆိုး" : adj
+		prevTag1 == "conj" and word == "မှန်ကန်" and nextTag1 == "part" : adj
+		word == "မှန်" and nextWord1 == "ပဲ" : adj
+		prevTag1 == "tn" and word == "ကြာ" and nextTag1 == "conj" : adj
+		word == "အဓိကထား" and nextTag1 == "part" and nextTag2 == "n" : adj
+		word == "ထူ" and nextTag1 == "conj" and nextTag2 == "adj" : adj
+		prevTag1 == "<BOS_T>" and suffixL3 == "စို" : adj
+		prevTag1 == "ppm" and word == "တင်းမာ" and nextTag1 == "part" : adj
+		prevWord1 == "အမျိုးအစား" and word == "တူ" and nextWord1 == "ကုန်ပစ္စည်း" : adj
+		prevTag1 == "adj" and word == "သာယာ" : adj
+		word == "အရေးမပါ" and nextTag1 == "part" and nextTag2 == "n" : adj
+		word == "ရိုင်းပျ" and nextTag1 == "part" and nextTag2 == "part" : adj
+		nextWord1 == "တဲ့" and nextWord2 == "စိတ်ဓာတ်" : adj
+		nextWord1 == "အနေအထား" : adj
+		prevWord1 == "ကြိမ်" and word == "တိုင်" : ppm
+		prevTag1 == "part" and word == "လို" and nextTag1 == "adv" : ppm
+		nextTag1 == "num" and prefixL2 == "လိ" : ppm
+		word == "လို" and nextWord1 == "ရော" : ppm
+		nextTag1 == "fw" and prefixL2 == "လိ" : ppm
+		prevWord1 == "တရုတ်" and word == "လို" : ppm
+		prevTag1 == "adv" and word == "ပြန်" and nextTag1 == "v" : part
+			nextTag1 == "v" and wordShape == "U" : v
+		prevTag1 == "ppm" and word == "တင်" and nextTag1 == "pron" : part
+		prevWord2 == "တယ်" and prevWord1 == "ပြော" and word == "ပြော" : part
+		prevWord2 == "မ" and word == "ပြန်" : part
+		prevWord1 == "လုပ်" and word == "ပျော်" : part
+		prevWord1 == "သောက်" and word == "သောက်" : part
+		prevWord1 == "ရှစ်" and word == "ဆောင်" and nextWord1 == "ပဏ္ဏား" : part
+		prevWord2 == "လူ" and word == "ပြန်" : part
+		prevWord2 == "အပူချိန်" and word == "ကြည့်" : part
+		prevWord1 == "သွား" and word == "ဖြစ်" : part
+		prevWord1 == "ပြီး" and word == "ပြန်" : part
+			prevWord1 == "ပြီး" and word == "ပြန်" : v
+		prevWord1 == "အငယ်" and word == "စား" : part
+		prevWord1 == "လောက်" and nextWord1 == "သနည်း" : part
+		prevWord1 == "ချိန်" and word == "ကြည့်" : part
+		prevWord1 == "နည်း" and word == "သွား" : part
+		prevTag1 == "conj" and word == "ပြန်" and nextTag1 == "conj" : part
+		prevWord1 == "ကြာ" and word == "ရပ်" and nextWord1 == "နေ" : part
+		word == "ကြည့်" and nextWord1 == "မယ်" and nextWord2 == "။" : part
+		prevWord1 == "ခရီးထွက်" : part
+		prevTag1 == "part" and word == "ကျ" and nextTag1 == "n" : part
+		word == "တင်" and nextWord2 == "ဟုတ်" : part
+		prevWord1 == "မိုးလင်း" : part
+		prevWord1 == "နေမကောင်း" : part
+			prevWord1 == "နေမကောင်း" : v
+		prevWord1 == "ခေါက်" and word == "ပြန်" : part
+		nextWord2 == "စပ်ဆို" : part
+		prevWord1 == "ရေး" and word == "ကြည့်" : part
+		prevWord1 == "နင်" and nextWord1 == "တယ်" : part
+		prevWord1 == "လုပ်" and word == "ထိုက်" : part
+		prevWord1 == "ရေး" and word == "ဖြစ်" and nextWord1 == "ခဲ့" : part
+		prevWord2 == "ကို" and prevWord1 == "ပစ်" : part
+		word == "လော" and nextTag1 == "punc" : part
+		prevWord1 == "လယ်" and word == "ပြန်" : part
+		word == "ပြန်" and nextWord1 == "မေး" : part
+		prevWord1 == "အသက်မွေးဝမ်းကျောင်း" and word == "ပြု" : part
+		prevWord1 == "မ" and word == "သွား" and nextWord1 == "စေ" : part
+		word == "ပြန်" and nextWord2 == "ကောင်း" : part
+		word == "စုံ" and nextTag1 == "v" : part
+		prevWord1 == "ပေါင်း" and nextWord1 == "လိုက်" : part
+		prevWord2 == "အချိန်" and prevWord1 == "ကို" and word == "ပြန်" : part
+		prevTag1 == "v" and word == "လု" : part
+		prevWord2 == "မ" and word == "ရှိ" : part
+		word == "တူ" and nextWord1 == "ရာသီ" : n
+		word == "ဌာပနာ" and nextWord1 == "ထား" : n
+		prevWord1 == "အပင်" and nextWord1 == "များ" : n
+		nextWord2 == "ဖြူ" : n
+		prevTag1 == "n" and word == "စကားပြော" and nextTag1 == "n" : n
+			prevTag1 == "n" and nextTag1 == "n" : v
+		word == "ဥပဒေပြု" and nextWord1 == "အဖွဲ့အစည်း" : n
+		word == "စိတ်ကူး" and nextTag1 == "v" : n
+		word == "ပိုက်" and nextTag1 == "v" : n
+		word == "ကုန်" and nextWord1 == "ပေး" : n
+		word == "ဖုံး" and nextTag1 == "n" and nextTag2 == "ppm" : n
+		word == "ချိတ်" and nextWord1 == "မှာ" and nextWord2 == "ချိတ်" : n
+		prevTag1 == "n" and word == "ရပ်" and nextTag1 == "n" : n
+		word == "ကုန်" and nextTag1 == "v" and nextTag2 == "v" : n
+		prevTag1 == "part" and word == "ကြား" and nextTag1 == "adv" : n
+		word == "တူ" and nextTag1 == "ppm" and nextTag2 == "v" : n
+		prevWord1 == "''" and nextWord1 == "၊" : n
+		nextTag1 == "adj" and prefixL2 == "သွ" : n
+		word == "ဆောင်" and nextWord1 == "မှာ" : n
+		prevTag1 == "num" and word == "ဖွဲ့" : n
+		word == "တူ" and nextWord2 == "ရာသီခွင်" : n
+		prevWord2 == "၊" and word == "တူ" : n
+		nextWord1 == "၊" and nextWord2 == "ဒါမှမဟုတ်" : n
+		prevWord1 == "၊" and nextWord1 == "စသော" : n
+		prevWord2 == "သည်" and word == "ချို" : n
+		word == "တိုင်" and nextWord2 == "ကဒိုင်" : n
+		prevWord1 == "၃" and nextWord1 == "၊" : n
+		word == "စကားပြော" and nextWord2 == "ကို" : n
+		prevWord1 == "၌" and word == "စာရေး" : n
+		prevWord1 == "<BOS>" and word == "အောင်သွယ်" : n
+		nextWord1 == "စတဲ့" and nextWord2 == "လူမျိုး" : n
+		prevWord1 == "၏" and word == "နှိုင်းချင့်" and nextWord1 == "တန်ဖိုး" : n
+		prevTag2 == "pron" and prevTag1 == "ppm" and word == "စိတ်ကူး" : n
+		word == "ဆစ်" and nextTag1 == "n" and nextTag2 == "part" : n
+		prevWord2 == "တဲ့" and word == "ဆိုက်" : n
+		word == "မြည်း" and nextTag1 == "ppm" and nextTag2 == "n" : n
+		nextWord1 == "က" and nextWord2 == "ဌာနမှူး" : n
+		word == "လည်ပတ်" and nextTag1 == "n" and nextTag2 == "ppm" : n
+		word == "ချိတ်ဆက်" and nextWord1 == "ထား" : n
+		prevWord1 == "ရန်" and nextWord1 == "များ" : n
+		prevTag1 == "adv" and nextTag1 == "tn" : n
+		word == "ဟင်းချက်" and nextWord1 == "နည်း" and nextWord2 == "တွေ" : n
+		word == "မှန်" and nextWord1 == "က" : n
+		nextWord1 == "ပုဒ်" : n
+		word == "ကုန်" and nextWord1 == "တွေ" : n
+		word == "ရှား" and nextWord2 == "၊" : n
+		nextWord1 == "တွေ" and nextWord2 == "လည်း" : n
+		prevWord1 == "ငှက်" and nextWord1 == "များ" : n
+		prevTag1 == "conj" and word == "မြည်း" : n
+		word == "ဆော့" and nextTag1 == "ppm" : n
+		prevTag1 == "num" and word == "စု" : n
+		prevWord1 == "စတော်ဘယ်ရီ" and word == "ဌာပနာ" : n
+		word == "စည်ပင်" and nextTag1 == "n" : n
+		word == "သုံး" and nextWord2 == "လောက်" : tn
+		nextTag1 == "adv" and prefixL2 == "သု" : tn
+		word == "မှား" and nextWord1 == "ဆက်" : adv
+		prevTag1 == "n" and word == "လျှော့" and nextTag1 == "v" : adv
+		word == "ပြင်းထန်" and nextWord1 == "စွာ" : adv
+			nextTag1 == "part" and nextTag2 == "v" : v
+				nextTag1 == "part" and prefixL2 == "ပြ" : adj
+		word == "တည်ငြိမ်" and nextWord1 == "စွာ" : adv
+		word == "တင်းကျပ်" and nextWord2 == "အောင်" : adv
+		nextWord1 == "ပြော" and nextWord2 == "တာ" : adv
+		word == "လှမ်း" and nextTag1 == "conj" : adv
+		prevWord1 == "က" and nextWord1 == "စွာ" : adv
+		prevTag2 == "pron" and prevTag1 == "v" and word == "လွန်" : adv
+		word == "တင်းကြပ်" and nextTag1 == "part" : adv
+		word == "ရင်ဆိုင်" and nextTag1 == "v" and nextTag2 == "conj" : adv
+		word == "ဝမ်းသာ" and nextWord1 == "စွာ" : adv
+		word == "ဆန့်ကျင်" and nextWord1 == "စွာ" : adv
+		prevTag2 == "<BOS_T>" and prevTag1 == "<BOS_T>" and word == "ဆက်" : adv
+		prevWord2 == "ကို" and word == "ပြတ်သား" : adv
+		word == "တိတ်ဆိတ်" and nextWord1 == "စွာ" : adv
+		prevWord1 == "ခြိုးခြံ" : adv

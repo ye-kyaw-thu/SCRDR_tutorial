@@ -1,0 +1,81 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ ./run_all.sh
+12:38:50 [INFO] ============================================================
+12:38:50 [INFO] MODE: TRAIN
+12:38:50 [INFO]   Train file   : ./data/mypos_v3.word
+12:38:50 [INFO]   Model prefix : model/rdrBurSeg
+12:38:50 [INFO]   Scheme       : BIES
+12:38:50 [INFO]   Imp thresh   : 2
+12:38:50 [INFO]   Match thresh : 2
+12:38:50 [INFO]   Workers      : 20
+12:38:50 [INFO]   Delimiter    : ' '
+12:38:50 [INFO] ============================================================
+12:38:51 [INFO] Corpus: 43196 sentences | 564517 words | 2332142 chars
+12:38:51 [INFO] Lexicon: 279 chars | 15 char-types | default=I | scheme=BIES
+12:38:51 [INFO] Lexicon saved → model/rdrBurSeg.lex
+12:38:51 [INFO] Building object dictionary …
+12:38:59 [INFO] Object dict: 4 initial labels, 2332142 total characters  [8.0s]
+12:38:59 [INFO] Default label (root conclusion): I
+12:38:59 [INFO] Learning rules for 4 initial labels using 4 worker(s) …
+12:40:28 [INFO] Rule learning done  [88.7s]
+12:40:29 [INFO]   Label B     : 1029 exception rule(s)
+12:40:29 [INFO]   Label E     : 418 exception rule(s)
+12:40:29 [INFO]   Label I     : 543 exception rule(s)
+12:40:29 [INFO]   Label S     : 13 exception rule(s)
+12:40:29 [INFO] Total exception rules: 2003 | Total nodes: 3176 | Elapsed: 97.8s
+12:40:30 [INFO] Binary model  → model/rdrBurSeg.pkl
+12:40:30 [INFO] Rules file    → model/rdrBurSeg.rdr  (3176 nodes)
+
+real    1m39.581s
+user    2m45.406s
+sys     0m4.394s
+12:40:30 [INFO] ============================================================
+12:40:30 [INFO] MODE: TEST
+12:40:30 [INFO]   Input  : ./data/10k_test.txt
+12:40:30 [INFO]   Model  : model/rdrBurSeg
+12:40:30 [INFO]   Output : test.hyp
+12:40:30 [INFO] ============================================================
+12:40:30 [INFO] Loading binary model …
+12:40:30 [INFO] Model loaded. Nodes: 3176
+12:40:30 [INFO] Test corpus: 10000 sentences
+12:40:46 [INFO] Segmentation done  [16.10s]
+12:40:46 [INFO] Hypothesis → test.hyp
+
+========================================================================
+  SCRDR TOKENIZER — EVALUATION RESULTS
+========================================================================
+  ── Word-level ──────────────────────────────────────────────────
+  Precision      :  12.6761%
+  Recall         :  27.2568%
+  F1             :  17.3045%
+  Correct/Ref/Hyp: 32124 / 117857 / 253422
+  ── Char-level (BIES) ───────────────────────────────────────────
+  Char Accuracy  :  45.1195%
+  Char Macro F1  :  38.5481%
+  Known-char Acc :  45.1195%  (526027 chars)
+  Unkn-char  Acc :   0.0000%  (0 chars)
+------------------------------------------------------------------------
+  Label     Precision     Recall         F1    Support
+------------------------------------------------------------------------
+  B           33.6275    46.7871    39.1306     110338
+  E           41.6449    57.9420    48.4599     110338
+  I           97.2944    38.9031    55.5819     297832
+  S            5.9246    78.7206    11.0199       7519
+========================================================================
+12:40:49 [INFO] Confusion matrix → bies_cm.png
+
+real    0m19.260s
+user    0m24.189s
+sys     0m0.119s
+12:40:49 [INFO] ============================================================
+12:40:49 [INFO] MODE: SEGMENT (raw text)
+12:40:49 [INFO]   Input  : ./data/10k_test.input
+12:40:49 [INFO]   Model  : model/rdrBurSeg
+12:40:49 [INFO]   Output : segmented.txt
+12:40:49 [INFO] ============================================================
+12:40:49 [INFO] Segmenting 10000 lines …
+12:41:05 [INFO] Done  [16.04s]  →  segmented.txt
+
+real    0m16.087s
+user    0m16.079s
+sys     0m0.006s
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$

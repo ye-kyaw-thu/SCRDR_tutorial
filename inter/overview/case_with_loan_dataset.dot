@@ -1,0 +1,69 @@
+digraph SCRDR_Loan_Learning {
+    // Quality settings for high-resolution PNG/PDF output
+    graph [rankdir=TB, nodesep=0.5, ranksep=0.4, fontname="Segoe UI, Arial", fontsize=12];
+    node [shape=none, fontname="Segoe UI, Arial", fontsize=11];
+    edge [color="#5F6368", fontname="Segoe UI, Arial", fontsize=10];
+
+    // Data Rows as Inputs from loan_demo.log
+    subgraph cluster_data {
+        label="Input Data Stream";
+        style=dotted;
+        Row1 [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#E8F0FE">
+                <tr><td><b>Row 1</b></td></tr>
+                <tr><td>Credit: 750<br/>Income: 5000</td></tr>
+                <tr><td><i>Actual: Yes</i></td></tr>
+            </table>
+        >];
+        Row2 [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#E8F0FE">
+                <tr><td><b>Row 2</b></td></tr>
+                <tr><td>Credit: 600<br/>Income: 2000</td></tr>
+                <tr><td><i>Actual: No</i></td></tr>
+            </table>
+        >];
+    }
+
+    // The Evolving Model Structure based on loan_rules_demo.json
+    subgraph cluster_model {
+        label="RDR Model Evolution";
+        Root [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#F1F3F4">
+                <tr><td><b>Root Node</b></td></tr>
+                <tr><td>Conclusion: Unknown</td></tr>
+            </table>
+        >];
+        Rule1 [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#D2E3FC">
+                <tr><td><b>Refinement 1</b></td></tr>
+                <tr><td>Credit_Score &gt; 700</td></tr>
+                <tr><td>Conclusion: Yes</td></tr>
+            </table>
+        >];
+        Rule2 [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="8" bgcolor="#D2E3FC">
+                <tr><td><b>Alternative 2</b></td></tr>
+                <tr><td>Credit_Score &lt; 700</td></tr>
+                <tr><td>Conclusion: No</td></tr>
+            </table>
+        >];
+    }
+
+    // Expert Intervention Point
+    Expert [label="EXPERT INTERVENTION\n(Knowledge Acquisition)", shape=hexagon, style="filled,bold", fillcolor="#FFF4E5", color="#E37400", fontsize=12];
+
+    // Flow for Row 1 
+    Row1 -> Root [label="1. Predict"];
+    Root -> Expert [label="2. ERROR: Expected 'Yes'\nPredicted 'Unknown'"];
+    Expert -> Rule1 [label="3. Add Refinement\nto Root"];
+
+    // Flow for Row 2 
+    Row2 -> Rule1 [label="4. Evaluates False\n(600 is not > 700)"];
+    Rule1 -> Expert [label="5. ERROR: Predicted 'Unknown'\n(Fall back to Root)"];
+    Expert -> Rule2 [label="6. Add Alternative\nto Rule 1"];
+
+    // Final result based on log summary 
+    Rule2 -> Final [label="Final Accuracy: 1.0", style=bold, color="#137333"];
+    Final [label="Fully Built Model\n(loan_rules_demo.json)", shape=note, style="filled,bold", fillcolor="#E6F4EA", color="#137333"];
+}
+

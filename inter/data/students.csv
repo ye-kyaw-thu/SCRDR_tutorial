@@ -1,0 +1,11 @@
+Student_ID,Hours_Studied,Attendance_Pct,Pass_Fail
+1,2,40,Fail
+2,15,95,Pass
+3,12,80,Pass
+4,1,30,Fail
+5,8,45,Fail
+6,20,90,Pass
+7,7,85,Pass
+8,3,50,Fail
+9,18,88,Pass
+10,5,92,Fail

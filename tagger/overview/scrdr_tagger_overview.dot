@@ -1,0 +1,79 @@
+digraph scrdr_tagger {
+    graph [rankdir=TB fontname="Helvetica" fontsize=11 splines=spline
+           nodesep=0.4 ranksep=0.55 bgcolor="white" pad="0.4,0.3"
+           label="scrdr_tagger.py  —  SCRDR-based POS / NLP Sequence Tagger"
+           labelloc=t labeljust=c]
+    node [fontname="Helvetica" fontsize=10 style="filled,rounded"
+          margin="0.18,0.08" shape=box]
+    edge [fontname="Helvetica" fontsize=9 arrowsize=0.7]
+
+    subgraph cluster_train {
+        label="TRAINING  (python scrdr_tagger.py train)"
+        style="filled,rounded" fillcolor="#F3F0FD"
+        color="#7F77DD" fontcolor="#3C3489" fontsize=10 fontname="Helvetica-Bold"
+
+        T1 [label="① Tagged corpus\nword/TAG  ·  one sentence per line"
+            fillcolor="#E8E4FA" color="#7F77DD"]
+        T2 [label="② Lexicon  (initial tagger)\nword → most-frequent POS tag\nsuffix n-grams  ·  OOV heuristics"
+            fillcolor="#CECBF6" color="#534AB7"]
+        T3 [label="③ Object dictionary\ninitTag → goldTag → [context vectors]\n16-slot feature vector per token"
+            fillcolor="#CECBF6" color="#534AB7"]
+        T4 [label="④ SCRDRLearner  (parallel workers)\none worker per initial tag\nnet score = |wrong| − |correct|\ninverted index + live-counts"
+            fillcolor="#AFA9EC" color="#3C3489" fontcolor="#26215C"]
+        T5 [label="⑤ SCRDR exception tree\nroot → per-tag nodes (depth 1)\nexcept_child: condition fires\nelse_child:   condition fails"
+            fillcolor="#AFA9EC" color="#3C3489" fontcolor="#26215C"]
+        T6 [label="⑥ Model files\n.pkl (binary)  ·  .rdr (human-readable)  ·  .lex"
+            fillcolor="#E8E4FA" color="#7F77DD"]
+
+        T1 -> T2 [color="#534AB7"]
+        T2 -> T3 [color="#534AB7" label=" initial tags"]
+        T3 -> T4 [color="#3C3489" label=" correction examples"]
+        T4 -> T5 [color="#3C3489" label=" assemble subtrees"]
+        T5 -> T6 [color="#534AB7" label=" save"]
+    }
+
+    subgraph cluster_infer {
+        label="INFERENCE  (python scrdr_tagger.py  test | tag)"
+        style="filled,rounded" fillcolor="#EBF8F3"
+        color="#1D9E75" fontcolor="#0F6E56" fontsize=10 fontname="Helvetica-Bold"
+
+        I1 [label="① Load model + lexicon\n.pkl or .rdr  +  .lex"
+            fillcolor="#D6F0E7" color="#1D9E75"]
+        I2 [label="② Initial tagging  (Lexicon)\nword → most-frequent POS tag\nsuffix / capital / number fallbacks"
+            fillcolor="#9FE1CB" color="#0F6E56"]
+        I3 [label="③ RDR tree traversal  (left→right)\nbuild 16-slot context vector\nif fires → except_child  else → else_child\nreturn last-fired node's tag\nupdate running tags for next token"
+            fillcolor="#9FE1CB" color="#0F6E56"]
+        I4 [label="④ Write hypothesis  (.hyp)\nword/PRED_TAG  per sentence"
+            fillcolor="#D6F0E7" color="#1D9E75"]
+        I5 [label="⑤ Evaluation\nper-tag P / R / F1\nMacro · Micro · Weighted averages\nKnown / OOV accuracy  ·  confusion matrix PNG"
+            fillcolor="#9FE1CB" color="#0F6E56"]
+
+        I1 -> I2 [color="#0F6E56"]
+        I2 -> I3 [color="#0F6E56" label=" word/tag strings"]
+        I3 -> I4 [color="#1D9E75" label=" predicted tags"]
+        I4 -> I5 [color="#1D9E75" label=" (test mode)"]
+    }
+
+    subgraph cluster_core {
+        label="SHARED CORE  (used by both pipelines)"
+        style="filled,rounded" fillcolor="#FEF0EB"
+        color="#D85A30" fontcolor="#993C1D" fontsize=10 fontname="Helvetica-Bold"
+
+        C1 [label="Context vector  (16 slots)\nprevWord2/1  ·  word  ·  nextWord1/2\nprevTag2/1  ·  tag  ·  nextTag1/2\nsuffixL2/3/4  ·  prefixL2/3  ·  wordShape"
+            fillcolor="#F5C4B3" color="#D85A30"]
+        C2 [label="Rule templates  (31+)\n15 single-feature\n10 two-feature pairs\n8  three-feature triples"
+            fillcolor="#F5C4B3" color="#D85A30"]
+        C3 [label="Rule  (no eval / exec)\nsorted (slot, value) constraint tuple\nsatisfied_by() = equality loop\nhashable  ·  serialisable"
+            fillcolor="#F5C4B3" color="#D85A30"]
+        { rank=same; C1 C2 C3 }
+    }
+
+    // Cross-cluster
+    T6 -> I1 [label=" save / load" style=dashed color="#666666" fontcolor="#666666" constraint=false]
+    C1 -> T3 [style=dashed color="#D85A30" fontcolor="#993C1D" label="build context" constraint=false]
+    C2 -> T4 [style=dashed color="#D85A30" label="candidate rules" constraint=false]
+    C3 -> T4 [style=dashed color="#D85A30" constraint=false]
+    C1 -> I3 [style=dashed color="#D85A30" fontcolor="#993C1D" label="build context" constraint=false]
+    C3 -> I3 [style=dashed color="#D85A30" constraint=false]
+}
+

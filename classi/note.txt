@@ -1,0 +1,14 @@
+
+## Dataset Information
+
+Iris Dataset: https://archive.ics.uci.edu/dataset/53/iris 
+
+Titanic Dataset: https://github.com/datasciencedojo/datasets/blob/master/titanic.csv 
+
+Wine Dataset: https://archive.ics.uci.edu/dataset/109/wine
+
+Breast Cancer Dataset: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic 
+
+Mushroom Dataset: https://archive.ics.uci.edu/dataset/73/mushroom
+
+

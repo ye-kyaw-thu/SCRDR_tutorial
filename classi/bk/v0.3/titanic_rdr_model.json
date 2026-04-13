@@ -1,0 +1,805 @@
+{
+    "rule": "Default",
+    "conclusion": "0",
+    "cornerstone_idx": 331,
+    "exception": {
+        "rule": "Ticket == 19947",
+        "conclusion": "1",
+        "cornerstone_idx": 55,
+        "exception": null,
+        "alternative": {
+            "rule": "Sex == female",
+            "conclusion": "1",
+            "cornerstone_idx": 865,
+            "exception": {
+                "rule": "Ticket == 347082",
+                "conclusion": "0",
+                "cornerstone_idx": 542,
+                "exception": null,
+                "alternative": {
+                    "rule": "Ticket == 315084",
+                    "conclusion": "0",
+                    "cornerstone_idx": 534,
+                    "exception": null,
+                    "alternative": {
+                        "rule": "Ticket == 4133",
+                        "conclusion": "0",
+                        "cornerstone_idx": 409,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "Ticket == 248747",
+                            "conclusion": "0",
+                            "cornerstone_idx": 199,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "Ticket == 315096",
+                                "conclusion": "0",
+                                "cornerstone_idx": 404,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "Ticket == 2678",
+                                    "conclusion": "0",
+                                    "cornerstone_idx": 140,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "Ticket == 7552",
+                                        "conclusion": "0",
+                                        "cornerstone_idx": 882,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "Ticket == A/5. 3337",
+                                            "conclusion": "0",
+                                            "cornerstone_idx": 132,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "Ticket == 11668",
+                                                "conclusion": "0",
+                                                "cornerstone_idx": 41,
+                                                "exception": null,
+                                                "alternative": {
+                                                    "rule": "Ticket == 349909",
+                                                    "conclusion": "0",
+                                                    "cornerstone_idx": 24,
+                                                    "exception": null,
+                                                    "alternative": {
+                                                        "rule": "Ticket == STON/O2. 3101290",
+                                                        "conclusion": "0",
+                                                        "cornerstone_idx": 816,
+                                                        "exception": null,
+                                                        "alternative": {
+                                                            "rule": "Ticket == 382649",
+                                                            "conclusion": "0",
+                                                            "cornerstone_idx": 264,
+                                                            "exception": null,
+                                                            "alternative": {
+                                                                "rule": "Ticket == W./C. 6608",
+                                                                "conclusion": "0",
+                                                                "cornerstone_idx": 436,
+                                                                "exception": null,
+                                                                "alternative": {
+                                                                    "rule": "Ticket == 345763",
+                                                                    "conclusion": "0",
+                                                                    "cornerstone_idx": 18,
+                                                                    "exception": null,
+                                                                    "alternative": {
+                                                                        "rule": "Ticket == CA 2144",
+                                                                        "conclusion": "0",
+                                                                        "cornerstone_idx": 678,
+                                                                        "exception": null,
+                                                                        "alternative": {
+                                                                            "rule": "Ticket == 4136",
+                                                                            "conclusion": "0",
+                                                                            "cornerstone_idx": 113,
+                                                                            "exception": null,
+                                                                            "alternative": {
+                                                                                "rule": "Ticket == 364846",
+                                                                                "conclusion": "0",
+                                                                                "cornerstone_idx": 501,
+                                                                                "exception": null,
+                                                                                "alternative": {
+                                                                                    "rule": "Ticket == 2627",
+                                                                                    "conclusion": "0",
+                                                                                    "cornerstone_idx": 114,
+                                                                                    "exception": null,
+                                                                                    "alternative": {
+                                                                                        "rule": "Ticket == 347088",
+                                                                                        "conclusion": "0",
+                                                                                        "cornerstone_idx": 167,
+                                                                                        "exception": null,
+                                                                                        "alternative": {
+                                                                                            "rule": "Ticket == 364848",
+                                                                                            "conclusion": "0",
+                                                                                            "cornerstone_idx": 593,
+                                                                                            "exception": null,
+                                                                                            "alternative": {
+                                                                                                "rule": "Ticket == PC 17595",
+                                                                                                "conclusion": "0",
+                                                                                                "cornerstone_idx": 177,
+                                                                                                "exception": null,
+                                                                                                "alternative": {
+                                                                                                    "rule": "Ticket == 347080",
+                                                                                                    "conclusion": "0",
+                                                                                                    "cornerstone_idx": 423,
+                                                                                                    "exception": null,
+                                                                                                    "alternative": {
+                                                                                                        "rule": "Ticket == 349245",
+                                                                                                        "conclusion": "0",
+                                                                                                        "cornerstone_idx": 100,
+                                                                                                        "exception": null,
+                                                                                                        "alternative": {
+                                                                                                            "rule": "Ticket == 345773",
+                                                                                                            "conclusion": "0",
+                                                                                                            "cornerstone_idx": 799,
+                                                                                                            "exception": null,
+                                                                                                            "alternative": {
+                                                                                                                "rule": "Ticket == CA. 2343",
+                                                                                                                "conclusion": "0",
+                                                                                                                "cornerstone_idx": 792,
+                                                                                                                "exception": null,
+                                                                                                                "alternative": {
+                                                                                                                    "rule": "Ticket == 345764",
+                                                                                                                    "conclusion": "0",
+                                                                                                                    "cornerstone_idx": 38,
+                                                                                                                    "exception": null,
+                                                                                                                    "alternative": {
+                                                                                                                        "rule": "Ticket == 3101295",
+                                                                                                                        "conclusion": "0",
+                                                                                                                        "cornerstone_idx": 638,
+                                                                                                                        "exception": null,
+                                                                                                                        "alternative": {
+                                                                                                                            "rule": "Ticket == 347087",
+                                                                                                                            "conclusion": "0",
+                                                                                                                            "cornerstone_idx": 807,
+                                                                                                                            "exception": null,
+                                                                                                                            "alternative": {
+                                                                                                                                "rule": "Ticket == A/5. 3336",
+                                                                                                                                "conclusion": "0",
+                                                                                                                                "cornerstone_idx": 617,
+                                                                                                                                "exception": null,
+                                                                                                                                "alternative": {
+                                                                                                                                    "rule": "Ticket == 4135",
+                                                                                                                                    "conclusion": "0",
+                                                                                                                                    "cornerstone_idx": 503,
+                                                                                                                                    "exception": null,
+                                                                                                                                    "alternative": {
+                                                                                                                                        "rule": "Ticket == W./C. 6607",
+                                                                                                                                        "conclusion": "0",
+                                                                                                                                        "cornerstone_idx": 888,
+                                                                                                                                        "exception": null,
+                                                                                                                                        "alternative": {
+                                                                                                                                            "rule": "Ticket == 2665",
+                                                                                                                                            "conclusion": "0",
+                                                                                                                                            "cornerstone_idx": 111,
+                                                                                                                                            "exception": null,
+                                                                                                                                            "alternative": {
+                                                                                                                                                "rule": "Ticket == 113781",
+                                                                                                                                                "conclusion": "0",
+                                                                                                                                                "cornerstone_idx": 297,
+                                                                                                                                                "exception": null,
+                                                                                                                                                "alternative": {
+                                                                                                                                                    "rule": "Ticket == 349236",
+                                                                                                                                                    "conclusion": "0",
+                                                                                                                                                    "cornerstone_idx": 293,
+                                                                                                                                                    "exception": null,
+                                                                                                                                                    "alternative": {
+                                                                                                                                                        "rule": "Ticket == 347071",
+                                                                                                                                                        "conclusion": "0",
+                                                                                                                                                        "cornerstone_idx": 246,
+                                                                                                                                                        "exception": null,
+                                                                                                                                                        "alternative": {
+                                                                                                                                                            "rule": "Ticket == 343095",
+                                                                                                                                                            "conclusion": "0",
+                                                                                                                                                            "cornerstone_idx": 415,
+                                                                                                                                                            "exception": null,
+                                                                                                                                                            "alternative": {
+                                                                                                                                                                "rule": "Ticket == 4137",
+                                                                                                                                                                "conclusion": "0",
+                                                                                                                                                                "cornerstone_idx": 402,
+                                                                                                                                                                "exception": null,
+                                                                                                                                                                "alternative": {
+                                                                                                                                                                    "rule": "Ticket == 330935",
+                                                                                                                                                                    "conclusion": "0",
+                                                                                                                                                                    "cornerstone_idx": 680,
+                                                                                                                                                                    "exception": null,
+                                                                                                                                                                    "alternative": {
+                                                                                                                                                                        "rule": "Ticket == 365226",
+                                                                                                                                                                        "conclusion": "0",
+                                                                                                                                                                        "cornerstone_idx": 654,
+                                                                                                                                                                        "exception": null,
+                                                                                                                                                                        "alternative": {
+                                                                                                                                                                            "rule": "Ticket == 330909",
+                                                                                                                                                                            "conclusion": "0",
+                                                                                                                                                                            "cornerstone_idx": 502,
+                                                                                                                                                                            "exception": null,
+                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                "rule": "Ticket == 350406",
+                                                                                                                                                                                "conclusion": "0",
+                                                                                                                                                                                "cornerstone_idx": 14,
+                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                    "rule": "Ticket == 7546",
+                                                                                                                                                                                    "conclusion": "0",
+                                                                                                                                                                                    "cornerstone_idx": 40,
+                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                        "rule": "Ticket == 347054",
+                                                                                                                                                                                        "conclusion": "0",
+                                                                                                                                                                                        "cornerstone_idx": 251,
+                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                            "rule": "Ticket == STON/O2. 3101271",
+                                                                                                                                                                                            "conclusion": "0",
+                                                                                                                                                                                            "cornerstone_idx": 729,
+                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                "rule": "Ticket == 2691",
+                                                                                                                                                                                                "conclusion": "0",
+                                                                                                                                                                                                "cornerstone_idx": 702,
+                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                    "rule": "Ticket == SOTON/O.Q. 392087",
+                                                                                                                                                                                                    "conclusion": "0",
+                                                                                                                                                                                                    "cornerstone_idx": 564,
+                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                        "rule": "Ticket == 7553",
+                                                                                                                                                                                                        "conclusion": "0",
+                                                                                                                                                                                                        "cornerstone_idx": 474,
+                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                            "rule": "Ticket == 347073",
+                                                                                                                                                                                                            "conclusion": "0",
+                                                                                                                                                                                                            "cornerstone_idx": 276,
+                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                            "alternative": null
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            }
+                                                                                                                                                                                        }
+                                                                                                                                                                                    }
+                                                                                                                                                                                }
+                                                                                                                                                                            }
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            }
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "alternative": {
+                "rule": "Ticket == 345779",
+                "conclusion": "1",
+                "cornerstone_idx": 81,
+                "exception": null,
+                "alternative": {
+                    "rule": "Ticket == 2663",
+                    "conclusion": "1",
+                    "cornerstone_idx": 762,
+                    "exception": null,
+                    "alternative": {
+                        "rule": "Ticket == 113760",
+                        "conclusion": "1",
+                        "cornerstone_idx": 390,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "Ticket == 19988",
+                            "conclusion": "1",
+                            "cornerstone_idx": 298,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "Ticket == 113781",
+                                "conclusion": "1",
+                                "cornerstone_idx": 305,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "Ticket == 113786",
+                                    "conclusion": "1",
+                                    "cornerstone_idx": 449,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "Ticket == PC 17611",
+                                        "conclusion": "1",
+                                        "cornerstone_idx": 660,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "Ticket == 347089",
+                                            "conclusion": "1",
+                                            "cornerstone_idx": 804,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "Ticket == 315098",
+                                                "conclusion": "1",
+                                                "cornerstone_idx": 821,
+                                                "exception": null,
+                                                "alternative": {
+                                                    "rule": "Ticket == 110564",
+                                                    "conclusion": "1",
+                                                    "cornerstone_idx": 430,
+                                                    "exception": null,
+                                                    "alternative": {
+                                                        "rule": "Ticket == 33638",
+                                                        "conclusion": "1",
+                                                        "cornerstone_idx": 445,
+                                                        "exception": null,
+                                                        "alternative": {
+                                                            "rule": "Ticket == 230080",
+                                                            "conclusion": "1",
+                                                            "cornerstone_idx": 193,
+                                                            "exception": null,
+                                                            "alternative": {
+                                                                "rule": "Ticket == 347742",
+                                                                "conclusion": "1",
+                                                                "cornerstone_idx": 869,
+                                                                "exception": null,
+                                                                "alternative": {
+                                                                    "rule": "Ticket == 17453",
+                                                                    "conclusion": "1",
+                                                                    "cornerstone_idx": 453,
+                                                                    "exception": null,
+                                                                    "alternative": {
+                                                                        "rule": "Ticket == SOTON/OQ 392089",
+                                                                        "conclusion": "1",
+                                                                        "cornerstone_idx": 220,
+                                                                        "exception": null,
+                                                                        "alternative": {
+                                                                            "rule": "Ticket == 11765",
+                                                                            "conclusion": "1",
+                                                                            "cornerstone_idx": 370,
+                                                                            "exception": null,
+                                                                            "alternative": {
+                                                                                "rule": "Ticket == SC/PARIS 2146",
+                                                                                "conclusion": "1",
+                                                                                "cornerstone_idx": 547,
+                                                                                "exception": null,
+                                                                                "alternative": {
+                                                                                    "rule": "Ticket == C.A. 33112",
+                                                                                    "conclusion": "1",
+                                                                                    "cornerstone_idx": 549,
+                                                                                    "exception": null,
+                                                                                    "alternative": {
+                                                                                        "rule": "Ticket == SOTON/O.Q. 392078",
+                                                                                        "conclusion": "1",
+                                                                                        "cornerstone_idx": 429,
+                                                                                        "exception": null,
+                                                                                        "alternative": {
+                                                                                            "rule": "Ticket == 350417",
+                                                                                            "conclusion": "1",
+                                                                                            "cornerstone_idx": 569,
+                                                                                            "exception": null,
+                                                                                            "alternative": {
+                                                                                                "rule": "Ticket == 65306",
+                                                                                                "conclusion": "1",
+                                                                                                "cornerstone_idx": 444,
+                                                                                                "exception": null,
+                                                                                                "alternative": {
+                                                                                                    "rule": "Ticket == 13567",
+                                                                                                    "conclusion": "1",
+                                                                                                    "cornerstone_idx": 587,
+                                                                                                    "exception": null,
+                                                                                                    "alternative": {
+                                                                                                        "rule": "Ticket == 1601",
+                                                                                                        "conclusion": "1",
+                                                                                                        "cornerstone_idx": 692,
+                                                                                                        "exception": {
+                                                                                                            "rule": "Pclass == 3",
+                                                                                                            "conclusion": "0",
+                                                                                                            "cornerstone_idx": 169,
+                                                                                                            "exception": {
+                                                                                                                "rule": "Age <= 27.0",
+                                                                                                                "conclusion": "1",
+                                                                                                                "cornerstone_idx": 509,
+                                                                                                                "exception": null,
+                                                                                                                "alternative": {
+                                                                                                                    "rule": "Age > 30.0",
+                                                                                                                    "conclusion": "1",
+                                                                                                                    "cornerstone_idx": 838,
+                                                                                                                    "exception": null,
+                                                                                                                    "alternative": null
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "alternative": null
+                                                                                                        },
+                                                                                                        "alternative": {
+                                                                                                            "rule": "Ticket == STON/O 2. 3101285",
+                                                                                                            "conclusion": "1",
+                                                                                                            "cornerstone_idx": 664,
+                                                                                                            "exception": null,
+                                                                                                            "alternative": {
+                                                                                                                "rule": "Ticket == 11751",
+                                                                                                                "conclusion": "1",
+                                                                                                                "cornerstone_idx": 248,
+                                                                                                                "exception": null,
+                                                                                                                "alternative": {
+                                                                                                                    "rule": "Ticket == S.W./PP 752",
+                                                                                                                    "conclusion": "1",
+                                                                                                                    "cornerstone_idx": 570,
+                                                                                                                    "exception": null,
+                                                                                                                    "alternative": {
+                                                                                                                        "rule": "Ticket == 367228",
+                                                                                                                        "conclusion": "1",
+                                                                                                                        "cornerstone_idx": 828,
+                                                                                                                        "exception": null,
+                                                                                                                        "alternative": {
+                                                                                                                            "rule": "Ticket == 2908",
+                                                                                                                            "conclusion": "1",
+                                                                                                                            "cornerstone_idx": 543,
+                                                                                                                            "exception": null,
+                                                                                                                            "alternative": {
+                                                                                                                                "rule": "Ticket == LINE",
+                                                                                                                                "conclusion": "1",
+                                                                                                                                "cornerstone_idx": 271,
+                                                                                                                                "exception": {
+                                                                                                                                    "rule": "Age > 30.5",
+                                                                                                                                    "conclusion": "0",
+                                                                                                                                    "cornerstone_idx": 179,
+                                                                                                                                    "exception": null,
+                                                                                                                                    "alternative": null
+                                                                                                                                },
+                                                                                                                                "alternative": {
+                                                                                                                                    "rule": "Ticket == 2651",
+                                                                                                                                    "conclusion": "1",
+                                                                                                                                    "cornerstone_idx": 125,
+                                                                                                                                    "exception": null,
+                                                                                                                                    "alternative": {
+                                                                                                                                        "rule": "Ticket == S.C./PARIS 2079",
+                                                                                                                                        "conclusion": "1",
+                                                                                                                                        "cornerstone_idx": 827,
+                                                                                                                                        "exception": null,
+                                                                                                                                        "alternative": {
+                                                                                                                                            "rule": "Ticket == 2653",
+                                                                                                                                            "conclusion": "1",
+                                                                                                                                            "cornerstone_idx": 622,
+                                                                                                                                            "exception": null,
+                                                                                                                                            "alternative": {
+                                                                                                                                                "rule": "Ticket == 347077",
+                                                                                                                                                "conclusion": "1",
+                                                                                                                                                "cornerstone_idx": 261,
+                                                                                                                                                "exception": null,
+                                                                                                                                                "alternative": {
+                                                                                                                                                    "rule": "Ticket == STON/O 2. 3101288",
+                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                    "cornerstone_idx": 744,
+                                                                                                                                                    "exception": null,
+                                                                                                                                                    "alternative": {
+                                                                                                                                                        "rule": "Ticket == 312991",
+                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                        "cornerstone_idx": 107,
+                                                                                                                                                        "exception": null,
+                                                                                                                                                        "alternative": {
+                                                                                                                                                            "rule": "Ticket == PC 17476",
+                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                            "cornerstone_idx": 707,
+                                                                                                                                                            "exception": null,
+                                                                                                                                                            "alternative": {
+                                                                                                                                                                "rule": "Ticket == 29106",
+                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                "cornerstone_idx": 407,
+                                                                                                                                                                "exception": null,
+                                                                                                                                                                "alternative": {
+                                                                                                                                                                    "rule": "Ticket == 16988",
+                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                    "cornerstone_idx": 740,
+                                                                                                                                                                    "exception": null,
+                                                                                                                                                                    "alternative": {
+                                                                                                                                                                        "rule": "Ticket == 244373",
+                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                        "cornerstone_idx": 17,
+                                                                                                                                                                        "exception": null,
+                                                                                                                                                                        "alternative": {
+                                                                                                                                                                            "rule": "Ticket == C 17369",
+                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                            "cornerstone_idx": 127,
+                                                                                                                                                                            "exception": null,
+                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                "rule": "Ticket == PC 17755",
+                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                "cornerstone_idx": 737,
+                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                    "rule": "Ticket == 367226",
+                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                    "cornerstone_idx": 301,
+                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                        "rule": "Ticket == A/5. 10482",
+                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                        "cornerstone_idx": 283,
+                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                            "rule": "Ticket == 113055",
+                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                            "cornerstone_idx": 857,
+                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                "rule": "Ticket == STON/O 2. 3101286",
+                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                "cornerstone_idx": 579,
+                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                    "rule": "Ticket == 27042",
+                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                    "cornerstone_idx": 630,
+                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                        "rule": "Ticket == SW/PP 751",
+                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                        "cornerstone_idx": 226,
+                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                            "rule": "Ticket == 11774",
+                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                            "cornerstone_idx": 839,
+                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                "rule": "Ticket == 2699",
+                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                "cornerstone_idx": 207,
+                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                    "rule": "Ticket == 2677",
+                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                    "cornerstone_idx": 36,
+                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                        "rule": "Ticket == STON/O 2. 3101269",
+                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                        "cornerstone_idx": 414,
+                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                            "rule": "Ticket == 17421",
+                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                            "cornerstone_idx": 550,
+                                                                                                                                                                                                                            "exception": {
+                                                                                                                                                                                                                                "rule": "Cabin == C68",
+                                                                                                                                                                                                                                "conclusion": "0",
+                                                                                                                                                                                                                                "cornerstone_idx": 698,
+                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                "alternative": null
+                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                "rule": "Ticket == 350043",
+                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                "cornerstone_idx": 146,
+                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                    "rule": "Ticket == C.A. 37671",
+                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                    "cornerstone_idx": 348,
+                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                                        "rule": "Ticket == STON/O 2. 3101289",
+                                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                                        "cornerstone_idx": 400,
+                                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                                            "rule": "Ticket == 230136",
+                                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                                            "cornerstone_idx": 183,
+                                                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                                "rule": "Ticket == C.A. 2315",
+                                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                                "cornerstone_idx": 788,
+                                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                                    "rule": "Ticket == 347083",
+                                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                                    "cornerstone_idx": 267,
+                                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                                                        "rule": "Ticket == 113804",
+                                                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                                                        "cornerstone_idx": 607,
+                                                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                                                            "rule": "Ticket == 392096",
+                                                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                                                            "cornerstone_idx": 751,
+                                                                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                                                "rule": "Ticket == 13214",
+                                                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                                                "cornerstone_idx": 632,
+                                                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                                                    "rule": "Ticket == 19943",
+                                                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                                                    "cornerstone_idx": 224,
+                                                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                                                                        "rule": "Ticket == 2625",
+                                                                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                                                                        "cornerstone_idx": 803,
+                                                                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                                                                            "rule": "Ticket == PC 17572",
+                                                                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                                                                            "cornerstone_idx": 645,
+                                                                                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                                                                "rule": "Ticket == 250649",
+                                                                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                                                                "cornerstone_idx": 755,
+                                                                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                                                                    "rule": "Ticket == 17474",
+                                                                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                                                                    "cornerstone_idx": 690,
+                                                                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                                                                                        "rule": "Ticket == 19952",
+                                                                                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                                                                                        "cornerstone_idx": 460,
+                                                                                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                                                                                            "rule": "Ticket == 2620",
+                                                                                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                                                                                            "cornerstone_idx": 553,
+                                                                                                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                                                                                "rule": "Ticket == 237798",
+                                                                                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                                                                                "cornerstone_idx": 288,
+                                                                                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                                                                                    "rule": "Ticket == 350034",
+                                                                                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                                                                                    "cornerstone_idx": 391,
+                                                                                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                                                                                                        "rule": "Ticket == 13213",
+                                                                                                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                                                                                                        "cornerstone_idx": 647,
+                                                                                                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                                                                                                            "rule": "Ticket == 111428",
+                                                                                                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                                                                                                            "cornerstone_idx": 187,
+                                                                                                                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                                                                                                "rule": "Ticket == 113806",
+                                                                                                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                                                                                                "cornerstone_idx": 724,
+                                                                                                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                                                                                                    "rule": "Ticket == PC 17475",
+                                                                                                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                                                                                                    "cornerstone_idx": 701,
+                                                                                                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                                                                                                    "alternative": {
+                                                                                                                                                                                                                                                                                                                        "rule": "Ticket == 349240",
+                                                                                                                                                                                                                                                                                                                        "conclusion": "1",
+                                                                                                                                                                                                                                                                                                                        "cornerstone_idx": 455,
+                                                                                                                                                                                                                                                                                                                        "exception": null,
+                                                                                                                                                                                                                                                                                                                        "alternative": {
+                                                                                                                                                                                                                                                                                                                            "rule": "Ticket == 11967",
+                                                                                                                                                                                                                                                                                                                            "conclusion": "1",
+                                                                                                                                                                                                                                                                                                                            "cornerstone_idx": 484,
+                                                                                                                                                                                                                                                                                                                            "exception": null,
+                                                                                                                                                                                                                                                                                                                            "alternative": {
+                                                                                                                                                                                                                                                                                                                                "rule": "Ticket == 382651",
+                                                                                                                                                                                                                                                                                                                                "conclusion": "1",
+                                                                                                                                                                                                                                                                                                                                "cornerstone_idx": 510,
+                                                                                                                                                                                                                                                                                                                                "exception": null,
+                                                                                                                                                                                                                                                                                                                                "alternative": {
+                                                                                                                                                                                                                                                                                                                                    "rule": "Ticket == 248698",
+                                                                                                                                                                                                                                                                                                                                    "conclusion": "1",
+                                                                                                                                                                                                                                                                                                                                    "cornerstone_idx": 21,
+                                                                                                                                                                                                                                                                                                                                    "exception": null,
+                                                                                                                                                                                                                                                                                                                                    "alternative": null
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            }
+                                                                                                                                                                                        }
+                                                                                                                                                                                    }
+                                                                                                                                                                                }
+                                                                                                                                                                            }
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            }
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "alternative": null
+}

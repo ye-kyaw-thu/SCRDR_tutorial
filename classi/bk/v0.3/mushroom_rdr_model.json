@@ -1,0 +1,985 @@
+{
+    "rule": "Default",
+    "conclusion": "p",
+    "cornerstone_idx": 7873,
+    "exception": {
+        "rule": "cap-shape == f",
+        "conclusion": "e",
+        "cornerstone_idx": 2764,
+        "exception": {
+            "rule": "cap-surface == y",
+            "conclusion": "p",
+            "cornerstone_idx": 4525,
+            "exception": {
+                "rule": "cap-color == p",
+                "conclusion": "e",
+                "cornerstone_idx": 4844,
+                "exception": {
+                    "rule": "stalk-root == b",
+                    "conclusion": "p",
+                    "cornerstone_idx": 5190,
+                    "exception": {
+                        "rule": "spore-print-color == w",
+                        "conclusion": "e",
+                        "cornerstone_idx": 7919,
+                        "exception": null,
+                        "alternative": null
+                    },
+                    "alternative": null
+                },
+                "alternative": {
+                    "rule": "bruises == t",
+                    "conclusion": "e",
+                    "cornerstone_idx": 3433,
+                    "exception": {
+                        "rule": "cap-color == w",
+                        "conclusion": "p",
+                        "cornerstone_idx": 2495,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "cap-color == b",
+                            "conclusion": "p",
+                            "cornerstone_idx": 5744,
+                            "exception": {
+                                "rule": "gill-color == w",
+                                "conclusion": "e",
+                                "cornerstone_idx": 5865,
+                                "exception": {
+                                    "rule": "stalk-root == b",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 5464,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": {
+                                    "rule": "gill-color == e",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 4534,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == n",
+                                "conclusion": "p",
+                                "cornerstone_idx": 1786,
+                                "exception": {
+                                    "rule": "odor == n",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 3131,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "odor == a",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 426,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "odor == l",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 371,
+                                            "exception": null,
+                                            "alternative": null
+                                        }
+                                    }
+                                },
+                                "alternative": null
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "cap-color == r",
+                        "conclusion": "e",
+                        "cornerstone_idx": 5430,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "cap-color == n",
+                            "conclusion": "e",
+                            "cornerstone_idx": 7702,
+                            "exception": {
+                                "rule": "odor == y",
+                                "conclusion": "p",
+                                "cornerstone_idx": 6343,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "odor == s",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 6973,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "odor == f",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 7106,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "odor == m",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 7166,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "gill-size == n",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 4946,
+                                                "exception": {
+                                                    "rule": "gill-spacing == w",
+                                                    "conclusion": "e",
+                                                    "cornerstone_idx": 5794,
+                                                    "exception": null,
+                                                    "alternative": null
+                                                },
+                                                "alternative": null
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == u",
+                                "conclusion": "e",
+                                "cornerstone_idx": 4076,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "cap-color == w",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 5283,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "cap-color == c",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 5185,
+                                        "exception": {
+                                            "rule": "odor == m",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 8114,
+                                            "exception": null,
+                                            "alternative": null
+                                        },
+                                        "alternative": null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "alternative": {
+                "rule": "cap-surface == s",
+                "conclusion": "p",
+                "cornerstone_idx": 2375,
+                "exception": {
+                    "rule": "bruises == f",
+                    "conclusion": "e",
+                    "cornerstone_idx": 1721,
+                    "exception": {
+                        "rule": "cap-color == e",
+                        "conclusion": "p",
+                        "cornerstone_idx": 6113,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "cap-color == n",
+                            "conclusion": "p",
+                            "cornerstone_idx": 6772,
+                            "exception": {
+                                "rule": "odor == n",
+                                "conclusion": "e",
+                                "cornerstone_idx": 6927,
+                                "exception": null,
+                                "alternative": null
+                            },
+                            "alternative": null
+                        }
+                    },
+                    "alternative": {
+                        "rule": "cap-color == e",
+                        "conclusion": "e",
+                        "cornerstone_idx": 5807,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "cap-color == p",
+                            "conclusion": "e",
+                            "cornerstone_idx": 5385,
+                            "exception": {
+                                "rule": "gill-color == g",
+                                "conclusion": "p",
+                                "cornerstone_idx": 5972,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "gill-color == w",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 5369,
+                                    "exception": {
+                                        "rule": "spore-print-color == w",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 7548,
+                                        "exception": null,
+                                        "alternative": null
+                                    },
+                                    "alternative": {
+                                        "rule": "gill-color == r",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 5782,
+                                        "exception": null,
+                                        "alternative": null
+                                    }
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == n",
+                                "conclusion": "e",
+                                "cornerstone_idx": 5863,
+                                "exception": {
+                                    "rule": "odor == p",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 1614,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": {
+                                    "rule": "cap-color == b",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 5686,
+                                    "exception": {
+                                        "rule": "gill-color == g",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 5566,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "odor == f",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 4629,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "gill-color == w",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 5137,
+                                                "exception": {
+                                                    "rule": "stalk-root == ?",
+                                                    "conclusion": "e",
+                                                    "cornerstone_idx": 4964,
+                                                    "exception": null,
+                                                    "alternative": null
+                                                },
+                                                "alternative": {
+                                                    "rule": "gill-color == r",
+                                                    "conclusion": "p",
+                                                    "cornerstone_idx": 5140,
+                                                    "exception": null,
+                                                    "alternative": null
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "alternative": {
+                                        "rule": "odor == l",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 553,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "cap-color == c",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 7952,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "cap-color == y",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 298,
+                                                "exception": null,
+                                                "alternative": {
+                                                    "rule": "odor == a",
+                                                    "conclusion": "e",
+                                                    "cornerstone_idx": 134,
+                                                    "exception": null,
+                                                    "alternative": {
+                                                        "rule": "cap-color == g",
+                                                        "conclusion": "e",
+                                                        "cornerstone_idx": 7704,
+                                                        "exception": {
+                                                            "rule": "odor == f",
+                                                            "conclusion": "p",
+                                                            "cornerstone_idx": 5827,
+                                                            "exception": null,
+                                                            "alternative": null
+                                                        },
+                                                        "alternative": null
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "alternative": {
+                    "rule": "cap-color == y",
+                    "conclusion": "p",
+                    "cornerstone_idx": 5030,
+                    "exception": {
+                        "rule": "bruises == t",
+                        "conclusion": "e",
+                        "cornerstone_idx": 1093,
+                        "exception": null,
+                        "alternative": null
+                    },
+                    "alternative": {
+                        "rule": "cap-color == g",
+                        "conclusion": "p",
+                        "cornerstone_idx": 4618,
+                        "exception": {
+                            "rule": "bruises == t",
+                            "conclusion": "e",
+                            "cornerstone_idx": 3961,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "odor == n",
+                                "conclusion": "e",
+                                "cornerstone_idx": 2966,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        },
+                        "alternative": {
+                            "rule": "cap-surface == g",
+                            "conclusion": "p",
+                            "cornerstone_idx": 5107,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "bruises == f",
+                                "conclusion": "p",
+                                "cornerstone_idx": 5205,
+                                "exception": {
+                                    "rule": "gill-spacing == w",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 2013,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "gill-color == k",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 28,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "gill-color == p",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 671,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "gill-color == g",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 675,
+                                                "exception": null,
+                                                "alternative": null
+                                            }
+                                        }
+                                    }
+                                },
+                                "alternative": null
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "alternative": {
+            "rule": "cap-shape == b",
+            "conclusion": "e",
+            "cornerstone_idx": 438,
+            "exception": {
+                "rule": "cap-color == p",
+                "conclusion": "p",
+                "cornerstone_idx": 5405,
+                "exception": null,
+                "alternative": {
+                    "rule": "bruises == f",
+                    "conclusion": "p",
+                    "cornerstone_idx": 5935,
+                    "exception": {
+                        "rule": "cap-surface == f",
+                        "conclusion": "e",
+                        "cornerstone_idx": 7305,
+                        "exception": {
+                            "rule": "cap-color == n",
+                            "conclusion": "p",
+                            "cornerstone_idx": 5955,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "cap-color == y",
+                                "conclusion": "p",
+                                "cornerstone_idx": 4826,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        },
+                        "alternative": {
+                            "rule": "cap-surface == s",
+                            "conclusion": "e",
+                            "cornerstone_idx": 7236,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "cap-color == n",
+                                "conclusion": "e",
+                                "cornerstone_idx": 7717,
+                                "exception": {
+                                    "rule": "gill-size == n",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 5311,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": null
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "cap-surface == s",
+                        "conclusion": "p",
+                        "cornerstone_idx": 4840,
+                        "exception": {
+                            "rule": "cap-color == w",
+                            "conclusion": "e",
+                            "cornerstone_idx": 268,
+                            "exception": {
+                                "rule": "odor == n",
+                                "conclusion": "p",
+                                "cornerstone_idx": 5929,
+                                "exception": null,
+                                "alternative": null
+                            },
+                            "alternative": {
+                                "rule": "cap-color == y",
+                                "conclusion": "e",
+                                "cornerstone_idx": 848,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        },
+                        "alternative": {
+                            "rule": "cap-color == w",
+                            "conclusion": "p",
+                            "cornerstone_idx": 5571,
+                            "exception": {
+                                "rule": "odor == l",
+                                "conclusion": "e",
+                                "cornerstone_idx": 104,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "odor == a",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 695,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == b",
+                                "conclusion": "p",
+                                "cornerstone_idx": 5633,
+                                "exception": null,
+                                "alternative": null
+                            }
+                        }
+                    }
+                }
+            },
+            "alternative": {
+                "rule": "cap-shape == x",
+                "conclusion": "e",
+                "cornerstone_idx": 2629,
+                "exception": {
+                    "rule": "cap-surface == y",
+                    "conclusion": "p",
+                    "cornerstone_idx": 6436,
+                    "exception": {
+                        "rule": "bruises == t",
+                        "conclusion": "e",
+                        "cornerstone_idx": 2166,
+                        "exception": {
+                            "rule": "cap-color == w",
+                            "conclusion": "p",
+                            "cornerstone_idx": 812,
+                            "exception": {
+                                "rule": "odor == a",
+                                "conclusion": "e",
+                                "cornerstone_idx": 121,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "odor == l",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 420,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == n",
+                                "conclusion": "p",
+                                "cornerstone_idx": 380,
+                                "exception": {
+                                    "rule": "odor == n",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 3000,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "odor == a",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 439,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "odor == l",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 1599,
+                                            "exception": null,
+                                            "alternative": null
+                                        }
+                                    }
+                                },
+                                "alternative": null
+                            }
+                        },
+                        "alternative": {
+                            "rule": "cap-color == r",
+                            "conclusion": "e",
+                            "cornerstone_idx": 4898,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "cap-color == n",
+                                "conclusion": "e",
+                                "cornerstone_idx": 5386,
+                                "exception": {
+                                    "rule": "odor == s",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 5192,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "odor == y",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 5817,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "odor == m",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 7805,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "odor == f",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 5933,
+                                                "exception": null,
+                                                "alternative": {
+                                                    "rule": "gill-spacing == c",
+                                                    "conclusion": "p",
+                                                    "cornerstone_idx": 5154,
+                                                    "exception": {
+                                                        "rule": "gill-size == b",
+                                                        "conclusion": "e",
+                                                        "cornerstone_idx": 7887,
+                                                        "exception": null,
+                                                        "alternative": null
+                                                    },
+                                                    "alternative": null
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "alternative": {
+                                    "rule": "cap-color == u",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 5839,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "cap-color == w",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 5599,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "cap-color == c",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 5335,
+                                            "exception": {
+                                                "rule": "odor == m",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 7714,
+                                                "exception": null,
+                                                "alternative": null
+                                            },
+                                            "alternative": null
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "cap-surface == s",
+                        "conclusion": "p",
+                        "cornerstone_idx": 5228,
+                        "exception": {
+                            "rule": "cap-color == n",
+                            "conclusion": "e",
+                            "cornerstone_idx": 7845,
+                            "exception": {
+                                "rule": "odor == s",
+                                "conclusion": "p",
+                                "cornerstone_idx": 6012,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "odor == f",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 6201,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "bruises == t",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 0,
+                                        "exception": {
+                                            "rule": "odor == n",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 5820,
+                                            "exception": null,
+                                            "alternative": null
+                                        },
+                                        "alternative": {
+                                            "rule": "odor == y",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 7209,
+                                            "exception": null,
+                                            "alternative": null
+                                        }
+                                    }
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == w",
+                                "conclusion": "e",
+                                "cornerstone_idx": 1393,
+                                "exception": {
+                                    "rule": "bruises == t",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 4661,
+                                    "exception": {
+                                        "rule": "odor == a",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 322,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "odor == l",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 51,
+                                            "exception": null,
+                                            "alternative": null
+                                        }
+                                    },
+                                    "alternative": {
+                                        "rule": "odor == c",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 3887,
+                                        "exception": null,
+                                        "alternative": null
+                                    }
+                                },
+                                "alternative": {
+                                    "rule": "cap-color == y",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 110,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "cap-color == g",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 7983,
+                                        "exception": {
+                                            "rule": "bruises == t",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 5435,
+                                            "exception": {
+                                                "rule": "odor == n",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 7300,
+                                                "exception": null,
+                                                "alternative": null
+                                            },
+                                            "alternative": {
+                                                "rule": "odor == c",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 3400,
+                                                "exception": null,
+                                                "alternative": null
+                                            }
+                                        },
+                                        "alternative": {
+                                            "rule": "cap-color == p",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 7063,
+                                            "exception": {
+                                                "rule": "bruises == f",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 3852,
+                                                "exception": null,
+                                                "alternative": null
+                                            },
+                                            "alternative": {
+                                                "rule": "cap-color == e",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 5071,
+                                                "exception": {
+                                                    "rule": "bruises == f",
+                                                    "conclusion": "p",
+                                                    "cornerstone_idx": 6159,
+                                                    "exception": null,
+                                                    "alternative": null
+                                                },
+                                                "alternative": {
+                                                    "rule": "odor == n",
+                                                    "conclusion": "e",
+                                                    "cornerstone_idx": 5271,
+                                                    "exception": null,
+                                                    "alternative": null
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "alternative": {
+                            "rule": "cap-color == g",
+                            "conclusion": "p",
+                            "cornerstone_idx": 3686,
+                            "exception": {
+                                "rule": "bruises == t",
+                                "conclusion": "e",
+                                "cornerstone_idx": 2069,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "odor == n",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 290,
+                                    "exception": null,
+                                    "alternative": null
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == y",
+                                "conclusion": "p",
+                                "cornerstone_idx": 4162,
+                                "exception": {
+                                    "rule": "bruises == t",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 212,
+                                    "exception": null,
+                                    "alternative": null
+                                },
+                                "alternative": {
+                                    "rule": "cap-color == p",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 3616,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "cap-color == w",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 4098,
+                                        "exception": {
+                                            "rule": "odor == n",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 1477,
+                                            "exception": null,
+                                            "alternative": {
+                                                "rule": "bruises == t",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 416,
+                                                "exception": null,
+                                                "alternative": null
+                                            }
+                                        },
+                                        "alternative": {
+                                            "rule": "bruises == f",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 5168,
+                                            "exception": {
+                                                "rule": "gill-spacing == w",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 2387,
+                                                "exception": null,
+                                                "alternative": {
+                                                    "rule": "gill-color == k",
+                                                    "conclusion": "e",
+                                                    "cornerstone_idx": 528,
+                                                    "exception": null,
+                                                    "alternative": {
+                                                        "rule": "gill-color == g",
+                                                        "conclusion": "e",
+                                                        "cornerstone_idx": 42,
+                                                        "exception": null,
+                                                        "alternative": {
+                                                            "rule": "gill-color == n",
+                                                            "conclusion": "e",
+                                                            "cornerstone_idx": 1026,
+                                                            "exception": null,
+                                                            "alternative": {
+                                                                "rule": "gill-color == p",
+                                                                "conclusion": "e",
+                                                                "cornerstone_idx": 740,
+                                                                "exception": null,
+                                                                "alternative": null
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "alternative": null
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "alternative": {
+                    "rule": "bruises == t",
+                    "conclusion": "e",
+                    "cornerstone_idx": 5976,
+                    "exception": {
+                        "rule": "cap-shape == c",
+                        "conclusion": "p",
+                        "cornerstone_idx": 5508,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "cap-surface == g",
+                            "conclusion": "p",
+                            "cornerstone_idx": 5717,
+                            "exception": null,
+                            "alternative": {
+                                "rule": "cap-surface == y",
+                                "conclusion": "p",
+                                "cornerstone_idx": 5237,
+                                "exception": {
+                                    "rule": "cap-color == n",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 5883,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "cap-color == e",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 5390,
+                                        "exception": null,
+                                        "alternative": null
+                                    }
+                                },
+                                "alternative": null
+                            }
+                        }
+                    },
+                    "alternative": {
+                        "rule": "cap-shape == s",
+                        "conclusion": "e",
+                        "cornerstone_idx": 373,
+                        "exception": null,
+                        "alternative": {
+                            "rule": "cap-color == n",
+                            "conclusion": "e",
+                            "cornerstone_idx": 7630,
+                            "exception": {
+                                "rule": "odor == y",
+                                "conclusion": "p",
+                                "cornerstone_idx": 7588,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "odor == f",
+                                    "conclusion": "p",
+                                    "cornerstone_idx": 7068,
+                                    "exception": null,
+                                    "alternative": {
+                                        "rule": "odor == s",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 7628,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "cap-surface == f",
+                                            "conclusion": "p",
+                                            "cornerstone_idx": 5964,
+                                            "exception": {
+                                                "rule": "gill-spacing == w",
+                                                "conclusion": "e",
+                                                "cornerstone_idx": 5664,
+                                                "exception": null,
+                                                "alternative": null
+                                            },
+                                            "alternative": {
+                                                "rule": "cap-surface == y",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 6855,
+                                                "exception": {
+                                                    "rule": "odor == n",
+                                                    "conclusion": "e",
+                                                    "cornerstone_idx": 5608,
+                                                    "exception": {
+                                                        "rule": "gill-spacing == c",
+                                                        "conclusion": "p",
+                                                        "cornerstone_idx": 5262,
+                                                        "exception": null,
+                                                        "alternative": null
+                                                    },
+                                                    "alternative": null
+                                                },
+                                                "alternative": null
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "alternative": {
+                                "rule": "cap-color == w",
+                                "conclusion": "e",
+                                "cornerstone_idx": 6219,
+                                "exception": null,
+                                "alternative": {
+                                    "rule": "cap-surface == f",
+                                    "conclusion": "e",
+                                    "cornerstone_idx": 6403,
+                                    "exception": {
+                                        "rule": "cap-color == y",
+                                        "conclusion": "p",
+                                        "cornerstone_idx": 5239,
+                                        "exception": null,
+                                        "alternative": null
+                                    },
+                                    "alternative": {
+                                        "rule": "cap-color == g",
+                                        "conclusion": "e",
+                                        "cornerstone_idx": 7170,
+                                        "exception": null,
+                                        "alternative": {
+                                            "rule": "cap-surface == y",
+                                            "conclusion": "e",
+                                            "cornerstone_idx": 5117,
+                                            "exception": {
+                                                "rule": "cap-color == e",
+                                                "conclusion": "p",
+                                                "cornerstone_idx": 7312,
+                                                "exception": null,
+                                                "alternative": {
+                                                    "rule": "cap-color == y",
+                                                    "conclusion": "p",
+                                                    "cornerstone_idx": 7739,
+                                                    "exception": null,
+                                                    "alternative": {
+                                                        "rule": "odor == m",
+                                                        "conclusion": "p",
+                                                        "cornerstone_idx": 7034,
+                                                        "exception": null,
+                                                        "alternative": null
+                                                    }
+                                                }
+                                            },
+                                            "alternative": null
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "alternative": null
+}

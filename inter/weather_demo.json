@@ -1,0 +1,60 @@
+{
+  "condition": null,
+  "conclusion": "Unknown",
+  "if_true": {
+    "condition": {
+      "col": "Windy",
+      "op": "==",
+      "val": "False"
+    },
+    "conclusion": "Swim",
+    "if_true": {
+      "condition": {
+        "col": "Temp",
+        "op": "==",
+        "val": "Mild"
+      },
+      "conclusion": "Walk",
+      "if_true": null,
+      "if_false": {
+        "condition": {
+          "col": "Temp",
+          "op": "==",
+          "val": "Cool"
+        },
+        "conclusion": "Walk",
+        "if_true": null,
+        "if_false": null
+      }
+    },
+    "if_false": {
+      "condition": {
+        "col": "Temp",
+        "op": "==",
+        "val": "Hot"
+      },
+      "conclusion": "Stay-In",
+      "if_true": null,
+      "if_false": {
+        "condition": {
+          "col": "Outlook",
+          "op": "==",
+          "val": "Rain"
+        },
+        "conclusion": "Stay-In",
+        "if_true": null,
+        "if_false": {
+          "condition": {
+            "col": "Temp",
+            "op": "==",
+            "val": "Cool"
+          },
+          "conclusion": "Walk",
+          "if_true": null,
+          "if_false": null
+        }
+      }
+    }
+  },
+  "if_false": null
+}

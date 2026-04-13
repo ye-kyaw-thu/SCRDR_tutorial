@@ -1,0 +1,42 @@
+{
+  "condition": null,
+  "conclusion": "Unknown",
+  "if_true": {
+    "condition": {
+      "col": "Windy",
+      "op": "==",
+      "val": "False"
+    },
+    "conclusion": "Swim",
+    "if_true": {
+      "condition": {
+        "col": "Windy",
+        "op": "==",
+        "val": "False"
+      },
+      "conclusion": "Walk",
+      "if_true": null,
+      "if_false": null
+    },
+    "if_false": {
+      "condition": {
+        "col": "Windy",
+        "op": "==",
+        "val": "True"
+      },
+      "conclusion": "Stay-In",
+      "if_true": {
+        "condition": {
+          "col": "Outlook",
+          "op": "==",
+          "val": "Overcast"
+        },
+        "conclusion": "Walk",
+        "if_true": null,
+        "if_false": null
+      },
+      "if_false": null
+    }
+  },
+  "if_false": null
+}

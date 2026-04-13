@@ -1,0 +1,3444 @@
+True : E
+	currTag == "B" : B
+		currUnit == "ပါ" and prevType1 == "SM" : S
+			currUnit == "ပါ" : B
+		currUnit == "ဒီ" and nextTag1 == "E" : S
+			currUnit == "ဒီ" : B
+		nextTag1 == "E" and nextTag2 == "E" : S
+			currType == "SM" : I
+		nextUnit1 == "ပါ" and nextTag1 == "E" : S
+			nextUnit1 == "ပါ" : B
+		bigramR == "မရှိ" : S
+			currUnit == "မ" : B
+		currUnit == "မ" and nextUnit2 == "တ်" : S
+			currUnit == "မ" : B
+		nextUnit1 == "တော့" : S
+			nextUnit1 == "တော့" : B
+		nextUnit1 == "မှာ" and nextTag1 == "E" : S
+			nextUnit1 == "မှာ" : B
+		nextBigram == "ချင်" : S
+			nextUnit1 == "ချ" : B
+		bigramR == "ရှိတ" : S
+		bigramR == "သူက" : S
+		currUnit == "ဆို" and nextUnit2 == "င်" : S
+			currUnit == "ဆို" : B
+		bigramR == "မရ" : S
+			currUnit == "မ" : B
+		nextBigram == "မယ်" : S
+			nextUnit1 == "မ" : B
+		nextUnit1 == "ပေး" and nextTag1 == "E" : S
+			nextUnit1 == "ပေး" : B
+				currType == "SM" : E
+		nextUnit1 == "မှ" and nextTag1 == "E" : S
+			nextUnit1 == "မှ" : B
+		bigramR == "များစွာ" : S
+			currUnit == "များ" : B
+		bigramR == "သူများ" : S
+			currUnit == "သူ" : B
+				prevUnit1 == "ည်" : E
+		nextUnit1 == "နဲ့" : S
+		bigramR == "ဘာလဲ" : S
+		bigramR == "ရလား" : S
+			currUnit == "ရ" : B
+		bigramR == "ပြီးရ" : S
+			currUnit == "ပြီး" : B
+		bigramR == "တွေ့ရှိ" : S
+			currUnit == "တွေ့" : B
+		currUnit == "ဒီ" and nextUnit2 == "က်" : S
+			currUnit == "ဒီ" : B
+		bigramR == "ပြောတာ" : S
+		bigramR == "မတွေ့" : S
+		nextTag1 == "E" and nextTag2 == "I" : S
+		bigramR == "မလာ" : S
+			currUnit == "မ" : B
+		currUnit == "ဒါ" and nextTag1 == "E" : S
+			currUnit == "ဒါ" : B
+		bigramR == "ကိုလာ" : S
+			currUnit == "ကို" : B
+		bigramR == "ရသ" : S
+			currUnit == "ရ" : B
+		bigramR == "နေ့တို" : S
+			currUnit == "နေ့" : B
+		nextUnit1 == "သွား" and nextTag1 == "E" : S
+			nextUnit1 == "သွား" : B
+		bigramR == "မေလ" : S
+			currUnit == "မေ" : B
+		bigramR == "သွားကြ" : S
+			currUnit == "သွား" : B
+		currUnit == "နဲ့" : S
+			currUnit == "နဲ့" : B
+		currUnit == "မ" and nextUnit2 == "ပါ" : S
+			currUnit == "မ" : B
+		currUnit == "ကို" and nextUnit2 == "ယ်" : S
+		bigramR == "လူတို" : S
+			currUnit == "လူ" : B
+		currUnit == "ကား" and nextTag1 == "E" : S
+			currUnit == "ကား" : B
+				currType == "SM" : E
+		currUnit == "ရ" and nextUnit1 == "ရ" and nextUnit2 == "င်" : S
+		bigramR == "မသော" : S
+		nextBigram == "စရာ" : S
+			nextUnit1 == "စ" : B
+		bigramR == "နေနို" : S
+		bigramR == "ပေးဖို့" : S
+		bigramR == "ဟိုဘ" : S
+			currUnit == "ဟို" : B
+		nextBigram == "အများ" : S
+			currUnit == "လူ" : B
+		bigramR == "မထား" : S
+		bigramR == "မတို" : S
+			currUnit == "မ" : B
+		bigramR == "နေစ" : S
+		bigramR == "ဘာများ" : S
+		nextUnit1 == "ခေ" : S
+			prevUnit1 == "<BOS>" : B
+		bigramR == "ခုလို" : S
+		currUnit == "မ" and nextUnit2 == "ယ်" : S
+			currUnit == "မ" : B
+		bigramR == "လိုပဲ" : S
+		bigramR == "ကျပါ" : S
+		currUnit == "ပေး" and nextUnit2 == "ယ်" : S
+			currUnit == "ပေး" : B
+		bigramR == "မြို့ကြီး" : S
+			currUnit == "မြို့" : B
+		bigramR == "ကိုငွေ" : S
+			currUnit == "ကို" : B
+		currUnit == "လို" and nextUnit1 == "လား" and nextUnit2 == "။" : S
+		bigramR == "၂ရ" : S
+		currUnit == "နေ" and nextUnit1 == "ရ" and nextUnit2 == "င်း" : S
+			currUnit == "နေ" : B
+		bigramR == "မမေ့" : S
+		bigramR == "ကိုရ" : S
+			currUnit == "ကို" : B
+		prevTag1 == "E" and bigramR == "ကနေ့" : S
+		bigramR == "မယူ" : S
+		bigramR == "စားတာ" : S
+			currUnit == "စား" : E
+		trigramC == "ရီးစဉ်" : I
+		bigramR == "ကသာ" : S
+			currUnit == "က" : B
+		bigramR == "မကြား" : S
+			currUnit == "မ" : B
+		trigramC == "င်တန်း" : I
+			currUnit == "တ" : B
+		prevUnit2 == "ပြ" and prevUnit1 == "ည်" and currUnit == "န" : I
+		bigramR == "ရေးထား" : S
+			currUnit == "ရေး" : B
+		bigramR == "လူ့အ" : S
+			currUnit == "လူ့" : B
+		nextBigram == "မရှိ" : S
+			nextUnit1 == "မ" : B
+		bigramR == "လေထဲ" : S
+		prevBigram == "ရသ" : I
+			prevUnit1 == "သ" : B
+		bigramR == "ဘာနေ့" : S
+		bigramR == "ငွေလဲ" : S
+			currUnit == "ငွေ" : B
+		bigramR == "ပြထား" : S
+		bigramR == "သွားလဲ" : S
+		currUnit == "ရှေး" and nextUnit2 == "ခါ" : S
+			currUnit == "ရှေး" : B
+		bigramR == "ဘာလို" : S
+		bigramR == "သွားယူ" : S
+			currUnit == "သွား" : B
+		prevTag1 == "E" and bigramR == "များစု" : S
+		bigramL == "ကိုးကွ" : I
+		currUnit == "မြို့" and nextUnit2 == "င်း" : S
+			currUnit == "မြို့" : B
+		bigramR == "ဖျားနေ" : S
+		bigramR == "မဆိုး" : S
+		bigramR == "ကလဲ" : S
+			currUnit == "က" : B
+		trigramC == "ကနေထွ" : S
+		currUnit == "စေ" and nextUnit1 == "ရ" and nextUnit2 == "မ" : S
+		bigramR == "မလုံ" : S
+			currUnit == "မ" : B
+		bigramR == "ပြီးအော" : S
+		bigramR == "သောက" : S
+			currUnit == "သော" : B
+		bigramR == "ပေါ်လာ" : S
+			currUnit == "ပေါ်" : B
+		bigramR == "ကားရ" : S
+			currUnit == "ကား" : B
+		bigramR == "ဆေးတ" : S
+			currUnit == "ဆေး" : B
+		prevUnit2 == "ရ" and prevUnit1 == "န်" and currUnit == "ကု" : I
+			currUnit == "ကု" : B
+		currUnit == "မ" and nextUnit1 == "ဆ" and nextUnit2 == "င်း" : S
+		currUnit == "ဟူ" and nextUnit2 == "ည်" : S
+			currUnit == "ဟူ" : B
+		nextBigram == "ကျေန" : S
+			currUnit == "မ" : B
+		trigramC == "ကျရောက်" : I
+			currUnit == "ရော" : B
+		bigramR == "သားတော်" : S
+			currUnit == "သား" : B
+		bigramR == "ခေါ်လာ" : S
+			currUnit == "ခေါ်" : B
+		bigramR == "ဘွဲ့ရ" : S
+			currUnit == "ဘွဲ့" : B
+		currUnit == "စာ" and nextUnit1 == "ရ" and nextUnit2 == "င်" : S
+		bigramR == "များလှ" : S
+		bigramR == "ရစေ" : S
+			currUnit == "ရ" : I
+		bigramL == "ညာရ" : I
+		bigramR == "မတ" : S
+			currUnit == "မ" : B
+		bigramR == "မကျ" : S
+			currUnit == "မ" : B
+		bigramR == "ချထား" : S
+			currUnit == "ချ" : B
+		prevTag1 == "E" and bigramR == "ကိုကျော်" : S
+			currUnit == "ကို" : B
+		nextBigram == "ကြာသေး" : S
+			currUnit == "မ" : B
+		bigramR == "မြို့သ" : S
+		nextBigram == "မယ့်" : S
+			currUnit == "ပေ" : B
+		nextBigram == "ကနေ" : S
+			currUnit == "ထဲ" : B
+		bigramR == "ကြားတွ" : S
+		bigramR == "မပူ" : S
+		currUnit == "ပေါ့" and nextUnit2 == "ရာ" : S
+		currUnit == "ကို" and nextUnit2 == "ကွ" : S
+		nextBigram == "ရ။" : S
+		prevTag1 == "E" and bigramR == "ကကြီး" : S
+		prevTag1 == "E" and bigramR == "အပြား" : I
+		prevUnit2 == "အော" and prevUnit1 == "င်" and currUnit == "မြ" : I
+			currUnit == "မြ" : B
+		bigramR == "စထွ" : S
+		trigramC == "လာလည်" : I
+		currUnit == "ပ" and prevTag1 == "E" and prevTag2 == "E" : I
+		bigramR == "မပြ" : S
+		nextBigram == "ချေ။" : S
+		bigramR == "စေမ" : S
+		bigramL == "သီဥ" : I
+		bigramL == "စာအု" : I
+		prevUnit2 == "ကု" and prevUnit1 == "န်း" and currUnit == "ပြ" : I
+		bigramR == "သွားစား" : S
+		nextTag1 == "E" and bigramL == "နေ့လ" : I
+			currUnit == "လ" : B
+		bigramR == "စာလေ့" : S
+		currUnit == "က" and nextUnit2 == "စ်" : S
+			currUnit == "က" : B
+		bigramR == "ဘာကြော" : S
+			currUnit == "ဘာ" : B
+		currUnit == "ရ" and nextUnit1 == "မှ" and nextUnit2 == "န်း" : S
+			currUnit == "ရ" : B
+		prevBigram == "ကိုကျော်" : I
+			prevUnit1 == "ကျော်" : B
+		bigramR == "နားလေး" : S
+		bigramR == "မကြီး" : S
+			currUnit == "မ" : E
+		nextBigram == "ပညာ" : S
+			currUnit == "ဆေး" : B
+		bigramR == "စိုးလို့" : S
+		currUnit == "ကြ" and prevTag1 == "E" and prevTag2 == "E" : I
+		currUnit == "ရဲ့" and prevType1 == "SM" : S
+			currUnit == "ရဲ့" : B
+		bigramR == "ကိုစီ" : S
+		bigramR == "ကနား" : S
+		prevUnit2 == "ချု" and currUnit == "ခွ" : I
+		prevBigram == "ကနား" : I
+		currUnit == "သွား" and nextUnit1 == "လ" and nextUnit2 == "ည်" : S
+			currUnit == "သွား" : B
+		prevUnit2 == "<BOS>" and currUnit == "ထဲ" : S
+		prevTag1 == "E" and bigramR == "မြို့တ" : S
+			currUnit == "မြို့" : B
+		trigramC == "စ်သက်" : I
+		nextBigram == "ကနေ့" : S
+			currUnit == "ဒီ" : B
+		bigramL == "နားက" : S
+			currUnit == "က" : B
+		bigramR == "ဆီသို့" : S
+		prevBigram == "ကိုစီ" : I
+		bigramR == "အေးတဲ့" : S
+		trigramC == "င်မြင့်" : I
+			currUnit == "မြ" : B
+		bigramR == "စေလို" : S
+		trigramC == "မှသာလျှ" : S
+		prevUnit2 == "ကို" and prevUnit1 == "ယ်" and currUnit == "တို" : I
+		currUnit == "ည" and nextUnit2 == "က်" : S
+			currUnit == "ည" : B
+		bigramL == "များကို" : S
+			currUnit == "ကို" : B
+		bigramR == "မခြား" : S
+		bigramR == "မစိုး" : S
+			currUnit == "မ" : B
+		bigramR == "စေဦး" : S
+		bigramR == "ခုထိ" : S
+			currUnit == "ခု" : B
+		bigramL == "စေရ" : I
+			currUnit == "ရ" : B
+		bigramR == "လူ့ဘ" : S
+			currUnit == "လူ့" : B
+		currUnit == "မ" and nextUnit2 == "ည်း" : S
+			currUnit == "မ" : B
+		currUnit == "သူ" and nextUnit1 == "မ" and nextUnit2 == "ဟု" : S
+		currUnit == "ဆို" and nextUnit1 == "သော်" and nextUnit2 == "လ" : S
+		nextBigram == "ဝါသ" : S
+		currUnit == "သာ" and nextUnit2 == "ဟု" : S
+		trigramC == "သော်လည်း" : I
+		trigramC == "စတင်" : I
+		bigramL == "လာရော" : I
+		prevUnit2 == "များ" and prevUnit1 == "စု" and currUnit == "ပေါ" : I
+		trigramC == "လိုအပ်" : I
+		bigramL == "က်ထဲ" : S
+		bigramR == "သွားပြ" : S
+			currUnit == "သွား" : B
+		currUnit == "ညာ" : S
+			currUnit == "ညာ" : B
+		bigramR == "ပါရှိ" : S
+		prevTag1 == "E" and bigramR == "ထားရှိ" : S
+			currUnit == "ထား" : B
+		bigramR == "ကြီးခြ" : S
+		bigramR == "ရေသော" : S
+		bigramR == "ကပြ" : S
+			currUnit == "က" : B
+		currUnit == "စ" and nextUnit2 == "င့်" : S
+		bigramR == "အိုးကြီး" : S
+			currUnit == "အိုး" : B
+		prevUnit2 == "ယ်" and prevUnit1 == "စု" and currUnit == "နှ" : I
+			currUnit == "နှ" : B
+		bigramR == "ဟောဟို" : S
+			currUnit == "ဟော" : B
+		bigramR == "လဲနေ" : S
+		bigramR == "တော်ပြီ" : S
+		currUnit == "ခါ" and prevTag1 == "E" and nextTag1 == "E" : S
+			currUnit == "ခါ" : B
+		bigramR == "မို့လား" : S
+		currUnit == "စေ" and nextUnit1 == "ရ" and nextUnit2 == "ပါ" : S
+		prevTag1 == "E" and bigramR == "နေ့ည" : S
+			currUnit == "နေ့" : I
+				prevUnit1 == "မ" : E
+		nextBigram == "ညာဘ" : S
+		currUnit == "တွဲ" and prevTag1 == "E" and nextTag1 == "E" : S
+		nextBigram == "နူးညံ့" : S
+		nextBigram == "စီးပွား" : S
+		nextBigram == "မွေးမြူ" : S
+		bigramL == "ကြားထဲ" : S
+		bigramR == "ငွေများ" : S
+		nextBigram == "ပို့ချ" : S
+		currUnit == "စ" and nextUnit1 == "တာ" and nextUnit2 == "လဲ" : S
+		bigramL == "ည်ရွ" : I
+		currUnit == "ဆော" and prevTag1 == "E" and prevTag2 == "E" : I
+		trigramC == "သူလူထု" : I
+		bigramR == "ပြီးချိ" : S
+		bigramR == "သားလေး" : S
+			currUnit == "သား" : B
+		bigramR == "မကျွ" : S
+			currUnit == "မ" : B
+		currUnit == "မှာ" and nextTag1 == "E" : S
+			currUnit == "မှာ" : B
+		bigramL == "နာမ" : I
+		currUnit == "ကျ" and prevTag1 == "E" and prevTag2 == "E" : I
+		bigramR == "ရှာကြ" : S
+		prevUnit2 == "<BOS>" and currUnit == "တွဲ" : S
+		nextTag1 == "E" and bigramL == "ပြုလု" : I
+			currUnit == "လု" : B
+		bigramR == "မိုးစ" : S
+		trigramC == "က်ရာ၌" : S
+			currUnit == "ရာ" : B
+		currUnit == "ဝ" and prevTag1 == "E" and prevTag2 == "E" : I
+		bigramR == "တွေ့ဖူး" : S
+		bigramR == "သွားဆ" : S
+		bigramR == "သုံးမ" : S
+		currUnit == "ရေ" and nextUnit1 == "သ" and nextUnit2 == "ည်" : S
+		bigramR == "နွေဥ" : S
+		trigramC == "က်ဆိုင်" : I
+		prevTag1 == "S" and bigramR == "မကူ" : S
+		bigramL == "ကူးထဲ" : S
+		nextTag1 == "I" and bigramL == "င့်ငွေ" : S
+		currUnit == "က" and nextUnit1 == "တိ" and nextUnit2 == "ရ" : S
+		currUnit == "နေ" and nextUnit1 == "နေ" and nextUnit2 == "တ" : S
+		prevUnit2 == "ည်" and currUnit == "ပြီး" : S
+		trigramC == "ဟုမဆို" : S
+		trigramC == "နဲ့ငွေရှ" : S
+		currUnit == "ရ" and nextUnit1 == "ထား" and nextUnit2 == "တဲ့" : S
+		nextBigram == "ကိုရီး" : S
+		prevTag1 == "E" and bigramR == "ကိုငြိ" : S
+		nextBigram == "အားလုံး" : S
+		currUnit == "မ" and nextUnit1 == "က" and nextUnit2 == "စား" : S
+		currUnit == "က" and prevTag1 == "E" and prevTag2 == "E" : I
+		prevUnit2 == "ရား" and currUnit == "စော" : I
+		currUnit == "လ" and prevTag1 == "I" : I
+		trigramC == "ပြတင်း" : I
+		prevUnit2 == "တ" and prevUnit1 == "င်း" and currUnit == "ပေါ" : I
+		bigramL == "စုဆော" : I
+		trigramC == "ယ်ပြန့်" : I
+		prevUnit2 == "ကို" and prevUnit1 == "ယ်" and currUnit == "ပို" : I
+		bigramL == "မ္ဘာလှ" : I
+		prevUnit2 == "လှ" and prevUnit1 == "ည့်" and currUnit == "ခ" : I
+		prevUnit2 == "ပြ" and prevUnit1 == "င်း" and currUnit == "ပြ" : I
+		prevUnit2 == "က" and prevUnit1 == "ယ်" and currUnit == "ဆ" : I
+		prevUnit2 == "ည" and prevUnit1 == "စ်" and currUnit == "ပ" : I
+		nextTag1 == "S" : I
+			currType == "SM" : E
+		nextTag1 == "E" and bigramL == "ည်ငြိ" : I
+		prevUnit2 == "ည်" and prevUnit1 == "သူ" and currUnit == "ပြ" : I
+		trigramC == "သာမန်" : I
+		prevBigram == "ခြားလူ" : I
+		prevUnit2 == "နော" and currUnit == "ပို" : I
+			currUnit == "ပို" : B
+		currUnit == "ဖဲ" and nextUnit2 == "စား" : S
+			currUnit == "ဖဲ" : B
+		bigramR == "ရုံတ" : S
+			currUnit == "ရုံ" : B
+		prevUnit2 == "လှ" and currUnit == "လ" : I
+			currUnit == "လ" : B
+		nextBigram == "ခက" : S
+		currUnit == "ဟို" and nextUnit2 == "လော" : S
+		bigramR == "ငါးချို" : S
+		bigramR == "သေကု" : S
+		prevTag1 == "E" and trigramC == "ရပြီးနော" : S
+			currUnit == "ပြီး" : B
+		bigramR == "စာလာ" : S
+		nextTag1 == "E" and bigramL == "ဒါက" : S
+		trigramC == "ဘေးကစား" : S
+		bigramR == "မရွေး" : S
+			currUnit == "မ" : B
+		trigramC == "င်ဆန်း" : I
+			currUnit == "ဆ" : B
+		bigramR == "စားစား" : S
+		trigramC == "စားပြီးနော" : S
+			currUnit == "ပြီး" : B
+		bigramR == "မအေး" : S
+		bigramR == "ခံထား" : S
+		bigramR == "ခုချ" : S
+		trigramC == "ကနေအိ" : S
+		bigramR == "အားပြု" : S
+		bigramR == "ဆေးစား" : S
+		prevTag1 == "E" and bigramR == "ကာစ" : S
+		bigramR == "ဒါတ" : S
+		currUnit == "တို" and prevTag1 == "E" and prevTag2 == "E" : I
+		currUnit == "တွ" and prevTag1 == "E" and prevTag2 == "E" : I
+		bigramR == "ခွေးလေး" : S
+		currUnit == "များ" and nextUnit1 == "များ" and nextUnit2 == "စွာ" : S
+		trigramC == "နှာနီလာ" : S
+		nextBigram == "လဲတဲ့" : S
+		bigramL == "ရွာပြီး" : S
+		bigramL == "ပွဲကို" : S
+		bigramR == "စားပ" : S
+		nextBigram == "မရော" : S
+		prevTag1 == "E" and bigramR == "ကိုမာ" : S
+		prevTag1 == "S" and bigramR == "ရှိရှိ" : S
+		trigramC == "င်းမဆို" : S
+		trigramC == "စ်လစာ" : S
+		prevUnit2 == "များ" and prevUnit1 == "စွာ" and currUnit == "မ" : S
+		trigramC == "ကနေဝ" : S
+		currUnit == "ရ" and nextUnit1 == "ထား" and nextUnit2 == "ပြီး" : S
+		nextBigram == "ဆုံးဖြ" : S
+		prevUnit2 == "စ" and currUnit == "မီး" : S
+		nextTag1 == "E" and bigramL == "ည့်ဈေး" : S
+		trigramC == "မပြောပြ" : S
+		nextBigram == "ရာစု" : S
+		prevTag1 == "E" and bigramR == "တွေဝေ" : S
+		prevTag1 == "S" and bigramR == "မိုးများ" : S
+		bigramL == "မှုကို" : S
+		bigramL == "ပေးပြီး" : S
+		prevTag1 == "<BOST>" and bigramR == "ကဲကဲ" : S
+		prevTag1 == "<BOST>" and bigramR == "ငါးဟ" : S
+		nextBigram == "မနေ့" : S
+		prevUnit2 == "ချ" and currUnit == "ပြီး" : S
+		prevBigram == "င်တ" : I
+		trigramC == "များအားထု" : S
+		prevTag1 == "E" and bigramR == "လာပို့" : S
+		prevTag1 == "E" and bigramR == "တွေ့တွေ့" : S
+		nextBigram == "နေတဲ့" : S
+		prevUnit2 == "စာ" and prevUnit1 == "ရေး" and currUnit == "ဆ" : I
+		prevUnit2 == "ကော" and currUnit == "မွ" : I
+		trigramC == "င်းထန်" : I
+		currUnit == "ပ" and nextUnit1 == "င်" and nextUnit2 == "တွေ" : I
+		nextTag1 == "E" and bigramL == "ည်ညွှ" : I
+		trigramC == "မြို့နယ်" : I
+		bigramL == "စားသော" : I
+		bigramL == "ဈေးကွ" : I
+		trigramC == "ပျံသန်း" : I
+		trigramC == "ဆုံးဖြတ်" : I
+		trigramC == "ပြုပြင်" : I
+		trigramC == "နေ့ခင်း" : I
+		prevUnit2 == "ကော" and prevUnit1 == "င်း" and currUnit == "ကော" : I
+		trigramC == "ပေးအပ်" : I
+		currUnit == "စ" and prevTag1 == "E" and prevTag2 == "E" : I
+		bigramR == "စုနှ" : I
+		bigramL == "ဦးလွ" : I
+		nextBigram == "မ်းစွာ" : I
+		prevUnit2 == "င်" and prevUnit1 == "ခြေ" and currUnit == "ရ" : I
+		currUnit == "က" and prevTag1 == "I" : I
+		prevUnit2 == "တို" and currUnit == "ခို" : I
+		prevUnit2 == "ကို" and prevUnit1 == "က်" and currUnit == "ဖြ" : I
+		currUnit == "လှဲ" : S
+			currUnit == "လှဲ" : B
+		nextBigram == "ခဘ" : S
+			currUnit == "ငှား" : B
+		trigramC == "ကိုယူလာ" : S
+			currUnit == "ယူ" : B
+		prevUnit2 == "ကို" and currUnit == "ဘာ" : I
+			currUnit == "ဘာ" : B
+		prevTag1 == "<BOST>" and bigramR == "ဆေးသော" : S
+			currUnit == "ဆေး" : B
+		currUnit == "က" and nextUnit2 == "ယ်" : S
+			currUnit == "က" : B
+		bigramR == "ငါးကြော်" : S
+		prevUnit2 == "ရ" and prevUnit1 == "င်" and currUnit == "ဆို" : I
+			currUnit == "ဆို" : B
+		nextBigram == "လားစ" : S
+			currUnit == "မ" : B
+		trigramC == "စ်ပြီးနော" : S
+			currUnit == "ပြီး" : B
+		currUnit == "မိုး" and nextUnit1 == "ဆ" and nextUnit2 == "က်" : S
+		currUnit == "ယူ" and nextUnit1 == "လာ" and nextUnit2 == "ပါ" : S
+			currUnit == "ယူ" : B
+		prevTag1 == "E" and bigramR == "လေလေ" : S
+			currUnit == "လေ" : B
+		nextBigram == "မသွား" : S
+		prevUnit2 == "သ" and currUnit == "ပြီး" : S
+		currUnit == "ဘာ" and nextUnit2 == "ဆို" : S
+			currUnit == "ဘာ" : B
+		prevUnit2 == "က" and currUnit == "ထဲ" : S
+		bigramR == "မကြိုး" : S
+			currUnit == "မ" : B
+		prevTag1 == "S" and bigramR == "ရှာမ" : S
+		prevUnit2 == "တ်" and currUnit == "ရှာ" : S
+		bigramL == "င်းထဲ" : S
+			currUnit == "ထဲ" : B
+		prevTag1 == "S" and bigramR == "မစ" : S
+			currUnit == "မ" : B
+		currUnit == "သွေး" and nextUnit2 == "စ်" : S
+		prevTag1 == "E" and bigramR == "ရေခ" : S
+		prevUnit2 == "မ" and prevUnit1 == "င်း" and currUnit == "ဆ" : I
+			currUnit == "ဆ" : B
+		bigramR == "မေးကြ" : S
+			currUnit == "မေး" : B
+		bigramR == "ငွေပြ" : S
+		bigramR == "ကိုဆော" : S
+		prevUnit2 == "ဖြ" and prevUnit1 == "စ်" and currUnit == "နေ" : S
+		trigramC == "င်းပြောပြ" : S
+			currUnit == "ပြော" : B
+		trigramC == "ကိုသူမ" : S
+		currUnit == "တော်" and nextUnit1 == "သေး" and nextUnit2 == "တ" : S
+		bigramL == "ပ်ဆေး" : S
+		currUnit == "စာ" and nextUnit2 == "ကား" : S
+		bigramL == "သာလျှ" : I
+		bigramL == "ချပြီး" : S
+		bigramR == "လျှော့ရော" : S
+		currUnit == "သ" and nextUnit1 == "င်" and nextUnit2 == "ကျော" : I
+		trigramC == "ထားပြီးလျှ" : S
+		bigramR == "ကိုရွှေ" : S
+		bigramR == "ခွဲပ" : S
+		currUnit == "က" and nextUnit2 == "သော" : S
+		nextUnit1 == "၈" : S
+		prevUnit2 == "က်" and currUnit == "ထဲ" : S
+		trigramC == "ဗျားကိုအော" : S
+		trigramC == "မဲ့သူမ" : S
+		trigramC == "တို့မနှ" : S
+		bigramL == "တွေဟာ" : S
+		nextBigram == "နီးပြီ" : S
+		trigramC == "တို့အားသာ" : S
+		bigramL == "မ်သုံး" : S
+		currUnit == "ဈေး" and prevType1 == "SD" : S
+		trigramC == "၏စားဝ" : S
+		trigramC == "၌လူစ" : S
+		prevTag1 == "E" and bigramR == "တတို" : S
+		nextTag1 == "E" and bigramL == "ည်ဆို" : S
+		trigramC == "အားစားကော" : S
+		bigramL == "ပြီးရှေ့" : S
+		prevUnit2 == "သော" and prevUnit1 == "က်" and currUnit == "ပြီး" : S
+		prevUnit2 == "မြ" and prevUnit1 == "န်" and currUnit == "ယူ" : S
+		bigramL == "င့်ပြီး" : S
+		bigramL == "ဘာဆေး" : S
+		currUnit == "သူ" and nextUnit2 == "ဝ" : S
+		prevUnit2 == "များ" and prevUnit1 == "မှာ" and currUnit == "မြို့" : S
+		currUnit == "သူ" and nextUnit2 == "စား" : S
+		prevTag1 == "<BOST>" and bigramR == "စျေးပေါ" : S
+		prevTag1 == "<BOST>" and bigramR == "ငါးဖ" : S
+		nextBigram == "လေးစား" : S
+		bigramR == "ချပ" : S
+		prevTag1 == "E" and trigramC == "ကြီးထဲက" : S
+		currUnit == "ခွေး" and nextUnit2 == "စ" : S
+		nextBigram == "ကြုံတွေ့" : S
+		nextBigram == "နေခဲ့" : S
+		prevUnit2 == "ထော" and currUnit == "က" : S
+		trigramC == "ကိုမနှ" : S
+		prevTag1 == "S" and bigramR == "လက" : S
+		prevTag1 == "E" and bigramR == "ရွှေတံ" : S
+		bigramL == "တော့်ဆီ" : S
+		trigramC == "ကားကဆီ" : S
+		nextBigram == "သုံးယော" : S
+		trigramC == "ည်းစားကော" : S
+		prevTag1 == "E" and bigramR == "မြေမျ" : S
+		bigramL == "ခဲ့ကာ" : S
+		prevTag1 == "<BOST>" and bigramR == "သွားတု" : S
+		trigramC == "ပေးရအော" : S
+		prevUnit2 == "နို" and currUnit == "ပြီး" : S
+		bigramL == "မြို့ကို" : S
+		prevTag1 == "S" and bigramR == "ကိုသ" : S
+		nextBigram == "တိုးတ" : S
+		prevUnit2 == "မြ" and currUnit == "စီး" : S
+		currUnit == "ပြ" and nextUnit1 == "ဆို" and nextUnit2 == "လို" : S
+		nextBigram == "ကြိုရ" : S
+		trigramC == "၏မနှ" : S
+		currUnit == "မိုး" and nextUnit2 == "ဖွဲ" : S
+		prevTag1 == "<BOST>" and bigramR == "စာလု" : S
+		trigramC == "တ်ထိုအ" : S
+		currUnit == "လူ" and nextUnit2 == "စုံ" : S
+		trigramC == "မ်းသိတ" : S
+		trigramC == "န်းပြီးလျှ" : S
+		currUnit == "သူ" and nextUnit2 == "ကြာ" : S
+		trigramC == "န်းထိရော" : S
+		nextBigram == "မဲ့စ" : S
+		currUnit == "မျိုး" and nextUnit2 == "စု" : S
+		trigramC == "ကိုမနော" : S
+		nextTag1 == "I" and bigramL == "က်သား" : S
+		trigramC == "ဆုံမလို့" : S
+		prevTag1 == "S" and bigramR == "ရေးရာ" : S
+		trigramC == "ယာကပြား" : S
+		currUnit == "နေ" and nextUnit1 == "နေ" and nextUnit2 == "ရ" : S
+		prevUnit2 == "ခေါ" and currUnit == "ကို" : I
+		currUnit == "ယူ" and nextUnit2 == "သော" : S
+		bigramL == "သာထဲ" : S
+		prevTag1 == "S" and bigramR == "လေကု" : S
+		bigramR == "လာသ" : S
+		currUnit == "ဦး" and nextUnit2 == "ယ်" : S
+		trigramC == "နီးကစား" : S
+		prevUnit2 == "ရာ" and prevUnit1 == "ကို" and currUnit == "ရေး" : S
+		nextTag1 == "E" and bigramL == "မှာနား" : S
+		nextBigram == "များပြား" : S
+		prevUnit2 == "သ" and currUnit == "နွေ" : S
+		currUnit == "လုံး" and nextUnit2 == "ယ်" : S
+		prevUnit2 == "င်" and currUnit == "ဘေး" : S
+		trigramC == "ပဲပြောပြော" : S
+		prevTag1 == "E" and bigramR == "အဲ့သ" : S
+		trigramC == "စေပြီးလျှ" : S
+		trigramC == "င့်ယူလာ" : S
+		currUnit == "နား" and nextUnit1 == "နေ" and nextUnit2 == "တ" : S
+		prevTag1 == "S" and bigramR == "သွားတု" : S
+		prevTag1 == "<BOST>" and bigramR == "ရှေ့ဆ" : S
+		prevTag1 == "S" and bigramR == "ရှေ့လ" : S
+		trigramC == "တာဟာသ" : S
+		prevUnit2 == "က်" and currUnit == "နွေ" : S
+		nextBigram == "ဥများ" : S
+		prevTag1 == "<BOST>" and bigramR == "ချွေးဒီး" : S
+		prevUnit2 == "ရော" and prevUnit1 == "င်" and currUnit == "သော်" : S
+		bigramL == "ရီခွဲ" : S
+		trigramC == "ကိုရအော" : S
+		bigramL == "ရှူထု" : I
+		currUnit == "သ" and nextUnit1 == "စ်" and nextUnit2 == "ဘာ" : I
+		trigramC == "နေ့စဉ်" : I
+		trigramC == "ပ်ငန်း" : I
+		trigramC == "တ်ချက်" : I
+		trigramC == "ယ်ကွင်း" : I
+		trigramC == "ဖွဲ့အစ" : I
+		bigramL == "ရုံးစို" : I
+		bigramL == "စာချု" : I
+		trigramC == "ရာခိုင်" : I
+		prevUnit2 == "ခို" and currUnit == "နှု" : I
+		prevUnit2 == "ခွေး" and currUnit == "စ" : I
+		bigramL == "န့်ကွ" : I
+		currUnit == "သ" and nextUnit1 == "က်" and nextUnit2 == "ပေ" : I
+		currUnit == "ချ" and nextUnit2 == "ရေး" : I
+		trigramC == "ချအပ်" : I
+		bigramL == "စာစော" : I
+		trigramC == "မ်းကြောင်း" : I
+		trigramC == "ယ်ဝန်" : I
+		prevUnit2 == "ဆော" and currUnit == "ရွ" : I
+		trigramC == "တ်သိမ်း" : I
+		trigramC == "က်ဆစ်" : I
+		trigramC == "တိုးတက်" : I
+		bigramL == "စ်ခုံ" : I
+		prevUnit2 == "ထိ" and currUnit == "သိ" : I
+		nextTag1 == "E" and bigramL == "ပြီးနော" : I
+		prevUnit2 == "မ" and prevUnit1 == "ကြာ" and currUnit == "ခ" : I
+		bigramL == "စာရွ" : I
+		bigramL == "စုစု" : I
+		prevBigram == "‌‌" : I
+		trigramC == "ကလောင်" : I
+		prevUnit2 == "တ" and prevUnit1 == "ည်" and currUnit == "ဆော" : I
+		trigramC == "မ်းစဉ်" : I
+		trigramC == "ကူးသန်း" : I
+		bigramL == "ရွှေတော" : I
+		bigramL == "ကြားဝ" : I
+		currUnit == "ခ" and nextUnit2 == "စာ" : I
+		currUnit == "ထ" and nextUnit1 == "မ်း" and nextUnit2 == "များ" : I
+		trigramC == "ခါတည်း" : I
+		trigramC == "ညံ့ပျော့ပျော" : I
+		trigramC == "ကြီးကျယ်" : I
+		nextTag1 == "B" : E
+		bigramL == "ကားဂိ" : I
+		bigramL == "ချမှ" : I
+		bigramL == "ကြာမြ" : I
+		prevUnit2 == "ဒြ" and currUnit == "ပေါ" : I
+		bigramL == "လူင" : I
+		prevBigram == "မပူ" : I
+		prevUnit2 == "တ" and prevUnit1 == "စ်" and currUnit == "ချိ" : I
+		bigramL == "ပူချိ" : I
+	currTag == "E" : E
+		currUnit == "မှာ" : S
+			currUnit == "မှာ" : E
+		currUnit == "ပါ" : S
+			currUnit == "ပါ" : E
+				currType == "SM" : B
+		prevUnit1 == "ပါ" and prevTag1 == "B" : S
+			prevUnit1 == "ပါ" : E
+				currType == "SM" : B
+		nextTag1 == "E" : B
+			currType == "SM" : I
+		bigramL == "မရှိ" : S
+			currUnit == "ရှိ" : E
+		currUnit == "တော့" : S
+			currUnit == "တော့" : E
+		currUnit == "ရေး" and prevTag1 == "I" and nextTag1 == "B" : S
+			currUnit == "ရေး" : E
+		prevUnit1 == "ဒီ" and prevTag1 == "B" : S
+			prevUnit1 == "ဒီ" : E
+				currType == "SM" : B
+		bigramL == "သူက" : S
+			currUnit == "က" : B
+		prevUnit1 == "ဗျား" : S
+			currUnit == "ရဲ့" : E
+		currUnit == "မှု" and prevTag1 == "I" and prevTag2 == "I" : S
+			currUnit == "မှု" : E
+		prevBigram == "တစ်" : S
+			prevUnit1 == "စ်" : E
+				currUnit == "ရာ" : B
+		currUnit == "လာ" and prevTag1 == "I" and prevTag2 == "B" : S
+			currUnit == "လာ" : E
+				prevUnit1 == "လေ့" : I
+		bigramL == "မရ" : S
+			currUnit == "ရ" : B
+				prevUnit1 == "မ" : E
+		currUnit == "ပေး" and nextType1 == "SM" : S
+			currUnit == "ပေး" : E
+				currType == "SM" : B
+		prevUnit1 == "ခု" : S
+			prevUnit1 == "ခု" : E
+				nextUnit2 == "ပ်" : B
+		currUnit == "စွာ" and nextType1 == "SM" : S
+			currUnit == "စွာ" : E
+		bigramL == "မှာလဲ" : S
+			currUnit == "လဲ" : E
+		currUnit == "မှ" : S
+			currUnit == "မှ" : E
+				nextUnit1 == "န်" : B
+		bigramL == "သူများ" : S
+			currUnit == "များ" : E
+				prevUnit1 == "သူ" : B
+		bigramL == "တာနဲ့" : S
+			currUnit == "နဲ့" : B
+		bigramL == "တ်လား" : S
+			currUnit == "လား" : E
+		currUnit == "သွား" and nextType1 == "SM" : S
+			currUnit == "သွား" : E
+		bigramL == "ဘာလဲ" : S
+		bigramL == "တွေ့ရှိ" : S
+			currUnit == "ရှိ" : E
+		nextTag1 == "I" : B
+			currType == "SM" : I
+		bigramL == "ရလား" : S
+			currUnit == "လား" : E
+		prevBigram == "ရောက်" : S
+			prevUnit1 == "က်" : E
+		bigramL == "ပြောတာ" : S
+		bigramL == "မတွေ့" : S
+			currUnit == "တွေ့" : E
+				prevUnit1 == "မ" : B
+		bigramL == "မလာ" : S
+		currUnit == "လ" and nextType1 == "SD" : S
+			currUnit == "လ" : E
+		prevUnit1 == "ဒါ" and prevTag1 == "B" : S
+			prevUnit1 == "ဒါ" : E
+		bigramL == "ရသ" : B
+			currUnit == "သ" : E
+		nextUnit1 == "ယ်" : B
+		bigramL == "ဒီလို" : S
+			currUnit == "လို" : E
+		prevUnit2 == "က" and currUnit == "များ" : S
+			currUnit == "များ" : E
+		bigramL == "လိုပဲ" : S
+			currUnit == "ပဲ" : E
+		prevBigram == "န်မာ" : S
+			currUnit == "စာ" : B
+				prevUnit1 == "မာ" : E
+			prevUnit1 == "မာ" : E
+		bigramL == "ကိုလာ" : S
+			currUnit == "လာ" : B
+				prevUnit1 == "ကို" : E
+		prevUnit2 == "ပြော" and currUnit == "စီး" : S
+			currUnit == "စီး" : E
+		currUnit == "သော" and prevTag1 == "I" : S
+			currUnit == "သော" : E
+		prevUnit2 == "မ" and prevUnit1 == "င်း" and currUnit == "စား" : S
+			currUnit == "စား" : E
+				prevUnit1 == "င်း" : B
+		currUnit == "ဘူး" and nextTag1 == "S" : S
+			currUnit == "ဘူး" : E
+		currUnit == "ပြီး" and prevTag1 == "I" and prevTag2 == "B" : S
+			currUnit == "ပြီး" : E
+				currType == "SM" : B
+		currUnit == "လို့" and prevTag1 == "I" : S
+			currUnit == "လို့" : E
+		prevUnit1 == "ကား" and prevTag1 == "B" : S
+			prevUnit1 == "ကား" : E
+		prevUnit2 == "ချိ" : S
+			prevUnit2 == "ချိ" : E
+				prevUnit1 == "န်" : B
+		bigramL == "ပေးဖို့" : S
+		bigramL == "ပ်ရေး" : S
+			currUnit == "ရေး" : E
+		prevBigram == "ပုံစံ" : S
+			prevUnit1 == "စံ" : E
+		bigramL == "မမေ့" : S
+		bigramL == "မထား" : S
+			currUnit == "ထား" : E
+		prevUnit2 == "နှ" and currUnit == "ဦး" : S
+			currUnit == "ဦး" : E
+		bigramL == "စေရ" : S
+		bigramL == "မြို့ကြီး" : S
+			currUnit == "ကြီး" : E
+		prevUnit2 == "ကို" and currUnit == "ကို" : S
+			currUnit == "ကို" : E
+		bigramL == "ရေးရ" : S
+			currUnit == "ရ" : B
+		prevUnit2 == "ထွ" and currUnit == "ရှိ" : S
+		prevUnit1 == "လှ" and prevTag1 == "E" : I
+			prevUnit1 == "လှ" : E
+		bigramL == "င်မီ" : S
+			currUnit == "မီ" : E
+		bigramL == "မဆိုး" : S
+			currUnit == "ဆိုး" : E
+		bigramL == "ဘာများ" : S
+		prevUnit2 == "ထ" and currUnit == "ရ" : S
+		prevUnit1 == "ဖြိုး" : S
+		currUnit == "တွဲ" and prevTag1 == "I" and prevTag2 == "I" : S
+			currUnit == "တွဲ" : E
+		prevBigram == "အခြား" : S
+			prevUnit1 == "ခြား" : B
+				prevUnit2 == "အ" : E
+		prevTag1 == "I" and bigramR == "လတွ" : S
+		bigramL == "လို့လဲ" : S
+		bigramL == "စားတာ" : S
+		trigramC == "လိုလား။" : S
+		prevUnit1 == "နဲ့" : S
+			currUnit == "ဆို" : E
+		bigramL == "ကားစီး" : S
+		bigramL == "မကြား" : S
+			currUnit == "ကြား" : E
+		bigramR == "ထားတဲ့" : S
+			currUnit == "ထား" : E
+		bigramL == "မေလ" : S
+		trigramC == "ပြည်သူ့" : I
+		prevTag1 == "I" and bigramR == "ရေး၊" : S
+			currUnit == "ရေး" : E
+		bigramL == "ကကြီး" : S
+			currUnit == "ကြီး" : E
+				prevUnit1 == "က" : B
+		bigramR == "မရှိ" : S
+			currUnit == "မ" : E
+		prevUnit2 == "ရု" and currUnit == "စာ" : S
+			currUnit == "စာ" : B
+		currUnit == "ထဲ" and prevTag1 == "I" : S
+			currUnit == "ထဲ" : E
+		bigramL == "မ်းကို" : S
+		prevUnit1 == "ပြ" and prevTag1 == "E" : I
+			prevUnit1 == "ပြ" : E
+		currUnit == "င်" and nextUnit1 == "တ" and nextUnit2 == "န်း" : I
+			currUnit == "င်" : E
+		trigramC == "ပြည်န" : I
+		prevUnit2 == "ဝ" and prevUnit1 == "ယ်" and currUnit == "တာ" : S
+		prevUnit1 == "ကျ" and prevTag1 == "E" : I
+			prevUnit1 == "ကျ" : E
+		bigramL == "ငံလုံး" : S
+			currUnit == "လုံး" : E
+		currUnit == "မ" and nextUnit1 == "ဟု" and nextUnit2 == "တ်" : S
+		bigramL == "လေထဲ" : S
+		bigramL == "မကြာ" : S
+			currUnit == "ကြာ" : E
+		bigramL == "စာစား" : S
+		bigramR == "ငံတော်" : I
+		bigramL == "ဉ်စီး" : S
+			currUnit == "စီး" : E
+		bigramL == "ရာရ" : S
+			currUnit == "ရ" : E
+		prevUnit2 == "သ" and currUnit == "များ" : S
+			currUnit == "များ" : E
+		bigramL == "သွားလဲ" : S
+		bigramL == "ကိုငွေ" : B
+			currUnit == "ငွေ" : S
+		prevTag1 == "I" and bigramR == "ပေါ်မှာ" : S
+			currUnit == "ပေါ်" : E
+		bigramL == "ဘာနေ့" : S
+		trigramC == "ပြည်သူ" : I
+		nextUnit1 == "ရီး" and nextTag1 == "S" : B
+		bigramR == "နေရ" : S
+		bigramL == "ယ်ကို" : S
+			currUnit == "ကို" : E
+		currUnit == "ထား" and nextUnit1 == "တ" and nextUnit2 == "ယ်" : S
+			currUnit == "ထား" : E
+		bigramL == "မယူ" : S
+			currUnit == "ယူ" : E
+				prevUnit1 == "မ" : B
+		bigramL == "ည်ထား" : S
+		currUnit == "နေ" and nextUnit1 == "တ" and nextUnit2 == "ယ်" : S
+		bigramR == "ကိုးကွ" : B
+		bigramL == "န်းက" : S
+		bigramL == "သွားယူ" : S
+			currUnit == "ယူ" : E
+		bigramL == "ကလဲ" : S
+			currUnit == "လဲ" : B
+		bigramL == "ပေါ်လာ" : S
+			currUnit == "လာ" : E
+		prevUnit2 == "စ်" and currUnit == "ကြီး" : S
+			currUnit == "ကြီး" : E
+		nextTag1 == "B" and bigramL == "ကသာ" : S
+			currUnit == "သာ" : B
+		prevUnit2 == "ခု" and currUnit == "က" : S
+			currUnit == "က" : E
+		bigramL == "ယ်မျှ" : S
+		bigramL == "င်တွေ့" : S
+			currUnit == "တွေ့" : E
+		bigramL == "န်တွေ့" : S
+			currUnit == "တွေ့" : E
+		bigramL == "ပ်ပြော" : S
+		bigramL == "ဘာလို" : S
+			currUnit == "လို" : B
+		bigramL == "ရီလ" : S
+		nextTag1 == "S" and nextTag2 == "E" : I
+			currType == "SM" : B
+		trigramC == "င်းသားပဲ" : S
+			currUnit == "သား" : E
+		bigramL == "ငံရေး" : S
+			currUnit == "ရေး" : B
+		prevBigram == "ကိုအော" : I
+			currUnit == "င်" : E
+		bigramL == "ဂါနေ့" : S
+		bigramL == "ဖွဲ့ကြီး" : S
+		bigramL == "မပြော" : S
+			currUnit == "ပြော" : E
+		trigramC == "င်းကြားပြီး" : S
+		currUnit == "ရီး" and nextUnit2 == "ဉ်" : I
+		bigramL == "က်၇" : S
+		bigramL == "ရာလဲ" : S
+		prevUnit2 == "က်" and currUnit == "ရေး" : S
+			currUnit == "ရေး" : E
+		bigramL == "ပြထား" : S
+		bigramR == "ပို့ချ" : S
+		currUnit == "ကျ" and nextUnit1 == "ရော" and nextUnit2 == "က်" : B
+			currUnit == "ကျ" : E
+		bigramL == "သားတော်" : S
+			currUnit == "တော်" : E
+		bigramL == "ခေါ်လာ" : S
+			currUnit == "လာ" : E
+		prevUnit2 == "စ်" and prevUnit1 == "မျိုး" and currUnit == "မျိုး" : S
+		trigramC == "ပြည်တော်" : I
+			currUnit == "ည်" : E
+		bigramL == "များလှ" : S
+		prevUnit2 == "ကို" and prevUnit1 == "ရ" and currUnit == "န်" : I
+		bigramL == "င်ရော" : S
+		trigramC == "ပညာရ" : I
+		bigramR == "တ်ဆို့" : I
+		trigramC == "င်ရရှိ" : B
+		bigramR == "စေခဲ့" : S
+			currUnit == "စေ" : E
+		bigramL == "ဉ်း၍" : S
+		bigramR == "ရာစု" : B
+		prevTag1 == "B" and bigramR == "ကနေ" : S
+			currUnit == "က" : E
+		bigramR == "ချေ။" : S
+		nextTag1 == "B" and bigramL == "ဘွဲ့ရ" : S
+		bigramL == "တ္တိရှိ" : S
+		prevTag1 == "B" and trigramC == "ကနေ့တို" : S
+			currUnit == "နေ့" : B
+		trigramC == "ပေါ့ဆရာ" : B
+		bigramL == "ခြားငွေ" : S
+			currUnit == "ငွေ" : E
+				prevUnit1 == "ခြား" : B
+		nextBigram == "အပြား" : I
+		prevUnit2 == "ပိ" and currUnit == "ထား" : S
+		nextTag1 == "B" and bigramL == "ကိုကျော်" : B
+			currUnit == "ကျော်" : S
+		bigramL == "ပ်မိ" : S
+		bigramL == "နေ့ည" : S
+			currUnit == "ည" : E
+				prevUnit1 == "နေ့" : B
+					prevUnit2 == "နေ့" : I
+		bigramL == "ခြားလူ" : S
+		prevUnit2 == "ချ" and currUnit == "ထား" : S
+		currUnit == "တ်" and prevTag1 == "E" : I
+			currUnit == "တ်" : E
+		prevUnit1 == "တ" and prevTag1 == "E" : I
+			prevUnit1 == "တ" : E
+		prevBigram == "ဆေးရုံ" : S
+			currUnit == "ကြီး" : E
+		bigramL == "ဂါရ" : S
+		bigramR == "သီဥ" : I
+		trigramC == "ကုန်းပြ" : I
+		prevTag1 == "B" and trigramC == "ပြင်မြ" : I
+		bigramL == "တ်ခ" : S
+		prevUnit2 == "မ်း" and prevUnit1 == "မ" and currUnit == "ကြီး" : S
+			currUnit == "ကြီး" : E
+		bigramL == "သွားစား" : S
+		bigramL == "ချထား" : S
+			currUnit == "ထား" : E
+		bigramL == "ယ်ရှိ" : S
+			currUnit == "ရှိ" : E
+		bigramL == "စ်ကြီး" : S
+			currUnit == "ကြီး" : E
+		bigramL == "မီးလေး" : S
+		bigramL == "နားလေး" : S
+		bigramL == "သာတာ" : S
+		bigramL == "စိုးလို့" : S
+		bigramR == "စေရ" : B
+			currUnit == "စေ" : S
+		currUnit == "စေ" and nextUnit2 == "ည်" : S
+		trigramC == "ချုပ်ခွ" : I
+		trigramC == "ရက်နေ့" : I
+		bigramR == "မွေးမြူ" : B
+		bigramR == "ကလေး" : B
+		nextTag1 == "B" and bigramL == "ကနား" : B
+		bigramL == "ယ်ပဲ" : S
+			currUnit == "ပဲ" : E
+		bigramL == "ယ်မြို့" : S
+		bigramL == "ဖျားနေ" : S
+		bigramR == "တဲ့အ" : S
+		prevUnit2 == "တော" and currUnit == "ပေါ်" : S
+			currUnit == "ပေါ်" : E
+		prevBigram == "ဆောက်" : S
+		prevUnit2 == "မှ" and prevUnit1 == "န်" and currUnit == "တာ" : S
+		bigramL == "န်ရေး" : S
+		bigramL == "ညီမှု" : S
+			currUnit == "မှု" : E
+		prevBigram == "စ္စတာ" : S
+			currUnit == "လီ" : E
+		currUnit == "စ်" and nextUnit1 == "သ" and nextUnit2 == "က်" : I
+		bigramL == "စ်သေး" : S
+		bigramL == "ဒါနဲ့" : S
+		bigramL == "ဆီသို့" : S
+		bigramL == "မအေး" : S
+			currUnit == "အေး" : E
+		prevUnit2 == "ကျ" and prevUnit1 == "င်" and currUnit == "သူ" : S
+			currUnit == "သူ" : E
+		bigramL == "ကိုစီ" : B
+		bigramL == "စ်ဆ" : S
+		currUnit == "စ်" and prevTag1 == "E" and prevTag2 == "B" : I
+		bigramL == "တ်ရှိ" : S
+		prevUnit2 == "ထိ" and currUnit == "ထား" : S
+		bigramL == "စေလို" : S
+		bigramL == "ချာလား" : S
+		trigramC == "လွယ်ကူ" : I
+		bigramR == "ငံသား" : I
+		bigramR == "ပုံစံ" : B
+		nextBigram == "သနာ" : B
+		prevTag1 == "B" and bigramR == "စုပေါ" : B
+		bigramL == "စားမှု" : S
+			currUnit == "မှု" : E
+		nextTag1 == "B" and bigramL == "တော်လေး" : S
+			currUnit == "လေး" : E
+		bigramL == "ရေးထား" : S
+			currUnit == "ထား" : E
+		bigramL == "တ်လ" : S
+		bigramR == "ရလဲ" : S
+			currUnit == "ရ" : E
+		bigramL == "ကြားမှု" : S
+		bigramL == "က်က" : S
+		prevBigram == "နံကာ" : S
+		bigramL == "စေဦး" : S
+		prevBigram == "မေးပွဲ" : S
+			currUnit == "ကျ" : E
+			currUnit == "ဖြေ" : B
+		currUnit == "မ်း" and prevTag1 == "E" : I
+		bigramL == "ပွဲပေါ်" : S
+		prevTag1 == "I" and bigramR == "ပြောကြ" : S
+		prevUnit2 == "ဆော" and currUnit == "ကြီး" : S
+			currUnit == "ကြီး" : E
+		bigramL == "လေးလေး" : S
+		trigramC == "ယ်စုနှ" : B
+		bigramL == "င်နေ" : S
+		nextTag1 == "S" and bigramL == "တော်ပြီ" : S
+		trigramC == "ကလာတာ" : S
+		bigramR == "စေတ" : S
+		bigramR == "များကြီး" : I
+		bigramR == "ခြားဘူး" : S
+		trigramC == "နောက်ဆုံး" : I
+		nextTag1 == "S" and nextTag2 == "I" : B
+		currUnit == "သော်" and nextUnit2 == "ည်း" : B
+		currUnit == "စ" and nextUnit1 == "တ" and nextUnit2 == "င်" : B
+		bigramL == "သာရေး" : S
+		prevBigram == "က်ထဲ" : S
+		bigramL == "ကြုံများ" : S
+		nextTag1 == "S" and bigramL == "တော်နေ့" : S
+		bigramL == "သွားပြ" : S
+			currUnit == "ပြ" : E
+		bigramL == "မ္ဘာကြီး" : S
+			currUnit == "ကြီး" : E
+		prevUnit2 == "မ" and currUnit == "များ" : S
+		bigramL == "န်းလုံး" : S
+		prevUnit2 == "အ" and currUnit == "ကြာ" : S
+			currUnit == "ကြာ" : E
+		nextTag1 == "S" and bigramL == "င်ရ" : S
+			currUnit == "ရ" : E
+		bigramL == "ဘီးစီး" : S
+			currUnit == "စီး" : E
+		nextTag1 == "B" and bigramL == "ခံထား" : S
+			currUnit == "ထား" : E
+		bigramL == "ဟောဟို" : S
+			currUnit == "ဟို" : E
+		bigramL == "လဲနေ" : S
+		prevUnit2 == "ဆ" and currUnit == "ပြော" : S
+		bigramL == "ယူကြ" : S
+		prevUnit2 == "န" and currUnit == "ပို့" : S
+		bigramL == "မို့လား" : S
+		prevBigram == "ကိတ်" : S
+		bigramL == "တမှု" : S
+		nextTag1 == "S" and bigramL == "ပို့ခ" : S
+		currUnit == "ဆို" and nextUnit1 == "တ" and nextUnit2 == "တ်" : S
+		prevBigram == "ကြားထဲ" : S
+		bigramL == "ငွေများ" : S
+		nextTag1 == "S" and bigramL == "ခဲတွေ့" : S
+		nextTag1 == "S" and bigramL == "နေနေ" : S
+		trigramC == "စတာလဲ" : S
+		bigramR == "ည်ရွ" : I
+		trigramC == "ဘူတာရုံ" : I
+		trigramC == "နှစ်မြို့" : I
+		trigramC == "တပ်မ" : I
+		trigramC == "စိတ်ချ" : I
+		bigramR == "စာအု" : B
+		bigramL == "ကနူး" : B
+		bigramR == "စီးပွား" : B
+		prevTag1 == "B" and trigramC == "ကနေ့လ" : B
+		prevUnit2 == "သ" and prevUnit1 == "ည်" and currUnit == "တော်" : S
+		bigramL == "က်သွား" : S
+		prevUnit2 == "န" and prevUnit1 == "ည်း" and currUnit == "လေး" : S
+			currUnit == "လေး" : E
+		bigramL == "တားကြီး" : S
+			currUnit == "ကြီး" : E
+		bigramL == "န်းသော့" : S
+		prevUnit2 == "ပြ" and currUnit == "ယူ" : S
+			currUnit == "ယူ" : E
+		trigramC == "ယ်လေးက" : S
+			currUnit == "လေး" : E
+		prevUnit2 == "က" and prevUnit1 == "သ" and currUnit == "စ်" : I
+			currUnit == "စ်" : E
+		trigramC == "မပြုပါ" : S
+			currUnit == "ပြု" : E
+		prevTag1 == "B" and bigramR == "ကစား" : B
+			currUnit == "က" : E
+		bigramL == "ကပြ" : B
+			currUnit == "ပြ" : E
+				prevUnit1 == "က" : S
+		bigramL == "မ်းရေး" : S
+			currUnit == "ရေး" : E
+		bigramL == "င်ချေ" : S
+		prevBigram == "ကိုငြိ" : I
+			currUnit == "မ်း" : E
+		bigramL == "အိုးကြီး" : S
+			currUnit == "ကြီး" : E
+		bigramL == "ဘများ" : S
+		prevUnit2 == "က်" and currUnit == "၌" : S
+			currUnit == "၌" : E
+		nextTag1 == "S" and bigramL == "ဏနေ" : S
+			currUnit == "နေ" : E
+		nextTag1 == "S" and bigramL == "ယားစာ" : S
+			currUnit == "စာ" : E
+		trigramC == "ပြည်မ" : I
+			currUnit == "ည်" : E
+		nextTag1 == "B" and bigramL == "ထားရှိ" : S
+			currUnit == "ရှိ" : E
+		bigramL == "ည့်နေ့" : S
+		bigramL == "ချီဆွဲ" : S
+		bigramL == "သာမ" : S
+		currUnit == "ပုံ" and nextUnit1 == "နှ" and nextUnit2 == "င့်" : S
+		bigramL == "တွေ့ဖူး" : S
+		bigramL == "အေးတဲ့" : S
+		nextTag1 == "B" and bigramL == "အားရှိ" : S
+		prevBigram == "ဿနာ" : S
+			prevUnit1 == "နာ" : E
+		bigramL == "န်ဆေး" : S
+		bigramL == "ခံသူ" : S
+		bigramL == "ခိုးကြီး" : S
+		prevTag1 == "I" and trigramC == "အောင်ဆ" : I
+		bigramL == "ကြွေလဲ" : S
+		prevUnit2 == "ကြော" and currUnit == "လေး" : S
+		currUnit == "က်" and nextUnit1 == "ဆို" and nextUnit2 == "င်" : I
+		bigramR == "နီးပြီ" : S
+		prevBigram == "ကူးထဲ" : S
+		prevUnit2 == "ဟု" and prevUnit1 == "မ" and currUnit == "ဆို" : S
+		prevUnit2 == "ခေ" and currUnit == "ကြီး" : S
+		prevUnit2 == "ည်း" and currUnit == "ပူ" : S
+		nextTag1 == "B" and bigramL == "ခိုးခံ" : S
+		prevTag1 == "E" and bigramR == "ည်းက" : I
+		trigramC == "ကျောင်းသား" : I
+		trigramC == "စည်ကား" : I
+		trigramC == "တင်းပေါ" : I
+		bigramR == "မ္ဘာလှ" : I
+		trigramC == "လှည့်ခ" : I
+		trigramC == "ညစ်ပ" : I
+		prevTag1 == "I" and trigramC == "မင်းဆ" : I
+		trigramC == "တည်ငြိ" : I
+		bigramR == "င်ငံ" : I
+		bigramR == "ကျကျ" : B
+		bigramR == "စုဝေး" : B
+		bigramR == "စုဆော" : B
+		currUnit == "နာ" and nextUnit1 == "မ" and nextUnit2 == "ည်" : B
+		bigramR == "အားလုံး" : B
+		bigramR == "ကျော်လွှား" : B
+		bigramL == "သားလေး" : S
+			currUnit == "လေး" : E
+		bigramL == "ကျိုးရှိ" : S
+			currUnit == "ရှိ" : E
+		bigramL == "များစွာ" : S
+		bigramR == "ပဲ။" : S
+		nextTag1 == "B" and bigramL == "ပ်များ" : S
+			currUnit == "များ" : E
+		nextTag1 == "S" and bigramL == "ထားမိ" : S
+		bigramL == "ပျိုးမြေ" : S
+			currUnit == "မြေ" : E
+		bigramL == "မ်းတိုး" : S
+			currUnit == "တိုး" : E
+		prevTag1 == "I" and trigramC == "ရင်ဆို" : I
+			currUnit == "င်" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "အေး" and currUnit == "အေး" : S
+			currUnit == "အေး" : E
+		bigramL == "င်းကျွေး" : S
+		prevUnit2 == "အ" and prevUnit1 == "စား" and currUnit == "စား" : S
+			currUnit == "စား" : E
+		currUnit == "စေ" and prevTag1 == "B" and nextTag1 == "B" : S
+		bigramL == "ပါနဲ့" : S
+			currUnit == "နဲ့" : E
+		bigramL == "န်လဲ" : S
+			currUnit == "လဲ" : E
+		prevUnit2 == "တော်" and prevUnit1 == "တော်" and currUnit == "ကြီး" : S
+		prevUnit2 == "စ" and prevUnit1 == "င်" and currUnit == "ယူ" : S
+		bigramL == "ပေးမှု" : S
+		prevUnit2 == "တို" and currUnit == "မိ" : S
+			currUnit == "မိ" : E
+		prevUnit2 == "စ" and currUnit == "ပေါ်" : S
+			currUnit == "ပေါ်" : E
+		bigramL == "မ်နာ" : S
+		prevUnit2 == "ဟ" and currUnit == "တော်" : S
+		prevUnit2 == "ရ" and prevUnit1 == "ည်" and currUnit == "ရှိ" : S
+			currUnit == "ရှိ" : E
+		bigramL == "တော့နာ" : S
+		prevUnit2 == "ည်" and prevUnit1 == "မ" and currUnit == "ကြီး" : S
+			currUnit == "ကြီး" : E
+		bigramL == "မစ" : S
+		prevBigram == "ယာလု" : I
+		bigramL == "န့်ရှိ" : S
+		currUnit == "ခံ" and nextUnit1 == "ရ" and nextUnit2 == "သော" : S
+			currUnit == "ခံ" : E
+		bigramR == "များလို့" : S
+			currUnit == "များ" : E
+		prevUnit2 == "ဆ" and currUnit == "ရေး" : S
+		bigramR == "နဲ့အ" : S
+		bigramL == "လေးမွေး" : S
+			currUnit == "မွေး" : B
+		prevTag1 == "B" and trigramC == "မပူပါ" : S
+			currUnit == "ပူ" : E
+		bigramL == "တွဲက" : S
+		bigramL == "ဆေးစား" : S
+		bigramR == "ကျော်၍" : S
+		bigramL == "န်းလေး" : S
+		prevUnit2 == "အ" and prevUnit1 == "မ" and currUnit == "က" : S
+		bigramL == "ခွေးလေး" : S
+		prevUnit2 == "ပြ" and currUnit == "ထား" : S
+		currUnit == "မ" and nextUnit2 == "ဘူး" : S
+		nextTag1 == "B" and bigramL == "ဏ်းခွဲ" : S
+		trigramC == "များများစွာ" : S
+		bigramR == "ညာဘ" : S
+			currUnit == "ညာ" : B
+		trigramC == "တ်ထားပေး" : S
+		bigramR == "ရှိလား" : S
+		trigramC == "င်မပြ" : S
+		prevBigram == "နှာနီ" : S
+		bigramR == "လဲတဲ့" : S
+		trigramC == "ညာရေးကို" : S
+		nextTag1 == "B" and bigramL == "ထူးကြီး" : S
+		trigramC == "စာလာခဲ့" : S
+		prevTag1 == "B" and bigramR == "မရော" : S
+		nextTag1 == "B" and bigramL == "လူသုံး" : S
+		prevUnit2 == "င်း" and prevUnit1 == "မ" and currUnit == "ဆို" : S
+		nextTag1 == "B" and bigramL == "ကထား" : S
+		prevUnit2 == "စ်" and prevUnit1 == "လ" and currUnit == "စာ" : S
+		nextTag1 == "B" and bigramL == "န်းရုံ" : S
+		trigramC == "ရထားပြီး" : S
+		prevBigram == "ည့်ဈေး" : S
+		prevUnit2 == "မ" and prevUnit1 == "ပြော" and currUnit == "ပြ" : S
+		nextTag1 == "B" and bigramL == "က်ကာ" : S
+		trigramC == "င်မသိ" : S
+		prevUnit2 == "<BOS>" and prevUnit1 == "ကဲ" and currUnit == "ကဲ" : S
+		trigramC == "န္ဒရှိပါ" : S
+		nextTag1 == "S" and bigramL == "အားပြု" : S
+		trigramC == "တောင်းခံ" : I
+		trigramC == "ကောင်းမွ" : I
+		trigramC == "ကိုင်ဆော" : I
+		trigramC == "ကုန်ဆုံး" : I
+		trigramC == "ရည်ညွှ" : I
+		trigramC == "လယ်စာ" : I
+		trigramC == "နောက်ကျ" : I
+		trigramC == "ထုတ်ယူ" : I
+		trigramC == "ဖွင့်ဆို" : I
+		nextTag1 == "B" and nextTag2 == "S" : I
+		trigramC == "ပြင်းပြ" : I
+		trigramC == "ချုပ်ဆို" : I
+		trigramC == "ဟန်တူ" : I
+		trigramC == "တိုက်ခို" : I
+		trigramC == "ကိုက်ဖြ" : I
+		trigramC == "ဆရာမ" : I
+		currUnit == "တော်" and nextUnit1 == "တော်" and nextUnit2 == "များ" : B
+		trigramC == "ကစားသော" : B
+		bigramR == "ဈေးကွ" : B
+		trigramC == "ဉ်ပျံသ" : B
+		bigramR == "မျိုးစုံ" : B
+		trigramC == "ပြီးဆုံးဖြ" : B
+		currUnit == "ပြု" and nextUnit1 == "ပြ" and nextUnit2 == "င်" : B
+		bigramR == "သဘော" : B
+		bigramR == "မနေ့" : B
+		bigramR == "ကြီးကြီး" : B
+		trigramC == "င်ခြေရ" : B
+		bigramR == "ကတိ" : B
+		trigramC == "နောက်ပို" : I
+			currUnit == "က်" : E
+		prevUnit2 == "နှ" and currUnit == "ကျ" : S
+			currUnit == "ကျ" : E
+		prevTag1 == "B" and bigramR == "ခဘ" : S
+			currUnit == "ခ" : E
+		nextTag1 == "S" and bigramL == "လာကြို" : S
+			currUnit == "ကြို" : E
+		prevTag1 == "I" and bigramR == "ကွဲသွား" : S
+		prevBigram == "ကိုယူ" : S
+			currUnit == "လာ" : E
+		bigramL == "ခြုံရေး" : S
+		bigramL == "င်လာ" : S
+		bigramL == "မ်ရှေ့" : S
+			currUnit == "ရှေ့" : E
+		currUnit == "လာ" and nextUnit1 == "ပါ" and nextUnit2 == "မ" : S
+		currUnit == "ထား" and nextUnit1 == "ခဲ့" and nextUnit2 == "တ" : S
+		bigramL == "သွားသွား" : S
+		bigramR == "နေလို့" : S
+		bigramL == "ငါးကြော်" : S
+		bigramR == "စေနဲ့" : S
+		bigramL == "န်ပြော" : S
+			currUnit == "ပြော" : E
+		nextTag1 == "B" and bigramL == "မရွာ" : S
+			currUnit == "ရွာ" : E
+		bigramR == "လားစ" : S
+			currUnit == "လား" : E
+		prevBigram == "ကျူးကျော်" : S
+		prevUnit2 == "ငှ" and currUnit == "မွေး" : S
+		bigramL == "ဆံရှာ" : S
+		bigramL == "တ်လူ" : B
+		bigramL == "က်ရွာ" : S
+		currUnit == "ရာ" and nextUnit1 == "အ" and nextUnit2 == "ရ" : S
+		prevUnit2 == "မ" and currUnit == "ကြော်" : S
+			currUnit == "ကြော်" : E
+		trigramC == "ယ်လိုလူ" : S
+		bigramL == "စ်ရှိ" : S
+		bigramL == "ကားရ" : S
+		trigramC == "တ်သူတို့" : S
+		bigramL == "လာပို့" : S
+		bigramL == "မိုးများ" : S
+			currUnit == "များ" : E
+		bigramR == "ပြောလို့" : S
+			currUnit == "ပြော" : E
+		bigramL == "ခြားသူ" : S
+			currUnit == "သူ" : E
+		bigramL == "စာရှာ" : S
+			currUnit == "ရှာ" : E
+		prevBigram == "သေးသေး" : S
+			currUnit == "လေး" : E
+		prevUnit2 == "တိ" and currUnit == "ပေး" : S
+		prevBigram == "င်းထဲ" : S
+			currUnit == "က" : E
+		nextTag1 == "B" and bigramL == "မာစာ" : S
+		prevUnit2 == "ဝ" and prevUnit1 == "န်" and currUnit == "ရှိ" : S
+		bigramL == "မိုးစ" : S
+		bigramL == "ပုံဆွဲ" : S
+			currUnit == "ဆွဲ" : E
+		nextTag1 == "B" and bigramL == "န်တွေး" : S
+		currUnit == "ရွေး" and prevTag1 == "B" : S
+			currUnit == "ရွေး" : E
+		prevUnit2 == "တ" and prevUnit1 == "က်" and currUnit == "မ" : B
+		bigramL == "ကူပြု" : S
+			currUnit == "ပြု" : E
+		bigramL == "ရှုံးမှု" : S
+		prevTag1 == "I" and bigramR == "မှုကို" : S
+		bigramL == "ခြုံမှု" : S
+		prevTag1 == "B" and trigramC == "မကြီးပါ" : S
+		prevUnit2 == "ငှ" and currUnit == "ကြီး" : S
+		prevTag1 == "B" and bigramR == "ကြီးနှ" : S
+		prevTag1 == "I" and bigramR == "ထိုးထား" : S
+			currUnit == "ထိုး" : E
+		prevUnit2 == "င" and currUnit == "ကြီး" : S
+		bigramL == "ဖီလား" : S
+		bigramL == "လာဈေး" : S
+			currUnit == "ဈေး" : E
+		currUnit == "ပြူး" and nextTag1 == "S" : S
+		currUnit == "င့်" and nextUnit1 == "ရ" and nextUnit2 == "ပြ" : I
+		prevUnit2 == "မှာ" and prevUnit1 == "မ" and currUnit == "ဆို" : S
+			currUnit == "ဆို" : E
+		prevUnit2 == "င်း" and prevUnit1 == "ပြော" and currUnit == "ပြ" : S
+			currUnit == "ပြ" : E
+		prevUnit2 == "တ" and currUnit == "ငွေ" : B
+		bigramL == "လဲပြု" : S
+		bigramR == "ယ်စု" : I
+		prevUnit2 == "ကို" and prevUnit1 == "သူ" and currUnit == "မ" : S
+		bigramL == "င်းရှိ" : S
+		bigramL == "မပေါ်" : S
+		bigramL == "စ္စာရှိ" : S
+		trigramC == "တော်သေးတ" : S
+		bigramL == "စားမျိုး" : S
+		prevTag1 == "B" and bigramR == "ပူရ" : S
+		trigramC == "ကောင်းကော" : I
+		trigramC == "ဆရာကြီး" : I
+			currUnit == "ရာ" : E
+		currUnit == "ပို့" and nextUnit1 == "လို" and nextUnit2 == "က်" : S
+		prevUnit2 == "က်" and currUnit == "မီး" : S
+		prevUnit2 == "တ" and currUnit == "ကြား" : S
+		currUnit == "ကြီး" and nextUnit1 == "များ" and nextUnit2 == "သ" : S
+		prevTag1 == "B" and trigramC == "သင်ကျော" : I
+		bigramR == "စေဖို့" : S
+		prevUnit2 == "ရ" and prevUnit1 == "င်" and currUnit == "ကြီး" : S
+		bigramR == "ထားလို့" : S
+		bigramL == "န်စ" : S
+		bigramL == "ည၈" : S
+		trigramC == "န်လုံးဟာ" : S
+		prevBigram == "မဲ့သူ" : S
+		trigramC == "င်မလို" : S
+		currUnit == "ရှိ" and nextUnit1 == "ရ" and nextUnit2 == "င်" : S
+		nextBigram == "မူ၍" : S
+		prevUnit2 == "တို့" and prevUnit1 == "အား" and currUnit == "သာ" : S
+		bigramR == "ကြီး"" : S
+		bigramL == "င်ဘူး" : S
+		currUnit == "မှား" and nextUnit1 == "နေ" and nextUnit2 == "ပြီ" : S
+		currUnit == "နဲ့" and nextUnit2 == "ရု" : S
+		bigramR == "ကဘ" : S
+		bigramR == "ကျော်ပြီး" : S
+		bigramR == "နေ့စ" : B
+		nextTag1 == "B" and bigramL == "ပြုသူ" : S
+		trigramC == "န်သံကို" : S
+		bigramR == "လိုသေး" : S
+		currUnit == "ပြ" and nextUnit2 == "ဒီ" : S
+		nextTag1 == "B" and bigramL == "ပ်စား" : S
+		trigramC == "သူမဝ" : S
+		prevUnit2 == "<BOS>" and prevUnit1 == "စျေး" and currUnit == "ပေါ" : S
+		trigramC == "မ်းရှိတ" : S
+		prevBigram == "ဘာစား" : S
+		bigramR == "ပြောရာ" : S
+		currUnit == "ပြ" and nextUnit2 == "မိ" : S
+		trigramC == "ယ်ရာမ" : S
+		currUnit == "ယူ" and nextUnit2 == "ပြီ" : S
+		currUnit == "ကြီး" and nextUnit2 == "တွေ့" : S
+		bigramR == "မစား" : S
+		trigramC == "မ်းဆုံးရ" : S
+		prevBigram == "န်ထဲ" : S
+		trigramC == "မ်းခံထား" : S
+		trigramC == "မ်းခဘ" : S
+		trigramC == "သားစားချ" : S
+		prevUnit2 == "ဗျား" and currUnit == "နေ" : S
+		prevUnit2 == "စ်" and prevUnit1 == "နေ" and currUnit == "ကျ" : S
+		prevUnit2 == "ကား" and currUnit == "ဆီ" : S
+		trigramC == "ဘွဲ့ရပြီး" : S
+		trigramC == "သူမသွား" : S
+		prevBigram == "ပဲရှိ" : S
+		trigramC == "မစုံကွ" : S
+		prevUnit2 == "<BOS>" and prevUnit1 == "သွား" and currUnit == "တု" : S
+		currUnit == "ငွေ" and nextUnit2 == "ဝ" : S
+		trigramC == "ယ်လိုကြော" : S
+		prevBigram == "စေ့ထဲ" : S
+		trigramC == "ဉ်စာနဲ့" : S
+		prevBigram == "ကဘွဲ့" : S
+		trigramC == "စားပြုရ" : S
+		trigramC == "ပြဆိုလို" : S
+		currUnit == "ရွာ" and nextUnit2 == "။" : S
+		trigramC == "က်ကြီးတာ" : S
+		nextTag1 == "B" and bigramL == "ပ်ဖို့" : S
+		currUnit == "စေ" and nextUnit2 == "၊" : S
+		nextTag1 == "S" and bigramL == "ခါသုံး" : S
+		bigramR == "ချေးခဲ့" : S
+		trigramC == "ကြိုးမဲ့စ" : S
+		bigramR == "၍၊" : S
+		prevUnit2 == "က်" and prevUnit1 == "မ" and currUnit == "ကြီး" : S
+		trigramC == "င်သူတို့" : S
+		prevUnit2 == "ဆုံ" and currUnit == "လို့" : S
+		trigramC == "ကပြားနေ" : S
+		trigramC == "င်းမဲ့မ" : S
+		nextTag1 == "B" and bigramL == "လာခေါ်" : S
+		trigramC == "ယူလာသော" : S
+		prevBigram == "သာထဲ" : S
+		prevTag1 == "B" and bigramR == "ကျအော" : S
+		nextTag1 == "S" and bigramL == "ဖျားကျ" : S
+		nextBigram == "နဲ့သိုး" : S
+		trigramC == "န်းခဘ" : S
+		trigramC == "မကြီး။" : S
+		bigramR == "စေချ" : S
+		currUnit == "ရှိ" and nextUnit2 == "ဆဲ" : S
+		bigramR == "ပို့မ" : S
+		prevUnit2 == "ပဲ" and prevUnit1 == "ပြော" and currUnit == "ပြော" : S
+		trigramC == "ဘွဲ့ရရှိ" : B
+		trigramC == "နေနဲ့ကျွ" : S
+		prevBigram == "င့်ယူ" : S
+		nextTag1 == "B" and bigramL == "ဆိုက" : S
+		currUnit == "ထား" and nextUnit1 == "၍" and nextUnit2 == "လေ့" : S
+		currUnit == "ကြီး" and nextUnit2 == "ဖွ" : S
+		prevBigram == "အိုးထဲ" : S
+		nextTag1 == "B" and bigramL == "က္ခကြီး" : S
+		trigramC == "က်ပြပါ့" : S
+		trigramC == "င်းပြခြ" : S
+		trigramC == "ခံထားခဲ့" : S
+		prevBigram == "ဒီလို" : I
+		bigramR == "သူကြိုး" : S
+		currUnit == "လို" and nextUnit1 == "အား" and nextUnit2 == "က" : S
+		trigramC == "ငါးဥများ" : S
+		nextTag1 == "B" and bigramL == "မီးနီ" : S
+		trigramC == "ကျငွေစာ" : S
+			currUnit == "ငွေ" : B
+		bigramR == "ည့်စုံ" : I
+		prevTag1 == "E" and bigramR == "န်းကျ" : I
+		bigramR == "ခါးဝ" : I
+		currUnit == "င်း" and nextUnit1 == "ကို" and nextUnit2 == "က်" : I
+		trigramC == "စစ်ဆေး" : I
+		trigramC == "လယ်ကွ" : I
+		currUnit == "ဖွဲ့" and nextUnit1 == "အ" and nextUnit2 == "စ" : I
+		trigramC == "ခိုင်နှု" : I
+		bigramR == "ပွဲထိုး" : I
+		bigramR == "န့်ကွ" : I
+		prevTag1 == "B" and trigramC == "ချမ်းရေး" : I
+		trigramC == "လမ်းကြော" : I
+		prevTag1 == "I" and bigramR == "ည့်ဝ" : I
+		trigramC == "ဆောင်ရွ" : I
+		trigramC == "ရိတ်သိ" : I
+		trigramC == "ဖက်ဆ" : I
+		trigramC == "ဆက်တို" : I
+		bigramR == "တူတူ" : I
+		prevTag1 == "I" and bigramR == "စ်သား" : I
+		prevTag1 == "I" and trigramC == "ရန်ကု" : I
+		trigramC == "ထိန်းသိ" : I
+		trigramC == "အတူဆုံး" : I
+		trigramC == "ကိုယ့်ဘာ" : I
+		bigramR == "ညာကျော်" : I
+		bigramR == "တ်ပြား" : I
+		trigramC == "တ်စ်ကား" : I
+		trigramC == "အာကာသ" : I
+		bigramR == "တီပွဲ" : I
+		trigramC == "ရပ်နား" : I
+		prevBigram == "ကူးလ" : I
+		trigramC == "တည်ဆော" : I
+		currUnit == "မ်း" and nextUnit1 == "စ" and nextUnit2 == "ဉ်" : I
+		currUnit == "န်း" and nextUnit1 == "စာ" and nextUnit2 == "ရှိ" : I
+		trigramC == "ကိုင်တွ" : I
+		trigramC == "ဒြပ်ပေါ" : I
+		trigramC == "လက်တွေ့" : I
+		currUnit == "သ" and nextUnit2 == "။" : B
+		bigramR == "ရှူထု" : B
+		prevBigram == "တွေဟာ" : B
+		bigramR == "စာပေ" : B
+		bigramR == "အေးအေး" : B
+		nextTag1 == "S" and bigramL == "ယ်ဖော်" : B
+		trigramC == "နပြုလု" : B
+		trigramC == "ကလေးစား" : B
+		bigramR == "ရုံးစို" : B
+		bigramR == "စာချု" : B
+		currUnit == "ရာ" and nextUnit1 == "ခို" and nextUnit2 == "င်" : B
+		trigramC == "ခွေးမစ" : B
+		bigramR == "မြို့န" : B
+		bigramR == "ကြုံတွေ့" : B
+		bigramR == "ကဗျာ" : B
+		trigramC == "က်ချအ" : B
+		nextTag1 == "S" and bigramL == "ကာယ" : B
+		bigramR == "ကြီးထွား" : B
+		bigramR == "တိုးတ" : B
+		nextUnit1 == "ဖွဲ" : B
+		trigramC == "ကနေ့နေ့" : B
+		bigramR == "မကြာ" : B
+		bigramR == "စာရွ" : B
+		bigramR == "စုစု" : B
+		bigramR == "‌‌" : B
+		bigramR == "ပြောကြား" : B
+		bigramR == "ကလော" : B
+		bigramR == "များပြား" : B
+		currUnit == "လို" and nextUnit1 == "အ" and nextUnit2 == "ပ်" : B
+		currUnit == "ကူး" and nextUnit1 == "သ" and nextUnit2 == "န်း" : B
+		bigramR == "ရွှေတော" : B
+		bigramR == "ကြားဝ" : B
+		bigramR == "ဆုံးရှုံး" : B
+		bigramR == "ပွဲတော်" : B
+		bigramR == "ကားဂိ" : B
+		bigramR == "ချမှ" : B
+		prevBigram == "တာဟာ" : B
+		bigramR == "တချိ" : B
+		prevBigram == "န်ခါ" : B
+		nextUnit1 == "ရီ" and nextTag1 == "S" : B
+		nextTag1 == "B" and bigramL == "မပူ" : B
+		bigramR == "ပူချိ" : B
+	currTag == "I" : I
+		bigramR == "တယ်" : B
+			currUnit == "တ" : I
+		prevUnit2 == "မြ" and currUnit == "မာ" : E
+			currUnit == "မာ" : I
+		bigramR == "ချင်" : B
+			currUnit == "ချ" : I
+		prevTag1 == "B" and bigramR == "ဟုတ်" : B
+			currUnit == "ဟု" : I
+		prevBigram == "န်မာ" : B
+			prevUnit1 == "မာ" : I
+		nextUnit1 == "ရေး" and nextTag1 == "E" : E
+			nextUnit1 == "ရေး" : I
+				currUnit == "နေ" : S
+		nextUnit1 == "မှာ" : E
+			nextUnit1 == "မှာ" : I
+		nextBigram == "တယ်" : E
+			nextUnit1 == "တ" : S
+				nextUnit2 == "ယ်" : I
+		nextUnit1 == "ပါ" : E
+			nextUnit1 == "ပါ" : I
+				currUnit == "နံ" : B
+				currType == "SM" : S
+		nextTag1 == "E" and bigramL == "ဆိုရ" : B
+			currUnit == "ရ" : I
+		bigramL == "ပါသ" : B
+		currUnit == "ဗျား" : E
+			currUnit == "ဗျား" : I
+		nextUnit1 == "မှု" and nextTag1 == "E" : E
+			nextUnit1 == "မှု" : I
+		nextTag1 == "E" and bigramL == "တစ်" : E
+			currUnit == "စ်" : I
+		bigramR == "မယ်" : B
+			currUnit == "မ" : I
+		bigramR == "ဘက်" : B
+			currUnit == "ဘ" : I
+		trigramC == "ဖြစ်လာ" : E
+			currUnit == "စ်" : I
+		nextBigram == "ဘက်" : E
+			nextUnit1 == "ဘ" : I
+		nextBigram == "ချင်" : E
+			nextUnit1 == "ချ" : I
+		prevUnit2 == "တ" and prevUnit1 == "ရု" and currUnit == "တ်" : E
+			currUnit == "တ်" : I
+		bigramL == "ယ်မှာ" : S
+			currUnit == "မှာ" : E
+				prevUnit1 == "ယ်" : I
+		bigramR == "စ်ခု" : E
+		bigramL == "စ်ခု" : S
+		prevUnit2 == "ရု" and prevUnit1 == "တ်" and currUnit == "ပြ" : B
+			currUnit == "ပြ" : I
+		nextTag1 == "E" and bigramL == "ရောက်" : E
+			currUnit == "က်" : I
+		nextBigram == "နိုင်" : E
+			nextUnit1 == "နို" : I
+		prevTag1 == "I" and bigramR == "နိုင်" : B
+			currUnit == "နို" : I
+		bigramR == "တ်လား" : E
+			currUnit == "တ်" : I
+		nextTag1 == "E" and nextTag2 == "E" : E
+			currType == "SM" : B
+		prevTag1 == "B" and trigramC == "တစ်ပ" : E
+			currUnit == "စ်" : I
+		prevUnit2 == "တ" and prevUnit1 == "စ်" and currUnit == "ပ" : B
+			currUnit == "ပ" : I
+		bigramL == "ပြီးရ" : B
+			currUnit == "ရ" : I
+		bigramR == "ပ်လု" : E
+			currUnit == "ပ်" : I
+		bigramL == "ပ်လု" : B
+			currUnit == "လု" : I
+		bigramR == "စရာ" : B
+			currUnit == "စ" : I
+		bigramL == "ဒီလော" : B
+			currUnit == "လော" : I
+		currUnit == "ည့်" and nextUnit2 == "စ်" : E
+			currUnit == "ည့်" : I
+		trigramC == "ည့်နှစ်" : B
+			currUnit == "နှ" : I
+		bigramL == "အဲဒီ" : E
+		bigramR == "က်သွား" : E
+			currUnit == "က်" : I
+		prevTag1 == "B" and trigramC == "နေ့တိုင်း" : B
+			currUnit == "တို" : I
+		bigramR == "ပ္ပံပ" : E
+			currUnit == "ပ္ပံ" : I
+		bigramL == "ပ္ပံပ" : B
+			currUnit == "ပ" : I
+		trigramC == "တစ်နာ" : E
+		trigramC == "စ်နာရီ" : B
+		bigramR == "ဖွဲ့ဝ" : E
+			currUnit == "ဖွဲ့" : I
+		bigramL == "ဖွဲ့ဝ" : B
+			currUnit == "ဝ" : I
+		nextUnit1 == "လို့" : E
+			nextUnit1 == "လို့" : I
+		bigramL == "သွားကြ" : B
+			currUnit == "ကြ" : I
+		nextTag1 == "E" and bigramL == "ကလေး" : E
+			currUnit == "လေး" : I
+		nextTag1 == "E" and bigramL == "အခု" : E
+			currUnit == "ခု" : I
+		nextTag1 == "E" and bigramL == "စ်ပေါ" : B
+			currUnit == "ပေါ" : I
+		prevUnit2 == "ဆေး" and prevUnit1 == "လိ" and currUnit == "ပ်" : E
+			currUnit == "ပ်" : I
+		trigramC == "နှစ်ပေါ" : E
+			currUnit == "စ်" : I
+		bigramL == "ကူညီ" : E
+			currUnit == "ညီ" : I
+		trigramC == "ပြည်ဆို" : E
+		nextTag1 == "I" and bigramL == "ည်ဆို" : B
+		trigramC == "ပြောင်းစီး" : E
+			currUnit == "င်း" : I
+		bigramL == "ပ်သော" : B
+			currUnit == "သော" : I
+		bigramR == "ည်းလော" : E
+		bigramL == "ည်းလော" : B
+		nextUnit1 == "သော" and nextTag1 == "E" : E
+			nextUnit1 == "သော" : I
+				currType == "SM" : S
+					currUnit == "ဟူ" : B
+		bigramL == "မသော" : B
+			currUnit == "သော" : I
+		trigramC == "မင်းစား" : E
+			currUnit == "င်း" : I
+		prevTag1 == "B" and trigramC == "လူတိုင်း" : B
+			currUnit == "တို" : I
+		bigramR == "ဒ္ဓဘာ" : E
+			currUnit == "ဒ္ဓ" : I
+		bigramL == "ဒ္ဓဘာ" : B
+			currUnit == "ဘာ" : I
+		prevTag1 == "B" and bigramR == "က်လာ" : E
+			currUnit == "က်" : I
+		trigramC == "မြောက်ပို" : E
+			currUnit == "က်" : I
+		prevUnit2 == "မြော" and currUnit == "ပို" : B
+			currUnit == "ပို" : I
+		nextUnit1 == "ဘူး" : E
+			nextUnit1 == "ဘူး" : I
+		prevTag1 == "I" and trigramC == "လယ်ပို" : E
+			currUnit == "ယ်" : I
+		nextUnit1 == "တော့" and nextTag1 == "E" : E
+			nextUnit1 == "တော့" : I
+				currType == "SM" : S
+		trigramC == "ဆောင်အိ" : E
+			currUnit == "င်" : I
+		prevUnit2 == "ဆော" and currUnit == "အိ" : B
+			currUnit == "အိ" : I
+		prevUnit2 == "လ" and prevUnit1 == "ယ်" and currUnit == "ပို" : B
+			currUnit == "ပို" : I
+		trigramC == "ဝါရီလ" : E
+		currUnit == "တု" and nextUnit1 == "န်း" and nextUnit2 == "က" : B
+			currUnit == "တု" : I
+		trigramC == "ဂုတ်လ" : E
+			currUnit == "တ်" : I
+		nextBigram == "စရာ" : E
+			nextUnit1 == "စ" : I
+		nextUnit1 == "ပဲ" and nextTag1 == "E" : E
+			nextUnit1 == "ပဲ" : I
+		trigramC == "ရရင်" : B
+		currUnit == "စ်" and nextUnit1 == "မ" and nextUnit2 == "ယ်" : E
+		currUnit == "ခြား" and prevTag1 == "B" : E
+			currUnit == "ခြား" : I
+		currUnit == "စ်" and nextUnit1 == "ထ" and nextUnit2 == "ည်" : E
+		trigramC == "စ်ထည်" : B
+		bigramR == "ရေးရ" : S
+			currUnit == "ရေး" : E
+		bigramL == "နေနို" : B
+		bigramR == "င်ပေး" : E
+			currUnit == "င်" : I
+		bigramR == "ပ်ပြီး" : E
+		prevUnit2 == "ပြ" and currUnit == "ထွ" : B
+			currUnit == "ထွ" : I
+		nextBigram == "ရေးရ" : E
+			currUnit == "ပ်" : I
+		trigramC == "ပြင်ထွ" : E
+			currUnit == "င်" : I
+		nextTag1 == "E" and bigramL == "ချိန်" : E
+			currUnit == "န်" : I
+		currUnit == "ပြ" and nextUnit1 == "ည်" and nextUnit2 == "န" : B
+			currUnit == "ပြ" : I
+		trigramC == "တစ်ခ" : E
+		trigramC == "စ်ခန်း" : B
+		nextTag1 == "E" and bigramL == "င်ပို" : B
+			currUnit == "ပို" : I
+		trigramC == "တောင်ပို" : E
+			currUnit == "င်" : I
+		currUnit == "ချ" and nextUnit1 == "က်" and nextUnit2 == "များ" : B
+			currUnit == "ချ" : I
+		trigramC == "ချိန်းထား" : E
+			currUnit == "န်း" : I
+		currUnit == "ယ့်" and nextUnit2 == "ကို" : E
+			currUnit == "ယ့်" : I
+		nextTag1 == "E" and bigramL == "ပုံစံ" : E
+			currUnit == "စံ" : I
+		trigramC == "လူအများ" : B
+			currUnit == "အ" : I
+		bigramL == "ခုခေ" : B
+			currUnit == "ခေ" : I
+		prevTag1 == "B" and trigramC == "ထွက်မ" : E
+			currUnit == "က်" : I
+		bigramR == "ခုခေ" : E
+			currUnit == "ခု" : I
+		bigramL == "နေစ" : B
+		bigramR == "ည့်ပေး" : E
+		bigramR == "မ္ဘာစ" : E
+		bigramL == "မ္ဘာစ" : B
+		nextBigram == "တုန်း" : E
+			nextUnit1 == "တု" : I
+		trigramC == "ထွက်ရှိ" : E
+		prevTag1 == "I" and bigramR == "န်ဒေါ်" : E
+			currUnit == "န်" : I
+		trigramC == "နှစ်ဦး" : E
+			currUnit == "စ်" : I
+		bigramL == "မတို" : B
+			currUnit == "တို" : I
+		nextBigram == "များများ" : E
+			currUnit == "တော်" : I
+		currUnit == "ခေ" and prevTag1 == "B" : B
+			currUnit == "ခေ" : I
+		bigramR == "ဒေါ်လာ" : B
+			currUnit == "ဒေါ်" : I
+		bigramR == "င်မီ" : E
+			currUnit == "င်" : I
+		bigramL == "တော်များ" : B
+			currUnit == "များ" : I
+		trigramC == "ထင်ရ" : E
+		prevBigram == "ကြိုတ" : E
+			currUnit == "င်" : I
+		bigramR == "န်စွာ" : E
+		prevUnit1 == "နဲ့" : B
+			currUnit == "အ" : I
+		prevTag1 == "B" and bigramR == "ယ်လာ" : E
+			currUnit == "ယ်" : I
+		currUnit == "ဒေ" and prevTag1 == "I" and prevTag2 == "I" : B
+			currUnit == "ဒေ" : I
+		prevUnit2 == "ထွ" and prevUnit1 == "က်" and currUnit == "မ" : B
+			currUnit == "မ" : I
+				prevUnit1 == "က်" : S
+		bigramR == "စားလု" : E
+		bigramL == "စားလု" : B
+		bigramR == "မ်ပြ" : E
+			currUnit == "မ်" : I
+		bigramL == "မ်ပြ" : B
+			currUnit == "ပြ" : I
+		prevTag1 == "B" and trigramC == "မလွယ်" : B
+		currUnit == "စ်" and nextUnit1 == "နေ" and nextUnit2 == "ရာ" : E
+			currUnit == "စ်" : I
+		trigramC == "စ်နေရာ" : B
+			currUnit == "နေ" : I
+		currUnit == "ဖြိုး" : E
+		prevUnit1 == "ဖြိုး" : B
+		trigramC == "င်လက်" : B
+			currUnit == "လ" : I
+		trigramC == "နောက်တ" : E
+			currUnit == "က်" : I
+		prevUnit2 == "နော" and prevUnit1 == "က်" and currUnit == "တ" : B
+			currUnit == "တ" : I
+		bigramL == "စ်လို့" : S
+		trigramC == "တန်းကျော" : E
+			currUnit == "န်း" : I
+		prevUnit2 == "တ" and currUnit == "ကျော" : B
+			currUnit == "ကျော" : I
+		bigramR == "ယ်ကို" : E
+			currUnit == "ယ်" : I
+		bigramL == "တိဂုံ" : E
+			currUnit == "ဂုံ" : I
+		prevBigram == "တိဂုံ" : B
+			prevUnit1 == "ဂုံ" : I
+		bigramL == "၂ရ" : B
+		bigramR == "ကားစီး" : E
+		trigramC == "သောက်တွဲ" : E
+		trigramC == "နေရင်း" : B
+			currUnit == "ရ" : I
+		trigramC == "ချင်ပြ" : E
+		prevTag1 == "B" and trigramC == "မတတ်" : B
+			currUnit == "တ" : I
+		trigramC == "ရိုးရိုးတ" : E
+			currUnit == "ရိုး" : I
+		prevUnit2 == "ရိုး" and currUnit == "တ" : B
+			currUnit == "တ" : I
+		nextTag1 == "I" and bigramL == "ရှမ်း" : E
+			currUnit == "မ်း" : I
+		nextUnit1 == "ထဲ" and nextTag1 == "E" : E
+			nextUnit1 == "ထဲ" : I
+		prevTag1 == "I" and bigramR == "ဉ်စီး" : E
+			currUnit == "ဉ်" : I
+		currUnit == "ပ်" and nextUnit1 == "တ" and nextUnit2 == "တ်" : E
+		trigramC == "ပ်တတ်" : B
+		currUnit == "အ" and nextUnit1 == "ခ" and nextUnit2 == "န်း" : B
+			currUnit == "အ" : I
+		trigramC == "နောင်အ" : E
+			currUnit == "င်" : I
+		trigramC == "င်အခါ" : B
+			currUnit == "အ" : I
+		trigramC == "ရမ်းကို" : E
+		nextBigram == "ပ်င" : B
+			currUnit == "လု" : I
+		bigramL == "ကိုရ" : B
+			currUnit == "ရ" : I
+		bigramR == "စောပို" : E
+			currUnit == "စော" : I
+		bigramL == "စောပို" : B
+			currUnit == "ပို" : I
+		trigramC == "ဘာသာဝ" : E
+			currUnit == "သာ" : I
+		trigramC == "သာဝင်" : B
+			currUnit == "ဝ" : I
+		trigramC == "ဝယ်တာ" : E
+		currUnit == "စ်" and nextUnit1 == "ဖ" and nextUnit2 == "က်" : E
+			currUnit == "စ်" : I
+		trigramC == "စ်ဖက်" : B
+			currUnit == "ဖ" : I
+		bigramL == "က်မြား" : E
+			currUnit == "မြား" : I
+		bigramR == "မှုလု" : E
+			currUnit == "မှု" : I
+		bigramR == "စာစား" : E
+			currUnit == "စာ" : I
+		bigramL == "လူ့အ" : B
+			currUnit == "အ" : I
+		prevTag1 == "I" and bigramR == "န်းက" : E
+			currUnit == "န်း" : I
+		currUnit == "အု" and nextUnit2 == "ချု" : B
+			currUnit == "အု" : I
+		bigramR == "ငံလုံး" : E
+			currUnit == "ငံ" : I
+		bigramL == "န္တလေး" : E
+		bigramL == "လေးတော" : B
+		bigramL == "ဏ်ရာ" : E
+			currUnit == "ရာ" : I
+		currUnit == "တော" and nextUnit1 == "င်" and nextUnit2 == "တ" : B
+			currUnit == "တော" : I
+		currUnit == "ချာ" and prevTag1 == "B" and nextTag1 == "E" : E
+			currUnit == "ချာ" : I
+		bigramL == "ငွေလဲ" : B
+			currUnit == "လဲ" : I
+		trigramC == "တ်စကား" : B
+		trigramC == "ခင်းကြ" : E
+		trigramC == "င်းကြည့်" : B
+		currUnit == "မ်း" and nextUnit1 == "တ" and nextUnit2 == "စ်" : E
+		trigramC == "မ်းတစ်" : B
+		nextBigram == "ပေါ်မှာ" : E
+			nextUnit1 == "ပေါ်" : I
+		currUnit == "န်" and prevTag1 == "E" : E
+			currUnit == "န်" : I
+		bigramR == "သွားချ" : E
+			currUnit == "သွား" : I
+		bigramL == "သွားချ" : B
+			currUnit == "ချ" : I
+		trigramC == "ရှေးအခါ" : B
+			currUnit == "အ" : I
+		currUnit == "တော့်" : E
+		bigramR == "ည်ထား" : E
+		prevTag1 == "B" and bigramR == "တ်ပေး" : E
+			currUnit == "တ်" : I
+		nextBigram == "ဒေသ" : E
+			nextUnit1 == "ဒေ" : I
+				currUnit == "ပေါ်" : S
+		bigramR == "င်သွား" : E
+			currUnit == "င်" : I
+		prevBigram == "လူသား" : B
+			prevUnit1 == "သား" : I
+		prevUnit2 == "က" and prevUnit1 == "နေ" and currUnit == "ထွ" : B
+		bigramR == "ကကြီး" : E
+			currUnit == "က" : I
+		bigramL == "မလုံ" : B
+			currUnit == "လုံ" : I
+		bigramL == "တိယ" : E
+			currUnit == "ယ" : I
+		prevBigram == "တိယ" : B
+			prevUnit1 == "ယ" : I
+		bigramR == "ရာကော" : E
+			currUnit == "ရာ" : I
+		bigramL == "ရာကော" : B
+			currUnit == "ကော" : I
+		prevTag1 == "I" and trigramC == "အပ်ချ" : E
+			currUnit == "ပ်" : I
+		trigramC == "ပိတ်ထား" : E
+			currUnit == "တ်" : I
+		bigramL == "သည့်" : E
+			currUnit == "ည့်" : I
+		prevBigram == "သည့်" : B
+			prevUnit1 == "ည့်" : I
+		nextTag1 == "E" and bigramL == "ကိုအော" : B
+		bigramL == "လူသား" : E
+			currUnit == "သား" : I
+		bigramL == "ပြီးအော" : B
+		nextBigram == "သာယာ" : E
+			nextUnit1 == "သာ" : I
+		bigramR == "င်းသွား" : E
+			currUnit == "င်း" : I
+		bigramL == "မြို့ဟော" : B
+			currUnit == "ဟော" : I
+		bigramR == "ယ်မျှ" : E
+		bigramR == "င်တွဲ" : E
+		currUnit == "သာ" and nextUnit2 == "ရေး" : B
+		bigramR == "င်တွေ့" : E
+			currUnit == "င်" : I
+		prevBigram == "မွေးနေ့" : B
+			prevUnit1 == "နေ့" : I
+		bigramL == "ည်းလုံး" : E
+		bigramL == "လုံးညီ" : B
+		prevBigram == "အစ်" : E
+			prevUnit1 == "စ်" : I
+		prevTag1 == "B" and trigramC == "ကားရပ်" : B
+			currUnit == "ရ" : I
+		prevTag1 == "B" and bigramR == "န်ရော" : E
+			currUnit == "န်" : I
+		trigramC == "န်ရောက်" : B
+			currUnit == "ရော" : I
+		nextTag1 == "E" and bigramL == "သမီး" : E
+			currUnit == "မီး" : I
+		bigramR == "န်တွေ့" : E
+			currUnit == "န်" : I
+		bigramR == "ပ်ပြော" : E
+		trigramC == "ဆယ်နာ" : E
+		trigramC == "ယ်နာရီ" : B
+		prevTag1 == "I" and bigramR == "င်းလို" : E
+			currUnit == "င်း" : I
+		currUnit == "ထု" and nextUnit1 == "တ်" and nextUnit2 == "လု" : B
+			currUnit == "ထု" : I
+		bigramR == "ပ်လာ" : E
+			currUnit == "ပ်" : I
+		bigramL == "ဆေးတ" : B
+			currUnit == "တ" : I
+		currUnit == "န္တာ" and nextUnit2 == "င်" : E
+		trigramC == "ခုနက" : E
+			currUnit == "န" : I
+		prevUnit2 == "အ" and prevUnit1 == "တွ" and currUnit == "က်" : E
+			currUnit == "က်" : I
+		nextTag1 == "E" and nextTag2 == "I" : E
+			prevUnit1 == "င်" : B
+		currUnit == "င်း" and nextUnit1 == "သား" and nextUnit2 == "ပဲ" : E
+			currUnit == "င်း" : I
+		prevBigram == "ယုံကြ" : E
+			currUnit == "ည်" : I
+		bigramR == "ဉ်လ" : E
+			currUnit == "ဉ်" : I
+		bigramL == "ဉ်လ" : B
+			currUnit == "လ" : I
+		bigramR == "ရားစီ" : E
+			currUnit == "ရား" : I
+		bigramL == "ရားစီ" : B
+			currUnit == "စီ" : I
+		trigramC == "မဆင်း" : B
+		trigramC == "ဟူသည်" : B
+			currUnit == "သ" : I
+		bigramR == "ဂါနေ့" : E
+		bigramR == "ပ်သွား" : E
+		bigramR == "ဖွဲ့ကြီး" : E
+		currUnit == "ကား" and nextUnit1 == "မ" and nextUnit2 == "ပြော" : E
+			currUnit == "ကား" : I
+		bigramR == "မပြော" : S
+			currUnit == "မ" : I
+		trigramC == "ပိုင်အု" : E
+		trigramC == "ရောဂါရ" : E
+		nextBigram == "ရီးစ" : B
+		currUnit == "င်း" and nextUnit1 == "ကြား" and nextUnit2 == "ပြီး" : E
+		bigramR == "က်၇" : E
+		bigramR == "ခြားငွေ" : E
+			currUnit == "ခြား" : I
+		prevTag1 == "B" and bigramR == "ကျေန" : B
+			currUnit == "ကျေ" : I
+		bigramR == "ရာလဲ" : E
+		currUnit == "မ" and nextUnit1 == "င်း" and nextUnit2 == "ဆ" : B
+			currUnit == "မ" : I
+		bigramL == "ဗမာ" : E
+			currUnit == "မာ" : I
+		trigramC == "နာရီဝ" : E
+			currUnit == "ရီ" : I
+		trigramC == "ရီဝက်" : B
+			currUnit == "ဝ" : I
+		trigramC == "စာရင်" : B
+		currUnit == "စ်" and nextUnit1 == "မျိုး" and nextUnit2 == "မျိုး" : E
+		trigramC == "စ်မျိုးမျိုး" : S
+		trigramC == "က်ကြောင့်" : B
+		trigramC == "ဆယ်တ" : E
+		prevUnit2 == "ဆ" and prevUnit1 == "ယ်" and currUnit == "တ" : B
+		nextBigram == "စေရ" : E
+		currUnit == "ဏ" and nextUnit1 == "နေ" and nextUnit2 == "ရ" : E
+		trigramC == "ရင်ရော" : E
+		currUnit == "ဉ်" and nextUnit2 == "ရီး" : E
+		currUnit == "င်" and nextUnit1 == "ရ" and nextUnit2 == "ရှိ" : E
+		trigramC == "ရွယ်ချ" : E
+			currUnit == "ယ်" : I
+		prevBigram == "ဗမာ" : B
+			prevUnit1 == "မာ" : I
+		bigramR == "တ်သွား" : E
+			currUnit == "တ်" : I
+		prevUnit2 == "ကြေ" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		bigramR == "စပို" : E
+			currUnit == "စ" : I
+		trigramC == "စပိုင်း" : B
+			currUnit == "ပို" : I
+		trigramC == "ဆောင်ချ" : E
+			currUnit == "င်" : I
+		trigramC == "င်းလိုင်း" : B
+			currUnit == "လို" : I
+		nextBigram == "စေခဲ့" : E
+			currUnit == "စ်" : I
+		trigramC == "ခွင့်ပေး" : E
+		bigramL == "လျဉ်း" : E
+		bigramL == "မြို့သ" : B
+		trigramC == "ဟောင်းပ" : E
+			currUnit == "င်း" : I
+		trigramC == "င်းပစ္စ" : B
+			currUnit == "ပ" : I
+		prevTag1 == "B" and bigramR == "မယ့်" : B
+			currUnit == "မ" : I
+		trigramC == "ချန်ထား" : E
+		bigramR == "စ်အု" : E
+			currUnit == "စ်" : I
+		trigramC == "မင်းနေ" : E
+			currUnit == "င်း" : I
+		bigramR == "နေပြ" : B
+			currUnit == "နေ" : I
+		trigramC == "မှန်အား" : E
+			currUnit == "န်" : I
+		trigramC == "န်အားဖြ" : B
+			currUnit == "အား" : I
+		bigramL == "ကြားတွ" : B
+		currUnit == "ယ်" and nextUnit1 == "နှ" and nextUnit2 == "စ်" : E
+			currUnit == "ယ်" : I
+		trigramC == "ယ်နှစ်" : B
+			currUnit == "နှ" : I
+		bigramR == "တ္တိရှိ" : E
+		prevBigram == "နေရာ" : B
+			prevUnit1 == "ရာ" : I
+				currUnit == "ချ" : E
+		bigramR == "င်လာ" : E
+			currUnit == "င်" : I
+		currUnit == "တော့" and prevTag1 == "B" : S
+			currUnit == "တော့" : I
+		nextTag1 == "E" and bigramL == "တော်တော်" : E
+			currUnit == "တော်" : I
+		prevTag1 == "B" and trigramC == "တောင်ပေါ်" : E
+			currUnit == "င်" : I
+		prevUnit2 == "ဝ" and currUnit == "ကြ" : B
+			currUnit == "ကြ" : I
+		bigramL == "စထွ" : B
+		bigramL == "ည်ချ" : B
+			currUnit == "ချ" : I
+		trigramC == "လုပ်မိ" : E
+		prevUnit2 == "င်" and prevUnit1 == "ရော" and currUnit == "က်" : E
+		trigramC == "ဝတ်ကြ" : E
+			currUnit == "တ်" : I
+		nextTag1 == "E" and bigramL == "မေးပွဲ" : E
+			currUnit == "ပွဲ" : I
+		nextBigram == "တ်ဆို့" : B
+			currUnit == "ပိ" : I
+		trigramC == "ဆက်ပြီး" : E
+		bigramR == "ရာအ" : E
+			currUnit == "ရာ" : I
+		trigramC == "ရထားဘူ" : E
+		trigramC == "ထားဘူတာ" : B
+		bigramR == "မားများ" : E
+			currUnit == "မား" : I
+		trigramC == "ဆေးရုံကြီး" : E
+			currUnit == "ရုံ" : I
+		bigramL == "စေမ" : B
+		trigramC == "နှိပ်ထု" : E
+		trigramC == "ပ်ထုတ်" : B
+		trigramC == "မပြည့်" : B
+		currUnit == "ကု" and nextUnit1 == "န်း" and nextUnit2 == "ပြ" : B
+		nextBigram == "သီတွ" : B
+		trigramC == "မှတ်ခ" : E
+		trigramC == "မ်းမကြီး" : E
+			currUnit == "မ" : I
+		trigramC == "ဖျက်လို" : E
+			currUnit == "က်" : I
+		prevUnit2 == "ဖျ" and currUnit == "လို" : B
+			currUnit == "လို" : I
+		bigramR == "ယ်မြို့" : E
+		bigramR == "မသော" : S
+			currUnit == "မ" : I
+		bigramR == "ညာချ" : E
+			currUnit == "ညာ" : I
+		bigramL == "စာလေ့" : B
+		bigramL == "ဘာကြော" : B
+			currUnit == "ကြော" : I
+		currUnit == "သ" and nextUnit1 == "ည်" and nextUnit2 == "။" : B
+			currUnit == "သ" : I
+		currUnit == "အ" and nextUnit1 == "ချ" and nextUnit2 == "က်" : B
+			currUnit == "အ" : I
+		trigramC == "ရမှန်း" : B
+			currUnit == "မှ" : I
+		bigramR == "နေပို" : E
+			currUnit == "နေ" : I
+		bigramL == "နေပို" : B
+			currUnit == "ပို" : I
+		currUnit == "န်" and nextUnit1 == "ထု" and nextUnit2 == "တ်" : E
+			currUnit == "န်" : I
+		trigramC == "အောက်က" : E
+		bigramR == "မ်ရော" : E
+			currUnit == "မ်" : I
+		bigramL == "မ်ရော" : B
+			currUnit == "ရော" : I
+		bigramL == "ယ့်ဟာ" : S
+			currUnit == "ဟာ" : I
+		bigramL == "ဟာကို" : B
+			currUnit == "ကို" : I
+		bigramR == "သာတာ" : E
+		bigramR == "န်ပေး" : E
+			currUnit == "န်" : I
+		bigramR == "စီဝ" : E
+		bigramL == "စီဝ" : B
+		trigramC == "က်စွက်" : B
+		prevTag1 == "I" and trigramC == "လစ်လ" : E
+		bigramL == "ရှေ့ပို" : B
+			currUnit == "ပို" : I
+		trigramC == "တက်မ" : E
+		bigramL == "ဉ်ကြော" : E
+			currUnit == "ကြော" : I
+		bigramR == "ကဏ္ဍ" : B
+			currUnit == "က" : I
+		trigramC == "သယ်သွား" : E
+		trigramC == "ဆေးပညာ" : B
+			currUnit == "ပ" : I
+		currUnit == "ဆ" and nextUnit2 == "ပူး" : B
+			currUnit == "ဆ" : I
+		bigramR == "င်းပြီး" : E
+			currUnit == "င်း" : I
+		prevUnit2 == "<BOS>" and prevUnit1 == "ငွေ" and currUnit == "စု" : E
+		trigramC == "သွားလည်" : B
+			currUnit == "လ" : I
+		trigramC == "မွေးနေ့လ" : E
+		trigramC == "ဆောက်ပုံ" : E
+		trigramC == "မှန်တာ" : E
+		bigramR == "ည်းကြ" : E
+		bigramL == "ည်းကြ" : B
+		trigramC == "တွင်းကျ" : E
+			currUnit == "င်း" : I
+		currUnit == "လ" and nextUnit1 == "မ်း" and nextUnit2 == "စ" : B
+			currUnit == "လ" : I
+		prevTag1 == "I" and bigramR == "န်လွ" : E
+			currUnit == "န်" : I
+		nextBigram == "စောစော" : E
+			nextUnit1 == "စော" : I
+		nextBigram == "စာချု" : E
+			nextUnit1 == "စာ" : I
+		trigramC == "စည်ပြ" : E
+			currUnit == "ည်" : I
+		trigramC == "ည်ပြပွဲ" : B
+			currUnit == "ပြ" : I
+		nextBigram == "စေတ" : E
+			nextUnit1 == "စေ" : I
+		bigramR == "ရှေ့ပို" : E
+			currUnit == "ရှေ့" : I
+		bigramR == "နီခေ" : E
+			currUnit == "နီ" : I
+		bigramL == "နီခေ" : B
+			currUnit == "ခေ" : I
+		bigramR == "ထူးဟ" : E
+			currUnit == "ထူး" : I
+		bigramL == "ထူးဟ" : B
+			currUnit == "ဟ" : I
+		trigramC == "က်စောစော" : B
+			currUnit == "စော" : I
+		bigramR == "နေ့ည" : E
+			currUnit == "နေ့" : I
+		trigramC == "စ္စတာလီ" : E
+			currUnit == "တာ" : I
+		bigramL == "သီပေါ" : E
+		bigramL == "ပေါမ" : B
+		nextBigram == "စ္စနဲ့" : B
+		trigramC == "ထမထ" : E
+			currUnit == "မ" : I
+		prevUnit2 == "ထ" and prevUnit1 == "မ" and currUnit == "ထ" : B
+			currUnit == "ထ" : I
+		prevTag1 == "I" and bigramR == "ကြားချ" : E
+			currUnit == "ကြား" : I
+		trigramC == "ရိုးမတော" : E
+		bigramR == "ကနေ့" : B
+			currUnit == "က" : I
+		nextTag1 == "E" and bigramL == "မြို့တ" : B
+			currUnit == "တ" : I
+		bigramR == "စ်သေး" : E
+		bigramR == "ဒါနဲ့" : E
+		nextBigram == "ရာစု" : E
+		trigramC == "ကျင်သူ" : E
+			currUnit == "င်" : I
+		trigramC == "ဆယ်စု" : E
+		bigramR == "တ်ရိ" : E
+		bigramL == "တ်ရိ" : B
+		trigramC == "ထိန်းထား" : E
+		trigramC == "ဝင်နေ" : E
+		bigramR == "ခံပေး" : E
+		currUnit == "င်" and nextUnit1 == "ပုံ" and nextUnit2 == "စံ" : E
+		nextBigram == "ကိုးကွ" : E
+		trigramC == "ရက်သော" : E
+			currUnit == "က်" : I
+		trigramC == "က်သောက်" : B
+			currUnit == "သော" : I
+		currUnit == "ထ" and nextUnit1 == "မ်း" and nextUnit2 == "ဆော" : B
+			currUnit == "ထ" : I
+		bigramR == "ပ်ကိ" : E
+			currUnit == "ပ်" : I
+		bigramR == "ယ်နှု" : E
+			currUnit == "ယ်" : I
+		bigramL == "ယ်နှု" : B
+			currUnit == "နှု" : I
+		nextBigram == "များကို" : E
+			nextUnit1 == "များ" : B
+		trigramC == "ကသစ်" : B
+			currUnit == "သ" : I
+		nextBigram == "ရလဲ" : E
+			currUnit == "ဘော" : I
+		bigramR == "တ်ရှိ" : E
+			currUnit == "တ်" : I
+		bigramL == "စုစာ" : B
+			currUnit == "စာ" : I
+		prevTag1 == "B" and trigramC == "မင်မ" : E
+		currUnit == "ခြာ" : E
+		prevUnit1 == "ခြာ" : B
+		prevUnit2 == "ဆော" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		trigramC == "န်မဖြ" : S
+		prevUnit2 == "န်" and prevUnit1 == "မ" and currUnit == "ဖြ" : B
+		currUnit == "ရို" and nextUnit2 == "ဖို့" : B
+		prevUnit2 == "မ်" and prevUnit1 == "စာ" and currUnit == "လု" : B
+			currUnit == "လု" : I
+		prevBigram == "လီဖု" : E
+			currUnit == "န်း" : I
+		prevUnit2 == "ခွ" and currUnit == "လွ" : B
+			currUnit == "လွ" : I
+		bigramL == "နံကာ" : E
+		bigramR == "များပြ" : E
+			currUnit == "များ" : I
+		bigramL == "များပြ" : B
+			currUnit == "ပြ" : I
+		currUnit == "ဒ္ဓ" and nextUnit1 == "သာ" and nextUnit2 == "သ" : E
+		bigramR == "သာသ" : B
+		bigramL == "မစိုး" : B
+			currUnit == "စိုး" : I
+		prevTag1 == "B" and bigramR == "စ်အ" : E
+			currUnit == "စ်" : I
+		trigramC == "ဓိကအ" : E
+		prevUnit2 == "မှ" and currUnit == "လျှ" : B
+		prevTag1 == "B" and trigramC == "တစ်ချ" : E
+		trigramC == "ချက်လော" : E
+			currUnit == "က်" : I
+		prevUnit2 == "ချ" and currUnit == "လော" : B
+			currUnit == "လော" : I
+		bigramR == "ပျော်ခ" : E
+		trigramC == "တုန်းမ" : E
+		prevUnit2 == "တု" and prevUnit1 == "န်း" and currUnit == "မ" : B
+		bigramR == "ပွဲပေါ်" : E
+		nextBigram == "မ်းယူ" : B
+		prevBigram == "နားက" : B
+			currUnit == "စား" : I
+		bigramR == "ညာဆ" : E
+		bigramR == "ခုအ" : E
+		bigramL == "ခုအ" : B
+		bigramR == "သေလေး" : E
+			currUnit == "သေ" : I
+		bigramL == "သေလေး" : B
+			currUnit == "လေး" : I
+		nextBigram == "ပြောကြ" : E
+		trigramC == "စမ်းဝ" : E
+			currUnit == "မ်း" : I
+		trigramC == "မ်းဝတ်" : B
+			currUnit == "ဝ" : I
+		nextBigram == "ရေးပ" : E
+		currUnit == "မြ" and nextUnit2 == "မော" : B
+		prevTag1 == "I" and trigramC == "တန်းမြ" : E
+		bigramL == "လူ့ဘ" : B
+			currUnit == "ဘ" : I
+		trigramC == "အောက်ပို" : E
+			currUnit == "က်" : I
+		prevUnit2 == "အော" and currUnit == "ပို" : B
+			currUnit == "ပို" : I
+		prevTag1 == "B" and trigramC == "မနည်း" : B
+			currUnit == "န" : I
+		trigramC == "ဆောင်ကြီး" : E
+			currUnit == "င်" : I
+		bigramL == "တူစာ" : B
+		bigramR == "စားအား" : E
+		bigramL == "စားအား" : B
+		trigramC == "နန်းပို့" : E
+		bigramR == "စံတော်" : B
+			currUnit == "စံ" : I
+		trigramC == "စ်အန" : B
+		trigramC == "ပွားရေးပ" : S
+		trigramC == "ရေးပညာ" : B
+		bigramR == "င်းဟ" : E
+		bigramL == "င်းဟ" : B
+		currUnit == "က" and nextUnit1 == "လာ" and nextUnit2 == "တာ" : S
+		trigramC == "သည်တော်" : E
+		prevUnit2 == "တ" and prevUnit1 == "စ်" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		currUnit == "ချ" and nextUnit2 == "တွ" : B
+		trigramC == "မတရား" : B
+			currUnit == "တ" : I
+		bigramR == "ပုံရို" : E
+			currUnit == "ပုံ" : I
+		trigramC == "နည်းလေး" : E
+			currUnit == "ည်း" : I
+		bigramR == "ည်သွား" : E
+			currUnit == "ည်" : I
+		prevBigram == "ဂျပ" : E
+			currUnit == "န်" : I
+		trigramC == "ပြန်ယူ" : E
+			currUnit == "န်" : I
+		bigramR == "မ္ဘာကြီး" : E
+			currUnit == "မ္ဘာ" : I
+		currUnit == "စ်" and nextUnit1 == "တို" and nextUnit2 == "င်း" : E
+			currUnit == "စ်" : I
+		bigramL == "ရာယ်" : E
+			currUnit == "ယ်" : I
+		trigramC == "မင်းများ" : E
+		prevBigram == "ယ်င" : E
+			currUnit == "ယ်" : I
+		nextTag1 == "E" and bigramL == "မကျ" : B
+			currUnit == "ကျ" : I
+		bigramR == "န်းလုံး" : E
+		bigramL == "ဈေးလျှော့" : E
+		prevUnit2 == "သူ" and prevUnit1 == "ပြ" and currUnit == "န်" : E
+		trigramC == "အတော်ကြာ" : E
+			currUnit == "တော်" : I
+		bigramL == "ကြီးခြ" : B
+		bigramR == "ရားသွား" : E
+		prevTag1 == "B" and trigramC == "ရေသောက်" : B
+		bigramL == "မ်စာ" : E
+			currUnit == "စာ" : I
+		prevTag1 == "I" and trigramC == "မှတ်ချ" : E
+			currUnit == "တ်" : I
+		trigramC == "ပြန်စ" : E
+			currUnit == "န်" : I
+		bigramR == "င်ချေ" : E
+		bigramR == "ပ်လေး" : E
+			currUnit == "ပ်" : I
+		bigramL == "ပ်လေး" : S
+		bigramL == "လေးမျ" : B
+		bigramR == "ဘီးစီး" : E
+			currUnit == "ဘီး" : I
+		nextBigram == "မ်းကြု" : B
+			currUnit == "ကြ" : I
+		trigramC == "စဖွင့်" : B
+		currUnit == "မ်း" and nextUnit2 == "ည့်" : E
+			currUnit == "မ်း" : I
+		trigramC == "မ်းကြည့်" : B
+			currUnit == "ကြ" : I
+		prevUnit2 == "န်" and prevUnit1 == "ပြ" and currUnit == "န်" : E
+			currUnit == "န်" : I
+		prevTag1 == "I" and bigramR == "ည်းမှ" : E
+		currUnit == "ကား" and nextUnit1 == "ပြော" and nextUnit2 == "တ" : E
+		bigramR == "င်းလာ" : E
+		prevBigram == "ကြံဉာ" : E
+		bigramL == "လဲခ" : B
+			currUnit == "ခ" : I
+		prevUnit2 == "နှ" and currUnit == "တို" : B
+			currUnit == "တို" : I
+		bigramR == "ကျိုးသ" : E
+			currUnit == "ကျိုး" : I
+		bigramL == "ကျိုးသ" : B
+			currUnit == "သ" : I
+		trigramC == "လိုက်လု" : E
+		prevUnit2 == "လို" and prevUnit1 == "က်" and currUnit == "လု" : B
+		bigramR == "ပါးရိ" : E
+		bigramL == "ပါးရိ" : B
+		prevTag1 == "B" and bigramR == "ဆချ" : E
+			currUnit == "ဆ" : I
+		bigramR == "င်ယှ" : E
+		bigramL == "င်ယှ" : B
+		prevTag1 == "B" and trigramC == "မြောက်ဝ" : E
+		currUnit == "ဝ" and nextUnit1 == "င်" and nextUnit2 == "ရိုး" : B
+		trigramC == "ဆက်ပြော" : E
+		bigramR == "ယူကြ" : E
+		prevTag1 == "B" and trigramC == "ဖတ်တ" : E
+		nextBigram == "ဆုံးရှုံး" : E
+			currUnit == "စီး" : I
+		bigramR == "န်ဆေး" : E
+		prevTag1 == "B" and trigramC == "တစ်တ" : E
+		bigramR == "ဗျာများ" : E
+		bigramR == "သစံ" : E
+		trigramC == "ကိတ်စီး" : E
+		trigramC == "စက်ကြ" : E
+		currUnit == "နော" and nextUnit2 == "ဆုံး" : B
+		currUnit == "နှ" and nextUnit2 == "မြို့" : B
+		currUnit == "တ" and nextUnit1 == "ပ်" and nextUnit2 == "မ" : B
+		currUnit == "စိ" and nextUnit1 == "တ်" and nextUnit2 == "ချ" : B
+		bigramR == "င်စွာ" : E
+		trigramC == "ဖန်ချ" : E
+		nextBigram == "ရှိဘူး" : S
+		bigramL == "ပြီးချိ" : B
+		currUnit == "နော" and nextUnit2 == "ပို" : B
+			currUnit == "နော" : I
+		bigramR == "ကြံကော" : E
+		bigramL == "ကြံကော" : B
+		prevUnit2 == "အ" and prevUnit1 == "ပ်" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		currUnit == "န်" and nextTag1 == "B" : E
+		bigramL == "မကျွ" : B
+			currUnit == "ကျွ" : I
+		bigramR == "တားကြီး" : E
+			currUnit == "တား" : I
+		currUnit == "တ်" and nextUnit1 == "မ" and nextUnit2 == "ရှိ" : E
+			currUnit == "တ်" : I
+		prevUnit2 == "အ" and prevUnit1 == "ခ" and currUnit == "န်း" : E
+			currUnit == "န်း" : I
+		nextBigram == "ခြမ်း" : E
+			nextUnit1 == "ခြ" : I
+		prevTag1 == "I" and bigramR == "ခြမ်း" : B
+			currUnit == "ခြ" : I
+		prevBigram == "နဲ့ငွေ" : B
+		prevTag1 == "B" and trigramC == "မတည်" : B
+			currUnit == "တ" : I
+		nextUnit1 == "ဒြ" : E
+			currUnit == "တု" : I
+		bigramL == "တုဒြ" : B
+			currUnit == "ဒြ" : I
+		bigramR == "စ်ချော" : E
+		bigramL == "စ်ချော" : B
+		prevTag1 == "B" and trigramC == "ရန်မ" : E
+			currUnit == "န်" : I
+		bigramR == "ခံထား" : E
+			currUnit == "ခံ" : I
+		prevTag1 == "B" and bigramR == "င်ထား" : E
+			currUnit == "င်" : I
+		prevUnit2 == "တ" and prevUnit1 == "စ်" and currUnit == "တ" : B
+			currUnit == "တ" : I
+		nextTag1 == "E" and bigramL == "ရုံတ" : B
+			currUnit == "တ" : I
+		bigramR == "ဝံင" : E
+		bigramL == "ဝံင" : B
+		bigramL == "ရှာကြ" : B
+		trigramC == "ကြောင်းခ" : E
+			currUnit == "င်း" : I
+		bigramL == "အခဲ" : E
+		bigramR == "ဟစ" : E
+			currUnit == "ဟ" : I
+		bigramL == "ဟစ" : B
+			currUnit == "စ" : I
+		currUnit == "မ" and nextUnit1 == "ပြု" and nextUnit2 == "ပါ" : S
+			currUnit == "မ" : I
+		trigramC == "ကညစ်" : B
+		nextBigram == "နှောင့်" : B
+		bigramL == "ကိုငြိ" : B
+			currUnit == "ငြိ" : I
+		bigramR == "ကြီးလ" : E
+		bigramL == "ကြီးလ" : B
+		bigramR == "ဘများ" : E
+		trigramC == "တွင်းပြ" : E
+		prevUnit2 == "တွ" and currUnit == "ပြ" : B
+		trigramC == "ငယ်စ" : E
+			currUnit == "ယ်" : I
+		trigramC == "ယ်စဉ်" : B
+			currUnit == "စ" : I
+		bigramR == "ပေါ်အ" : E
+			currUnit == "ပေါ်" : I
+		bigramL == "ပေါ်အ" : B
+			currUnit == "အ" : I
+		bigramL == "ညီထော" : B
+		bigramR == "ပ်နေ" : E
+			currUnit == "ပ်" : I
+		bigramR == "ညီတော" : E
+		trigramC == "ကားပြောတ" : S
+		trigramC == "ပြောတတ်" : B
+		prevUnit2 == "င်း" and prevUnit1 == "န" and currUnit == "စ်" : E
+			currUnit == "စ်" : I
+		trigramC == "ကြားချက်" : B
+			currUnit == "ချ" : I
+		trigramC == "စစ်ဖြ" : E
+		trigramC == "စ်ဖြစ်" : B
+		bigramR == "လေးသူ" : E
+		bigramL == "လေးသူ" : B
+		prevUnit2 == "အ" and prevUnit1 == "ညီ" and currUnit == "တော" : B
+		trigramC == "မတော်နေ့" : E
+		bigramR == "ည့်နေ့" : E
+		prevUnit2 == "ကို" and prevUnit1 == "ဆ" and currUnit == "ပ်" : E
+		prevTag1 == "B" and trigramC == "ချက်တ" : E
+		trigramC == "င့်ပြုချ" : E
+			currUnit == "ပြု" : I
+		prevUnit2 == "င့်" and prevUnit1 == "ပြု" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		bigramR == "ချီဆွဲ" : E
+		bigramR == "ကျီဝ" : E
+		bigramL == "ကျီဝ" : B
+		trigramC == "စ်ကွင်း" : B
+		nextTag1 == "E" and bigramL == "ဆီးပ" : B
+		bigramR == "လုံးပြို" : E
+		bigramL == "လုံးပြို" : B
+		bigramL == "သွားဆ" : B
+		bigramL == "စီးဆုံး" : B
+			currUnit == "ဆုံး" : I
+		nextTag1 == "E" and bigramL == "ဿနာ" : E
+			currUnit == "နာ" : I
+		trigramC == "သုံးမရ" : S
+		currUnit == "ယား" and nextUnit2 == "ကို" : E
+		bigramR == "ခံသူ" : E
+		bigramR == "ခိုးကြီး" : E
+		currUnit == "ဏ" and nextUnit2 == "မှ" : E
+		prevUnit2 == "ကြ" and currUnit == "န်" : E
+		bigramR == "ကြွေလဲ" : E
+		bigramL == "နွေဥ" : B
+		trigramC == "မက်ဖွ" : E
+		prevUnit2 == "မ" and prevUnit1 == "က်" and currUnit == "ဖွ" : B
+		trigramC == "ကြောင်လေး" : E
+		prevBigram == "င့်ငွေ" : B
+		nextBigram == "သီ၌" : B
+		prevUnit2 == "သာ" and prevUnit1 == "လ" and currUnit == "ည်း" : E
+		currUnit == "ဉ်" and nextUnit2 == "သ" : E
+		currUnit == "င်း" and nextUnit1 == "ပေး" and nextUnit2 == "ပါ" : E
+		prevBigram == "သွားခွ" : E
+		currUnit == "င်" and nextUnit1 == "မ" and nextUnit2 == "ရှိ" : E
+		currUnit == "ကျ" and nextUnit1 == "ငွေ" and nextUnit2 == "စာ" : E
+		trigramC == "ခေတ်ကြီး" : E
+		nextBigram == "ပို့ချ" : E
+			nextUnit1 == "ပို့" : I
+		bigramL == "ဟိုတ" : B
+		trigramC == "တွင်းပို" : E
+			currUnit == "င်း" : I
+		prevUnit2 == "တွ" and currUnit == "ပို" : B
+			currUnit == "ပို" : I
+		prevBigram == "နေထို" : E
+			currUnit == "င်" : I
+		trigramC == "ယ်ချက်" : B
+			currUnit == "ချ" : I
+		nextTag1 == "E" and bigramL == "ရာထူး" : E
+			currUnit == "ထူး" : I
+		currUnit == "န်" and nextUnit1 == "ဆ" and nextUnit2 == "က်" : E
+			currUnit == "န်" : I
+		trigramC == "န်ဆက်" : B
+			currUnit == "ဆ" : I
+		bigramR == "တုပ" : E
+		bigramL == "တုပ" : B
+		bigramR == "ခုချိ" : E
+			currUnit == "ခု" : I
+		bigramL == "ခုချိ" : B
+			currUnit == "ချိ" : I
+		prevUnit2 == "ပ" and currUnit == "ပြ" : B
+		trigramC == "နောက်ခ" : E
+			currUnit == "က်" : I
+		prevUnit2 == "နော" and currUnit == "ခ" : B
+			currUnit == "ခ" : I
+		bigramL == "ယွမ်" : E
+		bigramL == "ဏ်ကော" : B
+			currUnit == "ကော" : I
+		currUnit == "ထူး" and nextUnit1 == "တ" and nextUnit2 == "န်း" : E
+			currUnit == "ထူး" : I
+		trigramC == "ထူးတန်း" : B
+			currUnit == "တ" : I
+		bigramL == "က်ပျိုး" : E
+			currUnit == "ပျိုး" : I
+		bigramR == "မ်းတိုး" : E
+			currUnit == "မ်း" : I
+		trigramC == "အစာရှာ" : E
+			currUnit == "စာ" : I
+		bigramL == "ပြီးမြော" : B
+			currUnit == "မြော" : I
+		trigramC == "ဖဲကစား" : B
+			currUnit == "က" : I
+		nextBigram == "အေးထား" : B
+		bigramR == "င်းကျွေး" : E
+		trigramC == "အစားစား" : E
+			currUnit == "စား" : I
+		currUnit == "ဆ" and nextUnit1 == "က်" and nextUnit2 == "တို" : B
+		nextUnit1 == "မွေ" : B
+		prevTag1 == "B" and bigramR == "င်ခေါ" : E
+			currUnit == "င်" : I
+		trigramC == "ဖြစ်ဟ" : E
+		prevUnit2 == "ဖြ" and currUnit == "ဟ" : B
+		currUnit == "ဘု" and nextUnit1 == "ရား" and nextUnit2 == "ကြီး" : B
+		trigramC == "လုပ်ဆ" : E
+			currUnit == "ပ်" : I
+		prevUnit2 == "လု" and currUnit == "ဆ" : B
+			currUnit == "ဆ" : I
+		bigramL == "ရှိပါ" : S
+			currUnit == "ပါ" : I
+		currUnit == "စ်" and nextUnit2 == "စ္စ" : E
+			currUnit == "စ်" : I
+		trigramC == "စ်ပစ္စ" : B
+			currUnit == "ပ" : I
+		currUnit == "မိ" and nextUnit2 == "င်" : E
+		currUnit == "ဦး" and nextUnit2 == "ည်း" : S
+			currUnit == "ဦး" : I
+		trigramC == "ဦးတည်း" : B
+			currUnit == "တ" : I
+		trigramC == "ပြန်လဲ" : E
+			currUnit == "န်" : I
+		nextBigram == "နတ္ထ" : B
+			prevUnit1 == "ရ" : I
+		bigramL == "ငါးချို" : B
+		bigramL == "သေကု" : B
+		currUnit == "ည်း" and nextUnit1 == "ကျ" and nextUnit2 == "ကျ" : E
+		bigramL == "သားစု" : E
+			currUnit == "စု" : I
+		bigramL == "စုဝ" : B
+			currUnit == "ဝ" : I
+		prevTag1 == "B" and trigramC == "ရန်စ" : E
+		trigramC == "ကုတ်အ" : E
+			currUnit == "တ်" : I
+		trigramC == "တ်အင်" : B
+			currUnit == "အ" : I
+		trigramC == "င်းလိုင်" : B
+		nextBigram == "ဆိုတ" : E
+			currUnit == "င်း" : I
+		currUnit == "ငံ" and nextUnit2 == "တော်" : E
+		bigramR == "ပေဗိ" : E
+			currUnit == "ပေ" : I
+		bigramL == "ပေဗိ" : B
+			currUnit == "ဗိ" : I
+		trigramC == "လမ်းကော" : E
+		prevUnit2 == "လ" and prevUnit1 == "မ်း" and currUnit == "ကော" : B
+		trigramC == "စင်ယူ" : E
+		trigramC == "ဖြတ်ချ" : E
+			currUnit == "တ်" : I
+		trigramC == "မခံချ" : E
+			currUnit == "ခံ" : I
+		prevUnit2 == "မ" and prevUnit1 == "ခံ" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		prevUnit2 == "ပြ" and currUnit == "စ" : B
+		trigramC == "သနပ" : E
+			currUnit == "န" : I
+		prevUnit2 == "သ" and prevUnit1 == "န" and currUnit == "ပ" : B
+			currUnit == "ပ" : I
+		trigramC == "ပ္ပါယ်ရှိ" : E
+			currUnit == "ယ်" : I
+		bigramR == "ရေမျ" : E
+			currUnit == "ရေ" : I
+		bigramL == "ရေမျ" : B
+			currUnit == "မျ" : I
+		currUnit == "စ" and nextUnit1 == "စ်" and nextUnit2 == "ဆေး" : B
+		trigramC == "တိုက်မိ" : E
+			currUnit == "က်" : I
+		trigramC == "နက်တ" : E
+		prevUnit2 == "န" and prevUnit1 == "က်" and currUnit == "တ" : B
+		nextTag1 == "E" and bigramL == "ပ်ဖြ" : B
+			currUnit == "ဖြ" : I
+		trigramC == "စင်ပေါ်" : E
+			currUnit == "င်" : I
+		bigramR == "မ်နာ" : E
+		nextBigram == "လဲ။" : B
+			currUnit == "မ" : I
+		prevUnit2 == "ဘေး" and prevUnit1 == "က" and currUnit == "စား" : B
+		bigramR == "ရှေ့အ" : E
+		bigramL == "ရှေ့အ" : B
+		trigramC == "မျဉ်းစ" : E
+			currUnit == "ဉ်း" : I
+		trigramC == "ဉ်းစည်း" : B
+			currUnit == "စ" : I
+		bigramR == "မ္ဘာ့စံ" : E
+		bigramL == "မ္ဘာ့စံ" : B
+		trigramC == "ဟန်းတော်" : E
+		trigramC == "ရည်ရှိ" : E
+			currUnit == "ည်" : I
+		nextBigram == "ရှိမှာ" : E
+		currUnit == "ကြ" and nextUnit1 == "ည့်" and nextUnit2 == "ပါ" : B
+			currUnit == "ကြ" : I
+		trigramC == "က်တတ်" : B
+			currUnit == "တ" : I
+		trigramC == "ထပ်ပေါ" : E
+		prevUnit2 == "ထ" and prevUnit1 == "ပ်" and currUnit == "ပေါ" : B
+		prevTag1 == "B" and bigramR == "မ်းမှ" : E
+		nextBigram == "ထိုးထား" : E
+			currUnit == "တ်" : I
+		trigramC == "ငန်းကြီး" : E
+		prevUnit2 == "တ" and currUnit == "မြ" : B
+			currUnit == "မြ" : I
+		bigramR == "င်းမြော" : E
+		bigramL == "င်းမြော" : B
+		nextTag1 == "E" and bigramL == "စ်ပြ" : B
+			currUnit == "ပြ" : I
+		bigramR == "င်လျှ" : E
+			currUnit == "င်" : I
+		bigramL == "င်လျှ" : B
+			currUnit == "လျှ" : I
+		bigramR == "ဆီးပ" : E
+			currUnit == "ဆီး" : I
+		bigramL == "တ်လဲ" : S
+			currUnit == "လဲ" : I
+				prevUnit1 == "တ်" : E
+		bigramL == "ကိုဆော" : B
+		bigramR == "ယာလု" : E
+		trigramC == "ပြည်လ" : E
+		prevUnit2 == "ပြ" and prevUnit1 == "ည်" and currUnit == "လ" : B
+		bigramR == "န့်ရှိ" : E
+		bigramL == "မိပို" : B
+		currUnit == "င်" and nextUnit1 == "မ" and nextUnit2 == "လို" : E
+			currUnit == "င်" : I
+		bigramR == "ထွေသ" : E
+		bigramL == "ထွေသ" : B
+		currUnit == "လျှ" and nextUnit2 == "ထို" : B
+			currUnit == "လျှ" : I
+		trigramC == "င်ခေါင်း" : B
+			currUnit == "ခေါ" : I
+		nextBigram == "နဲ့အ" : E
+		bigramR == "ရာလွ" : E
+			currUnit == "ရာ" : I
+		prevUnit2 == "က်" and prevUnit1 == "ဖွ" and currUnit == "ယ်" : E
+			currUnit == "ယ်" : I
+		trigramC == "ပြန်လု" : E
+		trigramC == "န်လုပ်" : B
+		trigramC == "ရောင်တော" : E
+			currUnit == "င်" : I
+		trigramC == "င်တောက်" : B
+			currUnit == "တော" : I
+		bigramL == "ခုချ" : B
+		bigramR == "ဒါးသ" : E
+		bigramL == "ဒါးသ" : B
+		bigramR == "ရှားဖွ" : E
+		bigramL == "ရှားဖွ" : B
+		prevUnit2 == "က" and prevUnit1 == "နေ" and currUnit == "အိ" : B
+		prevUnit2 == "<BOS>" and currUnit == "ငြာ" : E
+		bigramR == "အားရှိ" : E
+			currUnit == "အား" : I
+		prevBigram == "စ်သား" : B
+		trigramC == "ထိုင်စော" : E
+		prevUnit2 == "ထို" and prevUnit1 == "င်" and currUnit == "စော" : B
+		trigramC == "ပြန်ပြ" : E
+		prevUnit2 == "ပြ" and prevUnit1 == "န်" and currUnit == "ပြ" : B
+		bigramL == "ဒါတ" : B
+		bigramR == "ည်းဝ" : E
+		bigramL == "ည်းဝ" : B
+		bigramR == "ရားစေ" : E
+		bigramL == "ရားစေ" : B
+		trigramC == "ရေသည်" : B
+		prevUnit2 == "ပ" and prevUnit1 == "င်" and currUnit == "သာ" : B
+		trigramC == "ပိုင်းဆို" : E
+			currUnit == "င်း" : I
+		prevUnit2 == "ပို" and prevUnit1 == "င်း" and currUnit == "ဆို" : B
+			currUnit == "ဆို" : I
+		bigramL == "ကိုကိုး" : E
+		prevBigram == "ကိုကိုး" : B
+		trigramC == "အမက" : E
+		bigramL == "မကူ" : B
+		currUnit == "ချူး" : E
+		bigramL == "န်းချိ" : B
+		currUnit == "သော" and nextUnit2 == "ပေ" : B
+		currUnit == "ကု" and nextUnit2 == "ဆုံး" : B
+		currUnit == "သိ" and nextUnit2 == "ထို" : B
+		prevBigram == "ရွာပြီး" : B
+		trigramC == "စားပစ်" : B
+		currUnit == "အိ" and nextUnit2 == "မှာ" : B
+		currUnit == "ထု" and nextUnit2 == "ယူ" : B
+		prevUnit2 == "က" and prevUnit1 == "နေ" and currUnit == "ဝ" : B
+		currUnit == "ဖွ" and nextUnit2 == "ဆို" : B
+		currUnit == "ကျွ" and nextUnit2 == "ကို" : B
+		currUnit == "လု" and nextUnit2 == "သား" : B
+		prevUnit2 == "<BOS>" and prevUnit1 == "ငါး" and currUnit == "ဟ" : B
+		prevUnit2 == "ရော" and currUnit == "ချိ" : B
+		currUnit == "လို" and nextUnit2 == "ခဲ့" : B
+		trigramC == "စ်စကား" : B
+		bigramR == "န်းချိ" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "က" and currUnit == "တိ" : E
+		trigramC == "လုပ်ဖြ" : E
+		prevBigram == "သွေးလ" : E
+		currUnit == "တ်" and nextUnit1 == "ထား" and nextUnit2 == "ပေး" : E
+		currUnit == "င်" and nextUnit1 == "မ" and nextUnit2 == "ပြ" : E
+		nextBigram == "ဈေးကွ" : E
+		nextBigram == "များဖြ" : E
+		nextBigram == "ရှိလား" : E
+		currUnit == "န်း" and nextUnit1 == "လေး" and nextUnit2 == "ပေး" : E
+		nextBigram == "တဲ့အ" : E
+		prevUnit2 == "ည်" and currUnit == "ဖြူ" : E
+		currUnit == "ဒေ" and nextUnit2 == "ဘော" : E
+		trigramC == "ရောက်ချိ" : E
+		currUnit == "င်" and nextUnit1 == "ခြေ" and nextUnit2 == "ရ" : E
+		prevBigram == "တော့်နော" : E
+		currUnit == "န္ဒ" and nextUnit2 == "ပါ" : E
+		currUnit == "စ်" and nextUnit1 == "စ" and nextUnit2 == "ကား" : E
+		prevUnit2 == "ဖ" and prevUnit1 == "တ်" and currUnit == "တ" : B
+			currUnit == "တ" : I
+		nextTag1 == "E" and bigramL == "မ်ပြော" : B
+			currUnit == "ပြော" : I
+		prevUnit1 == "လှဲ" : B
+		trigramC == "နှင်းကျ" : E
+			currUnit == "င်း" : I
+		bigramL == "ရေပြား" : E
+		bigramL == "ပြားလိ" : B
+		bigramR == "ဝဆေး" : E
+			currUnit == "ဝ" : I
+		currUnit == "ခံ" and nextUnit2 == "မှု" : B
+		nextBigram == "ကွဲသွား" : E
+		currUnit == "က်" and nextUnit1 == "အ" and nextUnit2 == "ဆ" : E
+		trigramC == "က်အဆ" : B
+		prevUnit2 == "တော်" and prevUnit1 == "လို" and currUnit == "က်" : E
+		trigramC == "တွင်းအ" : E
+			currUnit == "င်း" : I
+		trigramC == "င်းအပြ" : B
+			currUnit == "အ" : I
+		trigramC == "မသတ်" : B
+		prevUnit2 == "ဖ" and currUnit == "ချ" : B
+		trigramC == "ငန်းဆော" : E
+		prevUnit2 == "င" and currUnit == "ဆော" : B
+		prevUnit2 == "တို့" and prevUnit1 == "တော" and currUnit == "င်" : E
+		currUnit == "န်း" and nextUnit2 == "ဏ္ဌာ" : E
+			currUnit == "န်း" : I
+		trigramC == "န်းသဏ္ဌာ" : B
+			currUnit == "သ" : I
+		prevUnit2 == "<BOS>" and prevUnit1 == "ကော်" and currUnit == "ဖီ" : E
+			currUnit == "ဖီ" : I
+		currUnit == "အာ" and nextUnit2 == "သ" : B
+			currUnit == "အာ" : I
+		bigramR == "ဝရှု" : E
+		bigramL == "ဝရှု" : B
+		nextTag1 == "E" and bigramL == "စ္စည်း" : E
+			currUnit == "ည်း" : I
+		bigramL == "တိထား" : E
+			currUnit == "ထား" : I
+		nextBigram == "င်းမွ" : B
+			nextUnit1 == "င်း" : I
+		nextTag1 == "I" and bigramL == "စ်ချိ" : B
+			currUnit == "ချိ" : I
+		currUnit == "လို" and nextUnit2 == "ပြီး" : B
+		prevUnit2 == "ကြံ" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		currUnit == "န်" and nextTag1 == "S" : E
+		prevTag1 == "B" and trigramC == "ကလယ်" : B
+			currUnit == "လ" : I
+		bigramR == "တ္တုသို" : E
+		bigramL == "တ္တုသို" : B
+		prevUnit2 == "ပ်" and currUnit == "သော" : B
+		prevUnit2 == "ဒါ" and currUnit == "တော်" : E
+		bigramR == "ဂျူကျွ" : E
+			currUnit == "ဂျူ" : I
+		currUnit == "တ" and nextUnit1 == "ည်" and nextUnit2 == "တဲ့" : B
+		currUnit == "ယ်" and nextUnit1 == "ရှိ" and nextUnit2 == "တ" : E
+		trigramC == "င်းဆိုချ" : E
+			currUnit == "ဆို" : I
+		trigramC == "ငှက်က" : E
+			currUnit == "က်" : I
+		prevUnit2 == "ငှ" and currUnit == "က" : B
+			currUnit == "က" : I
+		trigramC == "ကင်လု" : E
+			currUnit == "င်" : I
+		prevUnit2 == "က" and prevUnit1 == "င်" and currUnit == "လု" : B
+			currUnit == "လု" : I
+		bigramR == "သထွ" : E
+			currUnit == "သ" : I
+		bigramL == "သထွ" : B
+			currUnit == "ထွ" : I
+		bigramL == "ကျူးကျော်" : E
+		trigramC == "ငှက်မွေး" : E
+			currUnit == "က်" : I
+		trigramC == "တန်းစာ" : E
+		trigramC == "န်းစာမေး" : B
+		bigramR == "ဆံရှာ" : E
+		bigramR == "တ်လူ" : E
+		prevBigram == "ဝေးကြ" : E
+			currUnit == "ည့်" : I
+		bigramR == "တော်ခ" : E
+			currUnit == "တော်" : I
+		bigramL == "တော်ခ" : B
+			currUnit == "ခ" : I
+		bigramR == "က်ရွာ" : E
+		bigramL == "မ်းမှ" : B
+			currUnit == "မှ" : I
+		bigramL == "ကျေးမှု" : S
+		bigramR == "န်ဥ" : E
+			currUnit == "န်" : I
+		bigramL == "န်ဥ" : B
+			currUnit == "ဥ" : I
+		bigramL == "ရှိချ" : B
+		trigramC == "ဝန်ရုံး" : E
+			currUnit == "န်" : I
+		bigramL == "စုလ" : B
+			currUnit == "လ" : I
+		nextTag1 == "E" and bigramL == "လ်ဝ" : B
+			currUnit == "ဝ" : I
+		bigramR == "ရီးမ" : E
+			currUnit == "ရီး" : I
+		bigramL == "ရီးမ" : S
+			currUnit == "မ" : I
+		trigramC == "မင်းကြော်" : E
+			currUnit == "င်း" : I
+		nextBigram == "လိုလူ" : E
+		prevUnit2 == "<BOS>" and currUnit == "ခါး" : E
+			currUnit == "ခါး" : I
+		prevBigram == "တိပေး" : B
+		bigramR == "င်းင" : E
+			currUnit == "င်း" : I
+		bigramL == "င်းင" : B
+			currUnit == "င" : I
+		bigramR == "ပ်ပျ" : E
+		bigramL == "ပ်ပျ" : B
+		bigramR == "ယ်ပေး" : E
+			currUnit == "ယ်" : I
+		bigramR == "စ်ရှိ" : E
+		bigramR == "မှုပ" : E
+			currUnit == "မှု" : I
+		bigramL == "မှုပ" : B
+			currUnit == "ပ" : I
+		trigramC == "လကားရ" : E
+		nextBigram == "စေသ" : E
+			currUnit == "စ်" : I
+		prevTag1 == "B" and trigramC == "ရိုက်တာ" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "အ" and currUnit == "ပေါ့" : E
+		currUnit == "င်" and nextUnit1 == "ရ" and nextUnit2 == "တာ" : E
+		bigramR == "ရလိ" : E
+		trigramC == "င်းလေးက" : E
+			currUnit == "လေး" : I
+		bigramL == "မကြိုး" : B
+			currUnit == "ကြိုး" : I
+		bigramR == "ရာအား" : E
+			currUnit == "ရာ" : I
+		bigramL == "ရာအား" : B
+			currUnit == "အား" : I
+		nextBigram == "သရု" : E
+		bigramR == "သရု" : B
+		nextBigram == "ပြုပြ" : E
+			nextUnit1 == "ပြု" : I
+		currUnit == "တ်" and nextUnit1 == "သူ" and nextUnit2 == "တို့" : E
+		trigramC == "ယာဉ်ဆ" : E
+		trigramC == "ဉ်ဆင်း" : B
+		currUnit == "တ်" and nextUnit2 == "နှော" : E
+			currUnit == "တ်" : I
+		nextBigram == "နားမှု" : B
+		trigramC == "ကာလရှ" : E
+		trigramC == "လရှည်" : B
+		bigramR == "ဥခေါ" : E
+		bigramL == "ဥခေါ" : B
+		nextBigram == "အမျိုး" : E
+		bigramR == "အမျိုး" : B
+		trigramC == "ကြိမ်ပေါ" : E
+		prevUnit2 == "ကြိ" and currUnit == "ပေါ" : B
+		currUnit == "သော" and nextUnit2 == "နေ" : B
+		currUnit == "စ်" and nextUnit2 == "လို့" : E
+			currUnit == "စ်" : I
+		nextBigram == "ပြောလို့" : E
+			currUnit == "ကား" : I
+		bigramR == "သစိ" : E
+		bigramL == "သစိ" : B
+		prevUnit2 == "ရှိ" and prevUnit1 == "ကု" and currUnit == "န်" : E
+		bigramR == "န်တွေး" : E
+			currUnit == "န်" : I
+		nextBigram == "တူတူ" : B
+		currUnit == "ရို" and nextUnit2 == "ခဲ့" : B
+		prevUnit2 == "အ" and prevUnit1 == "ကျ" and currUnit == "င့်" : E
+			currUnit == "င့်" : I
+		prevUnit2 == "ည်း" and prevUnit1 == "စား" and currUnit == "ကော" : B
+		trigramC == "မိုင်နှု" : E
+			currUnit == "င်" : I
+		prevUnit2 == "မို" and currUnit == "နှု" : B
+			currUnit == "နှု" : I
+		trigramC == "ဝန်ရှိ" : E
+		bigramR == "ဆုံးပ" : E
+		bigramL == "ဆုံးပ" : B
+		bigramL == "တ်စေ" : B
+		nextTag1 == "E" and bigramL == "ပ်ထွ" : B
+			currUnit == "ထွ" : I
+		prevUnit2 == "ဝ" and prevUnit1 == "တ" and currUnit == "ရား" : E
+			currUnit == "ရား" : I
+		trigramC == "ဒေပြုအ" : E
+			currUnit == "ပြု" : I
+		trigramC == "ပြုအဖွဲ့" : B
+			currUnit == "အ" : I
+		bigramR == "န်းကို" : E
+		bigramL == "န်းကို" : B
+		currUnit == "န်" and nextUnit1 == "မ" and nextUnit2 == "လဲ" : E
+		bigramR == "တံလ" : E
+		bigramL == "တံလ" : B
+		nextTag1 == "I" and bigramL == "က်ပြို" : B
+			currUnit == "ပြို" : I
+		bigramR == "ကူပြု" : E
+			currUnit == "ကူ" : I
+		bigramL == "င်စား" : B
+		trigramC == "လတ်ဆို" : E
+		trigramC == "တ်ဆိုဒ်" : B
+		prevUnit2 == "<BOS>" and prevUnit1 == "မြို့" and currUnit == "တွ" : B
+			currUnit == "တွ" : I
+		currUnit == "င်" and nextUnit1 == "မ" and nextUnit2 == "သိ" : E
+		nextTag1 == "B" and nextTag2 == "I" : E
+		currUnit == "သ" and nextUnit1 == "န့်" and nextUnit2 == "စ" : B
+			currUnit == "သ" : I
+		prevBigram == "ရေဘေး" : B
+		trigramC == "တ်စုစာ" : E
+		bigramL == "ပ်နေ" : B
+		bigramR == "င်းအိ" : E
+		prevUnit2 == "ဖွ" and currUnit == "ကော" : B
+			currUnit == "ကော" : I
+		prevUnit2 == "တ" and prevUnit1 == "င်" and currUnit == "ခ" : B
+		trigramC == "လိုက်ကာ" : E
+			currUnit == "က်" : I
+		trigramC == "လိပ်သီ" : E
+		trigramC == "ပ်သီချ" : B
+		bigramL == "ကွာဟ" : E
+		currUnit == "င်" and nextUnit1 == "ရ" and nextUnit2 == "ခဲ့" : E
+			currUnit == "င်" : I
+		bigramL == "ငွေပြ" : B
+		bigramR == "ရဲနွ" : E
+		bigramL == "ရဲနွ" : B
+		bigramR == "င်းနော" : E
+		bigramL == "င်းနော" : B
+		bigramR == "ကထား" : E
+			currUnit == "က" : I
+		bigramR == "ချာအော" : E
+			currUnit == "ချာ" : I
+		bigramL == "ချာအော" : B
+			currUnit == "အော" : I
+		prevUnit2 == "စား" and currUnit == "နော" : B
+			currUnit == "နော" : I
+		bigramR == "သားကြိုး" : E
+		bigramL == "သားကြိုး" : B
+		bigramR == "လာဈေး" : E
+			currUnit == "လာ" : I
+		currUnit == "ဉ်" and nextUnit1 == "သ" and nextUnit2 == "တ" : E
+		trigramC == "ဉ်သတ" : B
+		prevUnit2 == "မ်" and prevUnit1 == "တ" and currUnit == "စ်" : E
+		trigramC == "ဝင်ထွ" : E
+			currUnit == "င်" : I
+		prevUnit2 == "ဝ" and prevUnit1 == "င်" and currUnit == "ထွ" : B
+			currUnit == "ထွ" : I
+		bigramR == "ခံပြေ" : E
+			currUnit == "ခံ" : I
+		bigramL == "ခံပြေ" : B
+			currUnit == "ပြေ" : I
+		trigramC == "စာစကား" : B
+			currUnit == "စ" : I
+		trigramC == "ကြံပေးချ" : E
+		trigramC == "ကုတ်နံ" : E
+			currUnit == "တ်" : I
+		currUnit == "ချု" and nextUnit2 == "ဆို" : B
+		bigramL == "တွဲလဲ" : E
+		bigramR == "လအ" : E
+		bigramL == "လအ" : B
+		currUnit == "ပ်" and nextUnit1 == "များ" and nextUnit2 == "လို့" : E
+		trigramC == "စိုက်ပြို" : E
+		currUnit == "ယ်" and nextUnit1 == "ခံ" and nextUnit2 == "ရ" : E
+		bigramR == "င်းရှိ" : E
+		bigramR == "ကိုရီး" : B
+		bigramR == "စ္စာပ" : E
+		bigramL == "စ္စာပ" : B
+		bigramR == "မပေါ်" : E
+		trigramC == "ဆင်းချိ" : E
+		prevUnit2 == "ဆ" and currUnit == "ချိ" : B
+		prevUnit2 == "ယူ" and currUnit == "ချ" : B
+			currUnit == "ချ" : I
+		bigramR == "ပုံဆွဲ" : E
+		trigramC == "င်းစားပွဲ" : B
+		currUnit == "ဟာ" and nextUnit2 == "ဇ္ဇာ" : E
+		trigramC == "ဟာဝိဇ္ဇာ" : B
+		bigramR == "စ္စာရှိ" : E
+		currUnit == "ဆော" and nextUnit2 == "ရွ" : B
+			currUnit == "ဆော" : I
+		prevUnit2 == "၊" and prevUnit1 == "ခ" and currUnit == "ဏ" : E
+			currUnit == "ဏ" : I
+		nextBigram == "ပြောပြ" : E
+		bigramL == "ည်ပြု" : B
+		bigramL == "လူစား" : E
+		currUnit == "ည်း" and nextUnit1 == "အ" and nextUnit2 == "များ" : E
+		trigramC == "သန်းသွား" : E
+		trigramC == "န်းသွားလာ" : B
+		bigramR == "သားပ" : E
+		prevBigram == "သေဒ" : E
+		bigramR == "ဏ်းခွဲ" : E
+		nextBigram == "များအ" : E
+		bigramR == "လာဆ" : E
+		currUnit == "စော" and nextUnit2 == "နို" : B
+		currUnit == "က" and nextUnit1 == "ဒ်" and nextUnit2 == "ကို" : B
+		prevTag1 == "I" and trigramC == "လုပ်သူ" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "အ" and currUnit == "တော်" : E
+		trigramC == "ရင်နာ" : E
+		bigramR == "စုံဗ" : E
+		bigramL == "စုံဗ" : B
+		nextTag1 == "I" and bigramL == "ပြေးလ" : B
+		trigramC == "တင်းကြား" : E
+		currUnit == "ထွ" and nextUnit1 == "က်" and nextUnit2 == "ဆို" : B
+		bigramL == "လျှော့ရော" : B
+		bigramR == "မ်ဆော" : E
+		bigramL == "မ်ဆော" : B
+		nextBigram == "ကြီးမား" : E
+		bigramL == "အားကြီး" : B
+		nextBigram == "စေဖို့" : E
+		trigramC == "နပ်ဆို" : E
+		prevUnit2 == "န" and prevUnit1 == "ပ်" and currUnit == "ဆို" : B
+		bigramR == "ညတို" : E
+		bigramL == "ညတို" : B
+		bigramL == "ခါးအ" : B
+		trigramC == "ရင်ကြီး" : E
+		bigramR == "တ်ပေ" : E
+		bigramL == "တ်ပေ" : B
+		prevUnit2 == "ထား" and currUnit == "လျှ" : B
+		trigramC == "န်ယန်း" : B
+		bigramL == "လဖာ" : E
+		bigramL == "ဖာရော" : B
+		bigramL == "ခွဲပ" : B
+		bigramR == "ကူပေး" : E
+		nextBigram == "န့်ချိ" : B
+		bigramR == "တွေ့စ" : E
+		bigramL == "တွေ့စ" : B
+		currUnit == "ည်" and nextUnit1 == "က" and nextUnit2 == "တ်" : E
+		trigramC == "ည်ကတ်" : B
+		prevUnit2 == "တို့" and currUnit == "နှ" : B
+		prevBigram == "ပွဲလို" : E
+		prevUnit2 == "များ" and prevUnit1 == "ကို" and currUnit == "အော" : B
+		prevUnit2 == "ချ" and currUnit == "လျှ" : B
+		nextBigram == "ခါးဝ" : B
+		nextBigram == "လုံရေး" : B
+		currUnit == "လျှ" and nextUnit2 == "များ" : B
+		prevUnit2 == "၏" and prevUnit1 == "စား" and currUnit == "ဝ" : B
+		prevUnit2 == "၌" and prevUnit1 == "လူ" and currUnit == "စ" : B
+		prevUnit2 == "အား" and prevUnit1 == "စား" and currUnit == "ကော" : B
+		currUnit == "ထွ" and nextUnit1 == "က်" and nextUnit2 == "ချိ" : B
+		prevUnit2 == "<BOS>" and prevUnit1 == "ငါး" and currUnit == "ဖ" : B
+		currUnit == "ဖြ" and nextUnit1 == "စ်" and nextUnit2 == "လေ" : B
+		prevUnit2 == "ယ်" and prevUnit1 == "မ" and currUnit == "ပြ" : B
+		trigramC == "ချပစ်" : B
+		currUnit == "ရော" and nextUnit2 == "ခေါ" : B
+		nextBigram == "ပွဲထိုး" : B
+		prevBigram == "ပေးရ" : B
+			currUnit == "န်" : E
+		currUnit == "ဌာ" and nextUnit2 == "က" : B
+		currUnit == "ဖ" and nextUnit1 == "က်" and nextUnit2 == "ဆ" : B
+		currUnit == "ထု" and nextUnit1 == "ပ်" and nextUnit2 == "ပေး" : B
+		currUnit == "ပိ" and nextUnit2 == "ပါ" : B
+		currUnit == "ရ" and nextUnit1 == "န်" and nextUnit2 == "ကု" : B
+		currUnit == "ခြ" and nextUnit1 == "င်း" and nextUnit2 == "၊" : B
+		prevUnit2 == "<BOS>" and prevUnit1 == "စာ" and currUnit == "လု" : B
+		currUnit == "ထိ" and nextUnit2 == "သိ" : B
+		currUnit == "စိ" and nextUnit1 == "တ်" and nextUnit2 == "ပြ" : B
+		prevUnit2 == "တ်" and prevUnit1 == "ထို" and currUnit == "အ" : B
+		nextBigram == "မျှတို့" : B
+		prevBigram == "မ်းသိ" : B
+		prevUnit2 == "န်း" and prevUnit1 == "ပြီး" and currUnit == "လျှ" : B
+		prevUnit2 == "န်း" and prevUnit1 == "ထိ" and currUnit == "ရော" : B
+		currUnit == "အ" and nextUnit1 == "တူ" and nextUnit2 == "ဆုံး" : B
+		prevUnit2 == "ကို" and prevUnit1 == "မ" and currUnit == "နော" : B
+		currUnit == "စိ" and nextUnit2 == "ဘီ" : B
+		currUnit == "ရော" and nextUnit2 == "ဆေး" : B
+		currUnit == "လို" and nextUnit2 == "သော်" : B
+		prevBigram == "ပေးပြီး" : B
+		currUnit == "ထွ" and nextUnit2 == "ကု" : B
+		currUnit == "ရ" and nextUnit2 == "ဆု" : B
+		bigramL == "လာသ" : B
+		nextBigram == "ပွဲပို" : B
+		currUnit == "ပ" and nextUnit1 == "န်း" and nextUnit2 == "ဝ" : B
+		nextBigram == "တ်လော့" : B
+		currUnit == "သ" and nextUnit1 == "ယ်" and nextUnit2 == "ပါ" : B
+		currUnit == "ကျော" and nextUnit2 == "ပ" : B
+		nextBigram == "နီရှိ" : B
+		nextBigram == "မောနို" : B
+		currUnit == "တွ" and nextUnit2 == "ဖျော်" : B
+		prevUnit2 == "<BOS>" and prevUnit1 == "ရှေ့" and currUnit == "ဆ" : B
+		currUnit == "သာ" and nextUnit2 == "သ" : B
+		nextBigram == "လေ့ထုံး" : B
+		prevUnit2 == "န်" and prevUnit1 == "မြို့" and currUnit == "တွ" : B
+		currUnit == "ကော" and nextUnit2 == "စွာ" : B
+		prevUnit2 == "<BOS>" and prevUnit1 == "ချွေး" and currUnit == "ဒီး" : B
+		currUnit == "ရော" and nextUnit2 == "ပေါ်" : B
+		currUnit == "ရော" and nextUnit2 == "သော်" : B
+		prevBigram == "ရီခွဲ" : B
+		prevUnit2 == "ကို" and prevUnit1 == "ရ" and currUnit == "အော" : B
+		currUnit == "ရာ" and nextUnit1 == "သီ" and nextUnit2 == "၊" : B
+		prevUnit2 == "စာ" and prevUnit1 == "ဝ" and currUnit == "ယ်" : E
+		currUnit == "န်" and nextUnit1 == "လုံး" and nextUnit2 == "ဟာ" : E
+		nextBigram == "ရှူထု" : E
+		nextBigram == "ကြီး"" : E
+		currUnit == "မ်း" and nextUnit1 == "စာ" and nextUnit2 == "အု" : E
+		prevBigram == "ခြေလ" : E
+		currUnit == "န်" and nextUnit1 == "ပြော" and nextUnit2 == "ပေး" : E
+		prevUnit2 == "လာ" and prevUnit1 == "ရ" and currUnit == "င်" : E
+		currUnit == "ပ်" and nextUnit1 == "ကြီး" and nextUnit2 == "များ" : E
+		currUnit == "က်" and nextUnit1 == "မ" and nextUnit2 == "ယ်" : E
+		currUnit == "မ်း" and nextUnit1 == "မ" and nextUnit2 == "ရှိ" : E
+		currUnit == "န်" and nextUnit1 == "သံ" and nextUnit2 == "ကို" : E
+		prevUnit2 == "ထူး" and prevUnit1 == "ပ" and currUnit == "င်" : E
+		prevUnit2 == "၏" and currUnit == "ပြာ" : E
+		currUnit == "င်း" and nextUnit2 == "ဖူး" : E
+		currUnit == "မ်း" and nextUnit1 == "ရှိ" and nextUnit2 == "တ" : E
+		nextBigram == "ပြောရာ" : E
+		currUnit == "န" and nextUnit1 == "ပြု" and nextUnit2 == "လု" : E
+		currUnit == "ယ်" and nextUnit1 == "ရာ" and nextUnit2 == "မ" : E
+		currUnit == "ည်" and nextUnit1 == "လာ" and nextUnit2 == "ပါ" : E
+		prevBigram == "ဖိုးတ" : E
+		currUnit == "မ်း" and nextUnit1 == "ဆုံး" and nextUnit2 == "ရ" : E
+		prevUnit2 == "တွေ" and currUnit == "ရား" : E
+		currUnit == "ဏီ" and nextUnit2 == "များ" : E
+		currUnit == "မ်း" and nextUnit1 == "ခံ" and nextUnit2 == "ထား" : E
+		currUnit == "မ်း" and nextUnit1 == "ခ" and nextUnit2 == "ဘ" : E
+		currUnit == "သား" and nextUnit1 == "စား" and nextUnit2 == "ချ" : E
+		currUnit == "စ်" and nextUnit1 == "ကြီး" and nextUnit2 == "သုံး" : E
+		currUnit == "က်" and nextUnit1 == "ချ" and nextUnit2 == "အ" : E
+		prevBigram == "န်းခွ" : E
+		currUnit == "ကား" and nextUnit2 == "ရီး" : E
+		nextBigram == "ကြီးထွား" : E
+		prevUnit2 == "တဲ့" and currUnit == "ထား" : E
+		nextBigram == "လိုကြော" : E
+		currUnit == "ဉ်" and nextUnit1 == "စာ" and nextUnit2 == "နဲ့" : E
+		currUnit == "စား" and nextUnit1 == "ပြု" and nextUnit2 == "ရ" : E
+		currUnit == "စ်" and nextUnit1 == "ကြီး" and nextUnit2 == "မြ" : E
+		prevUnit2 == "ကြီး" and prevUnit1 == "မြ" and currUnit == "စ်" : E
+		currUnit == "က်" and nextUnit1 == "ကြီး" and nextUnit2 == "တာ" : E
+		prevUnit2 == "၊" and prevUnit1 == "ရိုး" and currUnit == "ရာ" : E
+		prevBigram == "ထဲလော" : E
+		currUnit == "င်" and nextUnit1 == "သူ" and nextUnit2 == "တို့" : E
+		prevBigram == "မို့ခ" : E
+		currUnit == "င်း" and nextUnit1 == "မဲ့" and nextUnit2 == "မ" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "စ" and currUnit == "ရံ" : E
+		nextBigram == "ပြောကြား" : E
+		currUnit == "ကျိုး" and nextUnit1 == "ရှိ" and nextUnit2 == "သ" : E
+		prevUnit2 == "။" and currUnit == "ရုံ" : E
+		prevUnit2 == "၂" and prevUnit1 == "မ" and currUnit == "တ်" : E
+		prevUnit2 == "င်း" and currUnit == "ပို့" : E
+		prevUnit2 == "များ" and prevUnit1 == "သ" and currUnit == "ည်" : E
+		nextBigram == "ကြီးကြီး" : E
+		currUnit == "မ" and nextUnit1 == "ကြီး" and nextUnit2 == "။" : E
+		nextBigram == "စေချ" : E
+		nextBigram == "ပြူးပြီး" : E
+		prevUnit2 == "က်" and prevUnit1 == "ဒေါ" and currUnit == "သ" : E
+		prevBigram == "၂၅နှ" : E
+		currUnit == "င်း" and nextUnit1 == "လ" and nextUnit2 == "တွ" : E
+		nextBigram == "ငှားခ" : E
+		currUnit == "နေ" and nextUnit2 == "ကျွ" : E
+		prevUnit2 == "သော" and prevUnit1 == "ဝါ" and currUnit == "ဒ" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "နံ" and currUnit == "ရံ" : E
+		currUnit == "င်း" and nextUnit1 == "ပြ" and nextUnit2 == "ခြ" : E
+		prevBigram == "ဏ်လ" : E
+		currUnit == "က်" and nextUnit1 == "ပြီး" and nextUnit2 == "အ" : E
+		currUnit == "က်" and nextUnit1 == "ချ" and nextUnit2 == "မှ" : E
+		nextBigram == "သူကြိုး" : E
+		currUnit == "ပ်" and nextUnit1 == "စာ" and nextUnit2 == "ပေ" : E
+		nextBigram == "တချိ" : E
+		prevUnit2 == "မှ" and prevUnit1 == "သ" and currUnit == "တိ" : E
+		prevUnit2 == "မှာ" and prevUnit1 == "အ" and currUnit == "ဆူ" : E
+		currUnit == "ခိုး" and nextUnit2 == "လို" : E
+		currUnit == "ယ်" and nextUnit1 == "ပူ" and nextUnit2 == "ချိ" : E
+		nextBigram == "စေနဲ့" : E
+		prevUnit2 == "ည်း" and currUnit == "ခိုး" : E
+		prevUnit2 == "<BOS>" and prevUnit1 == "မိုး" and currUnit == "ကာ" : E
+		currUnit == "စ်" and nextUnit1 == "ကြီး" and nextUnit2 == "များ" : E
+		prevUnit2 == "ယ့်" and currUnit == "မ" : S
+		currUnit == "မ" and nextUnit1 == "စုံ" and nextUnit2 == "ကွ" : S
+		prevUnit2 == "ကို" and prevUnit1 == "ရှာ" and currUnit == "မ" : S
+		nextBigram == "ရွာရ" : S
+	currTag == "S" : S
+		prevBigram == "ရသ" : E
+		currUnit == "ယ်" : I
+			currUnit == "ယ်" : E
+		bigramL == "ရရှိ" : E
+			currUnit == "ရှိ" : S
+		prevUnit2 == "ပြ" and prevUnit1 == "ည်" and currUnit == "သူ့" : E
+			currUnit == "သူ့" : I
+		prevUnit2 == "င်" and currUnit == "တော်" : E
+		nextTag1 == "S" and bigramL == "ယ်စား" : I
+		currUnit == "ရီး" and prevTag1 == "E" : I
+			currUnit == "ရီး" : E
+		prevUnit2 == "ယ်" and prevUnit1 == "စား" and currUnit == "ပြု" : E
+		nextTag1 == "E" : I
+		bigramL == "စာပေ" : E
+		prevUnit2 == "ပြ" and currUnit == "တော်" : E
+		prevUnit2 == "စ" and currUnit == "စား" : E
+		bigramL == "ရာစု" : E
+		bigramL == "တ်ဆို့" : E
+		bigramL == "ငွေသား" : E
+		bigramL == "ဆရာ" : E
+		prevUnit2 == "ပြ" and prevUnit1 == "ည်" and currUnit == "သူ" : I
+			currUnit == "သူ" : E
+		prevUnit2 == "ရ" and prevUnit1 == "က်" and currUnit == "နေ့" : E
+		prevUnit2 == "ကျ" and currUnit == "သုံး" : E
+		bigramL == "မွေးမြူ" : E
+		bigramL == "ကလေး" : E
+		nextTag1 == "I" : I
+		currUnit == "ဆုံး" and prevTag1 == "E" and prevTag2 == "I" : E
+			currUnit == "ဆုံး" : S
+		bigramL == "ပုံစံ" : E
+		bigramL == "ယ်ကူ" : E
+		bigramL == "ငံသား" : E
+		bigramR == "သနာ" : I
+		bigramL == "များကြီး" : E
+		bigramL == "န်းမာ" : E
+		nextUnit1 == "ယ်" : I
+		bigramL == "သနာ" : I
+		currUnit == "ပ" and prevTag1 == "E" : E
+		bigramL == "ညနေ" : E
+		prevUnit2 == "ဘူ" and currUnit == "ရုံ" : E
+		nextTag1 == "B" and bigramL == "တော်တော်" : E
+		prevUnit2 == "နှ" and prevUnit1 == "စ်" and currUnit == "မြို့" : E
+		bigramL == "တ်ချ" : E
+		prevUnit2 == "တ" and prevUnit1 == "ပ်" and currUnit == "မ" : I
+		currUnit == "လာ" and prevTag1 == "I" : E
+			currUnit == "လာ" : S
+		nextTag1 == "B" and bigramL == "င်းသား" : E
+		currUnit == "ယား" and prevTag1 == "S" and prevTag2 == "E" : E
+		prevUnit2 == "ပ်" and prevUnit1 == "မ" and currUnit == "တော်" : E
+		bigramL == "ကျကျ" : E
+		prevUnit2 == "သ" and prevUnit1 == "စ်" and currUnit == "သား" : E
+		prevUnit2 == "စ" and prevUnit1 == "ည်" and currUnit == "ကား" : E
+		bigramL == "စုဝေး" : E
+		bigramL == "စ်ဆေး" : E
+		bigramL == "စီးပွား" : E
+		prevUnit2 == "သ" and prevUnit1 == "နာ" and currUnit == "ပါ" : E
+		bigramL == "အားလုံး" : E
+		bigramL == "လူမျိုး" : E
+		bigramL == "ကျော်လွှား" : E
+		bigramL == "ပ်သား" : E
+		bigramL == "များပြား" : E
+		bigramL == "ကတိ" : E
+		trigramC == "ရားမစော" : I
+		bigramL == "င်ငံ" : I
+		bigramL == "ည့်စုံ" : E
+		prevUnit2 == "တော" and currUnit == "ခံ" : E
+		bigramL == "နူးညံ့" : E
+			currUnit == "ညံ့" : I
+		bigramL == "မ်းခြေ" : E
+		bigramL == "ကြာကြာ" : E
+		bigramL == "ယ်စာ" : E
+		prevUnit2 == "နော" and currUnit == "ကျ" : E
+		bigramL == "ဒီယို" : E
+		currUnit == "ယူ" and prevTag1 == "E" and prevTag2 == "E" : E
+		prevUnit2 == "ထု" and currUnit == "ယူ" : E
+		bigramL == "ယ်စု" : E
+		currUnit == "ဘော" : E
+		bigramL == "ပြဆို" : E
+		bigramL == "ရေးရာ" : E
+		prevUnit2 == "ဖွ" and currUnit == "ဆို" : E
+		bigramL == "မျိုးစုံ" : E
+		bigramL == "ရယူ" : E
+		currUnit == "ပြ" and prevTag1 == "E" and prevTag2 == "E" : E
+		bigramL == "န်မူ" : E
+		prevUnit2 == "ချု" and currUnit == "ဆို" : E
+		prevUnit2 == "ဟ" and currUnit == "တူ" : E
+		bigramL == "ယူဆ" : E
+		bigramL == "စာလုံး" : E
+		currUnit == "ဦး" and prevTag1 == "E" and prevTag2 == "E" : I
+		prevUnit2 == "ဆ" and prevUnit1 == "ရာ" and currUnit == "မ" : E
+		trigramC == "စာရေးဆ" : I
+		bigramL == "‌‌" : I
+		currUnit == "တ" : I
+			currUnit == "တ" : S
+		trigramC == "င့်ရပြ" : E
+		bigramL == "ကစား" : E
+		prevUnit2 == "ဆ" and prevUnit1 == "ရာ" and currUnit == "ကြီး" : E
+			currUnit == "ကြီး" : S
+		trigramC == "သလဲ။" : E
+		bigramL == "ခါးဝ" : E
+		prevBigram == "ယ်ဖော်" : E
+		prevUnit2 == "ပြ" and prevUnit1 == "ည်" and currUnit == "မ" : E
+		prevUnit2 == "က်" and prevUnit1 == "မ" and currUnit == "လား" : E
+		bigramL == "ပြုစု" : E
+		bigramL == "ဖြေဆို" : E
+		bigramL == "ပွဲထိုး" : E
+		bigramL == "ကြုံတွေ့" : E
+		bigramL == "ကြီးစိုး" : E
+		nextTag1 == "B" and bigramL == "ရထား" : E
+		prevBigram == "ကာယ" : E
+		bigramL == "ကြီးထွား" : E
+		bigramL == "န္တလေး" : E
+		prevUnit1 == "္" : I
+		bigramL == "တူတူ" : E
+		bigramL == "ဖွဲဖွဲ" : E
+		currUnit == "ယာ" and nextTag1 == "S" : E
+		bigramL == "ညာကျော်" : E
+		currUnit == "သ" and nextTag1 == "B" : E
+		bigramL == "ငွေကြေး" : E
+		bigramL == "ပြောကြား" : E
+		bigramL == "ငံခြား" : E
+		bigramL == "တ်ပြား" : E
+		bigramL == "တီပွဲ" : E
+		bigramL == "ဿနာ" : E
+		bigramL == "ကြီးကြီး" : E
+		prevUnit2 == "ရ" and prevUnit1 == "ပ်" and currUnit == "နား" : E
+		prevUnit2 == "လှ" and prevUnit1 == "မ်း" and currUnit == "ပေး" : E
+		nextTag1 == "B" and bigramL == "ပြောဆို" : E
+		currUnit == "တိ" and prevTag1 == "E" and prevTag2 == "B" : I
+		trigramC == "န်းစာရှိ" : E
+		bigramL == "ဆုံးရှုံး" : E
+		prevUnit2 == "ရ" and prevUnit1 == "န်" and currUnit == "သူ" : E
+		bigramL == "ပွဲတော်" : E
+		bigramL == "မွေးနေ့" : E
+		prevUnit2 == "လှ" and currUnit == "ခေါ်" : E
+		prevUnit2 == "လ" and prevUnit1 == "က်" and currUnit == "တွေ့" : E
+		bigramL == "သမီး" : E
+		bigramL == "လဲကျ" : E
+		nextTag1 == "S" and bigramL == "လာကြို" : E
+		bigramL == "ငွေစု" : E
+		prevUnit2 == "ပြ" and currUnit == "ဝ" : E
+		bigramL == "ရေဒီ" : I
+		bigramL == "မကြာ" : I
+		bigramR == "ခါတ" : I

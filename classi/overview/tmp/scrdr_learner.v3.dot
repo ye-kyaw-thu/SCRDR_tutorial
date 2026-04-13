@@ -1,0 +1,73 @@
+digraph SCRDR_AutoLearner_SlideOptimized {
+    // Optimization for rectangular slide area
+    graph [rankdir=TB, nodesep=0.8, ranksep=0.6, fontname="Segoe UI, Arial", fontsize=14, splines=polyline];
+    node [shape=none, fontname="Segoe UI, Arial", fontsize=12];
+    edge [fontname="Segoe UI, Arial", fontsize=11, color="#5F6368"];
+
+    // --- TOP ROW: Data & Prediction ---
+    { rank=same;
+        Input [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#E8F0FE" color="#1A73E8">
+                <tr><td><b>1. PRE-PROCESSING</b></td></tr>
+                <tr><td>Load &amp; Impute Data<br/>Label Encoding</td></tr>
+            </table>
+        >];
+
+        Classify [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#F1F3F4" color="#5F6368">
+                <tr><td><b>2. INFERENCE</b></td></tr>
+                <tr><td>Traverse RDR Tree<br/>Find Matching Node</td></tr>
+            </table>
+        >];
+    }
+
+    // --- MIDDLE ROW: Decision Point ---
+    CheckError [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#FFF4E5" color="#E37400">
+            <tr><td><b>3. ACCURACY CHECK</b></td></tr>
+            <tr><td>Prediction == Actual?</td></tr>
+        </table>
+    >];
+
+    // --- BOTTOM ROW: Learning & Output ---
+    { rank=same;
+        FindBestRule [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#D2E3FC" color="#1A73E8">
+                <tr><td><b>4. RULE DISCOVERY</b></td></tr>
+                <tr><td>Entropy/Info Gain<br/>Best Feature Split</td></tr>
+            </table>
+        >];
+
+        UpdateTree [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#E6F4EA" color="#137333">
+                <tr><td><b>5. TREE UPDATE</b></td></tr>
+                <tr><td>Attach New Rule<br/>Save Cornerstone</td></tr>
+            </table>
+        >];
+
+        Output [label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="10" bgcolor="#CEEAD6" color="#137333">
+                <tr><td><b>FINAL MODEL</b></td></tr>
+                <tr><td>rdr_model.json</td></tr>
+            </table>
+        >];
+    }
+
+    // --- CONNECTIONS ---
+    
+    // Top Flow
+    Input -> Classify [minlen=2];
+    Classify -> CheckError;
+
+    // The "Incorrect" Branch (Downwards)
+    CheckError -> FindBestRule [label="  Incorrect", color="#D93025", fontcolor="#D93025", weight=2];
+    
+    // Bottom Flow
+    FindBestRule -> UpdateTree [minlen=2];
+    UpdateTree -> Output [label=" Done", style=bold, color="#137333"];
+
+    // Feedback Loops (The "Wrap-around")
+    CheckError -> Classify [label=" Correct (Next Row)", style=dashed, constraint=false, tailport=e, headport=e];
+    UpdateTree -> Classify [label=" Repeat for all samples", style=dashed, constraint=false, tailport=w, headport=w];
+}
+

@@ -1,0 +1,70 @@
+digraph G {
+    // General Graph Settings for a balanced aspect ratio
+    graph [rankdir=TB, nodesep=0.5, ranksep=0.4, fontname="Helvetica,Arial,sans-serif", splines=ortho];
+    node [fontname="Helvetica,Arial,sans-serif", fontsize=12, shape=rect, style="rounded,filled", fillcolor="#F1F3F4", color="#5F6368"];
+    edge [color="#5F6368", penwidth=1.2];
+
+    // Entry Point
+    Start [label="START: five_ml.py", shape=ellipse, fillcolor="#CEEAD6", color="#137333", fontcolor="#137333", style="filled,bold"];
+
+    // 1. Configuration Cluster
+    subgraph cluster_0 {
+        label="I. Initialization";
+        style=dashed;
+        color="#70757A";
+        Args [label="Argparse\n(Input, Target, Method, Hyperparams)"];
+        Load [label="Data Loading\n(CSV / Excel)"];
+    }
+
+    // 2. Preprocessing Pipeline Cluster (Grouped for width control)
+    subgraph cluster_1 {
+        label="II. Preprocessing Pipeline";
+        style=dashed;
+        color="#70757A";
+        
+        {rank=same; Drop [label="Feature Filtering &\nMissing Target Removal"]; Encode [label="Feature (One-Hot) &\nTarget Encoding"];}
+        {rank=same; Impute [label="Median Imputation\n(SimpleImputer)"]; Scale [label="Standard Scaling\n(StandardScaler)"];}
+    }
+
+    // 3. Splitting & Dispatcher
+    Split [label="Data Split\n(80% Train / 20% Test)", fillcolor="#E8F0FE", color="#1A73E8"];
+
+    subgraph cluster_2 {
+        label="III. Model Selection (args.method)";
+        style=filled;
+        fillcolor="#F8F9FA";
+        color="#DADCE0";
+        {rank=same; DT [label="Decision\nTree"]; RF [label="Random\nForest"]; SVM [label="SVM"]; NB [label="Naive\nBayes"]; LR [label="Logistic\nReg."];}
+    }
+
+    // 4. Training & Execution
+    Train [label="Model Training\n(model.fit)", fillcolor="#FEF7E0", color="#E37400"];
+    Eval [label="Inference & Metrics\n(model.predict)", fillcolor="#FEF7E0", color="#E37400"];
+
+    // 5. Output Cluster
+    subgraph cluster_3 {
+        label="IV. Results Generation";
+        style=dashed;
+        color="#70757A";
+        Report [label="Classification Report\n(STDOUT)"];
+        Plot [label="Seaborn Heatmap\n(Confusion Matrix)"];
+    }
+    
+    Output [label="OUTPUT: PNG File", shape=note, fillcolor="#FAD2CF", color="#C5221F", style="filled,bold"];
+
+    // Flow Connections
+    Start -> Args -> Load;
+    Load -> Drop -> Encode -> Impute -> Scale -> Split;
+    
+    // Split to Models
+    Split -> {DT RF SVM NB LR} [color="#1A73E8"];
+    
+    // Models to Training
+    {DT RF SVM NB LR} -> Train;
+    
+    Train -> Eval;
+    Eval -> Report;
+    Eval -> Plot;
+    Plot -> Output;
+}
+

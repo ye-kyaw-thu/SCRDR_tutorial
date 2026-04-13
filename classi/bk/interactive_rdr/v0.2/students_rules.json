@@ -1,0 +1,42 @@
+{
+  "condition": null,
+  "conclusion": "Unknown",
+  "if_true": {
+    "condition": {
+      "col": "Hours_Studied",
+      "op": "<",
+      "val": "5"
+    },
+    "conclusion": "Fail",
+    "if_true": null,
+    "if_false": {
+      "condition": {
+        "col": "Hours_Studied",
+        "op": ">",
+        "val": "5"
+      },
+      "conclusion": "Pass",
+      "if_true": {
+        "condition": {
+          "col": "Attendance_Pct",
+          "op": "<",
+          "val": "50"
+        },
+        "conclusion": "Fail",
+        "if_true": null,
+        "if_false": null
+      },
+      "if_false": {
+        "condition": {
+          "col": "Hours_Studied",
+          "op": "<",
+          "val": "6"
+        },
+        "conclusion": "Fail",
+        "if_true": null,
+        "if_false": null
+      }
+    }
+  },
+  "if_false": null
+}

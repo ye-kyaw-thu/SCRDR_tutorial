@@ -1,0 +1,78 @@
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ python ./eval_segmentation.py -r ./data/10k_test.txt -H ./segmented.txt
+
+Word Segmentation Evaluation Results
+============================================================
+Metric                         Score
+------------------------------------------------------------
+Word Precision                0.1488
+Word Recall                   0.2360
+Word F1-score                 0.1825
+------------------------------------------------------------
+Boundary Precision            0.0585
+Boundary Recall               0.0928
+Boundary F1-score             0.0718
+------------------------------------------------------------
+Vocab Precision               0.1587
+Vocab Recall                  0.1994
+Vocab F1-score                0.1767
+============================================================
+
+Additional Statistics:
+Reference words: 117857
+Hypothesis words: 186889
+Correct words: 27809
+Reference vocabulary size: 10840
+Hypothesis vocabulary size: 13613
+Common vocabulary: 2161
+
+Top Segmentation Errors Analysis
+============================================================
+Total errors: 82093
+
+Most Frequent Over-Segmentation Errors (System split where it shouldn't):
+ 1263 × REF: 'တယ်' → HYP: 'တယ|်'
+  886 × REF: 'သည်' → HYP: 'သည|်'
+  642 × REF: 'ပါ' → HYP: 'ပ|ါ'
+  475 × REF: 'လဲ' → HYP: 'လ|ဲ'
+  455 × REF: 'လား' → HYP: 'လာ|း'
+  418 × REF: 'ကျွန်တော်' → HYP: 'ကျွန်|တော်'
+  291 × REF: 'မယ်' → HYP: 'မယ|်'
+  271 × REF: 'ဘူး' → HYP: 'ဘူ|း'
+  163 × REF: 'ပဲ' → HYP: 'ပ|ဲ'
+  155 × REF: 'တာ' → HYP: 'တ|ာ'
+
+Most Frequent Under-Segmentation Errors (System joined what should be separate):
+  126 × REF: 'လို့|ရ' → HYP: 'လို့ရ'
+   90 × REF: 'သူ|က' → HYP: 'သူက'
+   73 × REF: 'တွေ|က' → HYP: 'တွေက'
+   58 × REF: 'တစ်|ယောက်' → HYP: 'တစ်ယောက်'
+   56 × REF: 'ဒါ|က' → HYP: 'ဒါက'
+   54 × REF: 'ပေး|ရ' → HYP: 'ပေးရ'
+   41 × REF: 'တို့|က' → HYP: 'တို့က'
+   36 × REF: 'မှ|မ' → HYP: 'မှမ'
+   29 × REF: 'တွေ့|ရ' → HYP: 'တွေ့ရ'
+   29 × REF: 'လို့|မ' → HYP: 'လို့မ'
+
+Most Frequent Complex Boundary Errors:
+  182 × REF: 'များ' → HYP: 'များကို'
+  154 × REF: 'ဒီ' → HYP: 'ဒ'
+  148 × REF: 'နေ' → HYP: '်နေ'
+  141 × REF: 'ကျွန်တော်' → HYP: 'တော်'
+  122 × REF: 'မလား' → HYP: 'လ'
+  115 × REF: 'ကျွန်တော်' → HYP: 'ကျွန်'
+  100 × REF: 'တယ်' → HYP: 'ပါ'
+   87 × REF: 'နေ့' → HYP: 'ီနေ့'
+   77 × REF: 'မလဲ' → HYP: 'လ'
+   75 × REF: 'တယ်' → HYP: '်'
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$
+
+
+====================
+
+Evaluation with another program:  
+
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$ python2.7 ./evaluate.py ./segmented.txt ./data/10k_test.txt
+Tag precision: 0.242320307776
+ye@lst-hpc3090:~/exp/scrdr_tuto/tokenizer$
+
+
