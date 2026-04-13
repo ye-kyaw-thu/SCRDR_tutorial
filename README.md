@@ -80,3 +80,11 @@ If you use SCRDR_tutorial in your work or teaching, please cite it as follows:
   note         = {Accessed: YYYY-MM-DD},
   institution  = {Language Understanding Lab (LU Lab), Myanmar}
 }
+
+## References
+
+- Compton, P., & Kang, B. H. (2021). Ripple-Down Rules: The Alternative to Machine Learning. CRC Press.
+
+- Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., & Pham, S. B. (2014). RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger. In Proceedings of the 14th Conference of the European Chapter of the Association for Computational Linguistics (EACL), pp. 17–20.
+
+- Nguyen, D. Q., Nguyen, D. Q., Vu, T., Dras, M., & Johnson, M. (2018). A Fast and Accurate Vietnamese Word Segmenter. In Proceedings of the 11th International Conference on Language Resources and Evaluation (LREC 2018). European Language Resources Association (ELRA). 
