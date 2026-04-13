@@ -45,7 +45,7 @@ This repository contains reimplementations of specific RDR tools to support the 
 ## License and Usage
 
 ### Code and Tutorial Content
-The original code and tutorial materials in this repository are licensed under a **(Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International \(CC BY-NC-SA 4.0\))[https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en]** License.
+The original code and tutorial materials in this repository are licensed under a **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International \(CC BY-NC-SA 4.0\)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)** License.
 
 - ✅ **Allowed**: Using, modifying, and sharing for teaching, self-study, and Research & Development (R&D).
 - ❌ **Prohibited**: Any commercial use or redistribution for profit is strictly forbidden.
