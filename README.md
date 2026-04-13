@@ -51,7 +51,7 @@ The original code and tutorial materials in this repository are licensed under a
 - ❌ **Prohibited**: Any commercial use or redistribution for profit is strictly forbidden.
 
 ### Datasets
-The datasets provided (Iris, Titanic, Wine Quality, etc.) are included for educational convenience. They are **not** covered by the CC BY-NC-SA license. Users must adhere to the original licenses provided by their respective sources (UCI Machine Learning Repository, etc.).
+The datasets provided (Iris, Titanic, Wine Quality, etc.) are included for educational convenience. They are **not** covered by the CC BY-NC-SA license. Users must adhere to the original licenses provided by their respective sources ([UCI Machine Learning Repository](https://archive.ics.uci.edu/), etc.).
 
 ## Assignment No.4
 
