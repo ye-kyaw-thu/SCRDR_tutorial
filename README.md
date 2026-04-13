@@ -17,3 +17,15 @@
 4. [SCRDR-Tagging-Experiment.ipynb](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/tagger/SCRDR-Tagging-Experiment.ipynb)  
 5. [SCRDR-Tokenization-Experiment.ipynb](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/tokenizer/SCRDR-Tokenization-Experiment.ipynb)
 
+## Dataset
+
+Dataset links are as follows (ဒီ baseline experiment အတွက်လည်း အောက်ပါလင့်တွေကနေပဲ download လုပ်ယူခဲ့ပါတယ်။):  
+
+1. Iris: [https://archive.ics.uci.edu/dataset/53/iris](https://archive.ics.uci.edu/dataset/53/iris)
+2. Wine Quality: [https://archive.ics.uci.edu/dataset/186/wine+quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
+3. Mushroom: [https://archive.ics.uci.edu/dataset/73/mushroom](https://archive.ics.uci.edu/dataset/73/mushroom)
+4. Breast Cancer Wisconsin (Diagnostic): [https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
+5. Titanic Dataset: [https://github.com/datasciencedojo/datasets/blob/master/titanic.csv](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv)
+
+## Citation
+
