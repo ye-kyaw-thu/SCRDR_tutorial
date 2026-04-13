@@ -4,8 +4,10 @@
 
 အခုမှ စလေ့လာတဲ့ ကျောင်းသားတွေအနေနဲ့က အောက်ပါအစီအစဉ်အတိုင်း လေ့လာသွားရင် အဆင်ပြေမယ်လို့ ယူဆပါတယ်။  
 
-1. -Ripple-Down Rules, An Alternative to Machine Learning- by Paul Compton \& Byeong Ho Kang စာအုပ်ကို ရှာဖွေဖတ်ပါ။ အဲဒီစာအုပ်ကို အကျဉ်းချုပ်ရှင်းထားတဲ့ presentation slide: RDR-Intro ([https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/slide/RDR_Intro.pdf](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/slide/RDR_Intro.pdf)) ကိုလည်း တင်ပေးထားပါတယ်။
-2. Interactive-RDR-Learning.ipynb နဲ့ 
+1. *Ripple-Down Rules, An Alternative to Machine Learning* by Paul Compton \& Byeong Ho Kang စာအုပ်ကို ရှာဖွေဖတ်ပါ။ အဲဒီစာအုပ်ကို အကျဉ်းချုပ်ရှင်းထားတဲ့ presentation slide: RDR-Intro ([https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/slide/RDR_Intro.pdf](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/slide/RDR_Intro.pdf)) ကိုလည်း တင်ပေးထားပါတယ်။
+2. Interactive-RDR-Learning.ipynb မှာတော့ example dataset အသေးလေးသုံးခု ([students.csv](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/inter/data/students.csv), [loan_approval.csv](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/inter/data/loan_approval.csv), [weather_activity.csv](https://github.com/ye-kyaw-thu/SCRDR_tutorial/blob/main/inter/data/weather_activity.csv)) ကိုသုံးပြီး domain expert အနေနဲ့ ဘယ်လို RDR rule တွေကို သတ်မှတ်ပြီး decision making (or) classification လုပ်တာကို ဘယ်လို interactively လုပ်သွားလို့ ရတယ် ဆိုတာကို နားလည်လွယ်အောင် မိတ်ဆက်ပေးထားပါတယ်။
+3. Baseline-with-ML.ipynb ကတော့ အများစု သိထားပြီးသား machine learning method တွေဖြစ်တဲ့ DecisionTree, Random Forest, Support Vector Machine (SVM), Naive Bayes (NB), Logistic Regression (LR) တွေကိုသုံးပြီး dataset ၅မျိုး (Iris dataset, Wine Quality dataset, Mushroom dataset, Breast Cancer dataset, Titanic Survival Prediction Dataset) ကို classification လုပ်ပြထားတာပါ။ ဒါကိုတော့ RDR နဲ့ နှိုင်းယှဉ်ကြည့်နိုင်အောင်လို့ baseline အဖြစ်ထားပေးထားပါတယ်။
+4. 
 
 ## Notebooks
 
