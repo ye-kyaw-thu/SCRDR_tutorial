@@ -46,6 +46,11 @@ Overview of `scrdr_learner.py`:
 
 <img src="classi/overview/scrdr_learner.png" alt="SCRDR Learner Overview" width="50%">
 
+## 3. SCRDR Part-of-Speech Tagger
+
+Overview of `scrdr_tagger.py`:  
+
+<img src="tagger/overview/scrdr_tagger_overview.png" alt="SCRDR Tagger Overview" width="70%">
 
 ## Credits and Reimplementation
 
