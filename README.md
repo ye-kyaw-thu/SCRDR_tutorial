@@ -50,7 +50,7 @@ Overview of `scrdr_learner.py`:
 
 Overview of `scrdr_tagger.py`:  
 
-<img src="tagger/overview/scrdr_tagger_overview.png" alt="SCRDR Tagger Overview" width="70%">
+<img src="tagger/overview/scrdr_tagger_overview.png" alt="SCRDR Tagger Overview" width="90%">
 
 ## Credits and Reimplementation
 
