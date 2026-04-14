@@ -34,25 +34,25 @@ Dataset links are as follows:
 
 I have prepared high-level overview diagrams to illustrate the workflow of each program. These diagrams (available in `.dot`, `.pdf`, and `.png` formats) can be found within the `overview/` folders of each module.  
 
-## 1. Interactive RDR Learning Workflow
+## 1.Interactive RDR Learning Workflow
 
 Overview of `scrdr_interactive.py`:  
 
 <img src="inter/overview/scrdr_interactive_overview.png" alt="SCRDR Interactive Overview" width="50%">
 
-## 2. SCRDR Learner (Automatic Rule Induction)
+## 2.SCRDR Learner (Automatic Rule Induction)
 
 Overview of `scrdr_learner.py`:  
 
 <img src="classi/overview/scrdr_learner.png" alt="SCRDR Learner Overview" width="50%">
 
-## 3. SCRDR Part-of-Speech Tagger
+## 3.SCRDR Part-of-Speech Tagger
 
 Overview of `scrdr_tagger.py`:  
 
 <img src="tagger/overview/scrdr_tagger_overview.png" alt="SCRDR Tagger Overview" width="98%">
 
-## SCRDR Word Segmenter/Tokenizer
+## 4.SCRDR Word Segmenter/Tokenizer
 
 Overview of `scrdr_tokenizer.py`: 
 
