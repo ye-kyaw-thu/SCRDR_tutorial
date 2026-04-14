@@ -36,10 +36,15 @@ I have prepared high-level overview diagrams to illustrate the workflow of each 
 
 ## 1. Interactive RDR Learning Workflow
 
-Overview of scrdr_interactive.py:  
+Overview of `scrdr_interactive.py`:  
 
 <img src="inter/overview/scrdr_interactive_overview.png" alt="SCRDR Interactive Overview" width="50%">
 
+## 2. SCRDR Learner (Automatic Rule Induction)
+
+Overview of `scrdr_learner.py`:  
+
+<img src="classi/overview/scrdr_learner.png" alt="SCRDR Learner Overview" width="50%">
 
 
 ## Credits and Reimplementation
