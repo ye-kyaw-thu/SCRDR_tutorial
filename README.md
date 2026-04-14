@@ -30,6 +30,18 @@ Dataset links are as follows:
 4. Breast Cancer Wisconsin (Diagnostic): [https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 5. Titanic Dataset: [https://github.com/datasciencedojo/datasets/blob/master/titanic.csv](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv)
 
+## Overview Diagrams
+
+I have prepared high-level overview diagrams to illustrate the workflow of each program. These diagrams (available in `.dot`, `.pdf`, and `.png` formats) can be found within the `overview/` folders of each module.  
+
+## 1. Interactive RDR Learning Workflow
+
+Overview of scrdr_interactive.py:  
+
+<img src="inter/overview/scrdr_interactive_overview.png" alt="SCRDR Interactive Overview" width="90%">
+
+
+
 ## Credits and Reimplementation
 
 This repository contains reimplementations of specific RDR tools to support the AI Engineering curriculum.
