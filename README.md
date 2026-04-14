@@ -52,6 +52,12 @@ Overview of `scrdr_tagger.py`:
 
 <img src="tagger/overview/scrdr_tagger_overview.png" alt="SCRDR Tagger Overview" width="98%">
 
+## SCRDR Word Segmenter/Tokenizer
+
+Overview of `scrdr_tokenizer.py`: 
+
+<img src="tokenizer/overview/scrdr_tokenizer_overview.png" alt="SCRDR Tokenizer Overview" width="98%">
+
 ## Credits and Reimplementation
 
 This repository contains reimplementations of specific RDR tools to support the AI Engineering curriculum.
