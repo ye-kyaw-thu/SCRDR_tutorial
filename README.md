@@ -38,7 +38,7 @@ I have prepared high-level overview diagrams to illustrate the workflow of each 
 
 Overview of scrdr_interactive.py:  
 
-<img src="inter/overview/scrdr_interactive_overview.png" alt="SCRDR Interactive Overview" width="90%">
+<img src="inter/overview/scrdr_interactive_overview.png" alt="SCRDR Interactive Overview" width="50%">
 
 
 
